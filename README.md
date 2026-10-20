@@ -9,8 +9,8 @@
 ## 从仓库开始
 
 ```powershell
-git clone https://github.com/noirc162-dot/Indie-Game-.git
-cd Indie-Game-
+git clone https://github.com/2434143828/game.git
+cd game
 npm ci
 npm run dev
 ```
