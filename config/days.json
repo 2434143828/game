@@ -1,0 +1,69 @@
+[
+  {
+    "id": "D01",
+    "day": 1,
+    "title": "认识收容",
+    "quota": 150,
+    "rosterCount": 4,
+    "newAnomalyIds": [
+      "N01",
+      "N02"
+    ],
+    "activeAnomalyIds": [
+      "N01",
+      "N02"
+    ],
+    "newEmployeeIds": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "briefing": "今天只有两间开放收容室。完成工作获得能量，达标即可结束；事故会让出事的房间停产。",
+    "focus": "工作、累计指标与可用能量、档案、装备、一次可跳过的失效演练"
+  },
+  {
+    "id": "D02",
+    "day": 2,
+    "title": "广播与回声",
+    "quota": 240,
+    "rosterCount": 5,
+    "newAnomalyIds": [
+      "N03",
+      "N04"
+    ],
+    "activeAnomalyIds": [
+      "N01",
+      "N02",
+      "N03",
+      "N04"
+    ],
+    "newEmployeeIds": [
+      "E05"
+    ],
+    "briefing": "大狗与叮咚鸡开放。广播异常可能使大狗更加不稳定，请在档案中核对联动条件。",
+    "focus": "范围预警、四属性、唯一一组专属联动、主动技能"
+  },
+  {
+    "id": "D03",
+    "day": 3,
+    "title": "五室运转",
+    "quota": 340,
+    "rosterCount": 6,
+    "newAnomalyIds": [
+      "N05"
+    ],
+    "activeAnomalyIds": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N05"
+    ],
+    "newEmployeeIds": [
+      "E06"
+    ],
+    "briefing": "全部五间收容室开放。咕咕嘎嘎不能长期无人接待；预留恢复与调度空间。",
+    "focus": "五室分工、苍白伤害、调度和技能组合"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "designVersion": "0.1.0-draft",
+  "title": "网梗收容：奶龙失效",
+  "scope": "3日可玩Demo；文档和数值初稿，非已实现游戏",
+  "technicalDefault": {
+    "language": "TypeScript",
+    "renderer": "Phaser",
+    "phaserVersion": "3.90.0",
+    "buildTool": "Vite",
+    "respectExistingProject": true
+  },
+  "simulation": {
+    "fixedStepSec": 0.05,
+    "maxCatchupTicksPerFrame": 5,
+    "allowedTimeScales": [
+      0,
+      1,
+      2
+    ],
+    "pauseOnHidden": true,
+    "pauseOnFirstBreachPerDay": true
+  },
+  "economy": {
+    "initialWallet": 50,
+    "quotaCountsOnlyCompletedWork": true,
+    "spendingReducesQuotaProgress": false,
+    "archiveBehaviorCost": 12,
+    "archiveCombatCost": 18,
+    "equipmentPairCost": 45,
+    "skillUnlockCost": 35,
+    "equipmentCopiesPerAnomaly": 1,
+    "breachReward": 0,
+    "suppressionReward": 0,
+    "dailyBonus": 0
+  },
+  "work": {
+    "types": [
+      "OBSERVE",
+      "INTERACT",
+      "SOOTHE"
+    ],
+    "maxWorkersPerRoom": 1,
+    "automaticRepeat": false,
+    "payOnCompleteOnly": true,
+    "emergencyInterruptPressure": 8,
+    "voluntaryCancelPressure": 0
+  },
+  "pressure": {
+    "min": 0,
+    "warning": 60,
+    "danger": 80,
+    "breachThreshold": 100,
+    "afterRecovery": 25,
+    "recoverySec": 10
+  },
+  "employee": {
+    "hpMax": 100,
+    "spMax": 100,
+    "moveSpeedPxPerSec": 110,
+    "panicAtSp": 0,
+    "panicRecoverFraction": 0.35,
+    "safeHpPerSec": 5,
+    "safeSpPerSec": 8,
+    "safeRecoveryDelaySec": 3,
+    "incapacitatedReturnsNextDay": true,
+    "equipmentLostOnIncapacitation": false,
+    "friendlyFire": false,
+    "autoRetargetAfterSuppression": false
+  },
+  "combat": {
+    "enemyStat": "suppressionHp",
+    "normalDamageMinimum": 0,
+    "breachSpawnGraceSec": 1.5,
+    "attackPhases": [
+      "WINDUP",
+      "HIT",
+      "RECOVERY"
+    ],
+    "resistanceOrder": [
+      "RED",
+      "WHITE",
+      "BLACK",
+      "PALE"
+    ],
+    "blackToEnemyAppliesOnce": true
+  },
+  "dayEnd": {
+    "requiresQuota": true,
+    "requiresNoBreaches": false,
+    "requiresIdleEmployees": false,
+    "extraReward": 0,
+    "nextDayFullRecovery": true
+  },
+  "save": {
+    "key": "wanggeng.demo.v1",
+    "boundary": "DAY_PREP_ENTRY",
+    "saveMidDay": false,
+    "retryRestoresDayEntrySnapshot": true
+  },
+  "layout": {
+    "width": 1600,
+    "height": 900,
+    "minDisplayWidth": 1280,
+    "minDisplayHeight": 720,
+    "sceneBounds": {
+      "x": 30,
+      "y": 95,
+      "width": 1220,
+      "height": 585
+    },
+    "corridorY": 440,
+    "corridorMinX": 54,
+    "corridorMaxX": 1190,
+    "roomCenterY": 275,
+    "roomCentersX": [
+      154,
+      364,
+      574,
+      784,
+      994
+    ],
+    "safeCenter": {
+      "x": 1190,
+      "y": 600
+    },
+    "safeEntrance": {
+      "x": 1190,
+      "y": 440
+    },
+    "inspectorX": 1280,
+    "toolbarY": 700
+  },
+  "tutorial": {
+    "day": 1,
+    "offerAtProduced": 40,
+    "optional": true,
+    "anomalyId": "N01",
+    "grantsEnergy": false
+  },
+  "featuresOutOfScope": [
+    "传播网络或切换视图",
+    "自动工作预案",
+    "外部热度",
+    "随机模因变异",
+    "主动科研或主动引爆增产",
+    "装备随机词条或被动",
+    "永久死亡与装备掉落",
+    "员工等级与天赋",
+    "建造系统",
+    "多人联机",
+    "手机适配",
+    "实时语音识别",
+    "宣传片感染观众机制"
+  ]
+}

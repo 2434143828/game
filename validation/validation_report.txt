@@ -1,0 +1,43 @@
+《网梗收容：奶龙失效》设计包验证报告
+Date: 2026-10-16
+This report validates design data and examples, NOT a playable game.
+
+$ python3 validation/validate_design.py
+DESIGN VALIDATION PASSED: 459 assertions
+JSON files: 7
+Anomalies: 5; work profiles: 15; special weapons/armors: 5 each; skills: 5; links: 1
+Implementation acceptance scenarios specified (not executed): 73
+Budget check: initial 50 + quotas 730 = 780; fixed unlocks 550; remaining 230
+Scope: design data validation only. No game implementation or playtest was executed.
+
+$ python3 -m unittest discover -s validation -p test_*.py -v
+test_armor_changes_damage (test_balance_math.DamageExamples.test_armor_changes_damage) ... ok
+test_black_does_not_split (test_balance_math.DamageExamples.test_black_does_not_split) ... ok
+test_damage_clamps_at_zero (test_balance_math.DamageExamples.test_damage_clamps_at_zero) ... ok
+test_enemy_black_applies_once (test_balance_math.DamageExamples.test_enemy_black_applies_once) ... ok
+test_enemy_pale (test_balance_math.DamageExamples.test_enemy_pale) ... ok
+test_pale_four_is_not_four_percent (test_balance_math.DamageExamples.test_pale_four_is_not_four_percent) ... ok
+test_pale_uses_max_not_current (test_balance_math.DamageExamples.test_pale_uses_max_not_current) ... ok
+test_red (test_balance_math.DamageExamples.test_red) ... ok
+test_skill_five_panic_threshold (test_balance_math.DamageExamples.test_skill_five_panic_threshold) ... ok
+test_skill_four_speed (test_balance_math.DamageExamples.test_skill_four_speed) ... ok
+test_skill_two_example (test_balance_math.DamageExamples.test_skill_two_example) ... ok
+test_white (test_balance_math.DamageExamples.test_white) ... ok
+test_first_day_forces_initial_choice (test_balance_math.EconomyExamples.test_first_day_forces_initial_choice) ... ok
+test_no_breach_or_suppression_reward (test_balance_math.EconomyExamples.test_no_breach_or_suppression_reward) ... ok
+test_positive_yield_soothe_for_every_anomaly (test_balance_math.EconomyExamples.test_positive_yield_soothe_for_every_anomaly) ... ok
+test_quota_not_wallet (test_balance_math.EconomyExamples.test_quota_not_wallet) ... ok
+test_snapshot_example_deep_copy (test_balance_math.EconomyExamples.test_snapshot_example_deep_copy) ... ok
+test_spending_does_not_rollback_quota (test_balance_math.EconomyExamples.test_spending_does_not_rollback_quota) ... ok
+test_threshold_work_has_no_income_example (test_balance_math.EconomyExamples.test_threshold_work_has_no_income_example) ... ok
+test_total_unlock_budget (test_balance_math.EconomyExamples.test_total_unlock_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.001s
+
+OK
+
+$ tsc --strict --noEmit --target ES2020 contracts/data-contract.ts
+Type contract syntax check: PASSED (no game source present)
+
+Not executed: game build, game unit/integration tests, 73 implementation acceptance cases, actual playtest, performance profiling.

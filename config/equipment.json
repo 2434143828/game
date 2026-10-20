@@ -1,0 +1,162 @@
+{
+  "weapons": [
+    {
+      "id": "W00",
+      "name": "制式短棍",
+      "sourceAnomalyId": null,
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 6
+      },
+      "attackPeriodSec": 1.2,
+      "rangePx": 65,
+      "windupSec": 0.2,
+      "unlimitedStarter": true
+    },
+    {
+      "id": "W01",
+      "name": "复读器",
+      "sourceAnomalyId": "N01",
+      "damage": {
+        "type": "WHITE",
+        "kind": "FLAT",
+        "amount": 10
+      },
+      "attackPeriodSec": 1.2,
+      "rangePx": 150,
+      "windupSec": 0.2,
+      "unlimitedStarter": false
+    },
+    {
+      "id": "W02",
+      "name": "哈气爪",
+      "sourceAnomalyId": "N02",
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 14
+      },
+      "attackPeriodSec": 1.0,
+      "rangePx": 55,
+      "windupSec": 0.2,
+      "unlimitedStarter": false
+    },
+    {
+      "id": "W03",
+      "name": "吠声器",
+      "sourceAnomalyId": "N03",
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 12
+      },
+      "attackPeriodSec": 1.4,
+      "rangePx": 190,
+      "windupSec": 0.3,
+      "unlimitedStarter": false
+    },
+    {
+      "id": "W04",
+      "name": "通知喇叭",
+      "sourceAnomalyId": "N04",
+      "damage": {
+        "type": "BLACK",
+        "kind": "FLAT",
+        "amount": 9
+      },
+      "attackPeriodSec": 1.3,
+      "rangePx": 160,
+      "windupSec": 0.3,
+      "unlimitedStarter": false
+    },
+    {
+      "id": "W05",
+      "name": "嘎嘎共振器",
+      "sourceAnomalyId": "N05",
+      "damage": {
+        "type": "PALE",
+        "kind": "MAX_RATIO",
+        "amount": 0.04
+      },
+      "attackPeriodSec": 1.2,
+      "rangePx": 140,
+      "windupSec": 0.3,
+      "unlimitedStarter": false
+    }
+  ],
+  "armors": [
+    {
+      "id": "A00",
+      "name": "制式制服",
+      "sourceAnomalyId": null,
+      "resistances": {
+        "RED": 1,
+        "WHITE": 1,
+        "BLACK": 1,
+        "PALE": 1
+      },
+      "unlimitedStarter": true
+    },
+    {
+      "id": "A01",
+      "name": "奶龙防护服",
+      "sourceAnomalyId": "N01",
+      "resistances": {
+        "RED": 1,
+        "WHITE": 0.6,
+        "BLACK": 1,
+        "PALE": 1.2
+      },
+      "unlimitedStarter": false
+    },
+    {
+      "id": "A02",
+      "name": "耄耋防护服",
+      "sourceAnomalyId": "N02",
+      "resistances": {
+        "RED": 0.6,
+        "WHITE": 1.2,
+        "BLACK": 0.9,
+        "PALE": 1
+      },
+      "unlimitedStarter": false
+    },
+    {
+      "id": "A03",
+      "name": "大狗防护服",
+      "sourceAnomalyId": "N03",
+      "resistances": {
+        "RED": 0.75,
+        "WHITE": 0.9,
+        "BLACK": 1,
+        "PALE": 1.1
+      },
+      "unlimitedStarter": false
+    },
+    {
+      "id": "A04",
+      "name": "叮咚鸡防护服",
+      "sourceAnomalyId": "N04",
+      "resistances": {
+        "RED": 1.1,
+        "WHITE": 0.9,
+        "BLACK": 0.6,
+        "PALE": 1
+      },
+      "unlimitedStarter": false
+    },
+    {
+      "id": "A05",
+      "name": "咕咕嘎嘎防护服",
+      "sourceAnomalyId": "N05",
+      "resistances": {
+        "RED": 1.1,
+        "WHITE": 0.8,
+        "BLACK": 0.9,
+        "PALE": 0.55
+      },
+      "unlimitedStarter": false
+    }
+  ]
+}

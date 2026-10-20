@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #111b22; color: #dce6e9; font-family: "Microsoft YaHei", "Segoe UI", sans-serif; }
+#viewport { position: fixed; inset: 0; overflow: hidden; }
+#game-frame { position: absolute; left: 50%; top: 50%; width: 1600px; height: 900px; transform-origin: center; }
+#game, #interface { position: absolute; inset: 0; }
+#game canvas { display: block; }
+#interface { pointer-events: none; }
+button { font: inherit; border: 1px solid #60717b; color: #e2e9e8; background: #2a3d48; border-radius: 3px; cursor: pointer; padding: 8px 12px; }
+button:hover { background: #3b5864; border-color: #a5d7d5; }
+button:disabled { opacity: .42; cursor: default; }
+button:focus-visible { outline: 2px solid #b8e7cf; outline-offset: 2px; }
+.slice-top { position: absolute; left: 16px; top: 10px; width: 1568px; height: 56px; display: flex; align-items: center; gap: 30px; padding: 0 16px; background: #1d2c35; border-bottom: 2px solid #5c777b; pointer-events: auto; }
+.slice-brand { display: flex; align-items: center; gap: 12px; margin-right: auto; }
+.slice-brand strong { display: block; font-size: 20px; letter-spacing: 2px; }
+.slice-brand small { font-size: 11px; color: #9db5bb; }
+.agency-mark { color: #d4b76c; font-size: 34px; }
+.slice-scope { color: #d4b76c; font-size: 13px; }
+#slice-production, #slice-wallet { font-size: 15px; font-variant-numeric: tabular-nums; }
+#slice-clock { min-width: 65px; font-size: 13px; color: #9db5bb; font-variant-numeric: tabular-nums; }
+.slice-inspector { position: absolute; left: 1360px; top: 76px; width: 224px; max-height: 720px; background: #1b2a34; border: 1px solid #40555e; padding: 12px; pointer-events: auto; overflow: hidden; }
+.slice-section-title { display: flex; justify-content: space-between; align-items: center; color: #b8c7ca; font-size: 13px; letter-spacing: 2px; }
+.slice-section-title button { padding: 2px 8px; }
+.slice-room-status { padding: 15px 0 12px; display: grid; gap: 5px; border-bottom: 1px solid #40555e; }
+.slice-room-status strong { color: #a9dbc4; font-size: 16px; }
+.slice-room-status span, .slice-room-status small { font-size: 12px; color: #adbec5; }
+.slice-room-status.danger strong { color: #f59f87; }
+.slice-selection { font-size: 13px; color: #d6c185; margin: 14px 0 10px; }
+.slice-vitals { padding: 9px 7px; margin-bottom: 8px; border-left: 2px solid #42565f; background: #22343e; }
+.slice-vitals.selected { border-color: #99dfd1; background: #2d464e; }
+.slice-vitals > div { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.slice-vitals b { font-size: 14px; }
+.slice-vitals div span { font-size: 11px; color: #b8c9ce; }
+.slice-vitals label { display: flex; align-items: center; gap: 5px; font-size: 11px; margin-top: 2px; }
+.slice-vitals meter { width: 105px; height: 9px; }
+.slice-vitals label span { width: 24px; text-align: right; }
+.slice-orders { display: flex; gap: 6px; margin: 12px 0; }
+.slice-orders button { font-size: 12px; flex: 1; padding: 7px 4px; }
+.slice-help { font-size: 12px; color: #a8bac2; line-height: 1.8; }
+.slice-debug { margin: 12px 0; padding-top: 10px; border-top: 1px solid #40555e; }
+.slice-debug small { font-size: 10px; color: #a9a087; }
+.slice-debug button { display: block; width: 100%; margin-top: 7px; border-color: #957052; font-size: 12px; background: #493d35; }
+.slice-debug p { font-size: 10px; color: #a6b4ba; line-height: 1.6; }
+.slice-log { border-top: 1px solid #40555e; padding-top: 8px; }
+.slice-log button { border: none; background: none; padding: 0; font-size: 11px; color: #a8bcc1; }
+.slice-log p { font-size: 10px; line-height: 1.6; margin: 7px 0; color: #aebec5; }
+.slice-log time { color: #d0b977; }
+.slice-bottom { position: absolute; left: 16px; top: 808px; width: 1568px; height: 78px; padding: 11px 16px; background: #1d2c35; border-top: 1px solid #40555e; }
+.slice-controls { display: flex; align-items: center; gap: 27px; font-size: 13px; color: #c1ced1; }
+kbd { font: inherit; color: #e0d29e; }
+#slice-message { margin-top: 10px; font-size: 13px; color: #acd4cc; }
+.slice-bottom > small { position: absolute; bottom: 12px; right: 14px; font-size: 10px; color: #90a7af; }
+[hidden] { display: none !important; }

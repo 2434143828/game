@@ -1,0 +1,136 @@
+{
+  "policy": "只生成可替换的标注占位图和原创简单音效；未提供角色参考或配音时不抓取原角色素材，不声称已还原。",
+  "characters": [
+    {
+      "id": "character_n01",
+      "anomalyId": "N01",
+      "displayName": "奶龙",
+      "placeholder": "具有编号和中文名称的独立轮廓占位",
+      "states": [
+        "contained_idle",
+        "working_reaction",
+        "breach_idle",
+        "move",
+        "windup",
+        "hit",
+        "stunned",
+        "suppressed"
+      ],
+      "officialReferenceProvided": false
+    },
+    {
+      "id": "character_n02",
+      "anomalyId": "N02",
+      "displayName": "耄耋",
+      "placeholder": "具有编号和中文名称的独立轮廓占位",
+      "states": [
+        "contained_idle",
+        "working_reaction",
+        "breach_idle",
+        "move",
+        "windup",
+        "hit",
+        "stunned",
+        "suppressed"
+      ],
+      "officialReferenceProvided": false
+    },
+    {
+      "id": "character_n03",
+      "anomalyId": "N03",
+      "displayName": "大狗",
+      "placeholder": "具有编号和中文名称的独立轮廓占位",
+      "states": [
+        "contained_idle",
+        "working_reaction",
+        "breach_idle",
+        "move",
+        "windup",
+        "hit",
+        "stunned",
+        "suppressed"
+      ],
+      "officialReferenceProvided": false
+    },
+    {
+      "id": "character_n04",
+      "anomalyId": "N04",
+      "displayName": "叮咚鸡",
+      "placeholder": "具有编号和中文名称的独立轮廓占位",
+      "states": [
+        "contained_idle",
+        "working_reaction",
+        "breach_idle",
+        "move",
+        "windup",
+        "hit",
+        "stunned",
+        "suppressed"
+      ],
+      "officialReferenceProvided": false
+    },
+    {
+      "id": "character_n05",
+      "anomalyId": "N05",
+      "displayName": "咕咕嘎嘎",
+      "placeholder": "具有编号和中文名称的独立轮廓占位",
+      "states": [
+        "contained_idle",
+        "working_reaction",
+        "breach_idle",
+        "move",
+        "windup",
+        "hit",
+        "stunned",
+        "suppressed"
+      ],
+      "officialReferenceProvided": false
+    }
+  ],
+  "employee": {
+    "id": "employee_base",
+    "states": [
+      "idle",
+      "walk",
+      "work",
+      "attack",
+      "panic",
+      "incapacitated"
+    ],
+    "variations": "仅编号与装备色标；不要求六套独立动画"
+  },
+  "effects": [
+    "hit_red",
+    "hit_white",
+    "hit_black",
+    "hit_pale",
+    "stun",
+    "knockback",
+    "restore_sp",
+    "broadcast_windup",
+    "pale_windup",
+    "energy_gain"
+  ],
+  "ui": [
+    "room_state_icons",
+    "damage_type_icons",
+    "skill_icons_s01_to_s05",
+    "weapon_icons_w00_to_w05",
+    "armor_icons_a00_to_a05"
+  ],
+  "audio": [
+    "work_complete",
+    "alarm_breach",
+    "attack_hit",
+    "skill_cast",
+    "suppression_complete",
+    "day_complete"
+  ],
+  "notRequired": [
+    "角色原声",
+    "商业音乐",
+    "宣传片",
+    "复杂三维资产",
+    "完整动画逐帧美术"
+  ]
+}

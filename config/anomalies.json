@@ -1,0 +1,413 @@
+{
+  "anomalies": [
+    {
+      "id": "N01",
+      "name": "奶龙",
+      "roomIndex": 0,
+      "unlockDay": 1,
+      "initialPressure": 20,
+      "skillId": "S01",
+      "weaponId": "W01",
+      "armorId": "A01",
+      "workProfiles": [
+        {
+          "type": "OBSERVE",
+          "durationSec": 24,
+          "energy": 12,
+          "pressureDelta": 5,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 4
+          }
+        },
+        {
+          "type": "INTERACT",
+          "durationSec": 20,
+          "energy": 18,
+          "pressureDelta": 25,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 8
+          }
+        },
+        {
+          "type": "SOOTHE",
+          "durationSec": 22,
+          "energy": 8,
+          "pressureDelta": -20,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 2
+          }
+        }
+      ],
+      "specialWorkRule": {
+        "kind": "REPEAT_INTERACT",
+        "extraPressure": 15,
+        "resetOnDifferentCompletedWork": true
+      },
+      "breach": {
+        "ai": "CHASE",
+        "suppressionHpMax": 180,
+        "moveSpeedPxPerSec": 85,
+        "damage": {
+          "type": "WHITE",
+          "kind": "FLAT",
+          "amount": 8
+        },
+        "attackRangePx": 55,
+        "attackPeriodSec": 2,
+        "windupSec": 0.4,
+        "firstAttackDelaySec": 2,
+        "targetScope": "CORRIDOR",
+        "cloneCount": 2,
+        "cloneHp": 35,
+        "cloneSpeedPxPerSec": 85,
+        "cloneDamage": {
+          "type": "WHITE",
+          "kind": "FLAT",
+          "amount": 4
+        },
+        "cloneAttackPeriodSec": 2.5,
+        "clonesCanSpawnClones": false
+      },
+      "resistances": {
+        "RED": 1.0,
+        "WHITE": 0.75,
+        "BLACK": 1.0,
+        "PALE": 1.25
+      },
+      "archive": {
+        "behavior": "连续使用互动会强化复述倾向。更换为观察或安抚，可以打断连续互动记录。",
+        "combat": "失效时出现主样本和两只复读分身。镇压主样本会清除分身；分身本身没有能量收益。"
+      },
+      "conceptNote": "玩法原创暂定，不声称是该网络梗或形象的官方设定。"
+    },
+    {
+      "id": "N02",
+      "name": "耄耋",
+      "roomIndex": 1,
+      "unlockDay": 1,
+      "initialPressure": 25,
+      "skillId": "S02",
+      "weaponId": "W02",
+      "armorId": "A02",
+      "workProfiles": [
+        {
+          "type": "OBSERVE",
+          "durationSec": 22,
+          "energy": 12,
+          "pressureDelta": 5,
+          "hazard": {
+            "type": "RED",
+            "kind": "FLAT",
+            "amount": 4
+          }
+        },
+        {
+          "type": "INTERACT",
+          "durationSec": 18,
+          "energy": 18,
+          "pressureDelta": 25,
+          "hazard": {
+            "type": "RED",
+            "kind": "FLAT",
+            "amount": 8
+          }
+        },
+        {
+          "type": "SOOTHE",
+          "durationSec": 24,
+          "energy": 8,
+          "pressureDelta": -20,
+          "hazard": {
+            "type": "RED",
+            "kind": "FLAT",
+            "amount": 2
+          }
+        }
+      ],
+      "specialWorkRule": {
+        "kind": "REPEAT_WORKER",
+        "extraPressure": 15,
+        "clearAfterIdleSec": 20
+      },
+      "breach": {
+        "ai": "CHASE",
+        "suppressionHpMax": 160,
+        "moveSpeedPxPerSec": 175,
+        "damage": {
+          "type": "RED",
+          "kind": "FLAT",
+          "amount": 10
+        },
+        "attackRangePx": 50,
+        "attackPeriodSec": 0.9,
+        "windupSec": 0.25,
+        "firstAttackDelaySec": 1.5,
+        "targetScope": "CORRIDOR"
+      },
+      "resistances": {
+        "RED": 0.7,
+        "WHITE": 1.25,
+        "BLACK": 1.0,
+        "PALE": 1.0
+      },
+      "archive": {
+        "behavior": "相邻两次工作由同一名员工完成，会增加额外压力。连续空闲20秒后，它会忘记上一位工作人员。",
+        "combat": "移动速度快，近距离造成红色伤害。优先保护受伤员工；白色武器对它较有效。"
+      },
+      "conceptNote": "玩法原创暂定，不声称是该网络梗或形象的官方设定。"
+    },
+    {
+      "id": "N03",
+      "name": "大狗",
+      "roomIndex": 2,
+      "unlockDay": 2,
+      "initialPressure": 20,
+      "skillId": "S03",
+      "weaponId": "W03",
+      "armorId": "A03",
+      "workProfiles": [
+        {
+          "type": "OBSERVE",
+          "durationSec": 26,
+          "energy": 14,
+          "pressureDelta": 5,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 3
+          }
+        },
+        {
+          "type": "INTERACT",
+          "durationSec": 20,
+          "energy": 20,
+          "pressureDelta": 25,
+          "hazard": {
+            "type": "RED",
+            "kind": "FLAT",
+            "amount": 6
+          }
+        },
+        {
+          "type": "SOOTHE",
+          "durationSec": 24,
+          "energy": 8,
+          "pressureDelta": -20,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 2
+          }
+        }
+      ],
+      "specialWorkRule": {
+        "kind": "RAPID_RESTART",
+        "gapSec": 8,
+        "extraPressure": 10
+      },
+      "breach": {
+        "ai": "APPROACH_AND_AOE",
+        "suppressionHpMax": 240,
+        "moveSpeedPxPerSec": 65,
+        "damage": {
+          "type": "RED",
+          "kind": "FLAT",
+          "amount": 14
+        },
+        "attackRangePx": 160,
+        "attackPeriodSec": 6,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 2.5,
+        "targetScope": "CORRIDOR",
+        "knockbackPx": 90
+      },
+      "resistances": {
+        "RED": 0.8,
+        "WHITE": 1.1,
+        "BLACK": 1.0,
+        "PALE": 1.0
+      },
+      "archive": {
+        "behavior": "一次工作完成后8秒内再次开始工作，会增加额外压力。计时从上次完成起算，不是从下令起算。",
+        "combat": "吠叫有明显蓄力，命中走廊内的员工并击退。叮咚鸡每次失效，会使收容中的大狗压力+35；大狗若已失效，则安排一次吠叫。"
+      },
+      "conceptNote": "玩法原创暂定，不声称是该网络梗或形象的官方设定。"
+    },
+    {
+      "id": "N04",
+      "name": "叮咚鸡",
+      "roomIndex": 3,
+      "unlockDay": 2,
+      "initialPressure": 20,
+      "skillId": "S04",
+      "weaponId": "W04",
+      "armorId": "A04",
+      "workProfiles": [
+        {
+          "type": "OBSERVE",
+          "durationSec": 26,
+          "energy": 14,
+          "pressureDelta": 5,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 5
+          }
+        },
+        {
+          "type": "INTERACT",
+          "durationSec": 20,
+          "energy": 20,
+          "pressureDelta": 25,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 9
+          }
+        },
+        {
+          "type": "SOOTHE",
+          "durationSec": 24,
+          "energy": 8,
+          "pressureDelta": -20,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 2
+          }
+        }
+      ],
+      "specialWorkRule": {
+        "kind": "NON_SOOTHE_STREAK",
+        "threshold": 3,
+        "extraPressure": 20,
+        "resetAfterProc": true
+      },
+      "breach": {
+        "ai": "STATIONARY_BROADCAST",
+        "suppressionHpMax": 220,
+        "moveSpeedPxPerSec": 0,
+        "damage": {
+          "type": "BLACK",
+          "kind": "FLAT",
+          "amount": 4
+        },
+        "attackRangePx": 0,
+        "attackPeriodSec": 10,
+        "windupSec": 1.5,
+        "firstAttackDelaySec": 4,
+        "targetScope": "FACILITY_EXCEPT_SAFE",
+        "interruptWork": true
+      },
+      "resistances": {
+        "RED": 1.0,
+        "WHITE": 1.0,
+        "BLACK": 0.7,
+        "PALE": 1.2
+      },
+      "archive": {
+        "behavior": "每完成三次非安抚工作，额外增加压力。安抚会清空这项计数。",
+        "combat": "广播伤害覆盖除安全室外的设施，并中断正在进行的工作。每次进入失效状态，只向大狗发出一次联动事件。"
+      },
+      "conceptNote": "玩法原创暂定，不声称是该网络梗或形象的官方设定。"
+    },
+    {
+      "id": "N05",
+      "name": "咕咕嘎嘎",
+      "roomIndex": 4,
+      "unlockDay": 3,
+      "initialPressure": 20,
+      "skillId": "S05",
+      "weaponId": "W05",
+      "armorId": "A05",
+      "workProfiles": [
+        {
+          "type": "OBSERVE",
+          "durationSec": 28,
+          "energy": 16,
+          "pressureDelta": 5,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 6
+          }
+        },
+        {
+          "type": "INTERACT",
+          "durationSec": 22,
+          "energy": 22,
+          "pressureDelta": 25,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 10
+          }
+        },
+        {
+          "type": "SOOTHE",
+          "durationSec": 24,
+          "energy": 10,
+          "pressureDelta": -20,
+          "hazard": {
+            "type": "WHITE",
+            "kind": "FLAT",
+            "amount": 3
+          }
+        }
+      ],
+      "specialWorkRule": {
+        "kind": "NEGLECT",
+        "idleGraceSec": 30,
+        "pressurePerSecAfterGrace": 1,
+        "resetOnCompletedWork": true
+      },
+      "breach": {
+        "ai": "PATROL_AOE",
+        "suppressionHpMax": 240,
+        "moveSpeedPxPerSec": 45,
+        "damage": {
+          "type": "PALE",
+          "kind": "MAX_RATIO",
+          "amount": 0.06
+        },
+        "attackRangePx": 180,
+        "attackPeriodSec": 4,
+        "windupSec": 1,
+        "firstAttackDelaySec": 2.5,
+        "targetScope": "CORRIDOR"
+      },
+      "resistances": {
+        "RED": 0.8,
+        "WHITE": 0.8,
+        "BLACK": 0.8,
+        "PALE": 1.2
+      },
+      "archive": {
+        "behavior": "未作业的累计空闲超过30秒后，每秒增加1点压力。完成工作才清空空闲计时，取消工作不会重置。",
+        "combat": "哭闹对走廊范围内员工造成按最大生命计算的苍白伤害。蓄力范围可见，可以移动躲避。"
+      },
+      "conceptNote": "玩法原创暂定，不声称是该网络梗或形象的官方设定。"
+    }
+  ],
+  "links": [
+    {
+      "id": "L01",
+      "sourceAnomalyId": "N04",
+      "targetAnomalyId": "N03",
+      "on": "BREACH_ENTER",
+      "oncePerSourceBreach": true,
+      "ifTargetContained": {
+        "pressureAdd": 35
+      },
+      "ifTargetBreached": "REQUEST_ONE_HOWL",
+      "ifTargetUnavailable": "IGNORE",
+      "reverseLink": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+node_modules/
+dist/
+test-results/
+.vite/
+*.log
+__pycache__/
+
+# Local backups, full browser recordings and machine-specific test output.
+/backups/
+/docs/*evidence*/
+/docs/connection-recovery-*/
+/docs/screenshots/
+/docs/*smoke.json
+/docs/browser-regression.json
+*.webm
+*.mp4
+
+# Local credentials and editor/OS files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+.DS_Store
+Thumbs.db

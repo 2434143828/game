@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "cases": 4,
+  "checkpoints": 34,
+  "readOnlySamples": 2060,
+  "mapId": "expanded-facility-v1",
+  "ownedBrowserClosed": true,
+  "method": "Native Chrome, real mouse/keyboard input and elapsed wall time. No direct state, simulation, camera or command mutation through the DEV bridge.",
+  "errors": {
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "httpErrors": 0,
+    "requestFailures": 0,
+    "unexpectedNavigations": 0
+  },
+  "camera": {
+    "checkpoints": 8,
+    "samples": 109,
+    "nativeDragSelectedEmployees": 6,
+    "initialZoom": 0.6,
+    "overviewZoom": 0.28224,
+    "wheelZoom": 0.3217536,
+    "selectedEmployeeFocusZoom": 1,
+    "middleDragAndAltLeftDragVerified": true,
+    "minimapAndRoomShortcutVerified": true,
+    "pausedWorldFrozenDuringCameraOperations": true,
+    "viewport": { "width": 1280, "height": 720, "scrollWidth": 1280, "scrollHeight": 720 },
+    "directMovementAt1280Verified": true
+  },
+  "core": {
+    "checkpoints": 18,
+    "samples": 1361,
+    "idleWalkObservedAtSimulationSec": 8.5,
+    "stoppedPositionHeldForWallSeconds": 10,
+    "cancelledPreArrivalWorkIncome": 0,
+    "firstFiveRoomIncome": 68,
+    "additionalIncomeDuringN01Breach": 22,
+    "crossFloorSuppressionOrderedAtSec": 86.65,
+    "differentFloorNoRemoteHitObservedAtSec": 87.9,
+    "legalSameFloorHitObservedAtSec": 93.75,
+    "actualSafeArrivalAtSec": 102.6,
+    "safeRecoveryCompleteAtSec": 108.05,
+    "mainRecapturedAndClonesClearedAtSec": 172.15,
+    "roomRecoveryCompleteAtSec": 182.2,
+    "finalProduced": 90,
+    "finalWallet": 140,
+    "sampledRoutes": [
+      { "employee": "E04", "fromSec": 18.7, "toSec": 21.15, "samples": 47, "transitObserved": true },
+      { "employee": "E05", "fromSec": 23.95, "toSec": 72.95, "samples": 336, "transitObserved": true },
+      { "employee": "E01", "fromSec": 93.75, "toSec": 102.6, "samples": 88, "transitObserved": true }
+    ],
+    "sampledRouteChecks": "Each observed position lies on a configured edge and each observed displacement stays within configured movement speed over simulation elapsed time.",
+    "allFiveWorkArrivalChecks": "Each room has an EXECUTING sample with its assigned employee at that room's configured indoor work node."
+  },
+  "dog": {
+    "checkpoints": 4,
+    "samples": 268,
+    "logicalWarningRadius": 160,
+    "projectedWarningRadius": 96,
+    "cameraZoom": 0.6,
+    "dodgeFrom": { "x": 1174.047619047619, "y": 1360 },
+    "dodgeTo": { "x": 1306.047619047619, "y": 1360 },
+    "hpBeforeDodge": 100,
+    "hpAfterDodge": 100,
+    "laterActualHitHp": 86,
+    "laterActualHitSp": 100,
+    "retreatReachedSafe": true
+  },
+  "skills": {
+    "checkpoints": 4,
+    "samples": 322,
+    "initialWallet": 50,
+    "normalWorkIncome": 14,
+    "behaviorAndS03PurchaseCost": 47,
+    "invalidOtherFloorCastCost": 0,
+    "actualS03Cost": 12,
+    "enemyHpBefore": 240,
+    "enemyHpAfter": 233.6,
+    "knockbackFrom": { "x": 1040, "y": 1360 },
+    "knockbackTo": { "x": 1200, "y": 1360 },
+    "knockbackWorldDistance": 160,
+    "finalProduced": 14,
+    "finalWallet": 5
+  },
+  "coreVideo": {
+    "file": "core/video/page@a3e562f3272e9eb50f8d68e0c78d367e.webm",
+    "durationSec": 138.92,
+    "width": 1600,
+    "height": 900,
+    "fps": 25,
+    "frames": 3473,
+    "verification": "Root agent's OpenCV report successfully decoded five sampled frames; see core/video-qa/report.json.",
+    "qaReport": "core/video-qa/report.json"
+  },
+  "sandboxLocalStorageUnchanged": true,
+  "retainedEarlierAttempts": [
+    { "directory": "../2026-10-20T03-46-08-897Z", "classification": "Hot reload interrupted the recording." },
+    { "directory": "../2026-10-20T03-47-56-430Z", "classification": "Real transit pursuit deadlock, subsequently fixed and retested using the original native-input route." }
+  ],
+  "limitations": [
+    "The core recording is a sandbox loop, not a completed formal three-day campaign.",
+    "The browser S03 wrong-floor test uses actual configured floor spacing; close-but-disconnected graph cases are separately covered by navigation unit tests.",
+    "This incremental browser suite tests S03; it does not re-run all five skills or all ten equipment assignments.",
+    "N04 global broadcast, S04 global speed and S05 Euclidean world-radius exceptions are not newly browser-tested in these four recordings.",
+    "Programmatically drawn concept art remains placeholder art.",
+    "Video QA sampled five frames; it is not a full-file decode assertion."
+  ]
+}

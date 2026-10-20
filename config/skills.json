@@ -1,0 +1,74 @@
+[
+  {
+    "id": "S01",
+    "name": "我是奶龙",
+    "sourceAnomalyId": "N01",
+    "hotkey": "1",
+    "target": "SINGLE_ENEMY",
+    "effect": "STUN",
+    "energyCost": 10,
+    "cooldownSec": 24,
+    "durationSec": 4,
+    "description": "令一名失效敌对单位停止移动和攻击4秒，并取消其尚未命中的蓄力。"
+  },
+  {
+    "id": "S02",
+    "name": "耄耋暴怒",
+    "sourceAnomalyId": "N02",
+    "hotkey": "2",
+    "target": "SINGLE_ENEMY",
+    "effect": "DAMAGE",
+    "energyCost": 12,
+    "cooldownSec": 18,
+    "damage": {
+      "type": "RED",
+      "kind": "FLAT",
+      "amount": 32
+    },
+    "description": "对一名失效敌对单位造成32点基础红色伤害，受目标红色承伤倍率影响。"
+  },
+  {
+    "id": "S03",
+    "name": "大狗叫",
+    "sourceAnomalyId": "N03",
+    "hotkey": "3",
+    "target": "CORRIDOR_POINT",
+    "effect": "DAMAGE_AND_KNOCKBACK",
+    "energyCost": 12,
+    "cooldownSec": 20,
+    "radiusPx": 160,
+    "knockbackPx": 160,
+    "damage": {
+      "type": "RED",
+      "kind": "FLAT",
+      "amount": 8
+    },
+    "description": "对指定走廊位置半径160像素内的敌人造成8点基础红伤并向外推开160像素；取消被命中目标的蓄力。"
+  },
+  {
+    "id": "S04",
+    "name": "叮咚通知",
+    "sourceAnomalyId": "N04",
+    "hotkey": "4",
+    "target": "ALL_ACTIVE_EMPLOYEES",
+    "effect": "MOVE_SPEED_BUFF",
+    "energyCost": 10,
+    "cooldownSec": 28,
+    "durationSec": 8,
+    "moveSpeedMultiplier": 1.5,
+    "description": "全部未重伤员工移动速度变为1.5倍，持续8秒；包含惊慌撤离的员工。"
+  },
+  {
+    "id": "S05",
+    "name": "咕咕嘎嘎",
+    "sourceAnomalyId": "N05",
+    "hotkey": "5",
+    "target": "FACILITY_POINT",
+    "effect": "RESTORE_SP",
+    "energyCost": 16,
+    "cooldownSec": 30,
+    "radiusPx": 160,
+    "restoreSp": 35,
+    "description": "恢复范围内未重伤员工35点精神，可帮助惊慌员工恢复控制。"
+  }
+]
