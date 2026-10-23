@@ -13,7 +13,7 @@ export const FACILITY_GEOMETRY = {
   menuRowHeight: 44,
 } as const;
 export const ROOM_COLORS: Record<AnomalyId, number> = {
-  N01: 0xf3bd36, N02: 0xc66961, N03: 0x7c9b70, N04: 0x9a82c0, N05: 0x67a9bf,
+  N01: 0xbda35a, N02: 0xa67467, N03: 0x819170, N04: 0x938b9b, N05: 0x7d9ba3,
 };
 /** Legacy names are identity: the Phaser camera performs the only projection. */
 export function worldToScreen(point: Point): Point { return { x: point.x, y: point.y }; }

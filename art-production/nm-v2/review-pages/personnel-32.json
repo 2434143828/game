@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_agent_locomotion_reference_walk_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-485bd315-d726-4d79-ad7c-5ea3857528ee.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_locomotion_reference_walk_right.png",
+    "scope": "personnel",
+    "displayName": "右脚接触",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：右脚接触。只画本张：同一完整员工朝右走路的右脚着地姿，保持相同躯干比例；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 将两张呼吸参考合并为一个待机标准，双步态与双攀爬保留。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常员工的放松待机、轻快但稳的左右支撑步态及楼梯交替支撑；脚底接地、手臂自然摆动，没有神经质扭曲或跑酷动作。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_locomotion_reference_climb_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-681fd6ef-e79b-40bd-bb8d-146aa2be42e0.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_locomotion_reference_climb_right.png",
+    "scope": "personnel",
+    "displayName": "攀爬右手高",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攀爬右手高。只画本张：同一完整员工沿竖向通道攀爬、右手高左脚支撑的单姿，无通道背景；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 将两张呼吸参考合并为一个待机标准，双步态与双攀爬保留。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常员工的放松待机、轻快但稳的左右支撑步态及楼梯交替支撑；脚底接地、手臂自然摆动，没有神经质扭曲或跑酷动作。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_work_reference_observe.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ac3e35cd-a83d-4210-8f48-e65a7e772f26.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_work_reference_observe.png",
+    "scope": "personnel",
+    "displayName": "观察",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：观察。只画本张：同一完整员工双手稳持轻型平板、低头专注读数的工作姿；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 工作位到达需有收步反馈；观察/互动/安抚各一张关键参考，回正由共享骨架插值。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代研究员到达终端、查看平板、礼貌互动和安抚手势；动作克制、工作位清楚，不画同框第二个人或机器背景。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_work_reference_interact.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-e289fce7-4f60-4322-b385-8fa3680fe473.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_work_reference_interact.png",
+    "scope": "personnel",
+    "displayName": "互动",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：互动。只画本张：同一完整员工单手自然伸向样本、另一手保持平衡的互动姿，不画样本；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 工作位到达需有收步反馈；观察/互动/安抚各一张关键参考，回正由共享骨架插值。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代研究员到达终端、查看平板、礼貌互动和安抚手势；动作克制、工作位清楚，不画同框第二个人或机器背景。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_work_reference_soothe.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-dbe051fb-81f7-4099-93c5-86de9bd4139d.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_work_reference_soothe.png",
+    "scope": "personnel",
+    "displayName": "安抚",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：安抚。只画本张：同一完整员工双手温和摊开、身体稍低但不跪拜的安抚姿，不画样本；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 工作位到达需有收步反馈；观察/互动/安抚各一张关键参考，回正由共享骨架插值。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代研究员到达终端、查看平板、礼貌互动和安抚手势；动作克制、工作位清楚，不画同框第二个人或机器背景。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_condition_reference_hit_recoil.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a945dece-0936-40b1-9433-4657eac44cab.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_condition_reference_hit_recoil.png",
+    "scope": "personnel",
+    "displayName": "受击反馈",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：受击反馈。只画本张：一位完整员工短暂收肩回缩的受击关键姿，无伤口血迹或后飞；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 低HP仅改变姿态，不改真实速度。正常撤退共用行走；恐慌撤退需抬手与急促重心反馈。恢复只对应安全区已有HP/SP恢复规则。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常人的短促受击收缩、低HP护住身体、惊慌撤退、本日重伤倒地和存活员工安全区放松休整；不用伤口、尸体或复活仪式表达状态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_condition_reference_panic_retreat.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6997d7e4-33f6-4899-a2b6-21f8779c8c60.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_condition_reference_panic_retreat.png",
+    "scope": "personnel",
+    "displayName": "恐慌撤退",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：恐慌撤退。只画本张：同一完整员工惊慌抬手并向后方安全路径撤离的单个步态，脸和足清楚；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 低HP仅改变姿态，不改真实速度。正常撤退共用行走；恐慌撤退需抬手与急促重心反馈。恢复只对应安全区已有HP/SP恢复规则。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常人的短促受击收缩、低HP护住身体、惊慌撤退、本日重伤倒地和存活员工安全区放松休整；不用伤口、尸体或复活仪式表达状态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_condition_reference_low_hp_guard.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-279bdae3-74d1-4509-8be5-d6028addb1b2.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_condition_reference_low_hp_guard.png",
+    "scope": "personnel",
+    "displayName": "低HP护身",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：低HP护身。只画本张：同一完整员工低HP时轻微护住身体的站姿，仍保持可行动支撑，不画断肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 低HP仅改变姿态，不改真实速度。正常撤退共用行走；恐慌撤退需抬手与急促重心反馈。恢复只对应安全区已有HP/SP恢复规则。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常人的短促受击收缩、低HP护住身体、惊慌撤退、本日重伤倒地和存活员工安全区放松休整；不用伤口、尸体或复活仪式表达状态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_condition_reference_safe_recovery.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-393fbfbe-9595-4812-b5fa-2ece6390d50a.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_condition_reference_safe_recovery.png",
+    "scope": "personnel",
+    "displayName": "安全区恢复",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：安全区恢复。只画本张：同一完整员工在仍可行动时放松肩颈、平稳呼吸的站立恢复姿，无护士、治疗光束或复活动作；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 低HP仅改变姿态，不改真实速度。正常撤退共用行走；恐慌撤退需抬手与急促重心反馈。恢复只对应安全区已有HP/SP恢复规则。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常人的短促受击收缩、低HP护住身体、惊慌撤退、本日重伤倒地和存活员工安全区放松休整；不用伤口、尸体或复活仪式表达状态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_condition_reference_incapacitated.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-58bf5f69-af27-4cdd-8323-e87bc7a90308.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_condition_reference_incapacitated.png",
+    "scope": "personnel",
+    "displayName": "本日重伤卧倒",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：本日重伤卧倒。只画本张：同一完整员工侧卧在统一地面线上、关节自然收起，闭眼但无死亡符号；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 低HP仅改变姿态，不改真实速度。正常撤退共用行走；恐慌撤退需抬手与急促重心反馈。恢复只对应安全区已有HP/SP恢复规则。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：正常人的短促受击收缩、低HP护住身体、惊慌撤退、本日重伤倒地和存活员工安全区放松休整；不用伤口、尸体或复活仪式表达状态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_attack_reference_windup.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2308af23-e8d5-4605-953f-83bab5427afe.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_attack_reference_windup.png",
+    "scope": "personnel",
+    "displayName": "攻击前摇",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攻击前摇。只画本张：一位完整员工持W00制式短棍的清晰蓄力关键姿，腕与握点连接，不画目标；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 共用三阶段节奏与下肢重心，手臂方向按各武器握点适配为近战挥击或远程前举；不为每武器重复订整套人物动作。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代员工握持短器械的收臂准备、向前出力和自然回收三个关键姿势；双脚支撑清楚，不借用士兵火力射击或魔法施法姿态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_attack_reference_hit.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-68b90e8d-4a79-446e-a87c-066ee7a61e13.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_attack_reference_hit.png",
+    "scope": "personnel",
+    "displayName": "攻击释放",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攻击释放。只画本张：同一完整员工朝右释放攻击的关键姿，近手前伸、身体稳定，不画命中特效或目标；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 共用三阶段节奏与下肢重心，手臂方向按各武器握点适配为近战挥击或远程前举；不为每武器重复订整套人物动作。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代员工握持短器械的收臂准备、向前出力和自然回收三个关键姿势；双脚支撑清楚，不借用士兵火力射击或魔法施法姿态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_attack_reference_recover.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1454d591-f421-4852-9e3f-b3c916e93f7a.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_attack_reference_recover.png",
+    "scope": "personnel",
+    "displayName": "攻击收势",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攻击收势。只画本张：同一完整员工收回手臂恢复持械待机的关键姿，脚底与前两姿一致；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 共用三阶段节奏与下肢重心，手臂方向按各武器握点适配为近战挥击或远程前举；不为每武器重复订整套人物动作。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代员工握持短器械的收臂准备、向前出力和自然回收三个关键姿势；双脚支撑清楚，不借用士兵火力射击或魔法施法姿态。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_agent_skill_response_reference_acknowledge.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8646147a-5577-4892-aa92-483efea5c142.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_skill_response_reference_acknowledge.png",
+    "scope": "personnel",
+    "displayName": "技能响应姿",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：技能响应姿。只画本张：一位完整员工看向腕侧/管理终端、短促确认的克制响应姿；不画法阵、投射物或施法光束；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 仅作P2可选演出参考；现有技能由管理者点选目标，员工不是新增施法单位。 动作参考PNG仅指导后续分件动画，不是sprite帧、不是已经接入的动作；实际动画仍依赖pose.time/stride和真实状态，暂停时全部冻结。\n参考对象：现代机构员工在腕部/手持终端确认管理者技能反馈的单一短动作；仅表现响应，不做施法者、牧师或医生治疗姿势。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_role_identity_reference_technical.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8f8eec6f-eea3-45ce-81d6-4953592f1660.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_role_identity_reference_technical.png",
+    "scope": "personnel",
+    "displayName": "技术员外观",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：技术员外观。只画本张：一位完整技术员，蓝灰工作背心、少量冷青工具袋与整洁腰部工具收纳轮廓；无新增工具操作特效；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 安全/研究/技术/医疗仅服装轮廓与局部色块区分，共用相同比例、发型池、动画与四属性规则。职业不写入EmployeeRuntime，不分配治疗/维修/镇压能力；E01—E06可混搭发型。\n参考对象：同一员工基型上的四类现代机构工作装：轻便稳重安全员、冷白干净研究员、灰蓝工具袋技术员、白蓝舒适医疗员；职业只用服装轮廓与识别色区别。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  },
+  {
+    "filename": "nm_v2_role_identity_reference_research.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-84f5db55-c09c-4aff-9ba4-46c8ec906e2a.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_role_identity_reference_research.png",
+    "scope": "personnel",
+    "displayName": "研究员外观",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：研究员外观。只画本张：一位完整研究员，冷白轻便科研外套配蓝灰内搭、无字工牌、轻文职气质；不画冷酷特工或重防护；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 安全/研究/技术/医疗仅服装轮廓与局部色块区分，共用相同比例、发型池、动画与四属性规则。职业不写入EmployeeRuntime，不分配治疗/维修/镇压能力；E01—E06可混搭发型。\n参考对象：同一员工基型上的四类现代机构工作装：轻便稳重安全员、冷白干净研究员、灰蓝工具袋技术员、白蓝舒适医疗员；职业只用服装轮廓与识别色区别。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nDraw exactly the requested single full-body pose reference, not a sequence."
+  }
+]

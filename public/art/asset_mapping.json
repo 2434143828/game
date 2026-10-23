@@ -1,0 +1,80 @@
+{
+  "version": "generated_ink_v1",
+  "format": "generated_png_rigs_with_state_driven_procedural_precision_overlays",
+  "paletteModule": "src/art/ink.ts",
+  "scope": "default multi-level facility; legacy slice is preserved",
+  "productionIndex": "art-production/production-index.json",
+  "generatedMappings": {
+    "personnel_and_equipment": {"implementation":"src/art/generated/HumanRig.ts", "assets":"public/art/generated/personnel", "stateSource":"EmployeeRuntime and simulation-derived HumanPose"},
+    "five_abnormalities": {"implementation":"src/art/generated/CreatureRig.ts", "assets":"public/art/generated/abnormalities", "stateSource":"actual room work and enemy entities; clones reuse the same rig"},
+    "facility": {"implementation":"src/art/generated/EnvironmentArt.ts and src/scenes/facility/architecture.ts", "assets":"public/art/generated/environment", "stateSource":"unchanged facility geometry; actual room/door state"},
+    "ui_and_effects": {"implementation":"src/ui/FacilityHUD.ts, src/facility.css and src/art/generated/EffectsArt.ts", "assets":"public/art/generated/ui_vfx", "stateSource":"actual status, HP/SP changes, work and fixed simulation time"}
+  },
+  "mappingNote": "The mappings below retain the prior procedural fallback and exact overlays. Generated originals and pose references are catalogued separately; pose reference images do not execute gameplay.",
+  "mappings": [
+    {
+      "legacyId": "employee_base",
+      "implementation": "src/scenes/facility/actors.ts#drawHuman",
+      "visualIds": ["agent_base_idle_01", "agent_base_walk_01", "agent_base_climb_01", "agent_base_work_01", "agent_base_attack_01", "agent_panic_idle_01", "agent_hurt_01", "agent_incapacitated_01"],
+      "pivot": "actual employee foot",
+      "stateSource": "EmployeeRuntime and simulation-derived HumanPose",
+      "note": "dead maps to INCAPACITATED for the current day; injury does not delete equipment. Next day restores personnel and keeps progress; retry restores the day-start personnel and equipment snapshot, discarding same-day purchases and assignments"
+    },
+    {
+      "legacyId": "character_n01",
+      "implementation": "src/scenes/facility/actors.ts#drawCreature",
+      "visualIds": ["abn_nailong_idle_01", "abn_nailong_work_01", "abn_nailong_breach_01"],
+      "stateSource": "N01 room work and actual main/clone enemies"
+    },
+    {
+      "legacyId": "character_n02",
+      "implementation": "src/scenes/facility/actors.ts#drawCreature",
+      "visualIds": ["abn_maodie_idle_01", "abn_maodie_work_01", "abn_maodie_breach_01"],
+      "stateSource": "N02 room work and actual enemy"
+    },
+    {
+      "legacyId": "character_n03",
+      "implementation": "src/scenes/facility/actors.ts#drawCreature",
+      "visualIds": ["abn_big_dog_idle_01", "abn_big_dog_work_01", "abn_big_dog_breach_01"],
+      "stateSource": "N03 room work and actual enemy"
+    },
+    {
+      "legacyId": "character_n04",
+      "implementation": "src/scenes/facility/actors.ts#drawCreature",
+      "visualIds": ["abn_dingdong_chicken_idle_01", "abn_dingdong_chicken_work_01", "abn_dingdong_chicken_breach_01"],
+      "stateSource": "N04 room work and actual broadcaster"
+    },
+    {
+      "legacyId": "character_n05",
+      "implementation": "src/scenes/facility/actors.ts#drawCreature",
+      "visualIds": ["abn_gugu_gaga_idle_01", "abn_gugu_gaga_work_01", "abn_gugu_gaga_breach_01"],
+      "stateSource": "N05 room work and actual patrol enemy"
+    },
+    {
+      "legacyId": "drawArchitecture",
+      "implementation": "src/scenes/facility/architecture.ts",
+      "visualIds": ["room_containment_a", "room_control_a", "room_medical_a", "room_archive_a", "room_broadcast_a", "corridor_industrial_a", "transit_ladder_a"],
+      "stateSource": "unchanged config/facility.json geometry"
+    },
+    {
+      "legacyId": "hit_red / hit_white / hit_black / hit_pale",
+      "implementation": "src/art/effects.ts#drawInkImpact",
+      "visualIds": ["vfx_hit_ink_a"],
+      "stateSource": "actual HP/SP loss and fixed simulation time"
+    },
+    {
+      "legacyId": "panic / room_state_icons",
+      "implementation": "src/art/effects.ts and src/scenes/ContainmentFacilityScene.ts",
+      "visualIds": ["vfx_panic_smear_a", "vfx_breach_frame_a", "vfx_pressure_danger_a", "route_selected_ink_a"],
+      "stateSource": "PANICKED, BREACHED, existing pressure threshold, selected actual path",
+      "note": "meltdown artwork maps to existing high-pressure alert; no new meltdown system"
+    },
+    {
+      "legacyId": "facility brand / status symbols / archive divider",
+      "implementation": "src/ui/FacilityHUD.ts and src/facility.css",
+      "visualIds": ["ui_brand_seal", "ui_terminal_icons", "ui_archive_rule", "ui_panel_archive_a", "ui_alert_breach_red"],
+      "files": ["art/ui/ui_brand_seal.svg", "art/ui/ui_terminal_icons.svg", "art/ui/ui_archive_rule.svg"],
+      "stateSource": "existing controller state, config and actual archive unlocks"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_abn_maodie_base_parts_hind_foot_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ff341428-de57-4399-b9eb-c54b5c93e36e.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_base_parts_hind_foot_left.png",
+    "scope": "abnormalities",
+    "displayName": "远侧后足",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：远侧后足。只画本张：远侧后腿与足一体短部件，足底可落地，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 暖灰与脏粉相配的短躯干猫，三角耳、略有棱角的脸轮廓、可读的眉眼、真实比例的短前肢与后足、弯曲尾巴；荒诞且情绪多变，但不是僵尸猫或长肢怪。 旧ABN_N02_04的失效长肢与恐怖头不再使用；常态8件复用到失效，只增加1张情绪脸层。耳、尾与正常短肢负责轮廓，不靠拉长肢体区分状态。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 以NMV2_ABN_N02_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 远侧后足. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_work_reference_settle.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8bf583b0-8bd4-4b0b-9576-c643a60ec8b7.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_work_reference_settle.png",
+    "scope": "abnormalities",
+    "displayName": "短暂平静回应",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：短暂平静回应。只画本张：一只完整常态耄耋放松一只前爪，眉眼柔和一点，姿态可用于安抚工作后的短反馈；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 暖灰与脏粉相配的短躯干猫，三角耳、略有棱角的脸轮廓、可读的眉眼、真实比例的短前肢与后足、弯曲尾巴；荒诞且情绪多变，但不是僵尸猫或长肢怪。 两张提供工作回应的关键姿势，OBSERVE、INTERACT、SOOTHE可复用低频偏头/手足反馈；无需给每一工作种类各画完整动画。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考温和的观察、回应或安抚互动；沿用NMV2_ABN_N02_01新造型，不画员工同框。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_base_parts_hind_foot_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5efdd294-e5bd-42c0-af45-99bd9afe3e35.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_base_parts_hind_foot_right.png",
+    "scope": "abnormalities",
+    "displayName": "近侧后足",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：近侧后足。只画本张：近侧后腿与足一体短部件，足底可落地，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 暖灰与脏粉相配的短躯干猫，三角耳、略有棱角的脸轮廓、可读的眉眼、真实比例的短前肢与后足、弯曲尾巴；荒诞且情绪多变，但不是僵尸猫或长肢怪。 旧ABN_N02_04的失效长肢与恐怖头不再使用；常态8件复用到失效，只增加1张情绪脸层。耳、尾与正常短肢负责轮廓，不靠拉长肢体区分状态。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 以NMV2_ABN_N02_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 近侧后足. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_pollution_parts_outburst_face.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-745effe0-07d4-49d1-9a1c-46a2e0f6205c.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_pollution_parts_outburst_face.png",
+    "scope": "abnormalities",
+    "displayName": "情绪爆发脸层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：情绪爆发脸层。只画本张：耄耋一套愤怒眉眼与正常猫嘴张口的面部覆盖层，像爆炸性发言表情包，透明底，无长牙、黑洞眼、完整头或伤口；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 只增加必要的面部/胸牌局部层，不能生成另一具身体；显示本层时隐藏对应普通层，避免双眼双嘴叠印。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考NMV2_ABN_N02_04批准的单角色污染表情/胸牌，严格沿用同一面部挂点。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 情绪爆发脸层. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_combat_reference_walk_right_support.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-af946f21-0587-45ac-8ee2-e18557153e36.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_combat_reference_walk_right_support.png",
+    "scope": "abnormalities",
+    "displayName": "巡游步态右足支撑",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：巡游步态右足支撑。只画本张：一只完整失效耄耋朝右行走另一关键姿势，右侧足支撑、另一足自然前移，正常肢体长度，不画运动残影；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 失效追击与RED近身爪击使用原引擎前摇和射程；情绪化是表情与局部污染表现，不添加情绪资源、攻击模式或额外命中。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考短步可读的重心交替与前摇—发声/挥击—回收；沿用NMV2_ABN_N02_04，不混入其他角色或技能特效。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_combat_reference_walk_left_support.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-78ee90a8-9347-4216-a406-a75306f7465c.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_combat_reference_walk_left_support.png",
+    "scope": "abnormalities",
+    "displayName": "巡游步态左足支撑",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：巡游步态左足支撑。只画本张：一只完整失效耄耋朝右行走关键姿势，左侧足支撑、另一足自然前移，正常肢体长度，足底与地面基准一致；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 失效追击与RED近身爪击使用原引擎前摇和射程；情绪化是表情与局部污染表现，不添加情绪资源、攻击模式或额外命中。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考短步可读的重心交替与前摇—发声/挥击—回收；沿用NMV2_ABN_N02_04，不混入其他角色或技能特效。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_combat_reference_windup.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d0d72bab-a51a-48b5-85b9-e6c90fd5c405.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_combat_reference_windup.png",
+    "scope": "abnormalities",
+    "displayName": "攻击前摇参考",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攻击前摇参考。只画本张：一只完整失效耄耋眉眼紧张，一只正常长度前爪收至胸侧蓄势，身体略蹲，足底不离锚点；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 失效追击与RED近身爪击使用原引擎前摇和射程；情绪化是表情与局部污染表现，不添加情绪资源、攻击模式或额外命中。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考短步可读的重心交替与前摇—发声/挥击—回收；沿用NMV2_ABN_N02_04，不混入其他角色或技能特效。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_combat_reference_hit_recoil.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-cb0e1dc4-e3ce-4131-84e4-52a07457dd8e.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_combat_reference_hit_recoil.png",
+    "scope": "abnormalities",
+    "displayName": "受击反馈参考",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：受击反馈参考。只画本张：一只完整失效耄耋受到一次现有攻击后的短促收缩/偏头姿势，足底不传送，无伤口、血液或死亡形态；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 失效追击与RED近身爪击使用原引擎前摇和射程；情绪化是表情与局部污染表现，不添加情绪资源、攻击模式或额外命中。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考短步可读的重心交替与前摇—发声/挥击—回收；沿用NMV2_ABN_N02_04，不混入其他角色或技能特效。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_body.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-04a26a45-c473-4817-bd90-f24b1df48ea7.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_body.png",
+    "scope": "abnormalities",
+    "displayName": "黄鸡躯干",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：黄鸡躯干。只画本张：明黄鸡躯干与橙黄腹部小色块，胸部留徽章区，无头、翅、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 黄鸡躯干. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_combat_reference_attack_peak.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7baf3d65-fc07-46b4-9643-6e2a82ee9644.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_maodie_combat_reference_attack_peak.png",
+    "scope": "abnormalities",
+    "displayName": "攻击命中姿势参考",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：攻击命中姿势参考。只画本张：一只完整失效耄耋向右伸出正常长度前爪完成一次短爪击，表情像正在激烈发言，无爪光或独立文字；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 失效追击与RED近身爪击使用原引擎前摇和射程；情绪化是表情与局部污染表现，不添加情绪资源、攻击模式或额外命中。 本组是骨架动作/姿态参考，不是逐帧动画、sprite sheet或运行贴图；后续仅按现有pose.time/stride、working、windup、hurt等真实状态制作部件动作，暂停时冻结，不用参考图自动改变速度、伤害、产能或攻击时序。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考短步可读的重心交替与前摇—发声/挥击—回收；沿用NMV2_ABN_N02_04，不混入其他角色或技能特效。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nExactly one complete requested pose, same identity as reference. No animation strip."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_comb.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-26e3b6ea-d000-4232-aec5-76ee3255acff.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_comb.png",
+    "scope": "abnormalities",
+    "displayName": "鸡冠",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：鸡冠。只画本张：一块圆角红橙鸡冠，根部可接头，无头部；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 鸡冠. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_head_neck.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-cf063430-09da-4cdb-8000-2bdcf89d3e82.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_head_neck.png",
+    "scope": "abnormalities",
+    "displayName": "头颈与常态眼",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：头颈与常态眼。只画本张：鸡头短颈与一只可见正常眼的一体部件，喙部留空铰点，无鸡冠、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 头颈与常态眼. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_wing.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8a8145cd-9eea-4be9-b2c7-02a65d143c0c.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_wing.png",
+    "scope": "abnormalities",
+    "displayName": "可复用翅膀",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：可复用翅膀。只画本张：一只短鸡翅，明黄平面羽片轮廓，翅根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 可复用翅膀. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_lower_beak_wattle.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5bfb5acf-6e80-425e-ad02-1e975e5eabd4.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_lower_beak_wattle.png",
+    "scope": "abnormalities",
+    "displayName": "下喙与小肉垂",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：下喙与小肉垂。只画本张：短下喙及小型红橙肉垂的一体部件，铰点明确，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 下喙与小肉垂. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_upper_beak.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a3bafa70-6a8d-4f63-9613-313af2f8f11e.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_upper_beak.png",
+    "scope": "abnormalities",
+    "displayName": "上喙",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：上喙。只画本张：一只短钝橙黄上喙，清楚铰点，无头或下喙；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 上喙. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_leg_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b4d8ee38-8484-4f1a-9bc0-7d3d00e54e7f.png",
+    "candidate": "art-production/nm-v2/candidates/abnormalities/nm_v2_abn_dingdong_chicken_base_parts_leg_right.png",
+    "scope": "abnormalities",
+    "displayName": "近侧鸡腿",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：近侧鸡腿。只画本张：近侧细短鸡腿与圆钝趾足，正常长度，无身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 明黄与橙黄的鸡形吉祥物，清楚鸡冠、短喙、翅膀、尾羽和细短鸡腿；胸前一枚现代圆角通知徽章，提示红只占小块，不再用老式黄铜机械钟表。 旧ABN_N04_04的clock_shell/长短指针三件停用，改为1张现代通知胸牌；常态总10件，另1张局部循环提示层。保持本体驻点广播，不把定稿动作解释为新移动能力。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：现代音频应用通知徽章与明黄鸡形吉祥物；清楚鸡冠、短喙、尾羽和圆角胸牌，参考播报员准备说话的头部动作，非机械钟表或黄铜机器人。 以NMV2_ABN_N04_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 近侧鸡腿. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette."
+  }
+]

@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "sourceMethod": "Unedited copies of real Chrome screenshots; not image generation or mockups.",
+  "assetCounts": {
+    "requestedGroups": 105,
+    "requestedPng": 288,
+    "generated": 288,
+    "runtime": 206,
+    "referenceOnly": 82,
+    "missing": []
+  },
+  "core": {
+    "report": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/report.json",
+    "checks": 8,
+    "nativeInputs": 63,
+    "screenshots": 19,
+    "browserErrors": 0
+  },
+  "production": {
+    "report": "docs/generated-art-evidence-2026-10-21/production-2026-10-21T08-35-20.926Z/report.json",
+    "checks": 15,
+    "url": "http://127.0.0.1:4174",
+    "pausePixels": {
+      "identical": true,
+      "before": "0c95550fef17379d5e663e6ab993396e6c79bf4c21ddf4241e9c612d5e9722e2",
+      "after": "0c95550fef17379d5e663e6ab993396e6c79bf4c21ddf4241e9c612d5e9722e2",
+      "clockBefore": "SIM / 本日\n00:03",
+      "clockAfter": "SIM / 本日\n00:03",
+      "pauseButton": "继续 ▷",
+      "realWaitMs": 700,
+      "difference": {
+        "changedPixels": 0,
+        "totalPixels": 956160,
+        "maxChannelDelta": 0,
+        "boundsWithinCapture": null,
+        "boundsOnCanvas": null,
+        "regions": {
+          "employeeAnchor": 0,
+          "topNavigation": 0,
+          "bottomHelp": 0,
+          "minimap": 0,
+          "remainingWorld": 0
+        },
+        "changedPixelSamples": [],
+        "changedTiles": []
+      }
+    },
+    "localBlobRequests": 374,
+    "browserErrors": 0
+  },
+  "personnel": {
+    "report": "docs/generated-art-evidence-2026-10-21/personnel/2026-10-21T08-28-05.813Z/suite.json",
+    "cases": [
+      {
+        "name": "lineup",
+        "status": "PASS",
+        "report": "lineup/report.json",
+        "checks": 1,
+        "samples": 238,
+        "video": "lineup/video\\page@f91e50fa91fd0e7782529211f70815f9.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "panic",
+        "status": "PASS",
+        "report": "panic/report.json",
+        "checks": 2,
+        "samples": 117,
+        "video": "panic/video\\page@33acdcf0780825b3bc2537f69029ffb5.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "incapacitated",
+        "status": "PASS",
+        "report": "incapacitated/report.json",
+        "checks": 2,
+        "samples": 144,
+        "video": "incapacitated/video\\page@582fa5d6a0e7e9f3ef45e26b05019534.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      }
+    ],
+    "samples": 499
+  },
+  "equipment": {
+    "report": "docs/generated-art-evidence-2026-10-21/equipment-2026-10-21T07-55-19.939Z/report.json",
+    "checks": 5,
+    "nativeInputs": 176,
+    "produced": 272,
+    "walletAfterPurchases": 37,
+    "verifiedErrorCategories": [
+      "page errors",
+      "HTTP status >=400"
+    ],
+    "notMonitored": [
+      "console errors",
+      "request failures"
+    ],
+    "scope": "Real earnings, purchases, loadout textures, idle and movement. Final hairstyle refinements are shown in personnel proof; weapon attack variants not rerun."
+  },
+  "video": {
+    "video": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video/page@79d4369f31e4f1035594aa4f69684a11.webm",
+    "fps": 25.0,
+    "frames": 1521,
+    "durationSeconds": 60.84,
+    "width": 1600,
+    "height": 900,
+    "decodedFrames": [
+      {
+        "index": 182,
+        "seconds": 7.28,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-01.png"
+      },
+      {
+        "index": 456,
+        "seconds": 18.24,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-02.png"
+      },
+      {
+        "index": 729,
+        "seconds": 29.16,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-03.png"
+      },
+      {
+        "index": 988,
+        "seconds": 39.52,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-04.png"
+      },
+      {
+        "index": 1216,
+        "seconds": 48.64,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-05.png"
+      },
+      {
+        "index": 1444,
+        "seconds": 57.76,
+        "file": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/video-inspection/frame-06.png"
+      }
+    ]
+  },
+  "tests": {
+    "unitTests": 153,
+    "files": 8,
+    "typecheck": "PASS",
+    "build": "PASS",
+    "designAssertions": 760,
+    "formulaExamples": 20
+  },
+  "boundaries": [
+    "Full three-day campaign not rerun this art pass.",
+    "Five-skill combinations and all weapon attack variants not rerun.",
+    "Legacy ?slice=1 retains procedural art.",
+    "82 production pose/approval references are not a registered animation sheet.",
+    "No cross-device or long-duration performance conclusion."
+  ],
+  "screenshots": [
+    {
+      "file": "generated-facility-default.png",
+      "source": "docs/generated-art-evidence-2026-10-21/production-2026-10-21T08-35-20.926Z/01-production-central-view.png",
+      "sha256": "ab2b785a4e991088f0b16fe50d992e73b11d2755b70021aa491b3b1784d10136"
+    },
+    {
+      "file": "generated-facility-overview.png",
+      "source": "docs/generated-art-evidence-2026-10-21/production-2026-10-21T08-35-20.926Z/02-home-overview.png",
+      "sha256": "b586254bbb99707dedfc0ce2a046aed8f4217f484aacb5a288bd8de3b116bded"
+    },
+    {
+      "file": "generated-work.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/05-employee-inside-room-working.png",
+      "sha256": "950b6f6d3533106a518e1d641e332068eec41f4f3070e85ac5242797b026adac"
+    },
+    {
+      "file": "generated-nailong-breach.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/07-nailong-main-and-two-clones.png",
+      "sha256": "a56b65acede04b3b71de04f4862b15c0ed25539b4e53e1b48f85107b05f6d120"
+    },
+    {
+      "file": "generated-suppression.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/08-actual-suppression-hit.png",
+      "sha256": "e10374fd68f374342d5a842f0074955fdd6fd0895b510ee3d6deb3097f030220"
+    },
+    {
+      "file": "generated-retreat.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/09-retreating-after-suppression.png",
+      "sha256": "4e4187c4a481894404b67f88c7133ad84835c0a6151f512279eb85a0b891f6bb"
+    },
+    {
+      "file": "generated-dog-breach.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/13-N03-breached.png",
+      "sha256": "37943c0807dfaec8e50e9a9d393f6bcb0e73927be397f892d8782c24188e3587"
+    },
+    {
+      "file": "generated-archive.png",
+      "source": "docs/generated-art-evidence-2026-10-21/run-2026-10-21T08-30-53.802Z/18-generated-archive-ui.png",
+      "sha256": "8e5af7f065f5939579e15228efe4d9d157b736137b0cc225817779bc5a137ea3"
+    },
+    {
+      "file": "generated-personnel.png",
+      "source": "docs/generated-art-evidence-2026-10-21/personnel/2026-10-21T08-28-05.813Z/lineup/01-six-hairstyles-and-uniforms.png",
+      "sha256": "24e9cef924ff617a42ae13d7a389daaf87e876258678976303b94271230777d2"
+    },
+    {
+      "file": "generated-personnel-panic.png",
+      "source": "docs/generated-art-evidence-2026-10-21/personnel/2026-10-21T08-28-05.813Z/panic/02-panic-retreat-clear-of-enemies.png",
+      "sha256": "370f67015d2433454c0988fe11b25607078989743dea01914551fa0f780b58fa"
+    },
+    {
+      "file": "generated-personnel-incapacitated.png",
+      "source": "docs/generated-art-evidence-2026-10-21/personnel/2026-10-21T08-28-05.813Z/incapacitated/02-incapacitated-body-after-cat-leaves.png",
+      "sha256": "18c44165703b928f482c14e4b033576ee263fc800b94e02e6eae39ecca71eeea"
+    },
+    {
+      "file": "generated-equipment.png",
+      "source": "docs/generated-art-evidence-2026-10-21/equipment-2026-10-21T07-55-19.939Z/equipment-W05-A05.png",
+      "sha256": "2b962da28c4f0050191ff20f269b0b8a0e46f9c4aac3786d3834aac9b5f50b6f"
+    },
+    {
+      "file": "generated-day-one.png",
+      "source": "docs/generated-art-evidence-2026-10-21/production-2026-10-21T08-35-20.926Z/15-formal-day-one-started.png",
+      "sha256": "65f9ec33d0d619eb667c8dcb5d3ed469ac39af5a39eec05db21e58b203540417"
+    }
+  ]
+}

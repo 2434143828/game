@@ -1,0 +1,55 @@
+{
+  "id": "ABN_N02_04__breach_face",
+  "rowId": "ABN_N02_04",
+  "file": "abn_maodie_parts_01_breach_face.png",
+  "row": {
+    "id": "ABN_N02_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_maodie_parts_01",
+    "displayName": "N02 耄耋 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "常态躯干 1、伸长躯干 1、头含耳 1、平静眼口组 1、失控眼口组 1、短前肢 2、伸长前肢 2、后足 2、尾 1，共 12 件。伸长肢体为形态替换件，肩/髋根节点一致。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "耄耋 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N02_CALM",
+      "REF_N02_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N02_01",
+      "ABN_N02_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  "unit": {
+    "suffix": "breach_face",
+    "displayName": "耄耋失控眼口",
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "focus": "本次只画耄耋撑开双眼和偏斜张嘴的失控面部透明叠层，含胡须；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: precise-object-edit. Image 1 is the exact isolated FACIAL MASK footprint to edit. Image 2 shows the desired frightened breach expression only. Keep image 1 as a small isolated eyes-nose-mouth mask with transparent perimeter: NO EARS, NO TOP OF HEAD, NO SIDE HEAD FUR, NO NECK. Change ONLY its eyes to wide asymmetric startled eyes and its mouth to an open jagged toothy mouth matching image 2. Keep eyebrow, whisker and muzzle styling. Do not copy image 2's whole head. One isolated facial overlay on transparent alpha, centered with margin, no text or other anatomy.",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-1bc4042d-0218-412c-81a7-ef290bb7c572.png",
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-8d7f22a9-3475-4b09-bf72-1cd5b87aff88.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-b137eb6b-559d-4427-b26e-b4c82e1519e4.png",
+  "visualReview": {
+    "status": "pending"
+  },
+  "priorAttempts": [
+    {
+      "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-c11a86a0-c6c3-4b41-88b7-d6f479d0f4ad.png",
+      "prompt": "Use case: precise-object-edit. Asset type: one isolated 2D cutout puppet part. Reference is the APPROVED CAT identity/style only.\nDRAW ONLY THIS ONE PART: 本次只画耄耋撑开双眼和偏斜张嘴的失控面部透明叠层，含胡须；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nMaintain gray-green fur, pale fill where present, ink hatching, right-facing silhouette of reference. Cap joint seams with a tiny overlap.\nImportant exclusions: torso has no limbs, feet, tail, head or ears; head_ears is a featureless skull with ears and NO eyes/nose/mouth/whiskers, which will be a separate overlay; face groups contain ONLY the brows, eyes, nose, mouth, whiskers, without a filled head silhouette. Front limbs include one shoulder-to-paw ONLY, no torso or other limb; feet contain ankle-to-foot ONLY. Tail only tail.\nOne centered object at about 60% of 1024 square canvas, 15% clear alpha margin. Real transparency outside, opaque body paint. No sheet, typography, floor shadow, glow, extra anatomy, complete cat or other object.",
+      "reason": "Face overlay incorrectly included whole head and ears."
+    }
+  ]
+}

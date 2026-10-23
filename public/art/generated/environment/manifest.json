@@ -1,0 +1,1749 @@
+{
+  "generator": "built-in image_gen",
+  "requested": 67,
+  "count": 67,
+  "entries": [
+    {
+      "name": "room_shell_edges_a_corner_top_left",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_corner_top_left.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_corner_top_left.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1230,
+        1230
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "380f737a567c3478f32956e51c9e16ac5feefc54ffb0f8606777363d709c31cf",
+      "runtimeSha256": "7d8c9c02c7855506a68156d3fe4c70df63038065275e4b80510307e72708dc7a",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_corner_top_right",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_corner_top_right.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_corner_top_right.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        21,
+        1236,
+        1236
+      ],
+      "runtimeSize": [
+        1024,
+        1007
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "1f148078d1675c47fda841ec50690c300ed4d09ca8df4600f2516906298efaa2",
+      "runtimeSha256": "574500de40b3d85e6721a71aa0fdd697eda3045147dc7d566d131fc371ec2e05",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_corner_bottom_left",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_corner_bottom_left.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_corner_bottom_left.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        32,
+        1224,
+        1228
+      ],
+      "runtimeSize": [
+        1024,
+        1001
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "9605e48dc86bf22b26d60f91c9029d0e445c064a3b6123a6638b3b6484b7c25b",
+      "runtimeSha256": "fb6d0ab3a022aea89058c3b504797edfc554d473862e85edcee20a7def898646",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_corner_bottom_right",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_corner_bottom_right.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_corner_bottom_right.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        19,
+        1236,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1023
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "845e28ba3e2b4eeeb41876b44a648ff121751a5f5b916e91734ab8d7cb67d7a4",
+      "runtimeSha256": "faf04104a4bf8f29215f3f4f38c5d3a7b6ff9bd22b431f786b2c91cfa5018792",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_beam_top",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_beam_top.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_beam_top.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        42,
+        38,
+        2130,
+        656
+      ],
+      "runtimeSize": [
+        1024,
+        303
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "0336c73344a2d1c06adee3f401fbcf36e6843ce4eb77c8b6bc0daca1701fc171",
+      "runtimeSha256": "66c023ade6deb72c064c3e7756d526cbbe1c15240b928ad7e29675a3969e3a3b",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_beam_bottom",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_beam_bottom.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_beam_bottom.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        25,
+        103,
+        2148,
+        620
+      ],
+      "runtimeSize": [
+        1024,
+        249
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "79d54e27f3bdb3926ea29603c1db12b9adf0a0177f4e81ef39fb81d797d2d740",
+      "runtimeSha256": "f8b20aa659d6f48a60f04f19b9ef31d73916eea4f619974e63667516c7594e55",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_wall_left",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_wall_left.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_wall_left.png",
+      "originalSize": [
+        1024,
+        1536
+      ],
+      "cropBounds": [
+        113,
+        1,
+        978,
+        1522
+      ],
+      "runtimeSize": [
+        582,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "8380fe39188b0a235942ab9accc604948d74afe4f5f7bad7b3daa4fdab7c4396",
+      "runtimeSha256": "d1474c51d58c31d01ed9aa96fbc80b04e3fbb01e41bfb3687a1d0dd72269e0b1",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_shell_edges_a_wall_right",
+      "sourcePath": "art-production/generated/environment/room_shell_edges_a_wall_right.png",
+      "runtimePath": "public/art/generated/environment/room_shell_edges_a_wall_right.png",
+      "originalSize": [
+        724,
+        2172
+      ],
+      "cropBounds": [
+        25,
+        0,
+        706,
+        2172
+      ],
+      "runtimeSize": [
+        321,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "937439ad67830d1414d10d8d5ddc50629f8f82a7d4c597c26b51c9d0f5e42030",
+      "runtimeSha256": "999fa2ea9cd152caa37a2cef88a77f9499efde8a0c69c7adb8409c40422c76f9",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_upper_taupe",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_upper_taupe.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_upper_taupe.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "afb16e226f0c8d36acab09e3d05f469340c2f17f61b0ea5332e47053137e5138",
+      "runtimeSha256": "8626514d2bf833a76e3ece58ec8af8bc8d711d2d7d63387ba3ec7d95846e7fcd",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_lower_taupe",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_lower_taupe.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_lower_taupe.png",
+      "originalSize": [
+        2048,
+        768
+      ],
+      "cropBounds": [
+        0,
+        0,
+        2048,
+        768
+      ],
+      "runtimeSize": [
+        1024,
+        384
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "0dd7231c293200304ea460d2d880466d3f54e1752e6ae6fc7b09b46fee6f7ff4",
+      "runtimeSha256": "af7d92ea19ce4fda51d4b6df6cda284b5d00ea7ada89101467bfae3ed4455bf4",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_upper_moss",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_upper_moss.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_upper_moss.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "30617fbc133bddfe4033d27c42367e8e953a0122f7ca38a33e2513b8647e5967",
+      "runtimeSha256": "54ff24fc0912bf7c1a71a70f3e2860b6e910d8b8b3f5a6145619dbd40955e5f4",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_lower_moss",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_lower_moss.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_lower_moss.png",
+      "originalSize": [
+        1983,
+        793
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "runtimeSize": [
+        1024,
+        409
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "d012bc65b03af0a1d905a11822183b0e2e55442581e2889ac13a44c2566bdf75",
+      "runtimeSha256": "23becd3b5d27b25697438da3b79d26c4ff5da15b3f4cbb2fc7d7aed4c1045d4c",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_upper_slate",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_upper_slate.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_upper_slate.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "160a60f1c889b11b55e6517433316352399fa0a3b5b4c5344a1e8a39828ca4af",
+      "runtimeSha256": "ab74621e071857cb8ded3518d3948a6327d256fe0a2c3c725a3dbc59f830ad5c",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_lower_slate",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_lower_slate.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_lower_slate.png",
+      "originalSize": [
+        1983,
+        793
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "runtimeSize": [
+        1024,
+        409
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "5ce9f1896637c1f8163847eb1d9745e69fba438d7333d95db0c357df2cfb0652",
+      "runtimeSha256": "69c9e72f9497f7ef93ddf779511bee5271525aa4f060c73fe96fc993746459e7",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_upper_mauve",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_upper_mauve.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_upper_mauve.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "8454867267c2ff50f0d75fccd189233ab7616a3b9f7c4ac35c7648b96c9a5c0b",
+      "runtimeSha256": "173e66519172e66fd5291b5cfb5c37aaa923e2dcf2291100d4b17c6f5c6122f9",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "room_wall_panel_muted_a_lower_mauve",
+      "sourcePath": "art-production/generated/environment/room_wall_panel_muted_a_lower_mauve.png",
+      "runtimePath": "public/art/generated/environment/room_wall_panel_muted_a_lower_mauve.png",
+      "originalSize": [
+        1983,
+        793
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1983,
+        793
+      ],
+      "runtimeSize": [
+        1024,
+        409
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "5239706dd23c92c8e665a736d854f242175c1450795ae517d5b6cd372a245b17",
+      "runtimeSha256": "c14493f254ad6ee3c617037d094f12124dcf35ecc893c0b281104143240c8860",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "floor_bearing_strip_a_middle",
+      "sourcePath": "art-production/generated/environment/floor_bearing_strip_a_middle.png",
+      "runtimePath": "public/art/generated/environment/floor_bearing_strip_a_middle.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        0,
+        23,
+        2172,
+        682
+      ],
+      "runtimeSize": [
+        1024,
+        311
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "138f109c7293ea00c33b1caafc74841d2fee373abecf586bd43c75c733b6282b",
+      "runtimeSha256": "5db69257b5cfdc8c0ae3ebee59f102e1e77d1d7592d53508884ccd400adbcb92",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "floor_bearing_strip_a_cap_left",
+      "sourcePath": "art-production/generated/environment/floor_bearing_strip_a_cap_left.png",
+      "runtimePath": "public/art/generated/environment/floor_bearing_strip_a_cap_left.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        59,
+        39,
+        1760,
+        861
+      ],
+      "runtimeSize": [
+        1024,
+        495
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "ede56d49823612877e852410db879b4fcdb2e71c7e742ac87bb0af4e2d2eb146",
+      "runtimeSha256": "9079ca38a4d135a6bc1fda693357759d2538d03454f008068ece683ed9fe338c",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "floor_bearing_strip_a_cap_right",
+      "sourcePath": "art-production/generated/environment/floor_bearing_strip_a_cap_right.png",
+      "runtimePath": "public/art/generated/environment/floor_bearing_strip_a_cap_right.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        57,
+        81,
+        1691,
+        848
+      ],
+      "runtimeSize": [
+        1024,
+        481
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "259867a7c9cdc42d0523c51e1c9bc35a5b3427c6bd5c47311903dac0ee6b6908",
+      "runtimeSha256": "477e4007698f7cb2917d1ca0461f00057b7e01adc53644026c5b7c5076c906a3",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "corridor_wall_segment_a_middle",
+      "sourcePath": "art-production/generated/environment/corridor_wall_segment_a_middle.png",
+      "runtimePath": "public/art/generated/environment/corridor_wall_segment_a_middle.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        0,
+        18,
+        1744,
+        843
+      ],
+      "runtimeSize": [
+        1024,
+        484
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "04f7c0b081bb0c22faab65d1ef682d1aeb5e64a8bd22a289662e0285fd7dc84a",
+      "runtimeSha256": "9b3c6b835fe0248bc366c23cc6f0560d84dfcca972a1ef03abf20326436ec24c",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "corridor_wall_segment_a_edge_left",
+      "sourcePath": "art-production/generated/environment/corridor_wall_segment_a_edge_left.png",
+      "runtimePath": "public/art/generated/environment/corridor_wall_segment_a_edge_left.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        0,
+        7,
+        861,
+        1774
+      ],
+      "runtimeSize": [
+        499,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "9cc36601b633140af633e960f8e36f82200edaefc74fb577267d96aaffb7b267",
+      "runtimeSha256": "eef02b964dca78d2f01462f809585803e1ad799977af94fd7df0436ce021ab95",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "corridor_wall_segment_a_edge_right",
+      "sourcePath": "art-production/generated/environment/corridor_wall_segment_a_edge_right.png",
+      "runtimePath": "public/art/generated/environment/corridor_wall_segment_a_edge_right.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        31,
+        0,
+        823,
+        1774
+      ],
+      "runtimeSize": [
+        457,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "fe07a5aeb81b7bebc7a83da580bbb618433a7ab629906245e4ec0b12273d814d",
+      "runtimeSha256": "256dcddc2d83e56d733323a0fb8563590d8545fcb8f95a60013e4f1f564512b4",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "containment_side_door_frame_a_frame",
+      "sourcePath": "art-production/generated/environment/containment_side_door_frame_a_frame.png",
+      "runtimePath": "public/art/generated/environment/containment_side_door_frame_a_frame.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        0,
+        0,
+        877,
+        1774
+      ],
+      "runtimeSize": [
+        506,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "a031c782f15d64b372daa73aeee05579b8dfa5065e9304febe76db09d8a9ef06",
+      "runtimeSha256": "be1046af6132b3b175de235e8b142576b5938993d7c488999890cf7b1a30fcf8",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "containment_door_leaf_a_leaf",
+      "sourcePath": "art-production/generated/environment/containment_door_leaf_a_leaf.png",
+      "runtimePath": "public/art/generated/environment/containment_door_leaf_a_leaf.png",
+      "originalSize": [
+        793,
+        1983
+      ],
+      "cropBounds": [
+        74,
+        74,
+        722,
+        1919
+      ],
+      "runtimeSize": [
+        360,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "3d3dda5b87ad10ede3206fe9933a5af177b5bf0f2023d25e659d6157b57ed956",
+      "runtimeSha256": "1e2dd122ee789a128604140e5f7bfaf649a2fc6d2bd145ff97e58b1d2bf798b1",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "observation_window_layers_a_frame",
+      "sourcePath": "art-production/generated/environment/observation_window_layers_a_frame.png",
+      "runtimePath": "public/art/generated/environment/observation_window_layers_a_frame.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        0,
+        8,
+        1434,
+        1086
+      ],
+      "runtimeSize": [
+        1024,
+        770
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "74fddabe0ceca943cbedcf92193bb2f1edf9760139f69a9fb0c2723fb633c7b6",
+      "runtimeSha256": "880b4e64c15efd83fc44b13b40673380008c38d909826b7535d4ac6c287466e5",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "observation_window_layers_a_glass",
+      "sourcePath": "art-production/generated/environment/observation_window_layers_a_glass.png",
+      "runtimePath": "public/art/generated/environment/observation_window_layers_a_glass.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "runtimeSize": [
+        1024,
+        768
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "fe100088002e23bce6ea8b00d1f86a39b40834513163fc48caefd41c3e6f1a9e",
+      "runtimeSha256": "f77a02235f586f77787500551d4d142d81068d78d34ac8c71d60b0d539dc57b0",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "observation_window_layers_a_reflection",
+      "sourcePath": "art-production/generated/environment/observation_window_layers_a_reflection.png",
+      "runtimePath": "public/art/generated/environment/observation_window_layers_a_reflection.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        156,
+        78,
+        1378,
+        1004
+      ],
+      "runtimeSize": [
+        1024,
+        776
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "d2174b3f5a8719a4b742edde1b81499db8803a58b99284058dd25f3f8e6e4641",
+      "runtimeSha256": "5c90c57e6ffa9f9f6d1a887859dc8a1821219d94d7643b3bdc291e7bbc99bb23",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "transit_ladder_vertical_a_ladder",
+      "sourcePath": "art-production/generated/environment/transit_ladder_vertical_a_ladder.png",
+      "runtimePath": "public/art/generated/environment/transit_ladder_vertical_a_ladder.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        96,
+        8,
+        843,
+        1760
+      ],
+      "runtimeSize": [
+        437,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "22ae56eecd233f82b01e9cacba419378e153d946412b5d6bd6d2791b86095979",
+      "runtimeSha256": "6996a27d66cbf51034b97e4a2c214abd983dc60dc46be444d8ad47c547be2533",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "transit_ladder_vertical_a_shaft_wall",
+      "sourcePath": "art-production/generated/environment/transit_ladder_vertical_a_shaft_wall.png",
+      "runtimePath": "public/art/generated/environment/transit_ladder_vertical_a_shaft_wall.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        0,
+        0,
+        887,
+        1774
+      ],
+      "runtimeSize": [
+        512,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "217531bba70b4de18ebae58f0a320ce5f979adcfd4426a73690cc2933c283ff8",
+      "runtimeSha256": "d14cb83f12ad97e62e33c3b499a3f4ee778633928a73131a8a76655065565bb9",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "transit_landing_grate_a_landing_grate",
+      "sourcePath": "art-production/generated/environment/transit_landing_grate_a_landing_grate.png",
+      "runtimePath": "public/art/generated/environment/transit_landing_grate_a_landing_grate.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        0,
+        89,
+        2127,
+        682
+      ],
+      "runtimeSize": [
+        1024,
+        285
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "4fb560b6c4eb666b7abf1f18a738ec9a2080cf5ce9d3676535e93745cacbdf01",
+      "runtimeSha256": "df83b5ec155d8d17e88386e55a68fd45751ed3764abb7d81d19f50fa85368598",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_lamp_layers_a_housing",
+      "sourcePath": "art-production/generated/environment/industrial_lamp_layers_a_housing.png",
+      "runtimePath": "public/art/generated/environment/industrial_lamp_layers_a_housing.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        0,
+        17,
+        2074,
+        724
+      ],
+      "runtimeSize": [
+        1024,
+        349
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "835e488392b1e4d53ac474524bd7727cd63e205d30166eba30a4bb506505df0f",
+      "runtimeSha256": "172f1799ac473bec84c9ea1dce147aec372ecfca5ff0d0304c1cc8b07459a93d",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_lamp_layers_a_light_strip",
+      "sourcePath": "art-production/generated/environment/industrial_lamp_layers_a_light_strip.png",
+      "runtimePath": "public/art/generated/environment/industrial_lamp_layers_a_light_strip.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        59,
+        63,
+        2118,
+        686
+      ],
+      "runtimeSize": [
+        1024,
+        310
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "a185fea48b8f3a6261146dbf822a332a04751dd3493df9fa48b9bf706c7bf6a5",
+      "runtimeSha256": "1cb067560209dd2a3194a35f79161577e2bd6e8c986e98bf65f121b2883d3ba9",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_pipe_connectors_a_pipe_horizontal",
+      "sourcePath": "art-production/generated/environment/industrial_pipe_connectors_a_pipe_horizontal.png",
+      "runtimePath": "public/art/generated/environment/industrial_pipe_connectors_a_pipe_horizontal.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        0,
+        55,
+        2078,
+        666
+      ],
+      "runtimeSize": [
+        1024,
+        301
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "68fad8bf343b348affe428b5e4efa8462a1acb6d832df1867304a33396e78e8d",
+      "runtimeSha256": "1cc23a7c8866c833aa74aa76b51011754484469c8739ddb4a2155391c6b07f3d",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_pipe_connectors_a_pipe_vertical",
+      "sourcePath": "art-production/generated/environment/industrial_pipe_connectors_a_pipe_vertical.png",
+      "runtimePath": "public/art/generated/environment/industrial_pipe_connectors_a_pipe_vertical.png",
+      "originalSize": [
+        793,
+        1983
+      ],
+      "cropBounds": [
+        155,
+        80,
+        757,
+        1917
+      ],
+      "runtimeSize": [
+        336,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "ab3294fc280265e7587ad6c906513566c0f6b6a66bfd87582c8de33a7ee9fd58",
+      "runtimeSha256": "128746173b9eb0959e8f6c80bc8d48938937f0d8e803c65b01599e474e6606f3",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_pipe_connectors_a_elbow",
+      "sourcePath": "art-production/generated/environment/industrial_pipe_connectors_a_elbow.png",
+      "runtimePath": "public/art/generated/environment/industrial_pipe_connectors_a_elbow.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1204,
+        1254
+      ],
+      "runtimeSize": [
+        983,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "e1a7c994ddf77872b8b62234d45f8a69d56a49b52f529d1566accc5bc6637d37",
+      "runtimeSha256": "9a412f00d6b406884b8782a9d9c7d288b6cd0bea94859f842c8c3f3642fb9fee",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "industrial_pipe_connectors_a_handwheel_valve",
+      "sourcePath": "art-production/generated/environment/industrial_pipe_connectors_a_handwheel_valve.png",
+      "runtimePath": "public/art/generated/environment/industrial_pipe_connectors_a_handwheel_valve.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        61,
+        1234,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        990
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "ccf78f63d83129f766ffbca71dd5b7947b19a654631ca69c5d04cb49386920c7",
+      "runtimeSha256": "806a075a13557da4c0e1017c6f37f43fecd474fb99a6458b2f9a5bb130904839",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "operator_console_desk_a_console",
+      "sourcePath": "art-production/generated/environment/operator_console_desk_a_console.png",
+      "runtimePath": "public/art/generated/environment/operator_console_desk_a_console.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        0,
+        17,
+        1720,
+        887
+      ],
+      "runtimeSize": [
+        1024,
+        518
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "d580a2f046c998d7f60d6fdb646fb11782c819a822ec51b42089741b80d3542e",
+      "runtimeSha256": "281bbc639cabed007e4c503398f255c142789fda0abd564589e2738489bf84c6",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "crt_wall_terminal_layers_a_housing",
+      "sourcePath": "art-production/generated/environment/crt_wall_terminal_layers_a_housing.png",
+      "runtimePath": "public/art/generated/environment/crt_wall_terminal_layers_a_housing.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        35,
+        0,
+        1426,
+        1086
+      ],
+      "runtimeSize": [
+        1024,
+        799
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "1fbc9a89eccb1828115653e70986ac1f039ab1d44ba7b638da6ea999ab85b6de",
+      "runtimeSha256": "2e09e4f5f738f9dae3f9e2cf6621f2f60b8c4217c0c33cdd44d19ab5bad79e1a",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "crt_wall_terminal_layers_a_blank_screen",
+      "sourcePath": "art-production/generated/environment/crt_wall_terminal_layers_a_blank_screen.png",
+      "runtimePath": "public/art/generated/environment/crt_wall_terminal_layers_a_blank_screen.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1445,
+        1086
+      ],
+      "runtimeSize": [
+        1024,
+        770
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "c2ab7157a7ab5071efb474ae523e0310d8babeddc1c2d553c7376dcb069cd902",
+      "runtimeSha256": "d66fbb3de3808e6d2bb1729c7526fe9c878027c332fb1abddd16a58539c970c1",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "analog_wall_gauge_a_dial",
+      "sourcePath": "art-production/generated/environment/analog_wall_gauge_a_dial.png",
+      "runtimePath": "public/art/generated/environment/analog_wall_gauge_a_dial.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        3,
+        1240,
+        1254
+      ],
+      "runtimeSize": [
+        1015,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "84d59d539379ba3e6f8d476a9681162ac58d2f319416b5af3d55d3a0cf3fba63",
+      "runtimeSha256": "321882e5221d90e1e8f36f2f11f0757074dbf0d01177f994e227a495376d2f07",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "analog_wall_gauge_a_needle",
+      "sourcePath": "art-production/generated/environment/analog_wall_gauge_a_needle.png",
+      "runtimePath": "public/art/generated/environment/analog_wall_gauge_a_needle.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        164,
+        87,
+        1079,
+        1188
+      ],
+      "runtimeSize": [
+        851,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "c3bb7f333a892228e3bc08239e1cb1a4a7f944c4f0389971b3cb2bf0bb8e55ad",
+      "runtimeSha256": "ff5c2bbab04063ea40f7672e078853a13c693a32437ad6ddc3930297cad838a1",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "operations_buttress_a_buttress",
+      "sourcePath": "art-production/generated/environment/operations_buttress_a_buttress.png",
+      "runtimePath": "public/art/generated/environment/operations_buttress_a_buttress.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        0,
+        39,
+        865,
+        1749
+      ],
+      "runtimeSize": [
+        518,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "70a192bc137c24147a362272e15a48905acd50e4b1670221cd732c39e858648a",
+      "runtimeSha256": "601526da7eb23cea822dd6818989819fbccc4d781a9daa948e51813a60408278",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "operations_buttress_a_top_beam",
+      "sourcePath": "art-production/generated/environment/operations_buttress_a_top_beam.png",
+      "runtimePath": "public/art/generated/environment/operations_buttress_a_top_beam.png",
+      "originalSize": [
+        2172,
+        724
+      ],
+      "cropBounds": [
+        41,
+        9,
+        2126,
+        587
+      ],
+      "runtimeSize": [
+        1024,
+        284
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "dcdd77f46f7eca9ff125dad6cea78c18b0ab1ddebb22d2a5d18153ca499254c9",
+      "runtimeSha256": "03b836f254bc319580d453f5cac7b3bc7f7038041b55e532dcc227fb7f392eaf",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "facility_waiting_bench_a_bench",
+      "sourcePath": "art-production/generated/environment/facility_waiting_bench_a_bench.png",
+      "runtimePath": "public/art/generated/environment/facility_waiting_bench_a_bench.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        51,
+        0,
+        1713,
+        871
+      ],
+      "runtimeSize": [
+        1024,
+        537
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "9e2b196eb8d5f7ae2d25e3ad2d219ac23c9fb408279b351bdea3c93be5fddf7b",
+      "runtimeSha256": "10ecdf756af130fdd0b805b35f711160fc642e348ec64c0522c5f3993876c68c",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "medical_recovery_bed_a_bed_frame_mattress",
+      "sourcePath": "art-production/generated/environment/medical_recovery_bed_a_bed_frame_mattress.png",
+      "runtimePath": "public/art/generated/environment/medical_recovery_bed_a_bed_frame_mattress.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        18,
+        43,
+        1757,
+        887
+      ],
+      "runtimeSize": [
+        1024,
+        497
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "c7ca72fc08f857f5ea6fa7e0e37aed893a6dbb3625b0111cbe83a5eed7b0d819",
+      "runtimeSha256": "4c5fdbfe1ab219617f43ade1556cde5a23250d7833b14f84b82c4a9a073d9424",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "medical_recovery_bed_a_pillow",
+      "sourcePath": "art-production/generated/environment/medical_recovery_bed_a_pillow.png",
+      "runtimePath": "public/art/generated/environment/medical_recovery_bed_a_pillow.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        0,
+        37,
+        1752,
+        873
+      ],
+      "runtimeSize": [
+        1024,
+        489
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "6f85876e60fb843894856b2b8294be3bca4964cb53f01f2f6b48e16fdd603567",
+      "runtimeSha256": "cffecee5a2cf0478f28afa9a1241550d44e2fe138895e27055e08dbe632e5c20",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "medical_supply_cabinet_a_cabinet",
+      "sourcePath": "art-production/generated/environment/medical_supply_cabinet_a_cabinet.png",
+      "runtimePath": "public/art/generated/environment/medical_supply_cabinet_a_cabinet.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        2,
+        81,
+        853,
+        1758
+      ],
+      "runtimeSize": [
+        520,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "25dd903e5e015d3e0d644f9eccf94a8424cd3f832174b2d15596f270612ee614",
+      "runtimeSha256": "a7a34f231c138c167e4ebe2ce2e37897e5adcc5e13100d60cd44d72a237ca762",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "medical_supply_cabinet_a_blank_chart",
+      "sourcePath": "art-production/generated/environment/medical_supply_cabinet_a_blank_chart.png",
+      "runtimePath": "public/art/generated/environment/medical_supply_cabinet_a_blank_chart.png",
+      "originalSize": [
+        1024,
+        1536
+      ],
+      "cropBounds": [
+        0,
+        104,
+        1004,
+        1536
+      ],
+      "runtimeSize": [
+        718,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "d8ce5146fb29e9ffd397aea8908926d6c9b1741e3a62aa7fa88229b733d875d6",
+      "runtimeSha256": "5160e7b3de79a35e705489821dfc297b3c6c47ea4a1408da6461e57b36146b6d",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "archive_drawer_cabinet_a_cabinet",
+      "sourcePath": "art-production/generated/environment/archive_drawer_cabinet_a_cabinet.png",
+      "runtimePath": "public/art/generated/environment/archive_drawer_cabinet_a_cabinet.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        25,
+        23,
+        1360,
+        1062
+      ],
+      "runtimeSize": [
+        1024,
+        797
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "bac07a0d141625cb76d5c5b05063121f6cffd20b0b72302250b05e8e3a9c0b7d",
+      "runtimeSha256": "810a22521a41603b6c1618cd41323e307250788ac7b52567c97fb96494f6cec0",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "archive_drawer_cabinet_a_folder",
+      "sourcePath": "art-production/generated/environment/archive_drawer_cabinet_a_folder.png",
+      "runtimePath": "public/art/generated/environment/archive_drawer_cabinet_a_folder.png",
+      "originalSize": [
+        1774,
+        887
+      ],
+      "cropBounds": [
+        86,
+        0,
+        1752,
+        887
+      ],
+      "runtimeSize": [
+        1024,
+        545
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "1fd383200a5f06e55fea9b94125bf26f831ddf713eb039119533bd53a8146c57",
+      "runtimeSha256": "d2d02a631458d4b7e470d5d991e914753318062a829489b6ffcfc8bcbf3ea572",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "archive_drawer_cabinet_a_blank_label",
+      "sourcePath": "art-production/generated/environment/archive_drawer_cabinet_a_blank_label.png",
+      "runtimePath": "public/art/generated/environment/archive_drawer_cabinet_a_blank_label.png",
+      "originalSize": [
+        1983,
+        793
+      ],
+      "cropBounds": [
+        33,
+        17,
+        1947,
+        793
+      ],
+      "runtimeSize": [
+        1024,
+        415
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "f206101df19d4f2c62004cd2635b8d2e65a9251d6ad5db611bd3cc85cd05ab8d",
+      "runtimeSha256": "315a421f682950e97c2c268d9efac8374efd29a7ccd7a6c79742332d491ea546",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "security_broadcast_horn_a_horn",
+      "sourcePath": "art-production/generated/environment/security_broadcast_horn_a_horn.png",
+      "runtimePath": "public/art/generated/environment/security_broadcast_horn_a_horn.png",
+      "originalSize": [
+        1086,
+        1448
+      ],
+      "cropBounds": [
+        41,
+        21,
+        1072,
+        1392
+      ],
+      "runtimeSize": [
+        770,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "be182a44676f10314a70c57ddb148117e326f32b89603565f8ae11c904005216",
+      "runtimeSha256": "53e9c69356ec1b8e37def3a76d0322011b32a977ffb2c9cc19eeb255ea738f9e",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "cooling_relay_fan_a_housing",
+      "sourcePath": "art-production/generated/environment/cooling_relay_fan_a_housing.png",
+      "runtimePath": "public/art/generated/environment/cooling_relay_fan_a_housing.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1238,
+        1254
+      ],
+      "runtimeSize": [
+        1011,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "22a84a1ea47545b6d4695d7461bc2ca4cde4260b51205557df8248088b684bee",
+      "runtimeSha256": "a3a2074923f7a3afc8ecb2f6341b3c9af91fc31d89a72e0a9d5b512ae37f18e9",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "cooling_relay_fan_a_rotor",
+      "sourcePath": "art-production/generated/environment/cooling_relay_fan_a_rotor.png",
+      "runtimePath": "public/art/generated/environment/cooling_relay_fan_a_rotor.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        9,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1017
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "f3930ecf1f9c423a91f144ed6219f96613317953d728e26d10c3ba9e0e0aff10",
+      "runtimeSha256": "5d3705c00dd8d5b3971195966c9f68f940270f1aebb0cddc7a42fc9bdbcc078b",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "nailong_containment_meter_cabinet_a_meter_cabinet",
+      "sourcePath": "art-production/generated/environment/nailong_containment_meter_cabinet_a_meter_cabinet.png",
+      "runtimePath": "public/art/generated/environment/nailong_containment_meter_cabinet_a_meter_cabinet.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        33,
+        41,
+        847,
+        1774
+      ],
+      "runtimeSize": [
+        481,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "61f960f0d8d50e914775bca0c16aa473f0365ab684a5163f1018490e35d1d0bb",
+      "runtimeSha256": "a94881a827ee8676add5ff41db3155e1fc4bedda0e5174ee240c86841a8bc859",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "maodie_wall_perch_a_wall_perch",
+      "sourcePath": "art-production/generated/environment/maodie_wall_perch_a_wall_perch.png",
+      "runtimePath": "public/art/generated/environment/maodie_wall_perch_a_wall_perch.png",
+      "originalSize": [
+        1086,
+        1448
+      ],
+      "cropBounds": [
+        0,
+        35,
+        1066,
+        1424
+      ],
+      "runtimeSize": [
+        786,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "af4a8158a68050325106c315efab5b41d2404acb9c2ce75ab22a5c54d8826c3c",
+      "runtimeSha256": "4690650df6198836794a007a2b773fc1461453d93fc29aa3ee8c2ed1de5e371e",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "maodie_wall_perch_a_scratch_decal",
+      "sourcePath": "art-production/generated/environment/maodie_wall_perch_a_scratch_decal.png",
+      "runtimePath": "public/art/generated/environment/maodie_wall_perch_a_scratch_decal.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        186,
+        83,
+        1224,
+        1193
+      ],
+      "runtimeSize": [
+        958,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "ed4d9eaaa0898aebf0a118dd74a8549074db71cf708c99bee0553ee5e2e4d94c",
+      "runtimeSha256": "08fcbe261b33f6236831fa65ff79433ed014565d433f7a602e974d3b178766c3",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "big_dog_acoustic_panel_a_acoustic_panel",
+      "sourcePath": "art-production/generated/environment/big_dog_acoustic_panel_a_acoustic_panel.png",
+      "runtimePath": "public/art/generated/environment/big_dog_acoustic_panel_a_acoustic_panel.png",
+      "originalSize": [
+        798,
+        1971
+      ],
+      "cropBounds": [
+        44,
+        56,
+        778,
+        1925
+      ],
+      "runtimeSize": [
+        402,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "61f44a19c406078834297485ab7e1782e425eb87566b5f5b9f622a1d6476f220",
+      "runtimeSha256": "2c3a757fef14f95aec6615f6120c4016868164dfee266c7bfc22054e58154c47",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "big_dog_acoustic_panel_a_anchor_ring",
+      "sourcePath": "art-production/generated/environment/big_dog_acoustic_panel_a_anchor_ring.png",
+      "runtimePath": "public/art/generated/environment/big_dog_acoustic_panel_a_anchor_ring.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        19,
+        1236,
+        1230
+      ],
+      "runtimeSize": [
+        1024,
+        1003
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "e72beb3e164d2ffa03e57f2f1d36d776fab8cfc05a41acd3b4e75c9faaadbc4b",
+      "runtimeSha256": "a521267342d89ed262df769b5434e62974f8f516e59218ce6ea4479f8f73e38e",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "dingdong_chicken_speaker_clock_a_speaker",
+      "sourcePath": "art-production/generated/environment/dingdong_chicken_speaker_clock_a_speaker.png",
+      "runtimePath": "public/art/generated/environment/dingdong_chicken_speaker_clock_a_speaker.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        82,
+        0,
+        827,
+        1758
+      ],
+      "runtimeSize": [
+        434,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "9233888dc1ccb78a81b401f465e4ac922649931bffacee6a53c6d47f126f630d",
+      "runtimeSha256": "486e772e64320f8baf1e96e3f279785a615fb8e4321618546cfb958fc1cd831f",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "dingdong_chicken_speaker_clock_a_clock_dial",
+      "sourcePath": "art-production/generated/environment/dingdong_chicken_speaker_clock_a_clock_dial.png",
+      "runtimePath": "public/art/generated/environment/dingdong_chicken_speaker_clock_a_clock_dial.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        31,
+        19,
+        1240,
+        1236
+      ],
+      "runtimeSize": [
+        1017,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "1875489cda184b61a47c779e129c2db97d638af54465dd65182a3f83eb3b32a8",
+      "runtimeSha256": "0bac7f47dbfeeb5e943f65750014ac1fcf3c932f56005ac2816cd06545ed11ce",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "dingdong_chicken_speaker_clock_a_clock_hands",
+      "sourcePath": "art-production/generated/environment/dingdong_chicken_speaker_clock_a_clock_hands.png",
+      "runtimePath": "public/art/generated/environment/dingdong_chicken_speaker_clock_a_clock_hands.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        75,
+        88,
+        1192,
+        1174
+      ],
+      "runtimeSize": [
+        1024,
+        996
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "d5ee84f67fb509e70b82fa890973438f0105b61fb624953ef832b2e9e61e0659",
+      "runtimeSha256": "5a50847890f11ade8d808edde0f282016bbd5ab914b0672b1ffd3d0ed61bedb7",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "gugu_gaga_cold_vent_a_vent_box",
+      "sourcePath": "art-production/generated/environment/gugu_gaga_cold_vent_a_vent_box.png",
+      "runtimePath": "public/art/generated/environment/gugu_gaga_cold_vent_a_vent_box.png",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "cropBounds": [
+        0,
+        32,
+        1436,
+        1046
+      ],
+      "runtimeSize": [
+        1024,
+        723
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "1a49bebbd9cd3772536764ec347ceb383a33eadea638dda718d2934cfe1ed6ca",
+      "runtimeSha256": "a1a0ef1fd09c6f765a11f5286e94e37706a25bb8fc77f44c98036ff6b1a08aac",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "gugu_gaga_cold_vent_a_frost_decal",
+      "sourcePath": "art-production/generated/environment/gugu_gaga_cold_vent_a_frost_decal.png",
+      "runtimePath": "public/art/generated/environment/gugu_gaga_cold_vent_a_frost_decal.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        49,
+        31,
+        1226,
+        1254
+      ],
+      "runtimeSize": [
+        985,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "ac7f072001a4f8e57a492f1b839c3f22da4d84adfa26d88254ebe6dab88e1d6a",
+      "runtimeSha256": "16fcc8c4f619c3a962586e9d4a62fe053cc7353bd8c3ae57578f3285475db59f",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "facility_void_backdrop_a_void_tile",
+      "sourcePath": "art-production/generated/environment/facility_void_backdrop_a_void_tile.png",
+      "runtimePath": "public/art/generated/environment/facility_void_backdrop_a_void_tile.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "runtimeSize": [
+        1024,
+        1024
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceSha256": "27827e44f87fcdf058e06f09107aaa1e9242f2ca1cd1391186063359f492cde1",
+      "runtimeSha256": "25e64518566cc43b33f11d663947c04e4c06fa8ecdf9a44c426604dcbced3011",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "facility_distant_framework_a_column_crossbeam",
+      "sourcePath": "art-production/generated/environment/facility_distant_framework_a_column_crossbeam.png",
+      "runtimePath": "public/art/generated/environment/facility_distant_framework_a_column_crossbeam.png",
+      "originalSize": [
+        887,
+        1774
+      ],
+      "cropBounds": [
+        0,
+        0,
+        875,
+        1774
+      ],
+      "runtimeSize": [
+        505,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "7e0743bab3eca29bd9e5602cbec1a60f1f872897ddc4b65e5af2c39d39e73025",
+      "runtimeSha256": "e1f63da52e3119418f75b678348aea4559facc16f0f3aae9a09e895696f8f60d",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    },
+    {
+      "name": "facility_distant_framework_a_diagonal_brace",
+      "sourcePath": "art-production/generated/environment/facility_distant_framework_a_diagonal_brace.png",
+      "runtimePath": "public/art/generated/environment/facility_distant_framework_a_diagonal_brace.png",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "cropBounds": [
+        73,
+        25,
+        1181,
+        1208
+      ],
+      "runtimeSize": [
+        959,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sourceSha256": "84dc2489e3f0f956f90235b52a7731a4fb3106c0ef628298b851eecb23383209",
+      "runtimeSha256": "b2599a932401a4bb102b7b88eb4ffcbbb4a9e201565ed261d93643f1aac9e99b",
+      "processing": "original preserved; alpha-bounds crop; Lanczos downscale only"
+    }
+  ]
+}

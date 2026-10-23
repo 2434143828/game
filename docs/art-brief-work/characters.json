@@ -1,0 +1,1256 @@
+[
+  {
+    "id": "STA_001",
+    "priority": "P0",
+    "category": "员工/形体定稿",
+    "name": "agent_base_idle_01",
+    "displayName": "员工通用基型定稿",
+    "state": "IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 约 3 头身，大头、小而窄的工业外套躯干、细长四肢和厚底短靴；头略前倾、肩线不对称、神经质但仍是可工作的普通员工。灰绿制服 #68716c、旧纸肤色 #d9c6a5、少量铁锈/米白；不画英雄盔甲。用一位中性员工确定标准头颅、颈、肩、髋与手掌比例，服装含翻领、细领带和小工牌。",
+    "referenceObject": "当前 E01–E06 的共用身体及怪诞手绘指南",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "单个 RGBA 透明 PNG，sRGB，无底色和阴影背景，保留透明边距。",
+    "pivot": "脚底地面中心；1024 × 1024 定稿统一注册点 (512, 896)，朝右；左向由引擎镜像。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman / SKIN / UNIFORM；C:/Users/SEASUN/.codex/attachments/7f5d4409-cd91-4d45-b37e-b4e2248fafc7/已粘贴的文本.txt",
+    "acceptance": "缩到约 66 世界像素高仍能辨认头、躯干、双臂双腿；脚底与注册线一致；黑白剪影可读；与五物相比体量较小。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "只定一种可复用身体；六名员工不做六套全身图。制服 A00 和基础脸型属于此基型，发型与面部在后续拆件中独立。"
+  },
+  {
+    "id": "STA_002",
+    "priority": "P0",
+    "category": "员工/通用拆件",
+    "name": "agent_base_parts_01",
+    "displayName": "员工共用身体与基础工作道具拆件",
+    "state": "通用",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "已批准的员工基型；当前 OBSERVE 夹板和 W00",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "export": "16 个独立透明 PNG；同坐标母版导出，不自动裁切；另附可编辑分层源文件和挂点 JSON/表格（附属文件不另计素材数）。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "quantity": 16,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman / drawWeapon(W00)",
+    "acceptance": "零件数量和清单一致；手臂/腿弯曲时关节无白缝；同一骨架能组回基型；无需重画身体即可换发型、武器、防具。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "14 个身体件 + 2 个基础道具。只交拆件不宣称已有骨骼动画；选中圈、阴影、受击射线仍由引擎绘制。"
+  },
+  {
+    "id": "STA_003",
+    "priority": "P0",
+    "category": "员工/发型",
+    "name": "agent_hair_quiff_01",
+    "displayName": "E01 向上尖束",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 深灰发，前额一束不等长尖峰向上偏前，后脑轮廓压低；不要对称刺猬头。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "referenceObject": "当前 E01 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "1 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=0) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_004",
+    "priority": "P0",
+    "category": "员工/发型",
+    "name": "agent_hair_side_fringe_01",
+    "displayName": "E02 侧扫斜刘海",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 棕锈发，大块斜刘海由高侧扫到低侧，另一侧耳根露出；长度短，不盖住双眼和眼镜挂点。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "referenceObject": "当前 E02 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "1 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=1) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_005",
+    "priority": "P1",
+    "category": "员工/发型",
+    "name": "agent_hair_bob_glasses_01",
+    "displayName": "E03 短波波头与独立眼镜",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 浅灰褐短波波头，下半部向外略鼓、两侧长度不一；附一副深墨细框眼镜独立透明件，不把镜片变成发型。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "当前 E03 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "2 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 2,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=2) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；两件前后层级或眼镜关系明确；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_006",
+    "priority": "P1",
+    "category": "员工/发型",
+    "name": "agent_hair_messy_ponytail_01",
+    "displayName": "E04 乱翘短马尾",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 暗紫灰乱翘前发和后脑短马尾；前额尖束与后侧尾束构成两个明显方向。前发与后马尾分层，避免尾束压在脸前。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "当前 E04 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "2 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 2,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=3) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；两件前后层级或眼镜关系明确；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_007",
+    "priority": "P1",
+    "category": "员工/发型",
+    "name": "agent_hair_close_crop_01",
+    "displayName": "E05 贴头偏分短发",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿贴头短发，额线偏斜，一侧鬓角更短；整体高度最低，以平、短的外轮廓区别 E01/E04。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "referenceObject": "当前 E05 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "1 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=4) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_008",
+    "priority": "P1",
+    "category": "员工/发型",
+    "name": "agent_hair_bun_01",
+    "displayName": "E06 不对称盘髻",
+    "state": "通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰棕发，侧分贴头前发与后上方圆形松盘髻；髻偏离头中心，保留几根不规则碎发；前发与后髻分层。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "当前 E06 对应发型和已批准共用头颅",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "export": "2 个 RGBA 透明 PNG，保持与员工头件的注册坐标；不含头皮、脸、身体或背景。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "quantity": 2,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHair(index=5) / HAIR",
+    "acceptance": "只看剪影可区分其他五种发型；两件前后层级或眼镜关系明确；约 66 世界像素员工缩放下不遮眼，不用编号或颜色作为唯一差别。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "不额外生产六套完整员工；后层头发与脸前配件由装配层级决定。"
+  },
+  {
+    "id": "STA_009",
+    "priority": "P1",
+    "category": "员工/面部",
+    "name": "agent_face_states_01",
+    "displayName": "共用面部表情四件",
+    "state": "IDLE / PANICKED / HURT / INCAPACITATED",
+    "requirements": "同一头颅上分别交付：中性紧张（不等大眼、短抿嘴）、恐慌（眼张大、张口、眉眼歪斜）、受伤（单眼收紧、嘴压低，不改变头形）、本日重伤倒地（闭眼或低垂眼、嘴放松）四组面部叠层。各表情眼、鼻、嘴位置有共同基准，五官数量正常；不用真实伤口或流血来区别状态。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工基型面部与当前 panic/hurt/incapacitated 状态",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px（同员工装配母版），面部局部透明叠层",
+    "export": "4 个独立透明面部 PNG，不含头、头发或眼镜；附状态名映射。",
+    "pivot": "与共用头骨注册点相同，面部局部原点不随表情移动。",
+    "quantity": 4,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（panic / hurt / incapacitated 分支）",
+    "acceptance": "缩到游戏尺寸能用眉眼/嘴形认出恐慌和受伤；四件可以无跳位替换；闭眼不画死亡符号。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "工作用中性脸配合身体动作即可；不为 OBSERVE/INTERACT/SOOTHE 再复制面部。INCAPACITATED 为本日离场，重试或下一日恢复。"
+  },
+  {
+    "id": "STA_010",
+    "priority": "P0",
+    "category": "员工/动作参考",
+    "name": "agent_locomotion_reference_01",
+    "displayName": "员工待机、行走与攀爬参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "批准的共用员工拆件及实际 moving/climbing/stride",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px / 姿势，全部统一比例与注册点",
+    "export": "6 个独立透明 PNG，每个只含一个完整角色姿势；不拼 sheet、不画文字注释；挂点和姿势名另存文本。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: HumanPose / drawHuman（moving / climbing / stride）",
+    "acceptance": "同一个员工比例不漂移；左右支撑脚和握点明确；能指导拆件旋转与位移，但不以这些独立参考宣称已完成动画。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。"
+  },
+  {
+    "id": "STA_011",
+    "priority": "P0",
+    "category": "员工/动作参考",
+    "name": "agent_work_reference_01",
+    "displayName": "员工三类工作手势参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "drawHuman 的 workType 和原有夹板",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px / 姿势，全部统一比例与注册点",
+    "export": "6 个独立透明 PNG，每个只含一个完整角色姿势；不拼 sheet、不画文字注释；挂点和姿势名另存文本。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（workType OBSERVE / INTERACT / SOOTHE）",
+    "acceptance": "不依靠标题也能区分观察持板、互动探手、安抚双手；手掌不穿夹板，头发和躯干体积一致。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。"
+  },
+  {
+    "id": "STA_012",
+    "priority": "P0",
+    "category": "员工/动作参考",
+    "name": "agent_distress_reference_01",
+    "displayName": "员工恐慌、受伤与本日倒地参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "当前真实员工 panic、hurt、hp<40%、INCAPACITATED 绘制",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px / 姿势，全部统一比例与注册点",
+    "export": "6 个独立透明 PNG，每个只含一个完整角色姿势；不拼 sheet、不画文字注释；挂点和姿势名另存文本。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（panic / injured / impact / INCAPACITATED）",
+    "acceptance": "恐慌、受击、低 HP、倒地从姿态上可区分；倒地不出现墓碑、灵魂、尸解或复活动作；低 HP 仅外观变化。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "notes": "此项是动画制作参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 游戏已有 INCAPACITATED 为本日离场，重试/下一日恢复；低 HP 受伤姿不修改数值速度。"
+  },
+  {
+    "id": "STA_013",
+    "priority": "P0",
+    "category": "员工/动作参考",
+    "name": "agent_weapon_attack_reference_01",
+    "displayName": "员工统一持械与攻击挂点参考",
+    "state": "SUPPRESSING / WINDUP / IMPACT",
+    "requirements": "分别生成四个独立单姿参考：持械准备、前摇收臂、命中前送、收势。以制式短棍示范手、肘、肩的共用结构；爪套、喇叭与共振器的握点由拆件元数据说明，不再画五套完整人形。保持头部不突变、脚底不脱离实际位置，攻击动作不能暗示冲刺或位移技能。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "drawHuman 攻击分支与 drawWeapon 的 hand/facing/angle",
+    "referenceIds": [
+      "REF_STAFF"
+    ],
+    "canvas": "1024 × 1024 px / 姿势，全部统一比例与注册点",
+    "export": "4 个独立透明 PNG，每个只含一个完整角色姿势；不拼 sheet、不画文字注释；挂点和姿势名另存文本。",
+    "pivot": "全身根=脚底；武器根=握柄点；前后手层级明确。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "STA_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（attackPhase / windupEnd）/ drawWeapon",
+    "acceptance": "前摇和命中姿势差异可读；同一腕点可替换五专属武器；无新增攻击距离、子弹或技能特效。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 时长、射程和伤害由现有 config/模拟决定，单姿参考图组不给固定帧率或命中时间。"
+  },
+  {
+    "id": "ABN_N01_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_nailong_idle_01",
+    "displayName": "N01 奶龙 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 软黄梨形身体、奶油色圆肚、短手、宽扁脚、不对称短尾；头颈连成柔软长弧，两个小角一高一低，眼睛大小不一、口鼻略突出。主色黄 #d9b854、奶油 #e9d38c 和土黄阴影，呆软而非写实恐龙。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 奶龙 室内未作业形态",
+    "referenceIds": [
+      "REF_N01_CALM"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 奶龙；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。主样本与两只分身复用同一素材，分身仅由引擎按 0.76 缩放并调色；不新增分身专用图、不让分身产生更多分身。"
+  },
+  {
+    "id": "ABN_N01_02",
+    "priority": "P1",
+    "category": "五物/工作参考",
+    "name": "abn_nailong_work_reference_01",
+    "displayName": "N01 奶龙 工作回应参考",
+    "state": "CONTAINED / WORKING",
+    "requirements": "以平静形态做探头前伸与回收、短手抬到嘴边与落下的四个独立单姿；口部只轻微开合，肚皮呼吸。工作头部前伸而脚底保持原位；不能提前变成裂嘴失控形。 共用一个工作回应循环，不分别制造观察/互动/安抚三套收容物动画。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "奶龙 平静定稿与当前 working 分支",
+    "referenceIds": [
+      "REF_N01_CALM"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "4 个独立透明 RGBA PNG，每张仅一个完整角色的一个姿势；不拼 sheet，不放文字和其他对照姿。",
+    "pivot": "每个单姿文件相同脚底根节点和尺度；局部挂点另用文本记录，不画进 PNG。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N01_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01（m.working / m.beat）",
+    "acceptance": "工作回应与静止待机从动作幅度可辨；仍保持平静脸形；无额外角色、产能图标或新攻击动作。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 working 只在员工已抵达且工作为 EXECUTING 时成立；动作本身不结算产能。"
+  },
+  {
+    "id": "ABN_N01_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_nailong_breach_01",
+    "displayName": "N01 奶龙 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 保留软黄肚子与短尾识别点，头颈明显拉长，大小不等的实黑空眼；嘴裂成斜向大黑开口、稀疏奶油三角齿，嘴角延伸至颈部；身体有轻微被拉扁的视频帧错位感。相比平静形态，空眼、裂嘴、长颈三项都必须明确，不能仅涂红或加烟。",
+    "referenceObject": "当前 奶龙 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N01_CALM",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N01_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。主样本与两只分身复用同一素材，分身仅由引擎按 0.76 缩放并调色；不新增分身专用图、不让分身产生更多分身。"
+  },
+  {
+    "id": "ABN_N01_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_nailong_parts_01",
+    "displayName": "N01 奶龙 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干 1、平静头颈 1、失控头颈 1、平静口鼻 1、失控裂嘴 1、常态/空眼两组眼部 2、左右短臂 2、左右脚 2、尾 1，共 12 件。头颈、眼、口分层，裂嘴不与选中圈或残影合并。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "奶龙 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N01_CALM",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N01_01",
+      "ABN_N01_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  {
+    "id": "ABN_N01_05",
+    "priority": "P0",
+    "category": "五物/战斗参考",
+    "name": "abn_nailong_combat_reference_01",
+    "displayName": "N01 奶龙 失控行动与攻击参考",
+    "state": "MOVING / WINDUP / IMPACT / HURT",
+    "requirements": "分别生成六个独立单姿：失控行走左右支撑 2 姿、前摇抬臂/后仰 1 姿、裂嘴前送命中 1 姿、收势 1 姿、短促受击回缩 1 姿。拉长颈部但脚底不瞬移；所有姿态使用同一裂嘴造型。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "奶龙 已批准失控定稿与实际 attackPhase/impactRemaining/hurt",
+    "referenceIds": [
+      "REF_N01_CALM",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "6 个独立透明 RGBA PNG，每张仅一个完整角色姿势；不拼 sheet、无文字、无重复实体/残影。",
+    "pivot": "每个主要姿势保持同一脚底注册点；行走仅示足部接触关系，不烘焙移动距离。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N01_03",
+      "ABN_N01_04"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01（windup / impact / walk / hurt）",
+    "acceptance": "可清楚判断准备、前摇、释放、收势；受击与主动攻击不混淆；前摇不靠字幕才成立。参考不承诺未制作的动画帧数。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 主样本与两只分身复用同一素材，分身仅由引擎按 0.76 缩放并调色；不新增分身专用图、不让分身产生更多分身。"
+  },
+  {
+    "id": "ABN_N02_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_maodie_idle_01",
+    "displayName": "N02 耄耋 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿猫形，头宽而不规则，两只高尖耳长短不同；迟钝且略怀疑的不等大眼、重眉、短口鼻；身躯紧凑、短爪、弯折尾。主色灰绿 #929b92、深灰绿 #65736e、旧纸腹部 #d6d0b4，小面积锈色耳内。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 耄耋 室内未作业形态",
+    "referenceIds": [
+      "REF_N02_CALM"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 耄耋；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。快速追赶的速度由原配置决定；动作参考不得承诺新的冲刺、闪现、攀墙或额外爪击次数。"
+  },
+  {
+    "id": "ABN_N02_02",
+    "priority": "P1",
+    "category": "五物/工作参考",
+    "name": "abn_maodie_work_reference_01",
+    "displayName": "N02 耄耋 工作回应参考",
+    "state": "CONTAINED / WORKING",
+    "requirements": "以平静猫形做抬头露腹、两前爪交替抬起的四个独立单姿；爪掌朝外，肩肘有折角，一侧高一侧低；保持宽头短身，工作是笨拙回应，不画捕猎、飞扑或卖萌爱心。 共用一个工作回应循环，不分别制造观察/互动/安抚三套收容物动画。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "耄耋 平静定稿与当前 working 分支",
+    "referenceIds": [
+      "REF_N02_CALM"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "4 个独立透明 RGBA PNG，每张仅一个完整角色的一个姿势；不拼 sheet，不放文字和其他对照姿。",
+    "pivot": "每个单姿文件相同脚底根节点和尺度；局部挂点另用文本记录，不画进 PNG。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N02_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02（m.working / m.beat）",
+    "acceptance": "工作回应与静止待机从动作幅度可辨；仍保持平静脸形；无额外角色、产能图标或新攻击动作。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 working 只在员工已抵达且工作为 EXECUTING 时成立；动作本身不结算产能。"
+  },
+  {
+    "id": "ABN_N02_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_maodie_breach_01",
+    "displayName": "N02 耄耋 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 躯干纵向抽长、头抬高、两前肢变成明显细长的多折角轮廓，爪伸到身体两侧和地面；眼睛撑开、嘴偏斜张开，头有小幅错位线。仍保留大尖耳、灰绿皮毛和折尾；不是只把毛炸开。",
+    "referenceObject": "当前 耄耋 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N02_CALM",
+      "REF_N02_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N02_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。快速追赶的速度由原配置决定；动作参考不得承诺新的冲刺、闪现、攀墙或额外爪击次数。"
+  },
+  {
+    "id": "ABN_N02_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_maodie_parts_01",
+    "displayName": "N02 耄耋 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "常态躯干 1、伸长躯干 1、头含耳 1、平静眼口组 1、失控眼口组 1、短前肢 2、伸长前肢 2、后足 2、尾 1，共 12 件。伸长肢体为形态替换件，肩/髋根节点一致。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "耄耋 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N02_CALM",
+      "REF_N02_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N02_01",
+      "ABN_N02_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  {
+    "id": "ABN_N02_05",
+    "priority": "P0",
+    "category": "五物/战斗参考",
+    "name": "abn_maodie_combat_reference_01",
+    "displayName": "N02 耄耋 失控行动与攻击参考",
+    "state": "MOVING / WINDUP / IMPACT / HURT",
+    "requirements": "分别生成六个独立单姿：失控快速追赶左右支撑 2 姿、近身扑前的前摇 1 姿、前爪伸出命中 1 姿、收爪回稳 1 姿、受击扭肩 1 姿。长肢体始终连在躯干上；只做原地身体倾斜和爪击，不添加实际跳跃位移或新攻击范围。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "耄耋 已批准失控定稿与实际 attackPhase/impactRemaining/hurt",
+    "referenceIds": [
+      "REF_N02_CALM",
+      "REF_N02_BREACH"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "6 个独立透明 RGBA PNG，每张仅一个完整角色姿势；不拼 sheet、无文字、无重复实体/残影。",
+    "pivot": "每个主要姿势保持同一脚底注册点；行走仅示足部接触关系，不烘焙移动距离。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N02_03",
+      "ABN_N02_04"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / cat；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N02（windup / impact / walk / hurt）",
+    "acceptance": "可清楚判断准备、前摇、释放、收势；受击与主动攻击不混淆；前摇不靠字幕才成立。参考不承诺未制作的动画帧数。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 快速追赶的速度由原配置决定；动作参考不得承诺新的冲刺、闪现、攀墙或额外爪击次数。"
+  },
+  {
+    "id": "ABN_N03_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_big_dog_idle_01",
+    "displayName": "N03 大狗 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 五物中最厚重、横向最宽；背低肩厚，四足犬形的侧面读法，钝重口鼻向前突出；一只折耳一只竖耳，锈红项圈和旧金小牌。毛色灰褐绿 #6c7065、深影 #484d47、口鼻米灰 #b6ae8b。脚掌宽而不尖，不能画成长腿狼。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 大狗 室内未作业形态",
+    "referenceIds": [
+      "REF_N03_CALM"
+    ],
+    "canvas": "1536 × 1024 px（横向宽体）",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "根节点为身体支撑投影的地面中心；母版 (768, 896)，朝右；口鼻可前伸但不移动根。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 大狗；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。大狗现有 1.06 显示比例和宽体保留；吠叫/击退与联动不由图片触发。主影与前导影由引擎复用同一主体轮廓。"
+  },
+  {
+    "id": "ABN_N03_02",
+    "priority": "P1",
+    "category": "五物/工作参考",
+    "name": "abn_big_dog_work_reference_01",
+    "displayName": "N03 大狗 工作回应参考",
+    "state": "CONTAINED / WORKING",
+    "requirements": "以平静狗形做前爪轻抬/放下、嘴微张吐舌/闭合的四个独立单姿；胸背缓慢呼吸。抬爪与大口鼻同时可读，另一脚稳承重；不使用失控巨口和吼叫冲击波。 共用一个工作回应循环，不分别制造观察/互动/安抚三套收容物动画。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "大狗 平静定稿与当前 working 分支",
+    "referenceIds": [
+      "REF_N03_CALM"
+    ],
+    "canvas": "1536 × 1024 px，每张单独姿势/零件，共用 (768, 896) 根",
+    "export": "4 个独立透明 RGBA PNG，每张仅一个完整角色的一个姿势；不拼 sheet，不放文字和其他对照姿。",
+    "pivot": "每个单姿文件相同脚底根节点和尺度；局部挂点另用文本记录，不画进 PNG。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N03_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03（m.working / m.beat）",
+    "acceptance": "工作回应与静止待机从动作幅度可辨；仍保持平静脸形；无额外角色、产能图标或新攻击动作。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 working 只在员工已抵达且工作为 EXECUTING 时成立；动作本身不结算产能。"
+  },
+  {
+    "id": "ABN_N03_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_big_dog_breach_01",
+    "displayName": "N03 大狗 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 保持重背、厚腿和项圈；口部扩大为向前凸出的巨大黑色空腔，上下颌张开，边缘稀疏大三角齿。头前的咬合轮廓比常态明显更宽更高；口内以深墨平涂，不画写实咽喉。前导影仅另层视觉示意，不能成为第二只狗。",
+    "referenceObject": "当前 大狗 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N03_CALM",
+      "REF_N03_BREACH"
+    ],
+    "canvas": "1536 × 1024 px（横向宽体）",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "根节点为身体支撑投影的地面中心；母版 (768, 896)，朝右；口鼻可前伸但不移动根。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N03_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。大狗现有 1.06 显示比例和宽体保留；吠叫/击退与联动不由图片触发。主影与前导影由引擎复用同一主体轮廓。"
+  },
+  {
+    "id": "ABN_N03_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_big_dog_parts_01",
+    "displayName": "N03 大狗 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干 1、头含双耳 1、平静口鼻 1、失控上颌 1、失控下颌 1、舌 1、可见前腿 1、可见后腿 1、尾 1、项圈与牌 1，共 10 件。上下颌独立，牙齿可并入对应颌，不单颗拆分。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "大狗 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N03_CALM",
+      "REF_N03_BREACH"
+    ],
+    "canvas": "1536 × 1024 px（横向宽体） 装配母版；全部零件沿用原坐标透明导出",
+    "export": "10 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "根节点为身体支撑投影的地面中心；母版 (768, 896)，朝右；口鼻可前伸但不移动根。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 10,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N03_01",
+      "ABN_N03_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03",
+    "acceptance": "独立 PNG 恰为 10 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  {
+    "id": "ABN_N03_05",
+    "priority": "P0",
+    "category": "五物/战斗参考",
+    "name": "abn_big_dog_combat_reference_01",
+    "displayName": "N03 大狗 失控行动与攻击参考",
+    "state": "MOVING / WINDUP / IMPACT / HURT",
+    "requirements": "分别生成六个独立单姿：缓慢接近的左右步态 2 姿、吠叫蓄力收胸张颌 1 姿、巨口吠叫释放 1 姿、恢复闭颌 1 姿、受击缩肩 1 姿。前摇与释放的颌开度、胸背伸缩明确；实际范围由引擎绘制，不烘焙圆形圈、锥形范围或额外冲击弹。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "大狗 已批准失控定稿与实际 attackPhase/impactRemaining/hurt",
+    "referenceIds": [
+      "REF_N03_CALM",
+      "REF_N03_BREACH"
+    ],
+    "canvas": "1536 × 1024 px，每张单独姿势/零件，共用 (768, 896) 根",
+    "export": "6 个独立透明 RGBA PNG，每张仅一个完整角色姿势；不拼 sheet、无文字、无重复实体/残影。",
+    "pivot": "每个主要姿势保持同一脚底注册点；行走仅示足部接触关系，不烘焙移动距离。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N03_03",
+      "ABN_N03_04"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03（windup / impact / walk / hurt）",
+    "acceptance": "可清楚判断准备、前摇、释放、收势；受击与主动攻击不混淆；前摇不靠字幕才成立。参考不承诺未制作的动画帧数。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 大狗现有 1.06 显示比例和宽体保留；吠叫/击退与联动不由图片触发。主影与前导影由引擎复用同一主体轮廓。"
+  },
+  {
+    "id": "ABN_N04_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_dingdong_chicken_idle_01",
+    "displayName": "N04 叮咚鸡 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 旧纸白蛋形躯干，细长的黄褐鸡腿、别扭尾羽；不对称锈红鸡冠、角形短嘴、小肉垂。腹前嵌一只圆钟，表盘仅四个短刻线、两根粗细不同指针，无数字文字。颜色为纸白 #d7d0af、灰绿影 #a6aa94、锈红小面积点缀。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 叮咚鸡 室内未作业形态",
+    "referenceIds": [
+      "REF_N04_CALM"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 叮咚鸡；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。实际失效 AI 是 STATIONARY_BROADCAST，速度为 0；不申请追赶/巡游动画。广播残影不是分身，不增加 ID、点击区或伤害。"
+  },
+  {
+    "id": "ABN_N04_02",
+    "priority": "P1",
+    "category": "五物/工作参考",
+    "name": "abn_dingdong_chicken_work_reference_01",
+    "displayName": "N04 叮咚鸡 工作回应参考",
+    "state": "CONTAINED / WORKING",
+    "requirements": "以平静鸡形做单翅举起/落下、头部轻点/回正的四个独立单姿；腹钟指针随对应姿势分别示意两个角度，保持离散跳动。细腿仍立在原点，不能画啄食设施地面、奔跑或召唤广播机器人。 共用一个工作回应循环，不分别制造观察/互动/安抚三套收容物动画。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "叮咚鸡 平静定稿与当前 working 分支",
+    "referenceIds": [
+      "REF_N04_CALM"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "4 个独立透明 RGBA PNG，每张仅一个完整角色的一个姿势；不拼 sheet，不放文字和其他对照姿。",
+    "pivot": "每个单姿文件相同脚底根节点和尺度；局部挂点另用文本记录，不画进 PNG。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N04_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04（m.working / m.beat）",
+    "acceptance": "工作回应与静止待机从动作幅度可辨；仍保持平静脸形；无额外角色、产能图标或新攻击动作。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 working 只在员工已抵达且工作为 EXECUTING 时成立；动作本身不结算产能。"
+  },
+  {
+    "id": "ABN_N04_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_dingdong_chicken_breach_01",
+    "displayName": "N04 叮咚鸡 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脖颈/头部拉长，喙向外张开形成明显黑口，翅膀高举、腹钟外壳略大。只绘制清晰单一主体；左右淡薄错位轮廓和广播干扰线保留为引擎效果，不烘焙进透明 PNG，也不画多只鸡。",
+    "referenceObject": "当前 叮咚鸡 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N04_CALM",
+      "REF_N04_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N04_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。实际失效 AI 是 STATIONARY_BROADCAST，速度为 0；不申请追赶/巡游动画。广播残影不是分身，不增加 ID、点击区或伤害。"
+  },
+  {
+    "id": "ABN_N04_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_dingdong_chicken_parts_01",
+    "displayName": "N04 叮咚鸡 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干 1、头颈 1、鸡冠 1、上喙 1、下喙与肉垂 1、可见翅 1、尾羽 1、双腿含足 2、钟壳与无字表盘 1、长指针 1、短指针 1，共 12 件。钟心挂点固定，表盘和两针分开。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "叮咚鸡 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N04_CALM",
+      "REF_N04_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N04_01",
+      "ABN_N04_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  {
+    "id": "ABN_N04_05",
+    "priority": "P0",
+    "category": "五物/战斗参考",
+    "name": "abn_dingdong_chicken_combat_reference_01",
+    "displayName": "N04 叮咚鸡 失控行动与攻击参考",
+    "state": "WINDUP / BROADCAST / IMPACT / HURT",
+    "requirements": "分别生成五个独立单姿：静止准备、广播蓄力抬翅/张嘴、广播释放、收势、受击短顿。重影与断线扩张保留为引擎效果，不烘焙入主体 PNG；不画移动攻击步态。核心动作始终原地，脚底和钟心位置不漂；广播覆盖是玩法判定，素材不带跨楼层能量束。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "叮咚鸡 已批准失控定稿与实际 attackPhase/impactRemaining/hurt",
+    "referenceIds": [
+      "REF_N04_CALM",
+      "REF_N04_BREACH"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "5 个独立透明 RGBA PNG，每张仅一个完整角色姿势；不拼 sheet、无文字、无重复实体/残影。",
+    "pivot": "每个主要姿势保持同一脚底注册点；行走仅示足部接触关系，不烘焙移动距离。",
+    "quantity": 5,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N04_03",
+      "ABN_N04_04"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04（windup / impact / walk / hurt）",
+    "acceptance": "可清楚判断准备、前摇、释放、收势；受击与主动攻击不混淆；前摇不靠字幕才成立。参考不承诺未制作的动画帧数。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 实际失效 AI 是 STATIONARY_BROADCAST，速度为 0；不申请追赶/巡游动画。广播残影不是分身，不增加 ID、点击区或伤害。"
+  },
+  {
+    "id": "ABN_N05_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_gugu_gaga_idle_01",
+    "displayName": "N05 咕咕嘎嘎 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 冷灰蓝企鹅轮廓，梨形大身、略小的偏头，旧纸白不对称腹面和脸块；不等大眼、小角形喙、短鳍、滑稽宽扁双足。灰青围巾两端长短不一；深体 #394950、淡腹 #d9d8c4、围巾 #7faaa9。不要礼帽、可爱红领结或写实羽毛。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 咕咕嘎嘎 室内未作业形态",
+    "referenceIds": [
+      "REF_N05_CALM"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 咕咕嘎嘎；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。PATROL_AOE 的移动和范围判定沿用现有模拟；不画冻结、减速、召唤冰块等装备/技能外的新功能。扫描线、残影和受控标记由引擎生成。"
+  },
+  {
+    "id": "ABN_N05_02",
+    "priority": "P1",
+    "category": "五物/工作参考",
+    "name": "abn_gugu_gaga_work_reference_01",
+    "displayName": "N05 咕咕嘎嘎 工作回应参考",
+    "state": "CONTAINED / WORKING",
+    "requirements": "以平静企鹅形做双鳍抬起/落下、喙部点头/回正的四个独立单姿；胖身轻压缩，围巾短端跟随小幅摆动。保持扁足稳定，工作是滑稽回应，不画冰魔法或哭闹伤害波。 共用一个工作回应循环，不分别制造观察/互动/安抚三套收容物动画。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "咕咕嘎嘎 平静定稿与当前 working 分支",
+    "referenceIds": [
+      "REF_N05_CALM"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "4 个独立透明 RGBA PNG，每张仅一个完整角色的一个姿势；不拼 sheet，不放文字和其他对照姿。",
+    "pivot": "每个单姿文件相同脚底根节点和尺度；局部挂点另用文本记录，不画进 PNG。",
+    "quantity": 4,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N05_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05（m.working / m.beat）",
+    "acceptance": "工作回应与静止待机从动作幅度可辨；仍保持平静脸形；无额外角色、产能图标或新攻击动作。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 working 只在员工已抵达且工作为 EXECUTING 时成立；动作本身不结算产能。"
+  },
+  {
+    "id": "ABN_N05_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_gugu_gaga_breach_01",
+    "displayName": "N05 咕咕嘎嘎 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 躯干纵向拉伸，空眼更大且左右不对称，鳍和围巾位置产生少量断帧感；中心企鹅保持完整清晰；冷灰青偏移轮廓与横向扫描断线保留为引擎效果，不烘焙进透明 PNG，不画透明幽灵或多只企鹅。",
+    "referenceObject": "当前 咕咕嘎嘎 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_N05_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N05_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。PATROL_AOE 的移动和范围判定沿用现有模拟；不画冻结、减速、召唤冰块等装备/技能外的新功能。扫描线、残影和受控标记由引擎生成。"
+  },
+  {
+    "id": "ABN_N05_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_gugu_gaga_parts_01",
+    "displayName": "N05 咕咕嘎嘎 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干含腹块 1、头含脸块 1、常态眼组 1、空眼组 1、喙 1、左右鳍 2、左右扁足 2、围巾领圈 1、围巾长短端 2，共 12 件。腹块可并入躯干，脸块可并入头；不逐块碎拆。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "咕咕嘎嘎 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_N05_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N05_01",
+      "ABN_N05_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  {
+    "id": "ABN_N05_05",
+    "priority": "P0",
+    "category": "五物/战斗参考",
+    "name": "abn_gugu_gaga_combat_reference_01",
+    "displayName": "N05 咕咕嘎嘎 失控行动与攻击参考",
+    "state": "MOVING / WINDUP / IMPACT / HURT",
+    "requirements": "分别生成六个独立单姿：慢速巡游左右支撑 2 姿、哭闹蓄力抬鳍 1 姿、释放时伸身/张喙 1 姿、缩回 1 姿、受击短顿 1 姿。用中心主体的伸缩与鳍角度区别阶段，冷色错帧只作辅助，不代替真正的攻击姿态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "referenceObject": "咕咕嘎嘎 已批准失控定稿与实际 attackPhase/impactRemaining/hurt",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_N05_BREACH"
+    ],
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "export": "6 个独立透明 RGBA PNG，每张仅一个完整角色姿势；不拼 sheet、无文字、无重复实体/残影。",
+    "pivot": "每个主要姿势保持同一脚底注册点；行走仅示足部接触关系，不烘焙移动距离。",
+    "quantity": 6,
+    "deliveryType": "动作参考",
+    "dependsOn": [
+      "ABN_N05_03",
+      "ABN_N05_04"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05（windup / impact / walk / hurt）",
+    "acceptance": "可清楚判断准备、前摇、释放、收势；受击与主动攻击不混淆；前摇不靠字幕才成立。参考不承诺未制作的动画帧数。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此项是动画制作独立参考图组，不是已完成的 sprite 动画或图集；拆件、骨骼装配和循环制作仍需另行接入。动作只能读取模拟 time/stride/状态，暂停冻结。 PATROL_AOE 的移动和范围判定沿用现有模拟；不画冻结、减速、召唤冰块等装备/技能外的新功能。扫描线、残影和受控标记由引擎生成。"
+  },
+  {
+    "id": "EQ_W01",
+    "priority": "P1",
+    "category": "装备/专属武器",
+    "name": "weapon_nailong_repeater_01",
+    "displayName": "W01 复读器",
+    "state": "手持/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 金旧黄的不规则块状机头，短握柄，前面三道深墨栅格；轮廓略向前倾，不画成枪管或收音机背包。大小以员工单手可握为准。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "referenceObject": "当前 W01 手持轮廓、员工手掌，以及 N01 的色彩/形态来源",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N01_CALM"
+    ],
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "export": "1 个透明 RGBA PNG，不含员工手或背景；另附握点与默认朝向信息。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N01_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawWeapon(W01)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: weapons[id=W01]",
+    "acceptance": "单看黑色剪影能与另四件武器区分；握柄无遮挡且手持不穿模；缩小后主要轮廓清楚；没有烘焙伤害颜色特效或攻击范围。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "notes": "WHITE 伤害；只用纸白/旧金配色提示来源，不绘制混乱、复读或分身被动。 装备仅沿用现有数值；图标可从批准的透明件裁取，不再申请重复图标图。"
+  },
+  {
+    "id": "EQ_W02",
+    "priority": "P1",
+    "category": "装备/专属武器",
+    "name": "weapon_maodie_claw_01",
+    "displayName": "W02 哈气爪",
+    "state": "手持/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 锈色手背套与三根长而弯的浅色爪，爪尖参差、根部包住手背；侧视能认清三爪，掌心/握点留空。不要猫爪手套、毛绒整臂或五指刀。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "referenceObject": "当前 W02 手持轮廓、员工手掌，以及 N02 的色彩/形态来源",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N02_CALM"
+    ],
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "export": "1 个透明 RGBA PNG，不含员工手或背景；另附握点与默认朝向信息。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N02_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawWeapon(W02)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: weapons[id=W02]",
+    "acceptance": "单看黑色剪影能与另四件武器区分；握柄无遮挡且手持不穿模；缩小后主要轮廓清楚；没有烘焙伤害颜色特效或攻击范围。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "notes": "RED 伤害；爪仅是武器外形，不附带流血、狂暴、加速或猫形变身。 装备仅沿用现有数值；图标可从批准的透明件裁取，不再申请重复图标图。"
+  },
+  {
+    "id": "EQ_W03",
+    "priority": "P1",
+    "category": "装备/专属武器",
+    "name": "weapon_big_dog_barker_01",
+    "displayName": "W03 吠声器",
+    "state": "手持/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿色宽口喇叭，前口明显外扩、内部墨黑，后端收窄连接短握柄；厚重钝边、少量铁锈，形成大狗宽口来源。不要现代冲锋枪或音响背包。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "referenceObject": "当前 W03 手持轮廓、员工手掌，以及 N03 的色彩/形态来源",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N03_CALM"
+    ],
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "export": "1 个透明 RGBA PNG，不含员工手或背景；另附握点与默认朝向信息。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N03_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawWeapon(W03)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: weapons[id=W03]",
+    "acceptance": "单看黑色剪影能与另四件武器区分；握柄无遮挡且手持不穿模；缩小后主要轮廓清楚；没有烘焙伤害颜色特效或攻击范围。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "notes": "RED 伤害；武器不附带大狗本体的吼叫击退，不画击退箭头或范围波。 装备仅沿用现有数值；图标可从批准的透明件裁取，不再申请重复图标图。"
+  },
+  {
+    "id": "EQ_W04",
+    "priority": "P1",
+    "category": "装备/专属武器",
+    "name": "weapon_dingdong_notification_horn_01",
+    "displayName": "W04 通知喇叭",
+    "state": "手持/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 旧纸米色与锈红的钟铃/通知扩音器混合小器件，轮廓是口沿稍宽的扁钟壳、短柄和小天线/铃舌；可见小块栅格但不写字。与 W03 的宽深筒喇叭明确不同。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "referenceObject": "当前 W04 手持轮廓、员工手掌，以及 N04 的色彩/形态来源",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N04_CALM"
+    ],
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "export": "1 个透明 RGBA PNG，不含员工手或背景；另附握点与默认朝向信息。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N04_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawWeapon(W04)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: weapons[id=W04]",
+    "acceptance": "单看黑色剪影能与另四件武器区分；握柄无遮挡且手持不穿模；缩小后主要轮廓清楚；没有烘焙伤害颜色特效或攻击范围。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "notes": "BLACK 伤害；不产生广播中断、全员通知增益、召唤或叮咚鸡联动。 装备仅沿用现有数值；图标可从批准的透明件裁取，不再申请重复图标图。"
+  },
+  {
+    "id": "EQ_W05",
+    "priority": "P1",
+    "category": "装备/专属武器",
+    "name": "weapon_gugu_resonator_01",
+    "displayName": "W05 嘎嘎共振器",
+    "state": "手持/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 浅冷蓝椭圆共振头，中央一条深墨锯齿裂口，细短握柄；外形紧凑、有歪斜刻线，边缘不发强光。与 W01 方块头、W03/W04 喇叭口区别。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "referenceObject": "当前 W05 手持轮廓、员工手掌，以及 N05 的色彩/形态来源",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N05_CALM"
+    ],
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "export": "1 个透明 RGBA PNG，不含员工手或背景；另附握点与默认朝向信息。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "quantity": 1,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N05_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawWeapon(W05)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: weapons[id=W05]",
+    "acceptance": "单看黑色剪影能与另四件武器区分；握柄无遮挡且手持不穿模；缩小后主要轮廓清楚；没有烘焙伤害颜色特效或攻击范围。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "notes": "PALE 伤害；不附带冻结、减速、生命窃取或护盾。 装备仅沿用现有数值；图标可从批准的透明件裁取，不再申请重复图标图。"
+  },
+  {
+    "id": "EQ_A01",
+    "priority": "P1",
+    "category": "装备/专属防具",
+    "name": "armor_nailong_uniform_parts_01",
+    "displayName": "A01 奶龙防护服",
+    "state": "穿戴/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配旧金/奶油小面积肩章、短胸襟和不对称圆钝缝边；轮廓轻软，引用奶龙色群但不变成恐龙套装。 制服躯干覆盖层 1、近侧圆钝肩片 1、远侧肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工制服共用基型、drawHuman A01 衣饰和 N01 主色群",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N01_CALM"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "export": "3 个独立透明 RGBA PNG + 同坐标装配说明，不含人体和完整员工复制图；不得把全部部件画在一张素材 sheet。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "quantity": 3,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N01_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（armorId=A01）/ EQUIPMENT；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: armors[id=A01]",
+    "acceptance": "独立件数为 3；装上同一员工骨架仍约 66 世界像素高；六发型和五武器可自由搭配；衣饰区别通过轮廓与小面积配色读取，不遮住手、面部或状态信息。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "notes": "防具只对应 RED/WHITE/BLACK/PALE 抗性倍率，不能增加装备被动。围巾/披带只是外观，无减速、减伤特效或新状态。图标如需可从装配预览裁取，不另计重复生成。"
+  },
+  {
+    "id": "EQ_A02",
+    "priority": "P1",
+    "category": "装备/专属防具",
+    "name": "armor_maodie_uniform_parts_01",
+    "displayName": "A02 耄耋防护服",
+    "state": "穿戴/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工制服共用基型、drawHuman A02 衣饰和 N02 主色群",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N02_CALM"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "export": "5 个独立透明 RGBA PNG + 同坐标装配说明，不含人体和完整员工复制图；不得把全部部件画在一张素材 sheet。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "quantity": 5,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（armorId=A02）/ EQUIPMENT；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: armors[id=A02]",
+    "acceptance": "独立件数为 5；装上同一员工骨架仍约 66 世界像素高；六发型和五武器可自由搭配；衣饰区别通过轮廓与小面积配色读取，不遮住手、面部或状态信息。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "notes": "防具只对应 RED/WHITE/BLACK/PALE 抗性倍率，不能增加装备被动。围巾/披带只是外观，无减速、减伤特效或新状态。图标如需可从装配预览裁取，不另计重复生成。"
+  },
+  {
+    "id": "EQ_A03",
+    "priority": "P1",
+    "category": "装备/专属防具",
+    "name": "armor_big_dog_uniform_parts_01",
+    "displayName": "A03 大狗防护服",
+    "state": "穿戴/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿/灰褐厚胸襟呈简短盒形，明显方形护领，厚但不夸张的双肩；宽块轮廓比其他套装更稳重，员工身高和四肢长度不变。 躯干胸襟层 1、方形护领 1、近/远肩片 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工制服共用基型、drawHuman A03 衣饰和 N03 主色群",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N03_CALM"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "export": "4 个独立透明 RGBA PNG + 同坐标装配说明，不含人体和完整员工复制图；不得把全部部件画在一张素材 sheet。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "quantity": 4,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N03_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（armorId=A03）/ EQUIPMENT；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: armors[id=A03]",
+    "acceptance": "独立件数为 4；装上同一员工骨架仍约 66 世界像素高；六发型和五武器可自由搭配；衣饰区别通过轮廓与小面积配色读取，不遮住手、面部或状态信息。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "notes": "防具只对应 RED/WHITE/BLACK/PALE 抗性倍率，不能增加装备被动。围巾/披带只是外观，无减速、减伤特效或新状态。图标如需可从装配预览裁取，不另计重复生成。"
+  },
+  {
+    "id": "EQ_A04",
+    "priority": "P1",
+    "category": "装备/专属防具",
+    "name": "armor_dingdong_uniform_parts_01",
+    "displayName": "A04 叮咚鸡防护服",
+    "state": "穿戴/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 低饱和灰绿制服配旧纸米色/暗紫灰边条，肩部有圆形小扬声器/钟面装饰轮廓，胸襟短直；装饰只刻线不画可读表盘数字或信号灯。 躯干覆盖层 1、近侧圆形肩片 1、远侧圆形肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工制服共用基型、drawHuman A04 衣饰和 N04 主色群",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N04_CALM"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "export": "3 个独立透明 RGBA PNG + 同坐标装配说明，不含人体和完整员工复制图；不得把全部部件画在一张素材 sheet。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "quantity": 3,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N04_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（armorId=A04）/ EQUIPMENT；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: armors[id=A04]",
+    "acceptance": "独立件数为 3；装上同一员工骨架仍约 66 世界像素高；六发型和五武器可自由搭配；衣饰区别通过轮廓与小面积配色读取，不遮住手、面部或状态信息。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "notes": "防具只对应 RED/WHITE/BLACK/PALE 抗性倍率，不能增加装备被动。围巾/披带只是外观，无减速、减伤特效或新状态。图标如需可从装配预览裁取，不另计重复生成。"
+  },
+  {
+    "id": "EQ_A05",
+    "priority": "P1",
+    "category": "装备/专属防具",
+    "name": "armor_gugu_uniform_parts_01",
+    "displayName": "A05 咕咕嘎嘎防护服",
+    "state": "穿戴/通用",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "员工制服共用基型、drawHuman A05 衣饰和 N05 主色群",
+    "referenceIds": [
+      "REF_STAFF",
+      "REF_N05_CALM"
+    ],
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "export": "5 个独立透明 RGBA PNG + 同坐标装配说明，不含人体和完整员工复制图；不得把全部部件画在一张素材 sheet。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "quantity": 5,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/actors.ts :: drawHuman（armorId=A05）/ EQUIPMENT；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/equipment.json :: armors[id=A05]",
+    "acceptance": "独立件数为 5；装上同一员工骨架仍约 66 世界像素高；六发型和五武器可自由搭配；衣饰区别通过轮廓与小面积配色读取，不遮住手、面部或状态信息。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "notes": "防具只对应 RED/WHITE/BLACK/PALE 抗性倍率，不能增加装备被动。围巾/披带只是外观，无减速、减伤特效或新状态。图标如需可从装配预览裁取，不另计重复生成。"
+  }
+]

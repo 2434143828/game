@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_weapon_nailong_held.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8d4bbe07-5cff-42c4-adaa-abb2344949e0.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_weapon_nailong_held.png",
+    "scope": "equipment",
+    "displayName": "复读器",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：复读器。只画本张：暖黄/奶白的现代圆角手持复读器，短身、正向圆形扬声格栅、小型无字重复箭头标识、下方实握把；器身饱满轻巧，轮廓与吹风机/枪械明显区分，侧向朝右，单件器械完整可握持；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代机构专用手持器械，干净色块和少量明暗面，克制轮廓。暖黄/奶白的现代圆角手持复读器，短身、正向圆形扬声格栅、小型无字重复箭头标识、下方实握把；器身饱满轻巧，轮廓与吹风机/枪械明显区分 小尺寸先靠轮廓区分5种器械，再用对应收容物色点缀；透明镂空正常，主体不能半透明。\n参考对象：现代便携音频设备、圆角实验室手持仪器和舒适实握把；暖黄/奶白的现代圆角手持复读器，短身、正向圆形扬声格栅、小型无字重复箭头标识、下方实握把；器身饱满轻巧，轮廓与吹风机/枪械明显区分 以新版员工手掌尺寸验证握持，不借用旧锈蚀、墨线排线或生物武器造型。\n建议制作尺寸：1024×512 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画魔法光束、火焰、弹药、光环、状态图标或文字面板；不把手画进武器，不把武器图当技能功能说明。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 复读器. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_nailong_torso.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3f00b98c-1526-47e1-89f5-07e13cd265a6.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_nailong_torso.png",
+    "scope": "equipment",
+    "displayName": "躯干层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：躯干层。只画本张：蓝灰短制服躯干、奶白领边和暖黄圆角胸块；只有肩根接合余量，无袖子、头或四肢；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 本组是3张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 躯干层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_nailong_shoulder_near.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8edee043-21ae-4b02-9484-0ea21b147b60.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_nailong_shoulder_near.png",
+    "scope": "equipment",
+    "displayName": "近肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：近肩层。只画本张：一块近侧暖黄/奶白柔软短肩层，克制圆角形，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 本组是3张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 近肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_nailong_shoulder_far.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2ba6b967-be03-4485-bfe9-777f132e1aba.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_nailong_shoulder_far.png",
+    "scope": "equipment",
+    "displayName": "远肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：远肩层。只画本张：一块远侧暖黄/奶白柔软短肩层，透视略窄，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 本组是3张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰机构短制服，奶白柔软领边、暖黄圆角胸部识别块与短肩层；像舒适内容防护工作服，不是充气怪物皮 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 远肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_weapon_maodie_held.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ea26d869-22c2-4baa-b239-9eca375ded2a.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_weapon_maodie_held.png",
+    "scope": "equipment",
+    "displayName": "哈气爪",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：哈气爪。只画本张：暖灰机身与脏粉衬垫的现代三指爪形手持防护器，三枚短而圆钝的工具爪指向右，掌背壳与手握区域明确；是机构器械，不是生物断爪或巨大尖刀，侧向朝右，单件器械完整可握持；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代机构专用手持器械，干净色块和少量明暗面，克制轮廓。暖灰机身与脏粉衬垫的现代三指爪形手持防护器，三枚短而圆钝的工具爪指向右，掌背壳与手握区域明确；是机构器械，不是生物断爪或巨大尖刀 小尺寸先靠轮廓区分5种器械，再用对应收容物色点缀；透明镂空正常，主体不能半透明。\n参考对象：现代便携音频设备、圆角实验室手持仪器和舒适实握把；暖灰机身与脏粉衬垫的现代三指爪形手持防护器，三枚短而圆钝的工具爪指向右，掌背壳与手握区域明确；是机构器械，不是生物断爪或巨大尖刀 以新版员工手掌尺寸验证握持，不借用旧锈蚀、墨线排线或生物武器造型。\n建议制作尺寸：1024×512 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画魔法光束、火焰、弹药、光环、状态图标或文字面板；不把手画进武器，不把武器图当技能功能说明。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 哈气爪. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_maodie_torso_collar.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-33312e8b-27f0-4eba-8825-ff0828d192ec.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_maodie_torso_collar.png",
+    "scope": "equipment",
+    "displayName": "躯干与短领",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：躯干与短领。只画本张：蓝灰短制服躯干和暖灰短立领，少量脏粉边线，肩根余量完整，无整臂、头或围领垂片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 本组是5张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 躯干与短领. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_maodie_scarf_long.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2428094c-2480-4a78-badb-343a21ec6b9d.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_maodie_scarf_long.png",
+    "scope": "equipment",
+    "displayName": "围领长垂片",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：围领长垂片。只画本张：一条较长但不到腰的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 本组是5张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 围领长垂片. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_maodie_shoulder_near.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1ca0d0c3-2a10-4af4-a221-357ee7308375.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_maodie_shoulder_near.png",
+    "scope": "equipment",
+    "displayName": "近肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：近肩层。只画本张：一块近侧脏粉/暖灰短肩层，简洁利落边角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 本组是5张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 近肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_maodie_shoulder_far.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b4b9692b-dfe1-4dab-a2f0-a93dd0f37b0e.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_maodie_shoulder_far.png",
+    "scope": "equipment",
+    "displayName": "远肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：远肩层。只画本张：一块远侧脏粉/暖灰短肩层，略窄轮廓，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 本组是5张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 远肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_maodie_scarf_short.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2fdc92f3-773b-48d6-a3cf-cbaf76035175.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_maodie_scarf_short.png",
+    "scope": "equipment",
+    "displayName": "围领短垂片",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：围领短垂片。只画本张：一条较短的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 本组是5张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服，暖灰短立领、脏粉小肩片和两片很短的柔软围领垂带；不遮脸、不盖手，表现情绪观测套装的辨识色而非攻击强化 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 围领短垂片. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_weapon_big_dog_held.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-69b577b3-f80e-4412-a908-73ee1e7ce920.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_weapon_big_dog_held.png",
+    "scope": "equipment",
+    "displayName": "吠声器",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：吠声器。只画本张：红橙机壳与粉白扬声口的便携音频吠声器，宽圆前口、紧凑后部、下方握把；像现代直播扩音器，前端朝右，没有狗牙嘴或攻击弹药造型，侧向朝右，单件器械完整可握持；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代机构专用手持器械，干净色块和少量明暗面，克制轮廓。红橙机壳与粉白扬声口的便携音频吠声器，宽圆前口、紧凑后部、下方握把；像现代直播扩音器，前端朝右，没有狗牙嘴或攻击弹药造型 小尺寸先靠轮廓区分5种器械，再用对应收容物色点缀；透明镂空正常，主体不能半透明。\n参考对象：现代便携音频设备、圆角实验室手持仪器和舒适实握把；红橙机壳与粉白扬声口的便携音频吠声器，宽圆前口、紧凑后部、下方握把；像现代直播扩音器，前端朝右，没有狗牙嘴或攻击弹药造型 以新版员工手掌尺寸验证握持，不借用旧锈蚀、墨线排线或生物武器造型。\n建议制作尺寸：1024×512 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画魔法光束、火焰、弹药、光环、状态图标或文字面板；不把手画进武器，不把武器图当技能功能说明。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 吠声器. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_torso.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-95e40583-36d7-4071-831c-a959d8622a3e.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_big_dog_torso.png",
+    "scope": "equipment",
+    "displayName": "躯干层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：躯干层。只画本张：蓝灰短制服躯干与红橙边线，胸前小块粉白识别面，无领圈、整臂、头或肩片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 本组是4张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 躯干层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_collar.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-63232db2-9ee6-4120-8dad-a65f774e3147.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_big_dog_collar.png",
+    "scope": "equipment",
+    "displayName": "独立短领",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：独立短领。只画本张：一个粉白现代短领环，圆角舒适、前后遮挡边界清楚，无躯干或头；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 本组是4张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 独立短领. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_shoulder_near.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6eb87f32-8d39-4eb9-a7b0-a67dd1487401.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_big_dog_shoulder_near.png",
+    "scope": "equipment",
+    "displayName": "近肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：近肩层。只画本张：一块近侧红橙/粉白短肩层，结构轻便，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 本组是4张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 近肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_weapon_dingdong_held.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-465815ca-ee55-4b1c-943a-c9b2ee3a36b0.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_weapon_dingdong_held.png",
+    "scope": "equipment",
+    "displayName": "通知喇叭",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：通知喇叭。只画本张：明黄/橙黄机壳的现代通知喇叭，短喇叭口朝右，小块提示红按钮和清楚握把，轮廓比吠声器更窄且有一块小型圆角通知面；无铜管乐器纹饰或机械钟，侧向朝右，单件器械完整可握持；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代机构专用手持器械，干净色块和少量明暗面，克制轮廓。明黄/橙黄机壳的现代通知喇叭，短喇叭口朝右，小块提示红按钮和清楚握把，轮廓比吠声器更窄且有一块小型圆角通知面；无铜管乐器纹饰或机械钟 小尺寸先靠轮廓区分5种器械，再用对应收容物色点缀；透明镂空正常，主体不能半透明。\n参考对象：现代便携音频设备、圆角实验室手持仪器和舒适实握把；明黄/橙黄机壳的现代通知喇叭，短喇叭口朝右，小块提示红按钮和清楚握把，轮廓比吠声器更窄且有一块小型圆角通知面；无铜管乐器纹饰或机械钟 以新版员工手掌尺寸验证握持，不借用旧锈蚀、墨线排线或生物武器造型。\n建议制作尺寸：1024×512 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画魔法光束、火焰、弹药、光环、状态图标或文字面板；不把手画进武器，不把武器图当技能功能说明。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 通知喇叭. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_shoulder_far.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b0e667fc-ac48-4fe4-b9d0-2da043e827ed.png",
+    "candidate": "art-production/nm-v2/candidates/equipment/nm_v2_armor_big_dog_shoulder_far.png",
+    "scope": "equipment",
+    "displayName": "远肩层",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：远肩层。只画本张：一块远侧红橙/粉白短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 本组是4张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服、红橙边线、粉白独立短领和简洁肩层；带音频工作人员的舒适防护感，无主播文字、数值显示或重型装甲 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 远肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent."
+  }
+]

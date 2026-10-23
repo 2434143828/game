@@ -1,0 +1,102 @@
+[
+  {
+    "filename": "nm_v2_env_room_shell_corner_top_right.png",
+    "displayName": "房框右上切角",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框右上切角。本次只画512×512的右上切角金属框，上梁接口向左、侧壁接口向下，冷白内沿朝左下；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-44dfd3ab-7faf-408e-9f26-83313de1fe7d.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_corner_bottom_left.png",
+    "displayName": "房框左下直角",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框左下直角。本次只画512×512的左下直角金属框，接口向右及向上，不画顶角切角；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-9395c108-25e5-44ce-8bda-bbf8ae9d63e8.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_corner_bottom_right.png",
+    "displayName": "房框右下直角",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框右下直角。本次只画512×512的右下直角金属框，接口向左及向上，不画顶角切角；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2b15dae2-98ec-4314-92b8-d2fa7639c726.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_beam_top.png",
+    "displayName": "房框顶部横梁",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框顶部横梁。本次只画1024×256的顶部直梁，内沿向下，左右同截面接口；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×256 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-72665de4-a2a8-429f-8a86-a2caf6641c31.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_beam_bottom.png",
+    "displayName": "房框底部横梁",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框底部横梁。本次只画1024×256的底部外壳直梁，内沿向上，不画可行走表面；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×256 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-c7849e40-1851-4443-ac8e-660ef6065b80.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_wall_left.png",
+    "displayName": "房框左侧竖壁",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框左侧竖壁。本次只画256×1024的左侧直壁，内沿向右，上下同截面接口，不含门洞；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：256×1024 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f6825515-940f-44b1-bfc5-b28b11ab0903.png"
+  },
+  {
+    "filename": "nm_v2_env_room_shell_wall_right.png",
+    "displayName": "房框右侧竖壁",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：房框右侧竖壁。本次只画256×1024的右侧直壁，内沿向左，上下同截面接口，不含门洞；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\n参考对象：现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：256×1024 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": true,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1b0dfe37-9ead-45da-b06d-34294bc84829.png"
+  },
+  {
+    "filename": "nm_v2_env_wall_cladding_upper_neutral.png",
+    "displayName": "中性冷白上墙",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：中性冷白上墙。本次只画1024×1024的冷白干净上墙平铺纹理，细蓝灰板缝，四边连续，不画护墙板；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。四套配色统一板缝尺度：neutral冷白/金属灰、clinical白蓝、slate蓝灰、soft灰白微暖。上墙中部留净空，护墙板较暗；不得把五异常的高饱和主色铺满整墙。\n参考对象：现代医院与数字研究机构的洁净墙板、浅蓝护墙板及金属踢脚护板，参考统一板缝、分区层次和干净留白。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×1024 px。单张RGB不透明PNG，sRGB，8bit；平铺背景，无透明留边。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。不透明无缝平铺底图，不加其他物体。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": false,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-02c21c4b-2bc8-4b22-a5b8-c06a34a96243.png"
+  },
+  {
+    "filename": "nm_v2_env_wall_cladding_lower_neutral.png",
+    "displayName": "中性金属灰护墙板",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：中性金属灰护墙板。本次只画1024×256的中性金属灰护墙板，左右平铺，上沿平直，不画地板；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。四套配色统一板缝尺度：neutral冷白/金属灰、clinical白蓝、slate蓝灰、soft灰白微暖。上墙中部留净空，护墙板较暗；不得把五异常的高饱和主色铺满整墙。\n参考对象：现代医院与数字研究机构的洁净墙板、浅蓝护墙板及金属踢脚护板，参考统一板缝、分区层次和干净留白。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×256 px。单张RGB不透明PNG，sRGB，8bit；平铺背景，无透明留边。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。不透明无缝平铺底图，不加其他物体。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": false,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-137bfa57-57cd-4435-9411-7ac84be99d7c.png"
+  },
+  {
+    "filename": "nm_v2_env_wall_cladding_upper_clinical.png",
+    "displayName": "医疗白蓝上墙",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：医疗白蓝上墙。本次只画1024×1024的偏白浅蓝上墙平铺纹理，少量光洁接缝，不画医疗标志；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。四套配色统一板缝尺度：neutral冷白/金属灰、clinical白蓝、slate蓝灰、soft灰白微暖。上墙中部留净空，护墙板较暗；不得把五异常的高饱和主色铺满整墙。\n参考对象：现代医院与数字研究机构的洁净墙板、浅蓝护墙板及金属踢脚护板，参考统一板缝、分区层次和干净留白。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×1024 px。单张RGB不透明PNG，sRGB，8bit；平铺背景，无透明留边。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。不透明无缝平铺底图，不加其他物体。\nStrict orthographic side-view elevation for 2D cutaway architecture. Match input reference clean blue-gray alloy finish and narrow white inner lining. One specified structural module only, not a room or scene. No depth perspective, no pictorial glow or shadows outside silhouette. Keep connecting ends exactly straight.",
+    "transparent": false,
+    "scope": "environment",
+    "referenceOnly": false,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-19e36d26-5afd-43cd-b157-6b76f774fa27.png"
+  }
+]

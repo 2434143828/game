@@ -6,9 +6,16 @@ import { chromium } from '@playwright/test';
 
 // Production-only black-box smoke. No simulation reads, DEV API calls, injected
 // clocks, state mutation, or imported browser modules are used anywhere below.
-const origin = 'http://127.0.0.1:4173';
+const origin = (process.env.FACILITY_URL ?? 'http://127.0.0.1:4173').replace(/\/$/, '');
+const isLocalResource = url => url.startsWith(`${origin}/`) || url.startsWith('data:')
+  || (url.startsWith('blob:') && new URL(url).origin === origin);
+// Phaser decodes local PNG downloads through same-origin object URLs.
+// Foreign blob origins and look-alike hostnames must still fail the network check.
+assert.equal(isLocalResource(`blob:${origin}/local-image`), true);
+assert.equal(isLocalResource('blob:https://example.invalid/foreign-image'), false);
+assert.equal(isLocalResource(`${origin}.example.invalid/image.png`), false);
 const map = JSON.parse(await readFile(new URL('../config/facility.json', import.meta.url), 'utf8'));
-const output = `docs/large-facility-evidence-2026-10-20/production-${new Date().toISOString().replaceAll(':', '-')}`;
+const output = `${process.env.FACILITY_EVIDENCE_ROOT ?? 'docs/large-facility-evidence-2026-10-20'}/production-${new Date().toISOString().replaceAll(':', '-')}`;
 await mkdir(output, { recursive: true });
 const view = { x: 16, y: 76, width: 1328, height: 720 };
 const roomControls = ['N01', 'N02', 'N03', 'N04', 'N05'].map((id, index) => ({ id, x: 86 + index * 110, y: 100 }));
@@ -19,7 +26,7 @@ const report = {
   status: 'RUNNING', startedAt: new Date().toISOString(), url: origin,
   policy: 'Production bundle; DOM observations and real mouse/keyboard only. No runtime state or DEV bridge access.',
   browserLaunch: { channel: 'chrome', headless: true, args: browserArgs },
-  errors: [], consoleErrors: [], failedRequests: [], httpErrors: [], externalRequests: [], developmentRequests: [], checks: [], screenshots: [],
+  errors: [], consoleErrors: [], failedRequests: [], httpErrors: [], externalRequests: [], developmentRequests: [], localBlobRequests: 0, checks: [], screenshots: [],
 };
 let browser;
 let context;
@@ -189,7 +196,8 @@ try {
   page.on('response', response => { if (response.status() >= 400) report.httpErrors.push({ url: response.url(), status: response.status() }); });
   page.on('request', request => {
     const url = request.url();
-    if (!url.startsWith(`${origin}/`) && !url.startsWith('data:')) report.externalRequests.push(url);
+    if (!isLocalResource(url)) report.externalRequests.push(url);
+    else if (url.startsWith('blob:')) report.localBlobRequests++;
     if (url.includes('/@vite/client') || url.includes('/src/main.ts')) report.developmentRequests.push(url);
   });
   const response = await page.goto(`${origin}/`, { waitUntil: 'networkidle' });

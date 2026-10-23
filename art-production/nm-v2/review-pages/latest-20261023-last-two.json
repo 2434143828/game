@@ -1,0 +1,186 @@
+[
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_body.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：大体量躯干。只画本张：红橙犬躯干与粉白胸腹，留颈根和腿根余量，无头、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY the oval torso. Smooth rounded sides. NO legs or feet, NO head, NO tail, NO flippers, NO collar, NO scarf. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-438db2c6-8ecc-406c-9cce-b54b1a7585aa.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_head_ears.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：头与垂耳。只画本张：宽圆犬头和正常垂耳一体，留空眼区及口鼻铰接区，无眼、上下口鼻或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY the BLANK head silhouette and ears or face patches. NO eyes, eyebrows, nose, mouth, beak, muzzle, neckwear or body. The facial area is entirely unmarked matching fur/feather color. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bcd8b319-ff88-40c1-bc45-d69f7ab0b937.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_eyes.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：常态眼层。只画本张：一对有神友好犬眼和简洁眉线，透明底，无头部底色或嘴；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY floating eye and eyebrow shapes. Transparent empty space between them. NO head, face outline, fur, feathers, cheeks, mouth, nose or beak. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6a6b22ee-fe63-4c23-9512-293477e06a04.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_upper_muzzle.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：上口鼻。只画本张：正常宽度粉白上口鼻与鼻尖，嘴沿圆钝、没有獠牙，留铰接余量，无完整头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 UPPER muzzle/beak ONLY; no lower jaw, no tongue, no full head. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d18e2aea-f4d9-4fe5-8af6-a04dd7a6006a.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_lower_muzzle.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：下颌口鼻。只画本张：正常尺度粉白下颌和圆钝嘴沿，可小角度开合，无獠牙或上口鼻；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 LOWER jaw/scoop ONLY, the entire upper jaw is absent and transparent. No upper muzzle, nose or top beak. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2ec59ea1-25f3-4fbc-bbbd-a7cc590bbde3.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_front_leg.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：可复用前腿。只画本张：一条正常粗细犬前腿与圆足一体，腿根可接躯干，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-976c8ea3-313a-482c-adb8-f342ca098935.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_tongue.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：舌头。只画本张：一条自然短舌，粉红、圆端、舌根明确，无嘴或唾液；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-70098c13-7ea0-4774-952f-0b3e88611f9a.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_collar_tag.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：项圈与识别牌。只画本张：一条现代简洁粉白项圈和小型无字圆角识别牌作为单部件，无头或胸腹；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 Collar ring ONLY, no character, head, torso or long fabric tails. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4a194fef-1775-45b8-90d1-ce9714d18841.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_hind_leg.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：可复用后腿。只画本张：一条正常粗细犬后腿与圆足一体，后膝轮廓自然，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-04137f98-cbf0-4640-af85-0303c9ecfe2a.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_pollution_parts_hype_eyes.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：直播兴奋眼层。只画本张：大狗一对兴奋有神的眼睛，允许小块应援亮点但保持眼球结构，透明底，无黑洞眼、完整头、爱心喷泉或外晕；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY floating eye and eyebrow shapes. Transparent empty space between them. NO head, face outline, fur, feathers, cheeks, mouth, nose or beak. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b63185bc-a2b3-4995-836b-e124f48ed061.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_tail.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Orange-red floppy-eared beagle, cream white chest and muzzle, pink ear lining. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：犬尾。只画本张：一条柔软有体量的红橙犬尾，尾根清楚，无身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_big_dog_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-32f8a1a8-b20c-45d7-9438-20c7772d33a3.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_head_face_patch.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：头与浅色脸斑。只画本张：短圆企鹅头及粉白脸斑，眼睛与喙区留空，无眼、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY the BLANK head silhouette and ears or face patches. NO eyes, eyebrows, nose, mouth, beak, muzzle, neckwear or body. The facial area is entirely unmarked matching fur/feather color. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0bf1fad9-9519-4986-89aa-10f234c84902.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_body_belly.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：身体与粉白腹部。只画本张：浅蓝短圆企鹅躯干与粉白腹部，肩根和腿根可接，无头、鳍或足；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY the oval torso. Smooth rounded sides. NO legs or feet, NO head, NO tail, NO flippers, NO collar, NO scarf. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ca5e4c0b-b3f4-4ff7-b1dd-1c35d680241d.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_upper_beak.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：小上喙。只画本张：一只正常短小上喙，柔和橙色、铰点明确，无头或下喙；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 UPPER muzzle/beak ONLY; no lower jaw, no tongue, no full head. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-c90ef26a-db2b-45ef-90f4-4bf6ab23a289.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_flipper_left.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：远侧短鳍。只画本张：远侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8634d387-4aba-40b9-a0a5-c44ce53305c2.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_lower_beak.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：小下喙。只画本张：一只正常短小下喙，可小角度开合，圆钝边缘，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 LOWER jaw/scoop ONLY, the entire upper jaw is absent and transparent. No upper muzzle, nose or top beak. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bf30ab19-435a-462a-964b-2dd12fc02fea.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_flipper_right.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：近侧短鳍。只画本张：近侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-71a2ae84-1d79-4e1f-9110-253c369a5fd7.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_foot_left.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：远侧短足。只画本张：远侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0a931d04-3be6-4169-b91c-cb78397592f5.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_foot_right.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：近侧短足。只画本张：近侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。  Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-c5abcaec-ff76-4564-88a4-8e9d6f88b0b1.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_collar.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：围巾领圈。只画本张：一段柔软粉白围巾领圈，颈部前后层边界明确，无头、身体或长垂片；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 Collar ring ONLY, no character, head, torso or long fabric tails. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-eed50524-a083-4453-b6d2-f11d99b95f3d.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_long.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：围巾长垂片。只画本张：一条围巾较长软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 Only ONE separate pink-white checkered fabric strip, no tied neck ring or second strip. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3d2532b5-0bd3-4416-87c7-4f448283d7bb.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_short.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：围巾短垂片。只画本张：一条围巾较短软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 Only ONE separate pink-white checkered fabric strip, no tied neck ring or second strip. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-75572891-063c-42d4-9371-144fb3e4e3a0.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_pollution_parts_cry_eyes.png",
+    "scope": "abnormalities",
+    "prompt": "Production cutout for a modular game puppet. Draw exactly ONE independent component specified below; reference image is ONLY for palette and identity, do not reproduce the complete animal. Soft light blue and cream penguin, pink-white scarf accents, peach-orange short beak and feet. Clean flat 2D cartoon, moderate navy outline, at most two cel shadows, three-quarter facing right. 唯一对象：哭闹眼层。只画本张：咕咕嘎嘎一对带泪光、略皱起的正常眼睛，少量粉色情绪色，透明底，无泪弹、黑洞眼、完整头或外部气泡；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 ONLY floating eye and eyebrow shapes. Transparent empty space between them. NO head, face outline, fur, feathers, cheeks, mouth, nose or beak. Truly transparent background, no glow, no shadow, no ground or label.",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-518c276b-02ce-4e4c-b38c-1d2fc4068240.png"
+  }
+]

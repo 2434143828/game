@@ -1,0 +1,51 @@
+[
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_body.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.A smooth horizontal oval orange-red dog trunk with cream belly and a cream chest patch on right. Neck opening at upper right. Absolutely no leg shapes, no hips, no shoulders protruding, no paws, no head, no tail, no collar. Single continuous oval silhouette. Chest patch is flat coloring, not a projecting limb.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ed3cf8a4-b3c2-476c-be5f-4544323422d6.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_pollution_parts_hype_eyes.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY a floating pair of amber brown cartoon dog eyes and eyebrows, no skin, no head, no face. Platform hype pollution: tiny cyan duplicate offset pupil rims, tiny pink repeated heart highlights trapped inside irises, overly eager asymmetric raised brows. Recognizable normal eyes, NOT horror. Transparent gaps between eyes.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-77baa066-cf9b-4f19-b4ea-cc3ee5b80a25.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_base_parts_lower_muzzle.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY the lower jaw of an orange and cream beagle dog. A small shallow cream curved bowl of chin fur with a dark inner mouth surface at its top edge. NO tongue, NO teeth, NO upper muzzle, NO nose, NO smile on cheek, NO head. Very shallow horizontal crescent, length three times its height.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3603f0ce-75ca-4c2a-a906-d5815a1ef048.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_body_belly.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY smooth pear shaped light pastel blue penguin torso, with flat cream oval belly patch. Small clean neck seam at top. Continuous smooth contour, absolutely NO flippers, NO wing bumps, NO feet, NO head, NO scarf, NO tail. One plain pear silhouette.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-86c15d84-0c7a-49ed-b179-49b499bfa985.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_lower_beak.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY LOWER HALF of a short peach orange penguin beak. A shallow concave cupped triangle, flat open upper rim colored darker orange, curved underside, right tip slightly upturned. NO upper beak, NO tongue, NO head, NO face. One slim shallow piece, three times wider than tall.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d9ecd430-ec20-4142-aa1e-2cbdee99ab9e.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_upper_beak.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY UPPER HALF of a short peach orange penguin beak. One small solid rounded triangular wedge pointing right, clean straight lower edge. No lower mandible, no dividing mouth line, no tongue, no head, no face. Width two times height.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0cb2cc30-c5ea-4b4d-9c49-fe565ab40c3a.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_collar.png",
+    "prompt": "One isolated animation cutout for a clean flat cel-shaded cute 2D game, thin dark navy outlines, 2 shade values. Three-quarter right facing. Transparent background, no shadow, no glow, no text. This is a disassembled component, NOT a character.ONLY a closed soft pink and cream horizontal striped fabric neck ring. Simple short elliptical tube, hollow center. Absolutely NO trailing ends, NO tails, NO hanging flap, NO knot, NO bow, NO body or head. One oval loop, width three times height.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0512220f-c970-4e93-901c-e9ff5c13b769.png"
+  }
+]

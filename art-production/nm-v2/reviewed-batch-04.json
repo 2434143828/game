@@ -1,0 +1,132 @@
+[
+  {
+    "sheet": "personnel-32",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "personnel-48",
+    "indices": [
+      0,
+      1
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "abnormalities-0",
+    "indices": [
+      2,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "abnormalities-16",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "abnormalities-32",
+    "indices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      14,
+      15
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "abnormalities-48",
+    "indices": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "equipment-0",
+    "indices": [
+      0,
+      4,
+      10,
+      12,
+      14
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  },
+  {
+    "sheet": "ui_vfx-0",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15
+    ],
+    "review": "Inspected checkerboard review sheet: requested separate object / approved pose reference, clean silhouette and transparent background; in-game placement pending."
+  }
+]

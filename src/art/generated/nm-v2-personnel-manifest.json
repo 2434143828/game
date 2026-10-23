@@ -1,0 +1,332 @@
+[
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_head",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_head.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_torso",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_torso.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_upper_arm_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_upper_arm_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_upper_arm_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_upper_arm_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_forearm_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_forearm_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_forearm_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_forearm_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_hand_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_hand_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_hand_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_hand_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_thigh_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_thigh_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_thigh_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_thigh_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_shin_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_shin_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_shin_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_shin_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_boot_left",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_boot_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_boot_right",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_boot_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_starter_baton",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_starter_baton.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "nm_v2_agent_base_parts_tablet",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_base_parts_tablet.png"
+  },
+  {
+    "id": "STA_003",
+    "key": "nm_v2_agent_hair_quiff_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_quiff_hair.png"
+  },
+  {
+    "id": "STA_004",
+    "key": "nm_v2_agent_hair_side_fringe_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_side_fringe_hair.png"
+  },
+  {
+    "id": "STA_005",
+    "key": "nm_v2_agent_hair_bob_glasses_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_bob_glasses_hair.png"
+  },
+  {
+    "id": "STA_005",
+    "key": "nm_v2_agent_hair_bob_glasses_glasses",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_bob_glasses_glasses.png"
+  },
+  {
+    "id": "STA_006",
+    "key": "nm_v2_agent_hair_ponytail_front_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_ponytail_front_hair.png"
+  },
+  {
+    "id": "STA_006",
+    "key": "nm_v2_agent_hair_ponytail_rear_ponytail",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_ponytail_rear_ponytail.png"
+  },
+  {
+    "id": "STA_007",
+    "key": "nm_v2_agent_hair_close_crop_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_close_crop_hair.png"
+  },
+  {
+    "id": "STA_008",
+    "key": "nm_v2_agent_hair_bun_front_hair",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_bun_front_hair.png"
+  },
+  {
+    "id": "STA_008",
+    "key": "nm_v2_agent_hair_bun_rear_bun",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_hair_bun_rear_bun.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "nm_v2_agent_face_states_neutral",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_face_states_neutral.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "nm_v2_agent_face_states_panic",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_face_states_panic.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "nm_v2_agent_face_states_hurt",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_face_states_hurt.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "nm_v2_agent_face_states_incapacitated",
+    "url": "/art/nm-v2/personnel/nm_v2_agent_face_states_incapacitated.png"
+  },
+  {
+    "id": "NMV2_ROLE_002",
+    "key": "nm_v2_role_security_parts_torso",
+    "url": "/art/nm-v2/personnel/nm_v2_role_security_parts_torso.png"
+  },
+  {
+    "id": "NMV2_ROLE_002",
+    "key": "nm_v2_role_security_parts_shoulder_near",
+    "url": "/art/nm-v2/personnel/nm_v2_role_security_parts_shoulder_near.png"
+  },
+  {
+    "id": "NMV2_ROLE_002",
+    "key": "nm_v2_role_security_parts_shoulder_far",
+    "url": "/art/nm-v2/personnel/nm_v2_role_security_parts_shoulder_far.png"
+  },
+  {
+    "id": "NMV2_ROLE_003",
+    "key": "nm_v2_role_research_parts_torso",
+    "url": "/art/nm-v2/personnel/nm_v2_role_research_parts_torso.png"
+  },
+  {
+    "id": "NMV2_ROLE_003",
+    "key": "nm_v2_role_research_parts_shoulder_near",
+    "url": "/art/nm-v2/personnel/nm_v2_role_research_parts_shoulder_near.png"
+  },
+  {
+    "id": "NMV2_ROLE_003",
+    "key": "nm_v2_role_research_parts_shoulder_far",
+    "url": "/art/nm-v2/personnel/nm_v2_role_research_parts_shoulder_far.png"
+  },
+  {
+    "id": "NMV2_ROLE_004",
+    "key": "nm_v2_role_technical_parts_torso",
+    "url": "/art/nm-v2/personnel/nm_v2_role_technical_parts_torso.png"
+  },
+  {
+    "id": "NMV2_ROLE_004",
+    "key": "nm_v2_role_technical_parts_shoulder_near",
+    "url": "/art/nm-v2/personnel/nm_v2_role_technical_parts_shoulder_near.png"
+  },
+  {
+    "id": "NMV2_ROLE_004",
+    "key": "nm_v2_role_technical_parts_shoulder_far",
+    "url": "/art/nm-v2/personnel/nm_v2_role_technical_parts_shoulder_far.png"
+  },
+  {
+    "id": "NMV2_ROLE_005",
+    "key": "nm_v2_role_medical_parts_torso",
+    "url": "/art/nm-v2/personnel/nm_v2_role_medical_parts_torso.png"
+  },
+  {
+    "id": "NMV2_ROLE_005",
+    "key": "nm_v2_role_medical_parts_shoulder_near",
+    "url": "/art/nm-v2/personnel/nm_v2_role_medical_parts_shoulder_near.png"
+  },
+  {
+    "id": "NMV2_ROLE_005",
+    "key": "nm_v2_role_medical_parts_shoulder_far",
+    "url": "/art/nm-v2/personnel/nm_v2_role_medical_parts_shoulder_far.png"
+  },
+  {
+    "id": "EQ_W01",
+    "key": "nm_v2_weapon_nailong_held",
+    "url": "/art/nm-v2/equipment/nm_v2_weapon_nailong_held.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "nm_v2_armor_nailong_torso",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_nailong_torso.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "nm_v2_armor_nailong_shoulder_near",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_nailong_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "nm_v2_armor_nailong_shoulder_far",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_nailong_shoulder_far.png"
+  },
+  {
+    "id": "EQ_W02",
+    "key": "nm_v2_weapon_maodie_held",
+    "url": "/art/nm-v2/equipment/nm_v2_weapon_maodie_held.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "nm_v2_armor_maodie_torso_collar",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_maodie_torso_collar.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "nm_v2_armor_maodie_shoulder_near",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_maodie_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "nm_v2_armor_maodie_shoulder_far",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_maodie_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "nm_v2_armor_maodie_scarf_long",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_maodie_scarf_long.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "nm_v2_armor_maodie_scarf_short",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_maodie_scarf_short.png"
+  },
+  {
+    "id": "EQ_W03",
+    "key": "nm_v2_weapon_big_dog_held",
+    "url": "/art/nm-v2/equipment/nm_v2_weapon_big_dog_held.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "nm_v2_armor_big_dog_torso",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_big_dog_torso.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "nm_v2_armor_big_dog_collar",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_big_dog_collar.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "nm_v2_armor_big_dog_shoulder_near",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_big_dog_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "nm_v2_armor_big_dog_shoulder_far",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_big_dog_shoulder_far.png"
+  },
+  {
+    "id": "EQ_W04",
+    "key": "nm_v2_weapon_dingdong_held",
+    "url": "/art/nm-v2/equipment/nm_v2_weapon_dingdong_held.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "nm_v2_armor_dingdong_torso",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_dingdong_torso.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "nm_v2_armor_dingdong_shoulder_near",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_dingdong_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "nm_v2_armor_dingdong_shoulder_far",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_dingdong_shoulder_far.png"
+  },
+  {
+    "id": "EQ_W05",
+    "key": "nm_v2_weapon_gugu_held",
+    "url": "/art/nm-v2/equipment/nm_v2_weapon_gugu_held.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "nm_v2_armor_gugu_torso_collar",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_gugu_torso_collar.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "nm_v2_armor_gugu_shoulder_near",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_gugu_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "nm_v2_armor_gugu_shoulder_far",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_gugu_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "nm_v2_armor_gugu_ribbon_long",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_gugu_ribbon_long.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "nm_v2_armor_gugu_ribbon_short",
+    "url": "/art/nm-v2/equipment/nm_v2_armor_gugu_ribbon_short.png"
+  }
+]

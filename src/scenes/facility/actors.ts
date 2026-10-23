@@ -1,210 +1,181 @@
-import Phaser from 'phaser';
-import type { AnomalyId, EmployeeRuntime, EnemyRuntime, Point, WorkType } from '../../../contracts/data-contract';
+import type Phaser from 'phaser';
+import type { EmployeeRuntime, Point, WorkType } from '../../../contracts/data-contract';
 import { weaponById } from '../../data/config';
-import { ROOM_COLORS } from './geometry';
+import { PALETTE, inkBox, inkEllipse, inkLine, inkPolygon } from '../../art/ink';
+export { drawCreature, type CreaturePose } from '../../art/characters/abnormalities';
 
-export const INK = 0x18191f;
+export const INK = PALETTE.ink;
 export interface HumanPose {
   foot: Point; facing: -1 | 1; stride: number; moving: boolean; climbing: boolean;
   time: number; selected: boolean; hurt: number; impactRemaining: number; workType?: WorkType;
 }
-export interface CreaturePose {
-  foot: Point; facing: -1 | 1; time: number; stride: number; moving: boolean;
-  selected: boolean; hurt: number; working: boolean; enemy?: EnemyRuntime; impactRemaining?: number;
+type Graphics = Phaser.GameObjects.Graphics;
+type Shape = readonly (readonly [number, number])[];
+const SKIN = 0xd9c6a5;
+const UNIFORM = 0x68716c;
+const HAIR = [0x383238, 0x895649, 0xb0a183, 0x514750, 0x465754, 0x786453];
+const EQUIPMENT = [PALETTE.paper, PALETTE.gold, PALETTE.rust, PALETTE.moss, 0x92849a, PALETTE.pale];
+
+function limb(g: Graphics, a: Point, joint: Point, end: Point, width: number, fill: number, seed = 0): void {
+  inkLine(g, a.x, a.y, joint.x, joint.y, width + 2.5, INK, seed);
+  inkLine(g, joint.x, joint.y, end.x, end.y, width + 2.5, INK, seed + 1);
+  inkLine(g, a.x, a.y, joint.x, joint.y, width, fill, seed);
+  inkLine(g, joint.x, joint.y, end.x, end.y, width, fill, seed + 1);
 }
-const skin = 0xf1c6a0;
-const hair = [0x292630, 0xb46b4a, 0xd2c5a0, 0x473549, 0x55716a, 0x8d5a4d];
-function ellipse(g: Phaser.GameObjects.Graphics, x: number, y: number, w: number, h: number, color: number, outline = 3): void {
-  g.fillStyle(color).fillEllipse(x, y, w, h);
-  if (outline) g.lineStyle(outline, INK).strokeEllipse(x, y, w, h);
+function patch(g: Graphics, center: Point, points: Shape, color: number, facing = 1, width = 2, seed = 0): void {
+  inkPolygon(g, points.map(([x, y]) => ({ x: center.x + x * facing, y: center.y + y })), color, width, seed);
 }
-function rect(g: Phaser.GameObjects.Graphics, x: number, y: number, w: number, h: number, color: number, outline = 3): void {
-  g.fillStyle(color).fillRect(x, y, w, h);
-  if (outline) g.lineStyle(outline, INK).strokeRect(x, y, w, h);
-}
-function segment(g: Phaser.GameObjects.Graphics, a: Point, b: Point, width: number, color: number): void {
-  g.lineStyle(width + 3, INK).lineBetween(a.x, a.y, b.x, b.y);
-  g.lineStyle(width, color).lineBetween(a.x, a.y, b.x, b.y);
-  g.fillStyle(color).fillCircle(b.x, b.y, width / 2);
+/** Six authored hair silhouettes, rather than recolours of one haircut. */
+function drawHair(g: Graphics, head: Point, index: number, facing: number): void {
+  const shapes: readonly Shape[] = [
+    [[-12, 1], [-14, -9], [-8, -15], [-9, -20], [-2, -17], [3, -22], [6, -15], [13, -15], [15, -6], [7, -7], [2, -10], [-2, -4], [-7, -7]],
+    [[-12, 5], [-16, -3], [-13, -15], [-3, -18], [10, -14], [17, -7], [10, -5], [5, -1], [7, -9], [-1, -6], [-9, -2]],
+    [[-13, 7], [-17, -2], [-14, -12], [-6, -17], [6, -16], [14, -10], [15, 5], [10, 9], [9, -3], [1, -6], [-8, -4], [-8, 8]],
+    [[-12, 3], [-18, -3], [-14, -8], [-19, -12], [-8, -13], [-4, -20], [0, -14], [10, -17], [9, -11], [16, -8], [10, -2], [7, -8], [-4, -5]],
+    [[-12, 1], [-14, -8], [-11, -14], [3, -16], [12, -12], [14, -7], [4, -8], [-4, -10], [-8, -2]],
+    [[-12, 4], [-15, -7], [-10, -15], [-4, -17], [5, -17], [13, -11], [15, -3], [8, -5], [3, -9], [-7, -6], [-8, 4]],
+  ];
+  if (index === 3) patch(g, head, [[-10, -8], [-22, -6], [-17, 4], [-24, 12], [-13, 7]], HAIR[index], facing, 2.2, index);
+  if (index === 5) inkEllipse(g, head.x - facing * 6, head.y - 20, 15, 12, HAIR[index], 2, 5);
+  patch(g, head, shapes[index], HAIR[index], facing, 2.2, index);
+  inkLine(g, head.x - facing * 9, head.y - 11, head.x - facing * 3, head.y - 14, 1, PALETTE.paperShade, index, 0.55);
 }
 
-/** Cel-shaded articulated personnel. All poses depend exclusively on simulation state/time. */
-export function drawHuman(g: Phaser.GameObjects.Graphics, employee: EmployeeRuntime, pose: HumanPose): void {
-  const x = pose.foot.x; const y = pose.foot.y; const f = pose.facing;
-  const step = pose.moving ? Math.sin(pose.stride) : 0;
-  const bounce = pose.moving && !pose.climbing ? Math.abs(Math.cos(pose.stride)) * 1.6 : 0;
-  const recoil = pose.hurt > 0 ? -f * Math.sin(pose.hurt * 18) * 3 : 0;
-  const hip = { x: x + recoil, y: y - 21 - bounce };
-  const shoulder = { x: x + recoil + (pose.moving ? f * 2 : 0), y: y - 41 - bounce };
-  const index = Number(employee.id.slice(1)) - 1;
-  const armorIndex = Number(employee.armorId.slice(1));
-  const trim = armorIndex ? ROOM_COLORS[`N0${armorIndex}` as AnomalyId] : 0xe9ddd0;
-  g.fillStyle(INK, 0.25).fillEllipse(x, y + 2, 34, 8);
-  if (pose.selected) { g.fillStyle(0xffd04c, 0.18).fillEllipse(x, y + 1, 44, 11); g.lineStyle(3, 0xffcf43).strokeEllipse(x, y + 1, 44, 11); }
+/** Three-head-height paper-puppet personnel. Time and stride are simulation-owned. */
+export function drawHuman(g: Graphics, employee: EmployeeRuntime, pose: HumanPose): void {
+  const { x, y } = pose.foot, f = pose.facing, index = (Number(employee.id.slice(1)) - 1) % 6;
+  const panic = employee.status === 'PANICKED', injured = employee.hp / employee.hpMax < 0.4;
+  const moving = pose.moving ? Math.sin(pose.stride) : 0;
+  const breath = Math.sin(pose.time * 2.2 + index) * 0.55;
+  const flinch = pose.hurt > 0 ? Math.sin(pose.hurt * 23) * 2 : 0;
+  const shake = panic ? Math.sin(pose.time * 19 + index) * 1.2 : 0;
+  const lift = pose.moving && !pose.climbing ? Math.abs(Math.cos(pose.stride)) * 1.4 : breath;
+  const lean = (pose.workType ? 5 : pose.moving ? 3 : 2) + (injured ? 4 : 0);
+  const hip = { x: x - f + shake, y: y - 23 - lift + (injured ? 2 : 0) };
+  const shoulder = { x: x + f * (lean - flinch) + shake, y: y - 40 - lift + (injured ? 3 : 0) };
+  const head = { x: shoulder.x + f * 3, y: shoulder.y - 12 };
+  const trim = EQUIPMENT[Number(employee.armorId.slice(1))] ?? PALETTE.paper;
+  inkEllipse(g, x, y + 2, 33, 7, INK, 0, index, 0.3);
+  if (pose.selected) {
+    g.fillStyle(0xffcf43, 0.16).fillEllipse(x, y + 1, 44, 11);
+    g.lineStyle(3, 0xffcf43).strokeEllipse(x, y + 1, 44, 11);
+  }
   if (employee.status === 'INCAPACITATED') {
-    ellipse(g, x + 10, y - 8, 26, 18, skin); rect(g, x - 24, y - 12, 30, 12, 0x292b37);
-    g.lineStyle(2, INK).lineBetween(x + 4, y - 10, x + 10, y - 6).lineBetween(x + 10, y - 10, x + 4, y - 6);
+    // Recoverable incapacitation: a fallen puppet, not a new death mechanic.
+    patch(g, { x, y }, [[-29, 1], [-19, -4], [-5, -2], [8, 2], [24, 0], [15, 6], [-12, 5]], INK, 1, 0);
+    limb(g, { x: x - 9, y: y - 9 }, { x: x - 19, y: y - 4 }, { x: x - 29, y: y - 8 }, 3.5, PALETTE.steel);
+    patch(g, { x, y }, [[-14, -13], [6, -16], [12, -5], [-12, -4]], UNIFORM, 1, 2.2);
+    inkEllipse(g, x + 17, y - 10, 24, 22, SKIN, 2.4, index);
+    drawHair(g, { x: x + 17, y: y - 10 }, index, 1);
+    inkLine(g, x + 17, y - 8, x + 22, y - 7, 1.7);
+    limb(g, { x: x + 2, y: y - 12 }, { x: x + 2, y: y - 3 }, { x: x + 12, y: y - 1 }, 2.7, SKIN);
     return;
   }
-  const farKnee = { x: hip.x - f * (pose.climbing ? 8 + step * 3 : step * 7), y: y - (pose.climbing ? 15 - step * 4 : 11) };
-  const nearKnee = { x: hip.x + f * (pose.climbing ? 6 + step * 3 : step * 7), y: y - (pose.climbing ? 15 + step * 4 : 11) };
-  const farFoot = { x: x - f * (pose.climbing ? 9 : step * 11), y: y - (pose.climbing ? 5 - step * 5 : Math.max(0, -step) * 5) };
-  const nearFoot = { x: x + f * (pose.climbing ? 9 : step * 11), y: y - (pose.climbing ? 5 + step * 5 : Math.max(0, step) * 5) };
-  segment(g, hip, farKnee, 6, 0x262732); segment(g, farKnee, farFoot, 5, 0x262732);
-  segment(g, hip, nearKnee, 7, 0x3c3b48); segment(g, nearKnee, nearFoot, 6, 0x3c3b48);
-  rect(g, farFoot.x - 4, farFoot.y - 3, 11, 5, INK, 1); rect(g, nearFoot.x - 4, nearFoot.y - 3, 12, 5, INK, 1);
-  const farElbow = pose.climbing ? { x: x - 15, y: y - 44 + step * 6 } : { x: shoulder.x - f * (6 + step * 5), y: y - 30 };
-  const farHand = pose.climbing ? { x: x - 17, y: y - 55 + step * 6 } : { x: shoulder.x - f * (7 + step * 8), y: y - 23 };
-  segment(g, shoulder, farElbow, 6, 0x252630); segment(g, farElbow, farHand, 5, skin);
-  // Jacket, bright shirt and tie remain legible at 1280 × 720.
-  g.fillStyle(0x30303c).fillPoints([{ x: shoulder.x - 11, y: shoulder.y }, { x: shoulder.x + 11, y: shoulder.y }, { x: hip.x + 10, y: hip.y + 3 }, { x: hip.x - 10, y: hip.y + 3 }], true);
-  g.lineStyle(3, INK).strokePoints([{ x: shoulder.x - 11, y: shoulder.y }, { x: shoulder.x + 11, y: shoulder.y }, { x: hip.x + 10, y: hip.y + 3 }, { x: hip.x - 10, y: hip.y + 3 }], true);
-  g.fillStyle(0xfff7e5).fillTriangle(shoulder.x - 7, shoulder.y, shoulder.x + 7, shoulder.y, shoulder.x, shoulder.y + 13);
-  g.fillStyle(trim).fillTriangle(shoulder.x, shoulder.y + 3, shoulder.x - 3, shoulder.y + 15, shoulder.x + 3, shoulder.y + 15);
-  g.lineStyle(3, trim).lineBetween(shoulder.x - 10, shoulder.y + 2, hip.x - 8, hip.y);
-  rect(g, shoulder.x + 5, shoulder.y + 6, 4, 5, trim, 1);
-  // Large expressive face with individual hair silhouettes.
-  const hx = shoulder.x + f; const hy = shoulder.y - 12;
-  ellipse(g, hx, hy, 25, 26, skin);
-  g.fillStyle(0xd99478).fillEllipse(hx - f * 7, hy + 4, 6, 5);
-  g.fillStyle(hair[index % hair.length]).fillPoints([
-    { x: hx - 13, y: hy - 1 }, { x: hx - 13, y: hy - 12 }, { x: hx - 6, y: hy - 18 },
-    { x: hx - 1, y: hy - 15 }, { x: hx + 7, y: hy - 18 + index % 3 * 2 },
-    { x: hx + 14, y: hy - 9 }, { x: hx + 9, y: hy + 1 },
-    { x: hx + 5, y: hy - 7 }, { x: hx - 1, y: hy - 3 }, { x: hx - 5, y: hy - 8 },
-  ], true);
-  g.lineStyle(2, INK).lineBetween(hx - 11, hy - 12, hx - 5, hy - 16).lineBetween(hx - 5, hy - 16, hx, hy - 13);
-  g.fillStyle(0xfff5dc).fillEllipse(hx + f * 5, hy + 1, 6, 6);
-  g.fillStyle(INK).fillRect(hx + f * 6 - 1, hy - 1, 3, 5);
-  g.lineStyle(1.5, INK).lineBetween(hx + f * 2, hy + 8, hx + f * 7, hy + 7);
-  if (index % 3 === 2) g.lineStyle(1.5, INK).strokeRect(hx + f * 2 - 3, hy - 3, 10, 8);
-  let elbow = { x: shoulder.x + f * (9 - step * 4), y: y - 31 };
-  let hand = { x: shoulder.x + f * (14 - step * 7), y: y - 23 };
+  const feet = [-1, 1].map(side => ({
+    x: x + f * (pose.climbing ? side * 9 : side * moving * 10 + side * 3),
+    y: y - (pose.climbing ? 6 + side * moving * 6 : Math.max(0, side * moving) * 4),
+  }));
+  for (const [i, side] of [-1, 1].entries()) {
+    const knee = { x: hip.x + f * (side * moving * 5 + (pose.climbing ? 9 : 2)), y: y - (pose.climbing ? 16 + side * moving * 3 : 12) };
+    limb(g, hip, knee, feet[i], 3.5, i ? PALETTE.steel : 0x49514f, i);
+    patch(g, feet[i], [[-3, -3], [4, -3], [9, 0], [8, 3], [-4, 2]], 0x363237, f, 1.6, i);
+  }
+  const farElbow = { x: shoulder.x - f * (7 + moving * 5), y: shoulder.y + 9 };
+  const farHand = pose.climbing ? { x: x - 13, y: y - 53 + moving * 7 }
+    : panic ? { x: shoulder.x - f * 15, y: shoulder.y - 12 + Math.sin(pose.time * 9) * 5 }
+      : { x: shoulder.x - f * (8 + moving * 8), y: shoulder.y + 20 };
+  limb(g, shoulder, farElbow, farHand, 3, 0x525e58, 4);
+  inkEllipse(g, farHand.x, farHand.y, 5, 6, SKIN, 1.3, 4);
+  patch(g, shoulder, [[-8, -1], [5, -3], [9, 7], [6, 20], [0, 17], [-8, 20], [-10, 9]], UNIFORM, f, 2.4, index);
+  patch(g, shoulder, [[-5, -1], [1, 4], [5, -2], [3, 8], [-2, 11]], PALETTE.paper, f, 1.1);
+  patch(g, shoulder, [[0, 4], [3, 6], [2, 15], [-1, 12]], trim, f, 0.8);
+  inkLine(g, shoulder.x - f * 6, shoulder.y + 10, hip.x - f * 5, hip.y + 1, 1.1, INK, index);
+  inkBox(g, shoulder.x + f * 4 - 2, shoulder.y + 7, 4, 5, trim, 0.8, index);
+  const armor = Number(employee.armorId.slice(1));
+  if (armor) {
+    patch(g, shoulder, [[-9, 0], [-2, -2], [1, 5], [-4, 12], [-10, 8]], trim, f, 1.8, armor);
+    if (armor === 2 || armor === 5) patch(g, shoulder, [[-7, -2], [-12, 7], [-13, 18], [-7, 15], [-4, 1]], trim, f, 1.7, armor);
+    if (armor === 3) inkBox(g, shoulder.x - 6, shoulder.y + 1, 13, 8, trim, 1.6, 3);
+    if (armor === 4) inkEllipse(g, shoulder.x - f * 9, shoulder.y + 4, 8, 9, trim, 1.4, 4);
+  }
+  patch(g, head, [[-11, -10], [-3, -14], [9, -11], [13, -2], [11, 8], [5, 12], [-4, 10], [-12, 4]], SKIN, f, 2.4, index);
+  inkEllipse(g, head.x - f * 11, head.y + 1, 6, 8, PALETTE.paperShade, 1.2, index);
+  drawHair(g, head, index, f);
+  const eye = { x: head.x + f * 5, y: head.y };
+  inkEllipse(g, eye.x, eye.y, panic ? 9 : 7, panic ? 11 : 8, 0xece1c7, 1.2, index);
+  inkEllipse(g, head.x - f * 2, head.y - 1, panic ? 5 : 4, panic ? 7 : 5, 0xece1c7, 1, index + 1);
+  inkLine(g, eye.x + f, eye.y - 2, eye.x + f, eye.y + (panic ? 3 : 1), 1.7);
+  inkLine(g, head.x - f * 2, head.y - 2, head.x - f * 2, head.y, 1.4);
+  if (panic) {
+    inkEllipse(g, head.x + f * 6, head.y + 8, 5, 7, INK, 1);
+    inkLine(g, head.x - 13, head.y - 20, head.x - 16, head.y - 26, 1.8, PALETTE.panic, index);
+    inkLine(g, head.x + 14, head.y - 14, head.x + 18, head.y - 20, 1.8, PALETTE.panic, index + 1);
+    patch(g, head, [[-6, 3], [-3, 4], [-2, 7]], PALETTE.panic, f, 0);
+  } else inkLine(g, head.x + f * 4, head.y + 8, head.x + f * 9, head.y + (injured ? 9 : 6), 1.3);
+  if (index === 2) inkBox(g, eye.x - 5, eye.y - 5, 10, 9, 0xd7d0b8, 1, 2, 0.28);
+  if (injured) {
+    inkLine(g, head.x - f * 5, head.y + 5, head.x - f * 1, head.y + 3, 1.5, PALETTE.rust);
+    inkLine(g, shoulder.x + f * 4, shoulder.y + 11, shoulder.x, shoulder.y + 15, 1.8, INK);
+  }
+  let elbow = { x: shoulder.x + f * (8 - moving * 3), y: shoulder.y + 10 };
+  let hand = { x: shoulder.x + f * (13 - moving * 6), y: shoulder.y + 21 };
   let angle = -0.45;
-  const weapon = weaponById[employee.weaponId];
-  if (pose.climbing) { elbow = { x: x + 14, y: y - 44 - step * 6 }; hand = { x: x + 17, y: y - 55 - step * 6 }; }
-  else if (pose.workType) {
-    const beat = Math.sin(pose.time * (pose.workType === 'SOOTHE' ? 2.3 : 5));
-    elbow = { x: shoulder.x + f * 14, y: y - 31 }; hand = { x: shoulder.x + f * (25 + beat * 4), y: y - 37 + beat * 4 };
+  if (pose.climbing) {
+    elbow = { x: x + 10, y: y - 40 - moving * 5 }; hand = { x: x + 14, y: y - 55 - moving * 7 };
+  } else if (panic) {
+    elbow = { x: shoulder.x + f * 14, y: shoulder.y + 3 };
+    hand = { x: head.x + f * 18, y: head.y - 5 + Math.sin(pose.time * 11) * 5 };
+  } else if (pose.workType) {
+    const beat = Math.sin(pose.time * (pose.workType === 'SOOTHE' ? 2.4 : 5));
+    elbow = { x: shoulder.x + f * 11, y: shoulder.y + 10 };
+    hand = { x: shoulder.x + f * (23 + beat * 3), y: shoulder.y + 4 + beat * 3 };
   } else if (employee.attackPhase === 'WINDUP' && employee.windupEndsAtSec !== null) {
-    const p = Math.max(0, Math.min(1, 1 - (employee.windupEndsAtSec - pose.time) / weapon.windupSec));
-    elbow = { x: shoulder.x - f * 9, y: y - 42 }; hand = { x: shoulder.x - f * (14 - p * 8), y: y - 54 };
-    angle = -1.8 + p * 0.7;
+    const progress = Math.max(0, Math.min(1, 1 - (employee.windupEndsAtSec - pose.time) / weaponById[employee.weaponId].windupSec));
+    elbow = { x: shoulder.x - f * 8, y: shoulder.y };
+    hand = { x: shoulder.x - f * (16 - progress * 6), y: shoulder.y - 10 }; angle = -1.9 + progress * 0.7;
   } else if (pose.impactRemaining > 0) {
-    elbow = { x: shoulder.x + f * 14, y: y - 36 }; hand = { x: shoulder.x + f * 29, y: y - 33 }; angle = 0.5;
+    elbow = { x: shoulder.x + f * 12, y: shoulder.y + 6 };
+    hand = { x: shoulder.x + f * 28, y: shoulder.y + 5 }; angle = 0.35;
+  } else if (injured) {
+    elbow = { x: shoulder.x + f * 10, y: shoulder.y + 14 };
+    hand = { x: shoulder.x + f * 3, y: shoulder.y + 14 };
   }
-  segment(g, shoulder, elbow, 7, 0x3b3a48); segment(g, elbow, hand, 5, skin);
+  limb(g, shoulder, elbow, hand, 3.3, UNIFORM, 7);
+  inkEllipse(g, hand.x, hand.y, 5.5, 6, SKIN, 1.3, 7);
   if (pose.workType === 'OBSERVE') {
-    rect(g, hand.x - 7, hand.y - 6, 16, 20, 0xe9e1cd, 2);
-    g.lineStyle(2, 0x637986).lineBetween(hand.x - 3, hand.y, hand.x + 5, hand.y).lineBetween(hand.x - 3, hand.y + 5, hand.x + 3, hand.y + 5);
-  } else if (!pose.workType && !pose.climbing) drawWeapon(g, employee.weaponId, hand, f, angle);
-  if (pose.hurt > 0) g.lineStyle(3, 0xfff5d0, Math.min(1, pose.hurt * 3)).strokeEllipse(x, y - 32, 36, 67);
+    inkBox(g, hand.x - 5, hand.y - 6, 13, 18, PALETTE.paper, 1.6, index);
+    inkBox(g, hand.x - 1, hand.y - 8, 6, 4, PALETTE.steel, 1, index);
+    inkLine(g, hand.x - 2, hand.y, hand.x + 5, hand.y + 1, 1, INK);
+    inkLine(g, hand.x - 2, hand.y + 5, hand.x + 4, hand.y + 5, 1, INK);
+  } else if (!pose.workType && !pose.climbing && !panic) drawWeapon(g, employee.weaponId, hand, f, angle);
+  if (pose.hurt > 0) for (let i = 0; i < 4; i++) {
+    const dx = (i % 2 ? 1 : -1) * (18 + i * 3), dy = -43 + i * 11;
+    inkLine(g, x + dx, y + dy, x + dx * 1.3, y + dy - 4, 2.1, INK, i, Math.min(1, pose.hurt * 5));
+  }
 }
 
-function drawWeapon(g: Phaser.GameObjects.Graphics, id: EmployeeRuntime['weaponId'], hand: Point, f: number, angle: number): void {
-  const tip = { x: hand.x + f * Math.cos(angle) * 25, y: hand.y + Math.sin(angle) * 25 };
-  if (id === 'W00') { segment(g, hand, tip, 5, 0xaab1b8); segment(g, hand, { x: hand.x + f * 7, y: hand.y - 3 }, 6, 0x35333b); }
-  else if (id === 'W02') {
-    rect(g, hand.x - 5, hand.y - 5, 13, 12, 0xc85c59, 2);
-    for (let i = 0; i < 3; i++) g.lineStyle(3, 0xe9e8df).lineBetween(hand.x + f * 5, hand.y - 5 + i * 5, hand.x + f * 23, hand.y - 12 + i * 5);
-  } else if (id === 'W03' || id === 'W04') {
-    segment(g, hand, tip, 7, id === 'W03' ? 0x829777 : 0xb28cc7);
-    g.fillStyle(id === 'W03' ? 0x7d9874 : 0xb49cd2).fillTriangle(tip.x - f * 7, tip.y - 5, tip.x + f * 10, tip.y - 15, tip.x + f * 10, tip.y + 9);
-    g.lineStyle(3, INK).lineBetween(tip.x + f * 10, tip.y - 15, tip.x + f * 10, tip.y + 9);
+function drawWeapon(g: Graphics, id: EmployeeRuntime['weaponId'], hand: Point, f: number, angle: number): void {
+  const tip = { x: hand.x + f * Math.cos(angle) * 23, y: hand.y + Math.sin(angle) * 23 };
+  inkLine(g, hand.x, hand.y, tip.x, tip.y, 6, INK);
+  inkLine(g, hand.x, hand.y, tip.x, tip.y, 3, id === 'W05' ? PALETTE.pale : PALETTE.steel);
+  if (id === 'W00') {
+    inkLine(g, hand.x, hand.y, hand.x + f * 6, hand.y - 2, 5, 0x57534c);
+    inkLine(g, tip.x - f * 3, tip.y - 4, tip.x + f * 3, tip.y + 2, 1.2, PALETTE.rust);
   } else if (id === 'W01') {
-    segment(g, hand, tip, 5, 0x765e35); rect(g, tip.x - 7, tip.y - 10, 17, 20, 0xefbe48, 2);
-    for (let i = 0; i < 3; i++) g.lineStyle(2, INK).lineBetween(tip.x - 3, tip.y - 5 + i * 5, tip.x + 6, tip.y - 5 + i * 5);
-  } else { segment(g, hand, tip, 6, 0x70a6ba); ellipse(g, tip.x, tip.y, 17, 23, 0xd5e9e8, 2); g.lineStyle(2, 0x447d93).strokeCircle(tip.x, tip.y, 4); }
-}
-
-/** Five original concept silhouettes; not official IP assets. */
-export function drawCreature(g: Phaser.GameObjects.Graphics, id: AnomalyId, pose: CreaturePose): void {
-  const clone = pose.enemy?.isClone ?? false;
-  const s = clone ? 0.76 : id === 'N03' ? 1.06 : 1;
-  const x = pose.foot.x; const y = pose.foot.y; const f = pose.facing;
-  const stunned = Boolean(pose.enemy && pose.enemy.stunnedUntilSec > pose.time);
-  const walk = pose.moving && !stunned ? Math.sin(pose.stride) : 0;
-  const breath = stunned ? 0 : Math.sin(pose.time * (pose.working ? 4 : 2)) * 1.3;
-  const windup = pose.enemy?.attackPhase === 'WINDUP';
-  const impact = (pose.impactRemaining ?? 0) > 0;
-  const lean = pose.hurt > 0 ? -f * 4 : windup ? -f * 3 : impact ? f * 6 : 0;
-  const p = (dx: number, dy: number): Point => ({ x: x + (dx + lean) * s, y: y + dy * s });
-  const e = (dx: number, dy: number, w: number, h: number, color: number, outline = 3): void => { const pt = p(dx, dy); ellipse(g, pt.x, pt.y, w * s, h * s, color, outline * s); };
-  const poly = (points: number[][], color: number): void => { const pts = points.map(([dx, dy]) => p(dx, dy)); g.fillStyle(color).fillPoints(pts, true); g.lineStyle(3 * s, INK).strokePoints(pts, true); };
-  g.fillStyle(INK, 0.2).fillEllipse(x, y + 3, (id === 'N03' ? 103 : 64) * s, 13 * s);
-  if (pose.selected) g.lineStyle(3, 0xffdb64).strokeEllipse(x, y + 2, (id === 'N03' ? 110 : 78) * s, 17 * s);
-  if (id === 'N01') {
-    const gold = clone ? 0xd2ab57 : 0xf5c63f;
-    poly([[-f * 20, -13], [-f * 48, -7], [-f * 38, -35], [-f * 14, -39]], 0xdba72b);
-    e(-14 + walk * 5, -6, 23, 12, 0xdca32c); e(14 - walk * 5, -6, 24, 12, gold);
-    e(0, -32 + breath, 61, 58, gold); e(f * 5, -28 + breath, 36, 39, 0xffe493, 1.5);
-    e(f * 8, -64 + breath, 42, 51, gold); e(f * 11, -81 + breath, 47, 37, gold);
-    e(-f * 2, -97 + breath, 10, 17, 0xd7a531); e(f * 25, -94 + breath, 9, 16, gold);
-    e(f * 30, -73 + breath, 25, 18, 0xffdc70, 2);
-    e(f * 21, -84 + breath, 8, 10, 0xfff6d7, 1); e(f * 23, -83 + breath, 4, 7, INK, 0);
-    const mouth = p(f * 28, -68 + breath); g.lineStyle(2, INK).lineBetween(mouth.x - 4, mouth.y, mouth.x + f * 9, mouth.y);
-    segment(g, p(f * 20, -43 + breath), p(f * (windup ? 41 : 31), (windup ? -57 : -35) + breath), 10 * s, 0xffd85d);
-  } else if (id === 'N02') {
-    poly([[-22, -14], [-43, -30], [-40, -49], [-30, -43], [-28, -24]], 0x79828b);
-    e(-13 + walk * 5, -5, 19, 12, 0x697580); e(13 - walk * 5, -5, 19, 12, 0x9fa8ae);
-    e(0, -29 + breath, 46, 50, 0x8c969e); e(f * 3, -24 + breath, 24, 28, 0xd7d8ce, 1.5);
-    poly([[-25, -66], [-28, -91], [-8, -79], [15, -81], [29, -96], [29, -62]], 0x8c969e);
-    e(0, -65 + breath, 61, 47, 0x9da7ab);
-    poly([[-24, -78], [-23, -87], [-14, -80]], 0xd48b91); poly([[18, -83], [26, -90], [25, -79]], 0xd48b91);
-    for (const side of [-1, 1]) {
-      e(side * 13, -65 + breath, 14, 9, 0xeee8bc, 1.5); e(side * 12, -64 + breath, 3, 7, INK, 0);
-      const a = p(side * 21, -72 + breath); const b = p(side * 6, -66 + breath); g.lineStyle(3, INK).lineBetween(a.x, a.y, b.x, b.y);
-      segment(g, p(side * 16, -38), p(side * (windup || impact ? 40 : 23), windup ? -53 : impact ? -30 : -22), 9 * s, 0x929da4);
-      for (let i = 0; i < 2; i++) { const a1 = p(side * 22, -56 + i * 5); const b1 = p(side * 38, -59 + i * 8); g.lineStyle(1.5, INK).lineBetween(a1.x, a1.y, b1.x, b1.y); }
-    }
-    poly([[-4, -57], [4, -57], [0, -53]], 0xb87078);
-  } else if (id === 'N03') {
-    poly([[-f * 35, -30], [-f * 58, -60], [-f * 55, -32], [-f * 34, -17]], 0x444550);
-    for (const leg of [-1, 1]) {
-      segment(g, p(leg * 25, -32), p(leg * 28 + walk * leg * 7, -7), 13 * s, leg < 0 ? 0x383a43 : 0x555662);
-      e(leg * 28 + walk * leg * 7 + f * 3, -5, 22, 11, 0x3d3c45);
-    }
-    e(-8, -41 + breath, 82, 49, 0x555761);
-    poly([[f * 13, -65], [f * 23, -81], [f * 45, -76], [f * 52, -40], [f * 24, -32]], 0x353741);
-    e(f * 29, -65 + breath, 45, 45, 0x5f6069);
-    poly([[f * 16, -78], [f * 12, -101], [f * 33, -83]], 0x41414b);
-    e(f * 49, -58 + breath, 32, 25, 0x9b9a91); e(f * 62, -62 + breath, 12, 11, INK, 1);
-    e(f * 37, -72 + breath, 10, 7, 0xffc956, 1); e(f * 39, -72 + breath, 3, 6, INK, 0);
-    const jaw = p(f * 47, -47 + breath); g.lineStyle(windup ? 5 : 2, INK).lineBetween(jaw.x - 8, jaw.y, jaw.x + f * 15, jaw.y - 2);
-    segment(g, p(f * 11, -53), p(f * 28, -37), 6, 0xb55349);
-    e(f * 24, -35, 9, 10, 0xe5c169, 1);
-  } else if (id === 'N04') {
-    for (const leg of [-1, 1]) {
-      segment(g, p(leg * 12, -19), p(leg * 13 + walk * leg * 4, -4), 5 * s, 0xdd9b39);
-      const a = p(leg * 13, -3); g.lineStyle(3, INK).lineBetween(a.x - 6, a.y, a.x + 8, a.y);
-    }
-    poly([[-f * 21, -23], [-f * 42, -50], [-f * 27, -42], [-f * 41, -65], [-f * 15, -51]], 0xe1e3d9);
-    e(0, -39 + breath, 59, 60, 0xf5f0dd); e(f * 5, -69 + breath, 33, 42, 0xfff8e5);
-    e(f * 1, -91 + breath, 12, 20, 0xcf4b46); e(f * 12, -89 + breath, 11, 16, 0xe35b51); e(-f * 8, -87 + breath, 11, 16, 0xc64742);
-    poly([[f * 17, -72], [f * 36, -66], [f * 17, -60]], 0xe8ac43);
-    e(f * 14, -77 + breath, 7, 9, INK, 1); e(f * 17, -54, 9, 16, 0xd64a45);
-    segment(g, p(-f * 3, -42), p(-f * (windup ? 31 : 22), windup ? -59 : -30), 12, 0xdedfd5);
-    e(f * 6, -30, 25, 25, 0xd8b458, 2); e(f * 6, -30, 17, 17, 0xfff0b1, 1);
-    const bell = p(f * 6, -30); g.lineStyle(2, INK).lineBetween(bell.x, bell.y - 6, bell.x, bell.y).lineBetween(bell.x, bell.y, bell.x + 5, bell.y + 2);
+    patch(g, tip, [[-7, -11], [8, -9], [9, 8], [-4, 11], [-9, 3]], PALETTE.gold, f, 2.2, 1);
+    for (let i = 0; i < 3; i++) inkLine(g, tip.x - 4, tip.y - 4 + i * 4, tip.x + 5, tip.y - 5 + i * 4, 1.5);
+  } else if (id === 'W02') {
+    inkBox(g, hand.x - 4, hand.y - 5, 11, 11, PALETTE.rust, 1.6, 2);
+    for (let i = 0; i < 3; i++) patch(g, hand, [[4, -5 + i * 4], [22, -13 + i * 6], [17, -5 + i * 5], [6, -1 + i * 4]], PALETTE.paper, f, 1.3, i);
+  } else if (id === 'W03') {
+    patch(g, tip, [[-8, -6], [11, -16], [13, 12], [-8, 5]], PALETTE.moss, f, 2.2, 3);
+    inkEllipse(g, tip.x + f * 11, tip.y - 1, 7, 27, INK, 1.2, 3);
+  } else if (id === 'W04') {
+    patch(g, tip, [[-6, -11], [5, -11], [10, 7], [-10, 7]], PALETTE.paperShade, f, 2, 4);
+    inkEllipse(g, tip.x, tip.y + 8, 6, 5, PALETTE.rust, 1);
+    inkLine(g, tip.x, tip.y - 10, tip.x + f * 4, tip.y - 18, 1.4, INK);
   } else {
-    e(-13 + walk * 4, -5, 25, 12, 0xd5a34d); e(14 - walk * 4, -5, 25, 12, 0xe1b256);
-    e(0, -41 + breath, 56, 76, 0x303944); e(f * 2, -34 + breath, 35, 53, 0xecebdd, 2);
-    e(f * 2, -73 + breath, 43, 37, 0x303944); e(f * 10, -72 + breath, 27, 27, 0xf3efe0, 1.5);
-    e(f * 14, -77 + breath, 6, 8, INK, 1);
-    poly([[f * 19, -69], [f * 34, -64], [f * 20, -60]], 0xe0ae56);
-    segment(g, p(-f * 23, -54), p(-f * (windup ? 39 : 28), windup ? -63 : -23), 11, 0x384552);
-    segment(g, p(f * 23, -53), p(f * (windup ? 39 : 29), windup ? -64 : -24), 11, 0x384552);
-    segment(g, p(-18, -59), p(20, -59), 9, 0x6eaac1);
-    poly([[-f * 4, -60], [-f * 18, -42], [-f * 8, -37], [f * 3, -57]], 0x87b9c9);
+    inkEllipse(g, tip.x, tip.y - 1, 15, 24, PALETTE.pale, 2, 5);
+    patch(g, tip, [[-3, -7], [4, -5], [1, 0], [5, 4], [-2, 8]], INK, f, 0);
   }
-  if (stunned) {
-    g.lineStyle(3, 0x78e0ee).strokeEllipse(x, y - 112 * s, 39, 10);
-    for (const dx of [-17, 17]) {
-      g.fillStyle(0xffd154).fillPoints(Array.from({ length: 8 }, (_, i) => {
-        const angle = i * Math.PI / 4; const radius = i % 2 ? 2 : 5;
-        return { x: x + dx + Math.cos(angle) * radius, y: y - 113 * s + Math.sin(angle) * radius };
-      }), true);
-    }
-  }
-  if (pose.hurt > 0) g.lineStyle(3, 0xfff5d4, Math.min(1, pose.hurt * 3)).strokeEllipse(x, y - 49 * s, 72 * s, 100 * s);
 }

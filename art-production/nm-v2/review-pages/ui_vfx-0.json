@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_ui_console_panel_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-838934e4-a17d-40d4-b72c-08cb77359574.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_console_panel_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "通用无字面板",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：通用无字面板。本次只交一张独立PNG：一张空白冷灰控制台框；顶部与侧边均可拉伸，中心不分格。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。一张可复用的简洁矩形底框，窄金属灰边与冷青极细分区线，中心至少85%安静留白；可半透明叠于背景，禁止烘焙横竖信息栏。顶栏、右栏、技能栏与日志外框共享此母版。\n参考对象：现代内容管理后台与科研中控台的通用空白面板；参考细线分区、冷灰底与足量留白，不复制任何品牌界面。\n建议制作尺寸：1024×1024 px；后处理九宫格，建议角区48 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_digital_record_panel_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4b8de636-45a2-4da9-9f05-c18a8138ad29.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_digital_record_panel_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "数字档案空白底板",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：数字档案空白底板。本次只交一张独立PNG：一张现代数字资料弹窗底板，保留足量空白内容区。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。数字资料终端空白底板；大面积均匀蓝灰/冷白内容底，窄页签承载带、清晰边缘、轻微玻璃分层感。无纸张、封条、手写批注和印章；所有标题、页签、关闭按钮与正文由程序排版，五物共享一个模板。\n参考对象：现代数字档案终端与资料阅读器；参考清洁电子页签、均匀正文底和窄边框，排除纸质卷宗、手写批注与印章。\n建议制作尺寸：1024×1024 px；后处理九宫格，建议角区40 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_personnel_row_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ad29706f-87f1-4c47-a208-e82a31ac2a38.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_row_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "人员行空白底板",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：人员行空白底板。本次只交一张独立PNG：一张扁平清洁的人员名单行底，不画姓名头像及条形填充。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。一张轻量名单行底板：冷灰平底、细边、左侧窄身份标记槽但无固定色块或头像。名字、状态图标、HP/SP条、选中描边都在上层程序布局；六人复用，不按员工生成六张。\n参考对象：现代科研机构人员名册的紧凑列表行；参考可读姓名区、属性区与轻量分隔，示意内容全部留空。\n建议制作尺寸：1024×256 px；后处理九宫格，建议左右角区40 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_alert_strip_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-195004a1-6e83-46bf-a95f-1e0b52f55af8.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_alert_strip_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "状态警报无字条",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：状态警报无字条。本次只交一张独立PNG：一张现代系统状态条空框，不预画警报词、计数或常亮红灯。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。窄而清晰的状态条底框，留独立图标位和两行文案空区；主体保持冷灰，允许程序按真实tone添加红/紫/青色细边。不要把警报画成永久破屏或红灯闪烁。危急程度依靠程序文字、形状与颜色共同表达。\n参考对象：现代系统后台的克制状态提示条；参考图标+两行信息的留白结构，危险色只作边缘语义提示。\n建议制作尺寸：1024×256 px；建议可伸缩边带24 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_metric_icon_health.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b53d06a8-2ddc-4e2a-b32c-d171418a981f.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_metric_icon_health.png",
+    "scope": "ui_vfx",
+    "displayName": "体力属性",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：体力属性。本次只交一张独立PNG：一个简洁心形体力符号，清晰单轮廓，不含血滴或伤口。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。三个独立平面语义图标，统一线宽和视觉重量；只标识属性，不包含仪表、刻度、条形槽、数值或填充比例。能量为现代紧凑电芯；HP为简洁非写实心形；SP为头部轮廓与稳定思维弧。\n参考对象：同一现代扁平图标系统的电芯、心形体力、头部思维三种语义；冷白与青蓝主调，缩小后轮廓清楚。\n建议制作尺寸：每张512×512 px；主体约360 px，建议透明边至少64 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_metric_icon_energy.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-db8834a1-eb27-4e4a-baa4-8a44266cf0c8.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_metric_icon_energy.png",
+    "scope": "ui_vfx",
+    "displayName": "能量电芯",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：能量电芯。本次只交一张独立PNG：一个现代简洁电芯符号，冷青能量槽只作固定图形，不画剩余电量刻度。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。三个独立平面语义图标，统一线宽和视觉重量；只标识属性，不包含仪表、刻度、条形槽、数值或填充比例。能量为现代紧凑电芯；HP为简洁非写实心形；SP为头部轮廓与稳定思维弧。\n参考对象：同一现代扁平图标系统的电芯、心形体力、头部思维三种语义；冷白与青蓝主调，缩小后轮廓清楚。\n建议制作尺寸：每张512×512 px；主体约360 px，建议透明边至少64 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_idle.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bfa3122b-9b85-4dec-8aea-2d57caf7a641.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_idle.png",
+    "scope": "ui_vfx",
+    "displayName": "待命",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a simple upright human pictogram with arms resting. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_metric_icon_sanity.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-92a132fe-b241-4bbd-ab33-f24317f26edf.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_metric_icon_sanity.png",
+    "scope": "ui_vfx",
+    "displayName": "精神属性",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：精神属性。本次只交一张独立PNG：一个侧面头部加稳定思维弧的精神符号，不含读数或虚假脑电图。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。三个独立平面语义图标，统一线宽和视觉重量；只标识属性，不包含仪表、刻度、条形槽、数值或填充比例。能量为现代紧凑电芯；HP为简洁非写实心形；SP为头部轮廓与稳定思维弧。\n参考对象：同一现代扁平图标系统的电芯、心形体力、头部思维三种语义；冷白与青蓝主调，缩小后轮廓清楚。\n建议制作尺寸：每张512×512 px；主体约360 px，建议透明边至少64 px待调。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_walk.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6545180b-bed8-44d3-bb8e-4e542f2aefc2.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_walk.png",
+    "scope": "ui_vfx",
+    "displayName": "移动",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a simple walking human pictogram with one leg forward. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_retreat.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-399e1c4b-4242-4361-8322-28227284929c.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_retreat.png",
+    "scope": "ui_vfx",
+    "displayName": "撤退",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a bent arrow pointing back beside a human pictogram. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_work.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b1ceff4e-7220-4884-a396-bc65be59eccc.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_work.png",
+    "scope": "ui_vfx",
+    "displayName": "工作",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a simple hand tapping a tablet pictogram. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_suppress.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5dd694ac-353b-4f22-b87c-c9a05dde5390.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_suppress.png",
+    "scope": "ui_vfx",
+    "displayName": "镇压",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, two simple crossed batons pictogram. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_panic.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5c87fd34-6d91-4c7b-9044-6092408999d3.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_panic.png",
+    "scope": "ui_vfx",
+    "displayName": "恐慌",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a head outline with a broken signal arc above it. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_personnel_state_incapacitated.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1bdb3462-8373-4ea4-8f2e-12d3dd7f4c88.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_personnel_state_incapacitated.png",
+    "scope": "ui_vfx",
+    "displayName": "重伤失能",
+    "status": "pending",
+    "recordPrompt": "Use case: logo-brand. Tiny 24 pixel game UI status glyph, a simple resting human pictogram lying sideways. Flat solid cold white #D9E1EA with one cyan #57B8FF accent. One very simple bold pictogram, easily legible when tiny. Transparent background. No portrait, no clothes, no anime, no character illustration, no shading, no glow, no frame, no words or numbers. Entire shape centered with margin."
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s01_stun.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b77b1c93-7d93-44c5-922f-c02cf568f5be.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_skill_icon_s01_stun.png",
+    "scope": "ui_vfx",
+    "displayName": "S01 我是奶龙",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S01 我是奶龙。本次只交一张独立PNG：一个暖黄圆润角色停顿手势加静止短线，表达单目标停止，不画伤害爆炸。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。"
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s02_claw.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7eb92418-76b7-4cb6-9999-b6d181ef7579.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_skill_icon_s02_claw.png",
+    "scope": "ui_vfx",
+    "displayName": "S02 耄耋暴怒",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S02 耄耋暴怒。本次只交一张独立PNG：三道紧凑斜爪切痕，暖灰与脏粉少量异常红，表达单体红伤。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  }
+]

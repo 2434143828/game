@@ -2,10 +2,17 @@ import Phaser from 'phaser';
 import type { AnomalyId, EmployeeId, EmployeeRuntime, EnemyRuntime, Point, Rect, WorkType } from '../../contracts/data-contract';
 import type { FacilityController } from '../game/FacilityController';
 import { anomalyById, config, skillById, weaponById } from '../data/config';
-import { drawCreature, drawHuman, INK } from './facility/actors';
+import { drawCreature, drawHuman, INK, type CreaturePose, type HumanPose } from './facility/actors';
 import { drawArchitecture } from './facility/architecture';
 import { FACILITY_GEOMETRY, ROOM_COLORS, ROOM_RECTS, employeeOffset, inRect, roomWorkFeet } from './facility/geometry';
 import facilityMap from '../../config/facility.json';
+import { inkBox, inkLine, inkPolygon, PALETTE } from '../art/ink';
+import { drawBreachFrame, drawInkImpact, drawPanicMarks } from '../art/effects';
+import { HumanRig, PERSONNEL_TEXTURES } from '../art/generated/HumanRig';
+import { CreatureRig, CREATURE_TEXTURES } from '../art/generated/CreatureRig';
+import { EnvironmentArt } from '../art/generated/EnvironmentArt';
+import { EffectsArt, preloadEffectsArt } from '../art/generated/EffectsArt';
+import artCoverage from '../art/generated/nm-v2-coverage.json';
 
 interface DisplayActor {
   world: Point; foot: Point; stride: number; facing: -1 | 1; moving: boolean; climbing: boolean;
@@ -46,11 +53,23 @@ export class ContainmentFacilityScene extends Phaser.Scene {
   private cameraZoom: number = facilityMap.camera.zoom;
   private panStart: { pointer: Point; center: Point } | null = null;
   private following: EmployeeId | null = null;
+  private humanArt!: HumanRig;
+  private creatureArt!: CreatureRig;
+  private environmentArt!: EnvironmentArt;
+  private generatedEffects!: EffectsArt;
+  private artLoadErrors: string[] = [];
 
   constructor(readonly controller: FacilityController) { super('containment-facility'); }
+  preload(): void {
+    this.artLoadErrors=[];
+    this.load.on('loaderror', (file: Phaser.Loader.File) => this.artLoadErrors.push(file.key));
+    for(const asset of [...PERSONNEL_TEXTURES,...CREATURE_TEXTURES]) if(!this.textures.exists(asset.key))this.load.image(asset.key,asset.url);
+    EnvironmentArt.preload(this);
+    preloadEffectsArt(this);
+  }
   create(): void {
     const view = FACILITY_GEOMETRY.view;
-    this.cameras.main.setViewport(view.x, view.y, view.width, view.height).setBackgroundColor('#111218');
+    this.cameras.main.setViewport(view.x, view.y, view.width, view.height).setBackgroundColor('#181a20');
     this.worldRoot = this.add.container();
     this.screenRoot = this.add.container().setDepth(100);
     const uiCamera = this.cameras.add(0, 0, config.game.layout.width, config.game.layout.height, false, 'facility-interface');
@@ -59,12 +78,18 @@ export class ContainmentFacilityScene extends Phaser.Scene {
     this.screenRoot.cameraFilter |= this.cameras.main.id;
     const background = this.add.graphics();
     this.worldRoot.add(background);
+    this.environmentArt = new EnvironmentArt(this, this.worldRoot);
     drawArchitecture(background, (text, x, y, size = 12, color = '#eee5cf') => {
       this.worldRoot.add(this.add.text(x, y, text, { fontFamily: '"Microsoft YaHei", sans-serif', fontSize: size, color }));
-    });
+    }, this.environmentArt);
     this.world = this.add.graphics();
     this.effects = this.add.graphics();
-    this.worldRoot.add([this.world, this.effects]);
+    this.worldRoot.add(this.world);
+    this.creatureArt = new CreatureRig(this, this.worldRoot);
+    // Keep the controllable bodies and held weapons readable when enemies overlap them.
+    this.humanArt = new HumanRig(this, this.worldRoot);
+    this.worldRoot.add(this.effects);
+    this.generatedEffects = new EffectsArt(this, this.worldRoot);
     this.overlay = this.add.graphics();
     this.screenRoot.add(this.overlay);
     this.applyCamera();
@@ -215,6 +240,11 @@ export class ContainmentFacilityScene extends Phaser.Scene {
       }),
       rooms: state.rooms.map(room => ({ id: room.anomalyId, mode: room.mode, workElapsed: room.work?.elapsedSec ?? null })),
     };
+  }
+  getGeneratedArtState(): unknown {
+    return {version:'modern-media-v2',coverage:artCoverage,creatureReadiness:this.creatureArt.getReadiness(),loadErrors:[...this.artLoadErrors],
+      environmentComplete:this.environmentArt.complete,environmentUsage:this.environmentArt.getUsage(),
+      personnel:this.humanArt.getState(),creatures:this.creatureArt.getState(),effects:this.generatedEffects.getState()};
   }
   private menuRect(): Rect {
     const room = ROOM_RECTS[this.workMenuRoom ?? this.controller.selectedRoomId ?? 'N01'];
@@ -403,9 +433,13 @@ export class ContainmentFacilityScene extends Phaser.Scene {
   }
   private drawFrame(): void {
     this.world.clear(); this.effects.clear(); this.overlay.clear(); this.usedLabels = 0; this.usedScreenLabels = 0;
+    this.humanArt.beginFrame(); this.creatureArt.beginFrame(); this.generatedEffects.beginFrame();
     const state = this.controller.state;
+    const safeDoor=mapNode('safe-door');
+    this.environmentArt.setDoorOpen('SAFE',state.employees.some(e=>Math.hypot(e.location.x-safeDoor.x,e.location.y-safeDoor.y)<70));
     for (const room of state.rooms) this.drawRoom(room.anomalyId);
     this.drawTelegraphs();
+    this.drawSelectedRoute();
     const entities = [...state.employees, ...state.enemies].sort((a, b) => (this.actors.get(a.id)?.foot.y ?? 0) - (this.actors.get(b.id)?.foot.y ?? 0));
     for (const entity of entities) { const actor = this.actors.get(entity.id)!; if ('hp' in entity) this.drawEmployee(entity, actor); else this.drawEnemy(entity, actor); }
     this.drawEffects();
@@ -418,36 +452,48 @@ export class ContainmentFacilityScene extends Phaser.Scene {
     }
     for (let index = this.usedLabels; index < this.labels.length; index++) this.labels[index].setVisible(false);
     for (let index = this.usedScreenLabels; index < this.screenLabels.length; index++) this.screenLabels[index].setVisible(false);
+    this.humanArt.endFrame(); this.creatureArt.endFrame(); this.generatedEffects.endFrame();
   }
   private drawRoom(id: AnomalyId): void {
     const state = this.controller.state, room = state.rooms.find(item => item.anomalyId === id)!;
     const rect = ROOM_RECTS[id], foot = roomWorkFeet(id), g = this.world, time = state.simulationTimeSec;
     const definition = facilityMap.rooms[id], creaturePoint = definition.creaturePoint, door = mapNode(definition.doorNodeId);
     const breached = room.mode === 'BREACHED', recovering = room.mode === 'RECOVERING', locked = room.mode === 'LOCKED';
-    const alarm = breached ? 0xf04c43 : room.pressure >= config.game.pressure.danger ? 0xf0a541 : 0x8db596;
+    const danger = !locked && !breached && room.pressure >= config.game.pressure.danger;
+    const alarm = breached ? PALETTE.alarm : danger ? 0xd5844d : PALETTE.moss;
     const light = breached ? 0.5 + (Math.sin(time * 8) + 1) * 0.25 : 1;
     const doorX = door.x < rect.x + rect.width / 2 ? rect.x + 5 : rect.x + rect.width - 25;
     const usingDoor = state.employees.some(e => Math.hypot(e.location.x - door.x, e.location.y - door.y) < 70);
-    g.fillStyle(INK).fillRect(doorX - 5, door.y - 117, 32, 20);
-    g.fillStyle(locked ? 0x676a69 : alarm, light).fillRect(doorX, door.y - 112, 22, 9);
-    if (!usingDoor && !breached) {
+    inkBox(g, doorX - 5, door.y - 117, 32, 20, INK, 2, 3);
+    inkBox(g, doorX, door.y - 112, 22, 9, locked ? 0x676a69 : alarm, 1, 7, light);
+    this.environmentArt.setDoorOpen(id, usingDoor || breached);
+    if (!this.environmentArt.complete && !usingDoor && !breached) {
       g.fillStyle(0x424c50).fillRect(doorX + 4, door.y - 91, 14, 88);
       g.lineStyle(2, 0x98aaa0).lineBetween(doorX + 11, door.y - 82, doorX + 11, door.y - 11);
-    } else g.lineStyle(5, breached ? 0xba5348 : 0xd8be73).lineBetween(doorX, door.y - 94, doorX + 24, door.y - 94);
-    if (breached) g.fillStyle(alarm, light * 0.12).fillRect(rect.x + 16, rect.y + 60, rect.width - 32, rect.height - 68);
+    } else if(usingDoor || breached)g.lineStyle(5, breached ? 0xba5348 : 0xd8be73).lineBetween(doorX, door.y - 94, doorX + 24, door.y - 94);
+    if (breached) {
+      g.fillStyle(alarm, light * 0.1).fillRect(rect.x + 16, rect.y + 60, rect.width - 32, rect.height - 68);
+      drawBreachFrame(g, rect, time);
+      this.generatedEffects.breach(rect,time,id);
+    }
+    if (danger) {
+      inkPolygon(g, [{ x: rect.x + 24, y: rect.y + 82 }, { x: rect.x + 36, y: rect.y + 61 }, { x: rect.x + 48, y: rect.y + 82 }], 0xd5844d, 2, 9);
+      this.label('!', rect.x + 36, rect.y + 74, 14, '#211e24', 'center', true);
+    }
     if (locked) {
       g.fillStyle(0x30383d, 0.97).fillRect(rect.x + 17, rect.y + 60, rect.width - 34, rect.height - 66);
       for (let y = rect.y + 70; y < rect.y + rect.height - 8; y += 17) g.lineStyle(4, 0x1e252b).lineBetween(rect.x + 20, y, rect.x + rect.width - 20, y);
       this.label(`第 ${anomalyById[id].unlockDay} 日开放`, rect.x + rect.width / 2, rect.y + rect.height / 2, 22, '#b9bbaa', 'center', true);
     } else if (!breached) {
-      g.fillStyle(0x12171b, 0.4).fillEllipse(creaturePoint.x, creaturePoint.y + 1, 105, 13);
-      drawCreature(g, id, { foot: creaturePoint, facing: -1, time, stride: 0, moving: false, selected: false, hurt: 0, working: room.work?.phase === 'EXECUTING' });
+      const creaturePose: CreaturePose = { foot: creaturePoint, facing: -1, time, stride: 0, moving: false, selected: false, hurt: 0, working: room.work?.phase === 'EXECUTING' };
+      if(!this.creatureArt.render(id,creaturePose,`room-${id}`))drawCreature(g,id,creaturePose);
       if (recovering) {
         g.fillStyle(0x79979b, 0.25).fillRect(rect.x + 17, rect.y + 60, rect.width - 34, rect.height - 68);
         for (let x = rect.x + 30; x < rect.x + rect.width - 25; x += 35) g.lineStyle(3, 0x80a6ad, 0.5).lineBetween(x, rect.y + 61, x, rect.y + rect.height - 10);
       }
     } else {
-      g.lineStyle(4, 0xbb554b).lineBetween(creaturePoint.x - 35, creaturePoint.y - 90, creaturePoint.x + 35, creaturePoint.y - 35).lineBetween(creaturePoint.x - 35, creaturePoint.y - 35, creaturePoint.x + 35, creaturePoint.y - 90);
+      inkLine(g, creaturePoint.x - 35, creaturePoint.y - 90, creaturePoint.x + 35, creaturePoint.y - 35, 5, PALETTE.rust, 2);
+      inkLine(g, creaturePoint.x - 35, creaturePoint.y - 35, creaturePoint.x + 35, creaturePoint.y - 90, 4, PALETTE.rust, 3);
       this.label('收容失效', creaturePoint.x, creaturePoint.y - 115, 20, '#ffcbc0', 'center', true);
     }
     const status = locked ? '封闭' : breached ? '停产 · 等待镇压' : recovering ? `恢复 ${Math.ceil(room.recoveryRemainingSec)}s` : room.work ? room.work.phase === 'TRAVELLING' ? '员工前往中' : `${config.localization[`work.${room.work.type}`]} ${Math.floor(room.work.elapsedSec)}s` : '收容稳定';
@@ -461,6 +507,7 @@ export class ContainmentFacilityScene extends Phaser.Scene {
       if (rule.kind === 'NEGLECT' && room.mode === 'CONTAINED') this.label(`无人接待 ${Math.floor(room.memory.idleElapsedSec)} / ${rule.idleGraceSec}s`, creaturePoint.x, rect.y + 111, 14, room.memory.idleElapsedSec > rule.idleGraceSec ? '#ffad8b' : '#a3bfc3', 'center', true);
     }
     if (room.work?.phase === 'EXECUTING') {
+      this.generatedEffects.work({x:foot.x+26,y:foot.y-45},time);
       const profile = anomalyById[id].workProfiles.find(item => item.type === room.work!.type)!;
       g.fillStyle(INK).fillRect(foot.x - 48, foot.y - 114, 130, 7);
       g.fillStyle(0xe8ce75).fillRect(foot.x - 47, foot.y - 113, 128 * room.work.elapsedSec / profile.durationSec, 5);
@@ -475,7 +522,12 @@ export class ContainmentFacilityScene extends Phaser.Scene {
   private drawEmployee(employee: EmployeeRuntime, actor: DisplayActor): void {
     const state = this.controller.state; const time = state.simulationTimeSec;
     const room = state.rooms.find(item => item.work?.employeeId === employee.id && item.work.phase === 'EXECUTING');
-    drawHuman(this.world, employee, { foot: actor.foot, facing: actor.facing, stride: actor.stride, moving: actor.moving, climbing: actor.climbing, time, selected: this.controller.selected.has(employee.id), hurt: Math.max(0, actor.hurtUntil - time), impactRemaining: Math.max(0, actor.impactUntil - time), workType: room?.work?.type });
+    const pose: HumanPose = { foot: actor.foot, facing: actor.facing, stride: actor.stride, moving: actor.moving, climbing: actor.climbing, time, selected: this.controller.selected.has(employee.id), hurt: Math.max(0, actor.hurtUntil - time), impactRemaining: Math.max(0, actor.impactUntil - time), workType: room?.work?.type };
+    if(!this.humanArt.render(employee,pose))drawHuman(this.world,employee,pose);
+    else {
+      this.world.fillStyle(INK,0.25).fillEllipse(actor.foot.x,actor.foot.y+2,33,7);
+      if(pose.selected){this.world.fillStyle(0xffcf43,0.16).fillEllipse(actor.foot.x,actor.foot.y+1,44,11);this.world.lineStyle(3,0xffcf43).strokeEllipse(actor.foot.x,actor.foot.y+1,44,11);}
+    }
     const x = actor.foot.x; const y = actor.foot.y;
     const selected = this.controller.selected.has(employee.id);
     if (selected || employee.hp < employee.hpMax || employee.sp < employee.spMax) {
@@ -485,12 +537,17 @@ export class ContainmentFacilityScene extends Phaser.Scene {
     }
     // Names only on selection avoid six overlapping floating labels at the safe endpoint.
     if (selected) this.label(employee.displayName, x, y - 92, 11, '#ffde81', 'center', true);
-    if (employee.status === 'PANICKED') this.label('!', x + 18, y - 65, 22, '#ff997c', 'center', true);
+    if (employee.status === 'PANICKED') {
+      drawPanicMarks(this.effects, actor.foot, time);
+      this.generatedEffects.panic(actor.foot,time);
+      this.label('!', x + 22, y - 64, 22, '#c8a4da', 'center', true);
+    }
     if (employee.location.zone === 'SAFE' && (employee.hp < employee.hpMax || employee.sp < employee.spMax)) this.label('+', x - 19, y - 34 - (time % 1.4 / 1.4) * 25, 18, '#b8e3ac', 'center', true);
   }
   private drawEnemy(enemy: EnemyRuntime, actor: DisplayActor): void {
     const time = this.controller.state.simulationTimeSec; const x = actor.foot.x; const y = actor.foot.y;
-    drawCreature(this.world, enemy.sourceAnomalyId, { foot: actor.foot, facing: actor.facing, time, stride: actor.stride, moving: actor.moving, selected: this.controller.selectedEnemyId === enemy.id, hurt: Math.max(0, actor.hurtUntil - time), working: false, enemy, impactRemaining: Math.max(0, actor.impactUntil - time) });
+    const pose: CreaturePose = { foot: actor.foot, facing: actor.facing, time, stride: actor.stride, moving: actor.moving, selected: this.controller.selectedEnemyId === enemy.id, hurt: Math.max(0, actor.hurtUntil - time), working: false, enemy, impactRemaining: Math.max(0, actor.impactUntil - time) };
+    if(!this.creatureArt.render(enemy.sourceAnomalyId,pose,enemy.id))drawCreature(this.world,enemy.sourceAnomalyId,pose);
     const top = y - (enemy.isClone ? 91 : 115);
     this.world.fillStyle(INK).fillRect(x - 32, top, 64, 6);
     this.world.fillStyle(enemy.isClone ? 0xd7ac70 : 0xef7761).fillRect(x - 31, top + 1, 62 * enemy.suppressionHp / enemy.suppressionHpMax, 4);
@@ -522,14 +579,21 @@ export class ContainmentFacilityScene extends Phaser.Scene {
   }
   private drawEffects(): void {
     const state = this.controller.state; const time = state.simulationTimeSec; const g = this.effects;
+    for (const [id, actor] of this.actors) {
+      if (actor.hurtUntil <= time) continue;
+      drawInkImpact(g, { x: actor.foot.x, y: actor.foot.y - 39 }, actor.hurtUntil - time,
+        id.startsWith('E') ? PALETTE.paper : PALETTE.alarm, id.length);
+      this.generatedEffects.hit({x:actor.foot.x,y:actor.foot.y-39},actor.hurtUntil-time);
+    }
     for (const employee of state.employees) {
       const actor = this.actors.get(employee.id)!;
       if (actor.impactUntil <= time || employee.order.kind !== 'SUPPRESS') continue;
       const target = this.actors.get(employee.order.enemyId); if (!target) continue;
       const color = damageColors[weaponById[employee.weaponId].damage.type]; const alpha = Math.min(1, (actor.impactUntil - time) / 0.22);
+      this.generatedEffects.damage({x:target.foot.x,y:target.foot.y-42},weaponById[employee.weaponId].damage.type,actor.impactUntil-time);
       if (weaponById[employee.weaponId].rangePx > weaponById.W00.rangePx) {
-        g.lineStyle(6, INK, alpha).lineBetween(actor.foot.x + actor.facing * 20, actor.foot.y - 37, target.foot.x, target.foot.y - 42);
-        g.lineStyle(3, color, alpha).lineBetween(actor.foot.x + actor.facing * 20, actor.foot.y - 37, target.foot.x, target.foot.y - 42);
+        inkLine(g, actor.foot.x + actor.facing * 20, actor.foot.y - 37, target.foot.x, target.foot.y - 42, 6, INK, 2, alpha);
+        inkLine(g, actor.foot.x + actor.facing * 20, actor.foot.y - 37, target.foot.x, target.foot.y - 42, 3, color, 2, alpha);
         g.lineStyle(3, color, alpha).strokeCircle(target.foot.x, target.foot.y - 42, 14);
       } else g.lineStyle(4, color, alpha).beginPath().arc(actor.foot.x + actor.facing * 32, actor.foot.y - 37, 28, actor.facing > 0 ? -1.2 : 1.8, actor.facing > 0 ? 1 : 4.3).strokePath();
     }
@@ -548,6 +612,21 @@ export class ContainmentFacilityScene extends Phaser.Scene {
       const flash = this.skillFlash; const alpha = Math.min(0.8, (flash.until - time) / 0.55);
       g.fillStyle(flash.color, alpha * 0.12).fillEllipse(flash.point.x, flash.point.y, flash.radius * 2.1, flash.radius * 2);
       g.lineStyle(4, flash.color, alpha).strokeEllipse(flash.point.x, flash.point.y, flash.radius * 2.1, flash.radius * 2);
+    }
+  }
+  private drawSelectedRoute(): void {
+    const id = [...this.controller.selected][0];
+    const employee = this.controller.state.employees.find(item => item.id === id);
+    if (!employee?.path.length || employee.status !== 'MOVING') return;
+    const points = [employee.location, ...employee.path];
+    for (let i = 1; i < points.length; i++) {
+      const a = points[i - 1], b = points[i], dx = b.x - a.x, dy = b.y - a.y;
+      const length = Math.hypot(dx, dy);
+      for (let offset = 8; offset < length; offset += 25) {
+        const end = Math.min(length, offset + 11);
+        inkLine(this.world, a.x + dx * offset / length, a.y + dy * offset / length - 4,
+          a.x + dx * end / length, a.y + dy * end / length - 4, 2, PALETTE.cyan, i, 0.75);
+      }
     }
   }
   private drawSkillPreview(): void {
@@ -571,16 +650,16 @@ export class ContainmentFacilityScene extends Phaser.Scene {
     const id = this.workMenuRoom; if (!id) return;
     const menu = this.menuRect(); const g = this.overlay; const room = this.controller.state.rooms.find(item => item.anomalyId === id)!;
     g.fillStyle(INK, 0.35).fillRect(menu.x + 6, menu.y + 7, menu.width, menu.height);
-    g.fillStyle(0xf1e6ce).fillRect(menu.x, menu.y, menu.width, menu.height); g.lineStyle(4, INK).strokeRect(menu.x, menu.y, menu.width, menu.height);
+    g.fillStyle(0x1e2630).fillRect(menu.x, menu.y, menu.width, menu.height); g.lineStyle(1, 0x57b8ff).strokeRect(menu.x, menu.y, menu.width, menu.height);
     g.fillStyle(INK).fillRect(menu.x, menu.y, menu.width, 40); g.fillStyle(ROOM_COLORS[id]).fillRect(menu.x, menu.y + 40, menu.width, 4);
-    this.screenLabel(`${anomalyById[id].name} · 派遣工作`, menu.x + 15, menu.y + 22, 14, '#f4e8c9', 'left', true);
+    this.screenLabel(`${anomalyById[id].name} · 派遣工作`, menu.x + 15, menu.y + 22, 14, '#d9e1ea', 'left', true);
     for (let i = 0; i < config.game.work.types.length; i++) {
       const type = config.game.work.types[i]; const profile = anomalyById[id].workProfiles.find(item => item.type === type)!;
       const y = menu.y + 44 + i * FACILITY_GEOMETRY.menuRowHeight; const possible = room.mode === 'CONTAINED' && !room.work && this.controller.selected.size === 1;
       const hover = inRect(this.hovered, { x: menu.x, y, width: menu.width, height: FACILITY_GEOMETRY.menuRowHeight });
-      g.fillStyle(possible ? hover ? 0xe5c77d : 0xd8cdb7 : 0xb1afa5).fillRect(menu.x + 4, y + 3, menu.width - 8, FACILITY_GEOMETRY.menuRowHeight - 5);
-      this.screenLabel(config.localization[`work.${type}`], menu.x + 16, y + 21, 15, possible ? '#302a20' : '#696b65', 'left', true);
-      this.screenLabel(`${profile.durationSec}s  +${profile.energy}能量`, menu.x + menu.width - 14, y + 21, 12, possible ? '#514634' : '#696b65', 'right');
+      g.fillStyle(possible ? hover ? 0x394f66 : 0x283440 : 0x202831).fillRect(menu.x + 4, y + 3, menu.width - 8, FACILITY_GEOMETRY.menuRowHeight - 5);
+      this.screenLabel(config.localization[`work.${type}`], menu.x + 16, y + 21, 15, possible ? '#d9e1ea' : '#7b8795', 'left', true);
+      this.screenLabel(`${profile.durationSec}s  +${profile.energy}能量`, menu.x + menu.width - 14, y + 21, 12, possible ? '#a9bbcd' : '#7b8795', 'right');
     }
   }
   private drawMapInterface(): void {
@@ -589,23 +668,23 @@ export class ContainmentFacilityScene extends Phaser.Scene {
     for (const [id, p] of Object.entries(controls.rooms)) {
       const room = state.rooms.find(item => item.anomalyId === id)!;
       const color = room.mode === 'BREACHED' ? 0xe46b59 : ROOM_COLORS[id as AnomalyId];
-      g.fillStyle(0x171c22, 0.95).fillRect(p.x - 53, p.y - 15, 106, 30);
-      g.lineStyle(1, color, room.mode === 'LOCKED' ? 0.3 : 0.8).strokeRect(p.x - 53, p.y - 15, 106, 30);
-      this.screenLabel(`${id} ${anomalyById[id as AnomalyId].name}`, p.x, p.y, 11, room.mode === 'LOCKED' ? '#757c7b' : '#dfdcca');
+      g.fillStyle(0x1e2630, 0.98).fillRect(p.x - 53, p.y - 15, 106, 30); g.lineStyle(1, 0x39424e).strokeRect(p.x - 53, p.y - 15, 106, 30);
+      inkLine(g, p.x - 49, p.y + 13, p.x + 49, p.y + 13, 2, color, 1, room.mode === 'LOCKED' ? 0.3 : 0.8);
+      this.screenLabel(`${id} ${anomalyById[id as AnomalyId].name}`, p.x, p.y, 11, room.mode === 'LOCKED' ? '#757c7b' : '#d9e1ea');
       if (room.mode === 'BREACHED') this.screenLabel('!', p.x + 43, p.y - 2, 16, '#ff9d79', 'center', true);
     }
     for (const [key, text, width] of [['overview', '总览 Home', 76], ['focus', '跟随 F', 76], ['zoomOut', '−', 38], ['zoomIn', '+', 38]] as const) {
       const p = controls[key];
-      g.fillStyle(0x171c22, 0.96).fillRect(p.x - width / 2, p.y - 15, width, 30);
-      g.lineStyle(1, 0x7b7865).strokeRect(p.x - width / 2, p.y - 15, width, 30);
-      this.screenLabel(text, p.x, p.y, 12, '#e3d7b3');
+      g.fillStyle(0x1e2630, 0.98).fillRect(p.x - width / 2, p.y - 15, width, 30); g.lineStyle(1, 0x39424e).strokeRect(p.x - width / 2, p.y - 15, width, 30);
+      inkLine(g, p.x - width / 2 + 4, p.y + 13, p.x + width / 2 - 4, p.y + 13, 1, PALETTE.paperShade, 2);
+      this.screenLabel(text, p.x, p.y, 12, '#d9e1ea');
     }
     this.screenLabel(`FACILITY 07   /   ${Math.round(this.cameraZoom * 100)}%${this.following ? `   跟随 ${this.following}` : ''}`, 37, 133, 11, '#a6ada8', 'left');
     g.fillStyle(0x10171e, 0.9).fillRect(28, 765, 300, 28);
     this.screenLabel('滚轮缩放 · 中键 / Alt拖动 · 双击员工跟随', 38, 779, 11, '#bec4bd', 'left');
-    g.fillStyle(0x10171e, 0.97).fillRect(MINI_MAP.x, MINI_MAP.y, MINI_MAP.width, MINI_MAP.height);
-    g.lineStyle(1, 0x7b816f).strokeRect(MINI_MAP.x, MINI_MAP.y, MINI_MAP.width, MINI_MAP.height);
-    this.screenLabel('设施导航 · 点击定位', MINI_MAP.x + 12, MINI_MAP.y + 15, 11, '#d3cbaa', 'left');
+    g.fillStyle(0x1e2630, 0.99).fillRect(MINI_MAP.x, MINI_MAP.y, MINI_MAP.width, MINI_MAP.height); g.lineStyle(1, 0x39424e).strokeRect(MINI_MAP.x, MINI_MAP.y, MINI_MAP.width, MINI_MAP.height);
+    inkLine(g, MINI_MAP.x + 7, MINI_MAP.y + 29, MINI_MAP.x + MINI_MAP.width - 7, MINI_MAP.y + 29, 1, PALETTE.paperShade, 7);
+    this.screenLabel('设施导航 · 点击定位', MINI_MAP.x + 12, MINI_MAP.y + 15, 11, '#d9e1ea', 'left');
     for (const edge of facilityMap.edges) {
       const a = this.toMini(mapNode(edge.from)), b = this.toMini(mapNode(edge.to));
       g.lineStyle(edge.kind === 'TRANSIT' ? 2 : 3, 0x636d72, 0.85).lineBetween(a.x, a.y, b.x, b.y);

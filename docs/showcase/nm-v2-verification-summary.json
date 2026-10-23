@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-23",
+  "assetDelivery": "COMPLETE",
+  "runtimeReplacement": "VERIFIED_WITHIN_REPORTED_SCOPE",
+  "fullGameAcceptance": "NOT_REVALIDATED",
+  "coverage": {
+    "expected": 307,
+    "imported": 307,
+    "runtimeExpected": 241,
+    "runtimeAvailable": 241,
+    "pending": []
+  },
+  "functional": {
+    "status": "PASS",
+    "checks": 8,
+    "inputs": 63,
+    "screenshots": 19
+  },
+  "equipment": {
+    "status": "PASS",
+    "checks": 5,
+    "inputs": 176,
+    "screenshots": 5
+  },
+  "production": {
+    "status": "PASS",
+    "checks": 15,
+    "pausePixels": {
+      "identical": true,
+      "before": "19b1874b13229386ef92cd0b7b37db21e1642fade65b29e041eaa985ff46cfb2",
+      "after": "19b1874b13229386ef92cd0b7b37db21e1642fade65b29e041eaa985ff46cfb2",
+      "clockBefore": "SIM / 本日\n00:03",
+      "clockAfter": "SIM / 本日\n00:03",
+      "pauseButton": "继续 ▷",
+      "realWaitMs": 700,
+      "difference": {
+        "changedPixels": 0,
+        "totalPixels": 956160,
+        "maxChannelDelta": 0,
+        "boundsWithinCapture": null,
+        "boundsOnCanvas": null,
+        "regions": {
+          "employeeAnchor": 0,
+          "topNavigation": 0,
+          "bottomHelp": 0,
+          "minimap": 0,
+          "remainingWorld": 0
+        },
+        "changedPixelSamples": [],
+        "changedTiles": []
+      }
+    }
+  },
+  "sources": [
+    "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/report.json",
+    "docs/nm-v2-evidence-2026-10-23/production-2026-10-23T08-46-05.647Z/report.json",
+    "docs/nm-v2-evidence-2026-10-23/equipment-2026-10-23T08-42-24.901Z/report.json"
+  ],
+  "screenshots": [
+    {
+      "file": "nm-v2-work.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/05-employee-inside-room-working.png",
+      "sha256": "3b9d80eec8ac6856771f302fb6145f420b512f168a7a920d008359dbe27bddb4"
+    },
+    {
+      "file": "nm-v2-breach.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/07-nailong-main-and-two-clones.png",
+      "sha256": "74adaee75e677a37c39f8d93c78f600e4bed7504eeb39df39f42e78f61c561c8"
+    },
+    {
+      "file": "nm-v2-combat.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/08-actual-suppression-hit.png",
+      "sha256": "3f463995d43038a5bf23a08f01a3d584e08ff220ab159ac7a44cb86236a210bb"
+    },
+    {
+      "file": "nm-v2-retreat.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/09-retreating-after-suppression.png",
+      "sha256": "35b53bed4b13ec7fc48c50a49e5d22724b0e686da68d0b634d7c4d72942d74a9"
+    },
+    {
+      "file": "nm-v2-dog.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/13-N03-breached.png",
+      "sha256": "25df8ee832824ed016c5c01af4b54b6e2d9b81ba90882cddfd9d195e6d44baa6"
+    },
+    {
+      "file": "nm-v2-penguin.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/run-2026-10-23T08-42-24.881Z/17-N05-breached.png",
+      "sha256": "166b368a858f9a781f4826df02863eeaadb4afabc613ee3f00b400e30c327cfa"
+    },
+    {
+      "file": "nm-v2-facility.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/production-2026-10-23T08-46-05.647Z/01-production-central-view.png",
+      "sha256": "77f3495975110a4f7aff89923d39aa89217a4dcc62e39898ac9f1d1b56c5931e"
+    },
+    {
+      "file": "nm-v2-overview.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/production-2026-10-23T08-46-05.647Z/02-home-overview.png",
+      "sha256": "fa4f67813ab130c11e0ccb842d949c2b39dea3cae53c9677d7e4122041903be1"
+    },
+    {
+      "file": "nm-v2-day-one.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/production-2026-10-23T08-46-05.647Z/15-formal-day-one-started.png",
+      "sha256": "747f956690e5e59ce52d92d43a3ab413d4e50581144f5f13914f81a74d9a9059"
+    },
+    {
+      "file": "nm-v2-equipment.png",
+      "source": "docs/nm-v2-evidence-2026-10-23/equipment-2026-10-23T08-42-24.901Z/equipment-W01-A01.png",
+      "sha256": "e6edd3a1981f9fe542d401edefbdc99772273be917683caece35eef551acda61"
+    }
+  ],
+  "limits": [
+    "Full three-day replay not repeated for v2",
+    "All skill and equipment attack combinations not replayed",
+    "No cross-device performance claim",
+    "Legacy slice retains procedural art"
+  ]
+}

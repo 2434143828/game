@@ -24,3 +24,14 @@ __pycache__/
 *.pfx
 .DS_Store
 Thumbs.db
+
+# Local generation scratch/history; approved v2 originals and deliverables are tracked.
+/art-production/generated/
+/art-production/contact-sheets/
+/art-production/inspection/
+/art-production/revisions/
+/art-production/nm-v2/candidates/
+/art-production/nm-v2/originals-history/
+/art-production/nm-v2/review-pages/*.png
+/art-production/*.pid
+/outputs/**/*.inspect.ndjson

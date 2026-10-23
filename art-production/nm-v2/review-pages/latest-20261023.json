@@ -1,0 +1,80 @@
+[
+  {
+    "filename": "nm_v2_abn_nailong_base_parts_body.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-342cc645-cc0e-4077-8b3c-3205700e6a1c.png",
+    "prompt": "Generate a production 2D puppet part using the attached image ONLY as the character color and shape reference. ONE isolated torso, NOT a complete character. Warm yellow short rounded pear-shaped torso with cream-white belly patch, matching reference. Three-quarter facing right. Top has short neck attachment overlap; sides are uninterrupted rounded edges, bottom is smoothly rounded. NO head, NO eyes, NO mouth, NO arms, NO hands, NO legs, NO feet, NO claws, NO tail, NO ears. Only chest-to-hip central body shape. Clean modern friendly cartoon, moderate thin dark outline and flat colors with two gentle cel-shadow values. True transparent background, no checkerboard, no ground, no shadow, no glow, no text. Single component centered with transparent margin. This is the missing nm_v2_abn_nailong_base_parts_body.png asset."
+  },
+  {
+    "filename": "nm_v2_abn_maodie_base_parts_body.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：短躯干。只画本张：暖灰猫躯干，脏粉腹部小色块，肩颈和后腿根留余量，无头、肢体或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_maodie_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4c6cc3be-4dee-4b13-88d0-d6305c7be00d.png"
+  },
+  {
+    "filename": "nm_v2_abn_maodie_pollution_parts_outburst_face.png",
+    "prompt": "A transparent facial-feature decal for a modular cartoon cat. Draw ONLY two narrowed angry pale beige eyes with dark pupils and sharply slanted dark eyelids, one tiny pink triangular nose, and one small oval open shouting mouth with muted pink tongue. Three-quarter face orientation looking right, right eye smaller. TRANSPARENT EMPTY GAPS between eyes, nose and mouth. NO head silhouette, NO fur, NO ears, NO cheeks, NO face skin, NO mask, NO connecting opaque fill. No glow or background. Crisp dark navy fine outline, flat colors. This is a floating facial feature overlay, not a cat portrait.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-fcf1e8fb-825e-4a54-9040-67e15dd930ee.png"
+  },
+  {
+    "filename": "nm_v2_abn_maodie_base_parts_calm_face.png",
+    "prompt": "A transparent facial-feature decal for a modular cartoon cat. Draw ONLY two half-lidded pale beige eyes with dark pupils and dark tired eyelids, one tiny pink triangular nose, and a tiny closed downward-curved mouth. Three-quarter face orientation looking right, the right eye smaller. TRANSPARENT EMPTY GAPS between eyes, nose and mouth. NO head silhouette, NO fur, NO ears, NO cheeks, NO face skin, NO mask, NO connecting opaque fill. No glow or background. Crisp dark navy fine outline, flat colors. This is a floating facial feature overlay, not a cat portrait.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a5ddf317-9ae9-4ac1-a513-71b80ed9a0f7.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_body.png",
+    "prompt": "ONE isolated round feathered torso cutout for a modular cute yellow cartoon chicken puppet. ONLY a rounded golden-yellow oval body with pale cream belly, short soft feather tufts around the edges and small neck joint at top. Three-quarter facing right. Smooth uninterrupted side contour, no appendages. Absolutely NO wings, NO wing feather pattern, NO head, NO eyes, NO beak, NO comb, NO legs, NO feet, NO tail, NO badge, NO tag, NO clothing, NO gadgets, NO symbols. Clean flat cel shaded game art, fine dark navy contour, truly transparent background with no shadow or glow. Body segment only.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b55ad1e4-4f39-4d5f-b32e-2fd544ec247d.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_wing.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：可复用翅膀。只画本张：一只短鸡翅，明黄平面羽片轮廓，翅根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-62d26756-3565-45d4-98e0-6279fc5b4c54.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_lower_beak_wattle.png",
+    "prompt": "ONE isolated LOWER HALF ONLY of a cute cartoon chicken beak with a small red-orange wattle underneath. Tiny golden-orange shallow scoop shape open upward, viewed three-quarter right, hinge at left. The scoop is only a single lower mandible with inner muted red tongue. Entire area ABOVE this lower scoop is TRANSPARENT. ABSOLUTELY NO upper beak, NO top jaw, NO head, NO eye, NO face, NO comb. Small red-orange oval wattle hangs below the scoop. Fine navy outline, flat cel shading, true transparent background no glow no shadow, one compact game puppet part.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1bf39829-4883-421b-82a6-30f125acef3f.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_head_neck.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：头颈与常态眼。只画本张：鸡头短颈与一只可见正常眼的一体部件，喙部留空铰点，无鸡冠、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-9872215b-407f-4251-abc6-993302efe131.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_pollution_identity_approved.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：污染状态完整形象。只画本张：一只完整失效叮咚鸡；保持其常态物种、肢体和体型，通过循环播报式开喙与胸牌局部提示红表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f5a6e9b8-f5ee-4ba0-ba74-7b2dfac3a599.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_base_parts_tail_feathers.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：尾羽。只画本张：一束简洁橙黄尾羽作为一个部件，尾根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-007c6a4b-6689-4ebf-90b4-138421b67b0f.png"
+  },
+  {
+    "filename": "nm_v2_abn_dingdong_chicken_combat_reference_windup.png",
+    "scope": "abnormalities",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击前摇参考。只画本张：一只完整失效叮咚鸡原地仰头、短喙微开、翅膀收紧准备播报，通知胸牌局部提示红，双脚留在原位；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+    "reference": "art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f6ba05bb-b248-4071-a45e-065a9cd38de6.png"
+  },
+  {
+    "filename": "nm_v2_abn_maodie_base_parts_head_ears.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-154fd561-cab9-4907-9ad1-237ab1b3adc4.png",
+    "prompt": "Edit this isolated cartoon cat head sprite. Preserve the exact head silhouette, pointed ears, inner ears, gray taupe pink and cream fur patches and original orientation. REMOVE both eyes, both eyelids, eyebrows, nose, mouth and whiskers completely. Fill their old positions with uninterrupted matching cream/gray/pink fur color. The facial area must be totally BLANK because separate expression decals will be placed by the game. Keep the head and ears only. No new features, no body, no background, no shadow or glow. Transparent PNG."
+  }
+]

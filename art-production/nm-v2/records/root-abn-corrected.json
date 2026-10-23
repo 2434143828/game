@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "nm_v2_abn_nailong_calm_identity_approved.png",
+    "displayName": "常态完整形象",
+    "prompt": "Use case: style-transfer. Edit the supplied mascot identity for a clean 2D facility game. Preserve this exact cute character silhouette, right-facing pose, limbs and signature colors. Replace all volumetric gradients with FLAT cel color regions and maximum TWO hard-edged shadow tones. Medium clean outline. Absolutely remove background and ALL external halo/glow/shadow: outside silhouette must be fully alpha-zero. No text, no extra parts, no horror change. Warm-yellow cream-belly round dinosaur toy, readable simple features.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "referenceOnly": true,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-75d1e423-1cb5-4e83-9d87-36954661c7eb.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+    "displayName": "常态完整形象",
+    "prompt": "Use case: style-transfer. Edit the supplied mascot identity for a clean 2D facility game. Preserve this exact cute character silhouette, right-facing pose, limbs and signature colors. Replace all volumetric gradients with FLAT cel color regions and maximum TWO hard-edged shadow tones. Medium clean outline. Absolutely remove background and ALL external halo/glow/shadow: outside silhouette must be fully alpha-zero. No text, no extra parts, no horror change. Orange-red and pink-white friendly droopy-ear large dog, simplify fine fur into broad flat shapes.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "referenceOnly": true,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-da8cdfba-dfd1-40bd-8623-6d1c091c30c3.png"
+  }
+]

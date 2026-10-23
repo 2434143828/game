@@ -1,0 +1,207 @@
+{
+  "scope": "Original procedural ink art in actual default facility; legacy slice preserved. No full three-day replay this turn.",
+  "gallery": {
+    "status": "PASS",
+    "checkpoints": 20,
+    "uiAssetRequests": 35,
+    "pausedAssetRequestIncrease": 0,
+    "errors": {
+      "errors": 0,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0
+    }
+  },
+  "continuous": {
+    "status": "PASS",
+    "cases": [
+      {
+        "name": "camera",
+        "status": "PASS",
+        "report": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\camera\\proof.json",
+        "video": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\camera\\video\\page@bcc3e1ffe3230c888cf071fb53ec239a.webm",
+        "checkpoints": 8,
+        "samples": 86,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "httpErrors": 0,
+        "requestFailures": 0
+      },
+      {
+        "name": "core",
+        "status": "PASS",
+        "report": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\core\\proof.json",
+        "video": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\core\\video\\page@43a1e76fd2634cb9d7de3569ca80ff02.webm",
+        "checkpoints": 18,
+        "samples": 1154,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "httpErrors": 0,
+        "requestFailures": 0
+      },
+      {
+        "name": "dog",
+        "status": "PASS",
+        "report": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\dog\\proof.json",
+        "video": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\dog\\video\\page@a6bef2f92013be5e6332c655ae49c166.webm",
+        "checkpoints": 4,
+        "samples": 229,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "httpErrors": 0,
+        "requestFailures": 0
+      },
+      {
+        "name": "skills",
+        "status": "PASS",
+        "report": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\skills\\proof.json",
+        "video": "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\skills\\video\\page@8e3fe4bbfb9179a7906e363dbcb62fc3.webm",
+        "checkpoints": 4,
+        "samples": 306,
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "httpErrors": 0,
+        "requestFailures": 0
+      }
+    ],
+    "checkpoints": 34,
+    "samples": 1775
+  },
+  "production": {
+    "status": "PASS",
+    "checks": 15,
+    "productionBridgeAbsent": true,
+    "pausePixels": {
+      "identical": true,
+      "before": "147188e236387a6f11f2f4cc0c3ec0c942c227a1665ff957b4ac5e84ea9d9103",
+      "after": "147188e236387a6f11f2f4cc0c3ec0c942c227a1665ff957b4ac5e84ea9d9103",
+      "clockBefore": "SIM / 本日\n00:03",
+      "clockAfter": "SIM / 本日\n00:03",
+      "pauseButton": "继续 ▷",
+      "realWaitMs": 700,
+      "difference": {
+        "changedPixels": 0,
+        "totalPixels": 956160,
+        "maxChannelDelta": 0,
+        "boundsWithinCapture": null,
+        "boundsOnCanvas": null,
+        "regions": {
+          "employeeAnchor": 0,
+          "topNavigation": 0,
+          "bottomHelp": 0,
+          "minimap": 0,
+          "remainingWorld": 0
+        },
+        "changedPixelSamples": [],
+        "changedTiles": []
+      }
+    },
+    "errors": {
+      "errors": 0,
+      "consoleErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "developmentRequests": 0
+    }
+  },
+  "images": [
+    {
+      "file": "art-facility-overview.png",
+      "source": "docs\\art-evidence-2026-10-20\\production-2026-10-20T09-20-48.760Z\\02-home-overview.png",
+      "sha256": "418aaf42d188aebb8718be6814379f2e9c2a4a72e2d3d80f0367df4daa919fcb"
+    },
+    {
+      "file": "art-facility-default.png",
+      "source": "docs\\art-evidence-2026-10-20\\production-2026-10-20T09-20-48.760Z\\01-production-central-view.png",
+      "sha256": "65e74f4e0fb5a460f03ba2757379930d4b888453ca9ae67e66b95398552938c3"
+    },
+    {
+      "file": "art-nailong-breach.png",
+      "source": "docs\\art-evidence-2026-10-20\\visual-2026-10-20T09-16-02.891Z\\12-N01-actual-breach.png",
+      "sha256": "79293a58e4fd1e17b9d5b653d6fc9ce12591e96a2b60929c6f04a97087fbcdcf"
+    },
+    {
+      "file": "art-dog-breach.png",
+      "source": "docs\\art-evidence-2026-10-20\\visual-2026-10-20T09-16-02.891Z\\18-N03-actual-breach.png",
+      "sha256": "dc39e6f2f959f15ebbf638f186ddb395bb9357acc7f82ddec74d2a4e307e8a12"
+    },
+    {
+      "file": "art-archive.png",
+      "source": "docs\\art-evidence-2026-10-20\\visual-2026-10-20T09-16-02.891Z\\09-archive-template.png",
+      "sha256": "44481b80b7cc97b5eedb72b0170188a7128f48abfd97c353ed6ccae8e77b85bd"
+    },
+    {
+      "file": "art-suppression-contact.png",
+      "source": "docs\\art-evidence-2026-10-20\\2026-10-20T09-17-09-421Z\\core\\13-actual-same-floor-contact.png",
+      "sha256": "e1f5609eea8e4f216b9fcd1b1455c07e1e3cfeb58286c0913885cc9305ddc712"
+    },
+    {
+      "file": "art-personnel.png",
+      "source": "docs\\art-evidence-2026-10-20\\personnel\\2026-10-20T09-24-47.595Z\\lineup\\01-six-hairstyles-and-uniforms.png",
+      "sha256": "7e2ef00bba64f13583e41405bf2cf36c5d3296d1adaf1c935cfa8ce74088c3ef"
+    },
+    {
+      "file": "art-personnel-panic.png",
+      "source": "docs\\art-evidence-2026-10-20\\personnel\\2026-10-20T09-24-47.595Z\\panic\\02-panic-retreat-clear-of-enemies.png",
+      "sha256": "901fdd389618baf0eac1e0efdac2a334d634e286184ee3ba3517f33254a8296c"
+    },
+    {
+      "file": "art-personnel-incapacitated.png",
+      "source": "docs\\art-evidence-2026-10-20\\personnel\\2026-10-20T09-24-47.595Z\\incapacitated\\02-incapacitated-body-after-cat-leaves.png",
+      "sha256": "890d3b5a2e238494f005342f88143d959fdc0070394411528e28c65f498339e1"
+    }
+  ],
+  "personnel": {
+    "status": "PASS",
+    "cases": [
+      {
+        "name": "lineup",
+        "status": "PASS",
+        "report": "lineup/report.json",
+        "checks": 1,
+        "samples": 195,
+        "video": "lineup/video\\page@a463f6bf89a8ebb60865d2d968d2133f.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "panic",
+        "status": "PASS",
+        "report": "panic/report.json",
+        "checks": 2,
+        "samples": 101,
+        "video": "panic/video\\page@b89a49dd11ff88e30caacf1f2f2e300d.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "incapacitated",
+        "status": "PASS",
+        "report": "incapacitated/report.json",
+        "checks": 2,
+        "samples": 127,
+        "video": "incapacitated/video\\page@7b5fa19d17d5cb418471601b47f00f59.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      }
+    ],
+    "checkpoints": 5,
+    "samples": 423
+  }
+}

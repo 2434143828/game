@@ -1,0 +1,47 @@
+{
+  "id": "ABN_N04_03__approved",
+  "rowId": "ABN_N04_03",
+  "file": "abn_dingdong_chicken_breach_01_approved.png",
+  "row": {
+    "id": "ABN_N04_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_dingdong_chicken_breach_01",
+    "displayName": "N04 叮咚鸡 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脖颈/头部拉长，喙向外张开形成明显黑口，翅膀高举、腹钟外壳略大。只绘制清晰单一主体；左右淡薄错位轮廓和广播干扰线保留为引擎效果，不烘焙进透明 PNG，也不画多只鸡。",
+    "referenceObject": "当前 叮咚鸡 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N04_CALM",
+      "REF_N04_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N04_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / chicken；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N04（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。实际失效 AI 是 STATIONARY_BROADCAST，速度为 0；不申请追赶/巡游动画。广播残影不是分身，不增加 ID、点击区或伤害。"
+  },
+  "unit": {
+    "suffix": "approved",
+    "displayName": "叮咚鸡 失控定稿",
+    "canvas": "1024 × 1024 px",
+    "focus": "本次只画一只完整失控 叮咚鸡 主体，严格体现本行眼口和轮廓变化；不含分身、重影、受控星标或范围；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: identity-preserve. Asset type: transparent 2D game enemy breach-state approval art.\nReference image 1 is the APPROVED CALM identity. Preserve its exact species, muted colors, hatch/ink style, body proportions and recognizable accessories, modifying only the required breach morphology. Keep one isolated right-facing character. No staff.\n本次只画一只完整失控 叮咚鸡 主体，严格体现本行眼口和轮廓变化；不含分身、重影、受控星标或范围；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nRequired transformation: 原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脖颈/头部拉长，喙向外张开形成明显黑口，翅膀高举、腹钟外壳略大。只绘制清晰单一主体；左右淡薄错位轮廓和广播干扰线保留为引擎效果，不烘焙进透明 PNG，也不画多只鸡。\nFull body with feet fully visible and at least 8% clear transparent margin on every side, no cut-off. Keep right-facing side-view with slight front-face visibility. Body color fully opaque, actual clear alpha outside, no ground shadow or glow. No ghosts, duplicates, text, UI, room, multi-panel layout.\n不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-241b6337-c43e-4e43-929d-b3b25b7a4d47.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-6a8102f5-b133-4849-8f22-c7dddf21938e.png",
+  "visualReview": {
+    "status": "inspected",
+    "notes": "已查看生成图；失控轮廓、嘴眼变化和相同身份保持合格。"
+  }
+}

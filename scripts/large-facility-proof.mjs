@@ -11,7 +11,7 @@ const anomalies = JSON.parse(await readFile('config/anomalies.json', 'utf8')).an
 const skills = JSON.parse(await readFile('config/skills.json', 'utf8'));
 const nodes = Object.fromEntries(map.nodes.map(node => [node.id, node]));
 const anomalyById = Object.fromEntries(anomalies.map(anomaly => [anomaly.id, anomaly]));
-const root = 'docs/large-facility-evidence-2026-10-20';
+const root = process.env.FACILITY_EVIDENCE_ROOT ?? 'docs/large-facility-evidence-2026-10-20';
 const runId = new Date().toISOString().replaceAll(':', '-').replaceAll('.', '-');
 const directory = resolve(root, runId);
 const url = process.env.FACILITY_URL ?? 'http://127.0.0.1:5173/';

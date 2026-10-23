@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_env_touch_console_console.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-14ca8a4a-6b9e-4a88-8747-fbdd9ea0c304.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_touch_console_console.png",
+    "scope": "environment",
+    "displayName": "低矮触控工作台",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：低矮触控工作台。本次只画1024×512的一台现代薄屏触控台，支脚与底座完整，屏幕不含可读数据；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。单个低矮现代工作台，薄斜面触屏、金属底座与简洁操作区；屏幕保持可覆盖的净空底，真实工作进度另绘。台面不能遮住站位员工上身或武器。\n参考对象：现代调度中心的低矮触控工作台、内容管理工作站与薄斜面操作屏，参考适合站姿操作的台面比例。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 低矮触控工作台. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_service_conduit_valve.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d7ff1843-a3f0-4167-9e41-467304f94522.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_service_conduit_valve.png",
+    "scope": "environment",
+    "displayName": "紧凑电控阀模块",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：紧凑电控阀模块。本次只画512×512的一个密封蓝灰电控阀小盒，单条无数值指示槽，不画旧式手轮；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。平整蓝灰包覆管线，固定卡扣与微弱冷青标识；接口口径一致。机械手轮改小型密封电控阀盒；不得画腐蚀液、漏水、锈斑或显眼警戒条。\n参考对象：现代数据中心的封闭服务管道、整洁线槽、直角接头与小型电控阀盒，参考统一截面和紧凑安装结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 紧凑电控阀模块. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_service_conduit_vertical.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-57053941-2c6f-4f44-bd2e-df659596997c.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_service_conduit_vertical.png",
+    "scope": "environment",
+    "displayName": "竖向服务管线",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：竖向服务管线。本次只画256×1024的一根竖向封闭蓝灰服务管，上下同截面可拼接；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。平整蓝灰包覆管线，固定卡扣与微弱冷青标识；接口口径一致。机械手轮改小型密封电控阀盒；不得画腐蚀液、漏水、锈斑或显眼警戒条。\n参考对象：现代数据中心的封闭服务管道、整洁线槽、直角接头与小型电控阀盒，参考统一截面和紧凑安装结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：256×1024 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 竖向服务管线. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_flat_wall_display_housing.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7bfc184f-f91b-467f-98be-cc88979f710d.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_flat_wall_display_housing.png",
+    "scope": "environment",
+    "displayName": "平板监测屏机壳",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：平板监测屏机壳。本次只画1024×768的一块窄边框平板屏外壳，内口透明，不画旋钮或屏幕；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。现代超薄墙挂平板屏，细金属边框，暗蓝灰空白显示区；干净平面玻璃，不画厚背壳/旋钮/CRT凸面。常态屏可由运行时叠内容，P1污染为另层。\n参考对象：现代中控室墙挂平板监测屏、薄边玻璃显示器，参考窄边框和独立显示面的配准，不参考厚CRT电视。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×768 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 平板监测屏机壳. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_service_conduit_elbow.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-17beeefa-f358-47d3-b693-39db79eec2c4.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_service_conduit_elbow.png",
+    "scope": "environment",
+    "displayName": "服务管线直角转接",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：服务管线直角转接。本次只画512×512的一个90度弯头，接口口径与两直段完全一致；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。平整蓝灰包覆管线，固定卡扣与微弱冷青标识；接口口径一致。机械手轮改小型密封电控阀盒；不得画腐蚀液、漏水、锈斑或显眼警戒条。\n参考对象：现代数据中心的封闭服务管道、整洁线槽、直角接头与小型电控阀盒，参考统一截面和紧凑安装结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 服务管线直角转接. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_status_panel_status_strip.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-e85008fe-9819-4d6c-bf58-d7b72f4644ff.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_status_panel_status_strip.png",
+    "scope": "environment",
+    "displayName": "中性状态光段",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：中性状态光段。本次只画512×512配准画布内一条窄冷青指示光段，单一静态亮度，不画百分比或仪表；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。小型方圆角数字状态面板，玻璃黑底和冷青短指示槽；不预印数字、不画模拟表盘和指针。指示层为单一静态中性光段，真实状态及数值必须后加。\n参考对象：现代实验室小型数字状态屏、圆角设备监测面板与简洁指示光槽，参考壳体、净空显示区和独立光段。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 中性状态光段. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_hall_support_beam.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-e8a892d2-0a16-4242-b01c-b11e0712953b.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_hall_support_beam.png",
+    "scope": "environment",
+    "displayName": "大厅顶部横构",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：大厅顶部横构。本次只画1024×256的一条低对比顶部横构，左右安装端清楚，不画立柱；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。干净蓝灰结构柱、细玻璃连接扣和低对比顶部横构，结构稳定平直；用于拉开部门大堂层次。置于人物后方，不能画成阻拦真实路线的密闭框或狱栏。\n参考对象：现代科研楼中庭的金属壁柱、玻璃连接扣与顶部横向构件，参考稳定平直的背景承重骨架。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×256 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 大厅顶部横构. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_flat_wall_display_blank_screen.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a4e40477-ce9d-4ea8-bb5b-b092c263e91b.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_flat_wall_display_blank_screen.png",
+    "scope": "environment",
+    "displayName": "平板空白显示底",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：平板空白显示底。本次只画1024×768对应内口的暗蓝灰空白屏面，四周透明，轻微边缘反光；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。现代超薄墙挂平板屏，细金属边框，暗蓝灰空白显示区；干净平面玻璃，不画厚背壳/旋钮/CRT凸面。常态屏可由运行时叠内容，P1污染为另层。\n参考对象：现代中控室墙挂平板监测屏、薄边玻璃显示器，参考窄边框和独立显示面的配准，不参考厚CRT电视。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×768 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 平板空白显示底. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_hall_support_column.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b43f522a-f980-4c4b-a378-5106f8259813.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_hall_support_column.png",
+    "scope": "environment",
+    "displayName": "大厅背景支柱",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：大厅背景支柱。本次只画512×1024的一根现代背景壁柱，干净金属与简洁连接扣，不画横梁；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。干净蓝灰结构柱、细玻璃连接扣和低对比顶部横构，结构稳定平直；用于拉开部门大堂层次。置于人物后方，不能画成阻拦真实路线的密闭框或狱栏。\n参考对象：现代科研楼中庭的金属壁柱、玻璃连接扣与顶部横向构件，参考稳定平直的背景承重骨架。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×1024 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 大厅背景支柱. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_status_panel_housing.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-29c9fa2c-ca3d-4553-9a45-9f3ae00adb43.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_status_panel_housing.png",
+    "scope": "environment",
+    "displayName": "数字状态面板底壳",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：数字状态面板底壳。本次只画512×512的一块小型方圆角玻璃状态面板壳体，留干净显示区，不画数据；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。小型方圆角数字状态面板，玻璃黑底和冷青短指示槽；不预印数字、不画模拟表盘和指针。指示层为单一静态中性光段，真实状态及数值必须后加。\n参考对象：现代实验室小型数字状态屏、圆角设备监测面板与简洁指示光槽，参考壳体、净空显示区和独立光段。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 数字状态面板底壳. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_medical_station_cabinet.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0b2b89d7-794a-4566-8dfd-e8898e733c38.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_medical_station_cabinet.png",
+    "scope": "environment",
+    "displayName": "白蓝医用储物柜",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：白蓝医用储物柜。本次只画512×1024的一个窄高白蓝医用密闭储物柜，清楚门缝和短把手，不画药品阵列；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。冷白浅蓝密闭医用补给柜、薄边数字健康平板；以通用无品牌医疗标识和小色条辨识，平板无病历文字。既有纸质记录夹改为数字屏。\n参考对象：现代医院的白蓝封闭补给柜、墙挂健康信息平板，参考窄柜门缝和薄型数字终端，不参考纸病历夹。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×1024 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 白蓝医用储物柜. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_recovery_couch_bed_frame_mattress.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-21a0e8e7-d92b-46ab-b8a3-1a5465791a4a.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_recovery_couch_bed_frame_mattress.png",
+    "scope": "environment",
+    "displayName": "医疗床架与床垫",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：医疗床架与床垫。本次只画1024×512的一张侧视白蓝低矮医疗休整床，床架与床垫完整，不含枕头或人员；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。舒适现代医疗休整床，白蓝洁净床垫与圆角轻金属架，单独软枕；不画束缚、手术器械或人体。保持此区与危险区明显区分，仍是既有安全区。\n参考对象：现代门诊休整区的白蓝检查床、圆角轻金属床架、洁净薄床垫与独立软枕，参考侧视支撑结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 医疗床架与床垫. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_waiting_bench_bench.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2fff1863-1cec-4ae6-9dbc-5378d067bd46.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_waiting_bench_bench.png",
+    "scope": "environment",
+    "displayName": "灰蓝软垫连座椅",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：灰蓝软垫连座椅。本次只画1024×512的一张现代两至三人连座长椅，低靠背、浅灰蓝软垫、完整支脚；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。浅灰蓝软垫、简洁金属连座骨架，舒服且专业；非旧木铁椅、非牢房凳。低矮背靠不挡员工；不含座位上的人。\n参考对象：现代医院等候区的浅灰蓝软垫连座椅、简洁金属支脚和低靠背，参考舒适而专业的家具比例。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 灰蓝软垫连座椅. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_recovery_couch_pillow.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-21b55a15-ad30-4746-a99b-107721275f1a.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_recovery_couch_pillow.png",
+    "scope": "environment",
+    "displayName": "医疗独立软枕",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：医疗独立软枕。本次只画512×256的一只冷白淡蓝软枕，少量柔和褶皱，水平放置面清楚；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。舒适现代医疗休整床，白蓝洁净床垫与圆角轻金属架，单独软枕；不画束缚、手术器械或人体。保持此区与危险区明显区分，仍是既有安全区。\n参考对象：现代门诊休整区的白蓝检查床、圆角轻金属床架、洁净薄床垫与独立软枕，参考侧视支撑结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×256 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 医疗独立软枕. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_digital_archive_cabinet.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4d801f50-5697-49d6-8df2-b0667a48b1d0.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_digital_archive_cabinet.png",
+    "scope": "environment",
+    "displayName": "数字档案机柜",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：数字档案机柜。本次只画1024×768的一台低矮现代数字档案柜，金属面板与细插槽，柜顶干净不画数据匣；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。现代封闭数字档案柜/小型数据机柜；浅金属面板、细插槽、低亮度状态区。独立数据匣代纸文件夹，电子索引条代纸标签。不得有旧抽屉铜拉手、纸堆或图书馆书架。\n参考对象：现代数字档案中心的小型封闭数据机柜、可拔插存储匣与电子索引条，参考干净插槽和紧凑模块，不参考纸柜书架。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：1024×768 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 数字档案机柜. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  },
+  {
+    "filename": "nm_v2_env_digital_archive_data_module.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-efcdfa94-ce67-42de-bd8f-759d0d199abc.png",
+    "candidate": "art-production/nm-v2/candidates/environment/nm_v2_env_digital_archive_data_module.png",
+    "scope": "environment",
+    "displayName": "可分离数据存储匣",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：可分离数据存储匣。本次只画512×256的一只薄型封闭数据匣，金属和深蓝灰接口，无纸页和品牌；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。现代封闭数字档案柜/小型数据机柜；浅金属面板、细插槽、低亮度状态区。独立数据匣代纸文件夹，电子索引条代纸标签。不得有旧抽屉铜拉手、纸堆或图书馆书架。\n参考对象：现代数字档案中心的小型封闭数据机柜、可拔插存储匣与电子索引条，参考干净插槽和紧凑模块，不参考纸柜书架。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×256 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 可分离数据存储匣. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette."
+  }
+]

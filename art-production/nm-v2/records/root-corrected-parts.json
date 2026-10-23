@@ -1,0 +1,29 @@
+[
+  {
+    "filename": "nm_v2_agent_base_parts_torso.png",
+    "prompt": "Use case: precise-object-edit. Edit this game character torso cutout. Remove BOTH entire sleeves and both arms, leaving a compact SLEEVELESS torso with only small rounded shoulder attachment tabs. Keep the blue-gray modern jacket, cold white inner shirt, cyan lanyard, blank badge, belt, clean flat color style and same front-three-quarter orientation. No head, arms, hands, legs. Exactly one torso only, transparent background. Do not replace removed sleeves with other parts.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b625a868-bbb0-45a9-9f0f-2541293aa453.png",
+    "mode": "built-in imagegen",
+    "referenceInputs": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ]
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_upper_arm_left.png",
+    "prompt": "Use case: precise-object-edit. Redraw ONLY the dark blue-gray short UPPER ARM sleeve from this reference. Shoulder to elbow ONLY: a compact vertically oriented capsule, height about 1.6 times width, rounded shoulder cap at TOP and elbow overlap at BOTTOM. Small cyan stripe. REMOVE all white lower sleeve, all forearm, wrist cuff, hand, torso and collar. One short upper-arm bone sprite for LEFT/far arm. Clean 2D flat shading, same palette and linework, transparent background.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ed11afd0-7058-48f5-9002-77ce623ad5cd.png",
+    "mode": "built-in imagegen",
+    "referenceInputs": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ]
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_upper_arm_right.png",
+    "prompt": "Use case: precise-object-edit. Redraw ONLY the dark blue-gray short UPPER ARM sleeve from this reference. Shoulder to elbow ONLY: a compact vertically oriented capsule, height about 1.6 times width, rounded shoulder cap at TOP and elbow overlap at BOTTOM. Small cyan stripe. REMOVE all white lower sleeve, all forearm, wrist cuff, hand, torso and collar. One short upper-arm bone sprite for RIGHT/near arm. Clean 2D flat shading, same palette and linework, transparent background.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f4b418eb-8df5-4ebf-95ca-599f8450727a.png",
+    "mode": "built-in imagegen",
+    "referenceInputs": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ]
+  }
+]

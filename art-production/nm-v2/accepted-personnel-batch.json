@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4651f284-4bcb-4a70-b43c-2f5f45b1b834.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-53c83031-957c-4404-b379-bf071fa939ca.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_thigh_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-48aff2e7-19dd-4f3f-b363-7033ebba5965.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_hair_bob_glasses_hair.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0ac970d1-6580-46ba-ae0d-1220a2d7978d.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_face_states_neutral.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bd74e08b-0d21-4b49-9cb8-5e8b6a5ce57d.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_face_states_panic.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-09f803f8-ec6d-4c21-b3bf-46800380e94d.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_face_states_hurt.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-43338451-d892-4864-9f05-12b372bec5d6.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  },
+  {
+    "filename": "nm_v2_agent_face_states_incapacitated.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-de339ec4-f5a0-4b20-b52b-9e940c571538.png",
+    "review": "Reviewed isolated requested part, clean silhouette and consistent palette; runtime assembly pending."
+  }
+]

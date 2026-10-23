@@ -1,0 +1,272 @@
+[
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_boot_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_boot_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_boot_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_boot_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_clipboard",
+    "url": "/art/generated/personnel/agent_base_parts_01_clipboard.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_forearm_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_forearm_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_forearm_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_forearm_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_hand_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_hand_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_hand_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_hand_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_head",
+    "url": "/art/generated/personnel/agent_base_parts_01_head.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_shin_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_shin_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_shin_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_shin_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_starter_baton",
+    "url": "/art/generated/personnel/agent_base_parts_01_starter_baton.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_thigh_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_thigh_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_thigh_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_thigh_right.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_torso",
+    "url": "/art/generated/personnel/agent_base_parts_01_torso.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_upper_arm_left",
+    "url": "/art/generated/personnel/agent_base_parts_01_upper_arm_left.png"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_upper_arm_right",
+    "url": "/art/generated/personnel/agent_base_parts_01_upper_arm_right.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_hurt",
+    "url": "/art/generated/personnel/agent_face_states_01_hurt.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_incapacitated",
+    "url": "/art/generated/personnel/agent_face_states_01_incapacitated.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_neutral",
+    "url": "/art/generated/personnel/agent_face_states_01_neutral.png"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_panic",
+    "url": "/art/generated/personnel/agent_face_states_01_panic.png"
+  },
+  {
+    "id": "STA_005",
+    "key": "agent_hair_bob_glasses_01_glasses",
+    "url": "/art/generated/personnel/agent_hair_bob_glasses_01_glasses.png"
+  },
+  {
+    "id": "STA_005",
+    "key": "agent_hair_bob_glasses_01_hair",
+    "url": "/art/generated/personnel/agent_hair_bob_glasses_01_hair.png"
+  },
+  {
+    "id": "STA_008",
+    "key": "agent_hair_bun_01_front_hair",
+    "url": "/art/generated/personnel/agent_hair_bun_01_front_hair.png"
+  },
+  {
+    "id": "STA_008",
+    "key": "agent_hair_bun_01_rear_bun",
+    "url": "/art/generated/personnel/agent_hair_bun_01_rear_bun.png"
+  },
+  {
+    "id": "STA_007",
+    "key": "agent_hair_close_crop_01_hair",
+    "url": "/art/generated/personnel/agent_hair_close_crop_01_hair.png"
+  },
+  {
+    "id": "STA_006",
+    "key": "agent_hair_messy_ponytail_01_front_hair",
+    "url": "/art/generated/personnel/agent_hair_messy_ponytail_01_front_hair.png"
+  },
+  {
+    "id": "STA_006",
+    "key": "agent_hair_messy_ponytail_01_rear_ponytail",
+    "url": "/art/generated/personnel/agent_hair_messy_ponytail_01_rear_ponytail.png"
+  },
+  {
+    "id": "STA_003",
+    "key": "agent_hair_quiff_01_hair",
+    "url": "/art/generated/personnel/agent_hair_quiff_01_hair.png"
+  },
+  {
+    "id": "STA_004",
+    "key": "agent_hair_side_fringe_01_hair",
+    "url": "/art/generated/personnel/agent_hair_side_fringe_01_hair.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_collar",
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_collar.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_shoulder_far",
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_shoulder_near",
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_torso",
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_torso.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_shoulder_far",
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_shoulder_near",
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_torso",
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_torso.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_ribbon_long",
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_ribbon_long.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_ribbon_short",
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_ribbon_short.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_shoulder_far",
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_shoulder_near",
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_torso_collar",
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_torso_collar.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_scarf_long",
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_scarf_long.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_scarf_short",
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_scarf_short.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_shoulder_far",
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_shoulder_near",
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_torso_collar",
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_torso_collar.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_shoulder_far",
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_shoulder_far.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_shoulder_near",
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_shoulder_near.png"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_torso",
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_torso.png"
+  },
+  {
+    "id": "EQ_W03",
+    "key": "weapon_big_dog_barker_01_held",
+    "url": "/art/generated/personnel/weapon_big_dog_barker_01_held.png"
+  },
+  {
+    "id": "EQ_W04",
+    "key": "weapon_dingdong_notification_horn_01_held",
+    "url": "/art/generated/personnel/weapon_dingdong_notification_horn_01_held.png"
+  },
+  {
+    "id": "EQ_W05",
+    "key": "weapon_gugu_resonator_01_held",
+    "url": "/art/generated/personnel/weapon_gugu_resonator_01_held.png"
+  },
+  {
+    "id": "EQ_W02",
+    "key": "weapon_maodie_claw_01_held",
+    "url": "/art/generated/personnel/weapon_maodie_claw_01_held.png"
+  },
+  {
+    "id": "EQ_W01",
+    "key": "weapon_nailong_repeater_01_held",
+    "url": "/art/generated/personnel/weapon_nailong_repeater_01_held.png"
+  }
+]

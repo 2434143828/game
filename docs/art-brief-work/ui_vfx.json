@@ -1,0 +1,728 @@
+[
+  {
+    "state": "静态素材；运行时状态另由程序控制",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "1024×1024 px；四角各约64 px不可拉伸，边带宽约32–48 px；不绘制切片线",
+    "export": "九宫格背景源图PNG；外围透明、内部暗底；只交一张完整原图，后处理确定切片边距",
+    "pivot": "左上(0,0)，九宫格容器后续设置",
+    "quantity": 1,
+    "deliveryType": "面板",
+    "dependsOn": [],
+    "acceptance": "拉伸模拟1568×57和224×720两种比例时角部不变形、中心不过度纹理化；实际1600×900与1280×720布局仍由程序保留；不以面板缩减设施视区。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不绘制监控假曲线、虚假读数、破屏遮罩或完整网页截图。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_001",
+    "priority": "P0",
+    "category": "UI/无字框架",
+    "name": "ui_panel_terminal_blank",
+    "displayName": "档案终端通用无字框",
+    "requirements": "正视平面矩形边框，墨黑#211e24粗外轮廓略有手绘偏差，暗灰褐中心保持均匀不透明，米纸色细内沿；只有少量角部铆钉/旧设备折角。中心至少85%为安静可读区域，无固定内容格、头像或按钮。长边可拉伸，复用于顶栏、右侧检查器与底部指令栏，不改变既有布局。",
+    "source": "src/facility.css::.facility-top/.facility-inspector/.facility-toolbar；src/ui/FacilityHUD.ts::constructor"
+  },
+  {
+    "state": "静态素材；运行时状态另由程序控制",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_ARCHIVE"
+    ],
+    "canvas": "1024×1024 px；边框安全带约48 px；内容区留白，不绘制裁切线",
+    "export": "九宫格背景源图PNG；外围透明、纸页内部不透明；后处理裁切九宫格，非模型直接交付九宫格工程",
+    "pivot": "左上(0,0)",
+    "quantity": 1,
+    "deliveryType": "面板",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "放到900 px宽档案弹窗时正文与购买按钮可覆盖其上且清晰；空白标签、无字页边与框角可复用到五份档案，五物不重复生成五张完整界面。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 五物档案内容与已解锁/未解锁盖印均程序生成；现有档案正文不印入底图。",
+    "id": "UI_002",
+    "priority": "P0",
+    "category": "UI/档案面板",
+    "name": "ui_panel_archive_blank",
+    "displayName": "收容档案无字纸页模板",
+    "requirements": "正视米纸#d9c9a4底页，深墨边与少量不对称旧纸折角；打印标签仅留空白贴纸形状，手写批注仅留空白页边，不生成手写文字。中部85%保持干净，顶部与底部可独立容纳程序标题、关闭与返回按钮。档案索引监控框只做空框，不生成生物截图、假状态或假条码。",
+    "source": "src/ui/FacilityHUD.ts::renderModal(archives)；src/facility.css::.facility-dialog/.archive-index/.archive-pages/.archive-rule；public/art/ui/ui_archive_rule.svg"
+  },
+  {
+    "state": "静态素材；运行时状态另由程序控制",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "1024×256 px；左右角部约48 px，边带24 px；不画出内容分隔栏",
+    "export": "九宫格背景源图PNG；透明外围，内部低饱和实底",
+    "pivot": "左上(0,0)",
+    "quantity": 1,
+    "deliveryType": "面板",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "缩到约204×37 px仍有完整清晰边框，不侵占名字和HP/SP读数；六名员工复用一份底板，选中反馈不可依赖烘焙高亮。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_003",
+    "priority": "P0",
+    "category": "UI/人员卡",
+    "name": "ui_panel_personnel_blank",
+    "displayName": "紧凑人员卡无字底板",
+    "requirements": "横向窄牌形态，灰褐与脏绿平涂，深墨不规则外沿；左侧预留窄部门色条位置，右侧为平净读数区。只生成底板，不生成员工头像、名字、状态图标、装备、血条或精神条。普通/选中/不可用复用同一底板，由程序叠加描边和透明度。",
+    "source": "src/ui/FacilityHUD.ts::renderInspector；src/facility.css::.facility-employee/.employee-stripe/.employee-meters"
+  },
+  {
+    "state": "静态素材；运行时状态另由程序控制",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N01_BREACH",
+      "REF_PANIC"
+    ],
+    "canvas": "1024×256 px；边缘装饰不超过高度18%；图标与正文位置不画实体",
+    "export": "透明PNG无字边框源图；后处理按九宫格复用边框",
+    "pivot": "左上(0,0)",
+    "quantity": 1,
+    "deliveryType": "面板",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "约204×36 px警报条上能同时显示真实图标与两行短文案；静态边缘不闪烁；只表现现有失效/高压/恐慌/重伤/稳定五种状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不新增熔毁警报、倒计时灾难、污染率或任何不存在的机制。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_004",
+    "priority": "P0",
+    "category": "UI/警报",
+    "name": "ui_alert_frame_blank",
+    "displayName": "无字警报墨边条",
+    "requirements": "细长横向警示框，透明中心与克制锯齿墨边；左侧只预留图标位，右侧留两行文字区。边角允许短斜切/撕裂，但不能遮挡读数。交付中性墨线版本；失效红、恐慌紫、重伤铁锈、高压橙及无警报脏绿由程序叠色，不为每种状态复制完整底图。",
+    "source": "src/ui/FacilityHUD.ts::renderAlert；src/facility.css::.facility-alert[data-tone]"
+  },
+  {
+    "state": "S01 / STUN",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "缩至29×29 px仍可与其他四技能区分；默认图不含锁、灰化、瞄准描边、费用、冷却遮罩、倒计时或数字热键，所有状态由程序覆盖。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 这里只交付一个静态基础图标；锁定/冷却/瞄准/可用共用基础图，不按状态重复生成。",
+    "id": "UI_005",
+    "priority": "P0",
+    "category": "UI/技能图标",
+    "name": "ui_skill_nailong_stun",
+    "displayName": "S01 我是奶龙·停滞",
+    "requirements": "收束的手绘旋眼与两道停顿短线；软圆轮廓略怪诞，米纸浅黄为点缀。传达单目标短暂停止移动与攻击；不画爆炸、血滴或伤害数字。 单张图形不带按钮底框，五图共享外接轮廓大小与视觉重量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，data-skill=\"S01\"；public/art/ui/ui_terminal_icons.svg#skill_s01；config/skills.json::S01"
+  },
+  {
+    "state": "S02 / DAMAGE",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_005"
+    ],
+    "acceptance": "缩至29×29 px仍可与其他四技能区分；默认图不含锁、灰化、瞄准描边、费用、冷却遮罩、倒计时或数字热键，所有状态由程序覆盖。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 这里只交付一个静态基础图标；锁定/冷却/瞄准/可用共用基础图，不按状态重复生成。",
+    "id": "UI_006",
+    "priority": "P0",
+    "category": "UI/技能图标",
+    "name": "ui_skill_maodie_claw",
+    "displayName": "S02 耄耋暴怒·爪击",
+    "requirements": "三道倾斜猫爪墨痕，粗黑轮廓与少量铁锈红，方向一致且末端尖锐；传达单目标红伤，与停滞旋眼和范围声波明显区别。 单张图形不带按钮底框，五图共享外接轮廓大小与视觉重量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，data-skill=\"S02\"；public/art/ui/ui_terminal_icons.svg#skill_s02；config/skills.json::S02"
+  },
+  {
+    "state": "S03 / DAMAGE_AND_KNOCKBACK",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_005"
+    ],
+    "acceptance": "缩至29×29 px仍可与其他四技能区分；默认图不含锁、灰化、瞄准描边、费用、冷却遮罩、倒计时或数字热键，所有状态由程序覆盖。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 这里只交付一个静态基础图标；锁定/冷却/瞄准/可用共用基础图，不按状态重复生成。",
+    "id": "UI_007",
+    "priority": "P0",
+    "category": "UI/技能图标",
+    "name": "ui_skill_bigdog_howl",
+    "displayName": "S03 大狗叫·声波击退",
+    "requirements": "简化犬嘴侧向轮廓加两道向外推的声波弧线；圆钝大形、少量脏绿/米纸高亮，传达走廊范围冲击和击退。只画象征符号，不画真实半径圈或目标数量。 单张图形不带按钮底框，五图共享外接轮廓大小与视觉重量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，data-skill=\"S03\"；public/art/ui/ui_terminal_icons.svg#skill_s03；config/skills.json::S03"
+  },
+  {
+    "state": "S04 / MOVE_SPEED_BUFF",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_005"
+    ],
+    "acceptance": "缩至29×29 px仍可与其他四技能区分；默认图不含锁、灰化、瞄准描边、费用、冷却遮罩、倒计时或数字热键，所有状态由程序覆盖。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 这里只交付一个静态基础图标；锁定/冷却/瞄准/可用共用基础图，不按状态重复生成。",
+    "id": "UI_008",
+    "priority": "P0",
+    "category": "UI/技能图标",
+    "name": "ui_skill_dingdong_notice",
+    "displayName": "S04 叮咚通知·全员加速",
+    "requirements": "旧式铃铛或广播铃，外侧两道短运动线，墨边与低饱和灰紫点缀；传达通知与移动加速，避免爆炸、伤害爪痕及治疗十字误读。 单张图形不带按钮底框，五图共享外接轮廓大小与视觉重量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，data-skill=\"S04\"；public/art/ui/ui_terminal_icons.svg#skill_s04；config/skills.json::S04"
+  },
+  {
+    "state": "S05 / RESTORE_SP",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_PANIC"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_005"
+    ],
+    "acceptance": "缩至29×29 px仍可与其他四技能区分；默认图不含锁、灰化、瞄准描边、费用、冷却遮罩、倒计时或数字热键，所有状态由程序覆盖。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 这里只交付一个静态基础图标；锁定/冷却/瞄准/可用共用基础图，不按状态重复生成。",
+    "id": "UI_009",
+    "priority": "P0",
+    "category": "UI/技能图标",
+    "name": "ui_skill_gugugaga_calm",
+    "displayName": "S05 咕咕嘎嘎·精神恢复",
+    "requirements": "一枚被柔和护弧包住的思绪线团，断裂线重新收束；浅青#8ab6b2与米纸点缀。清楚表达平复精神，不画心脏、HP血滴或亡者复活。 单张图形不带按钮底框，五图共享外接轮廓大小与视觉重量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，data-skill=\"S05\"；public/art/ui/ui_terminal_icons.svg#skill_s05；config/skills.json::S05"
+  },
+  {
+    "state": "可用能量 / wallet",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；竖向主体约260×380 px，透明留边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "缩到约25×33 px仍清楚；相邻真实钱包数字与累计产能由程序显示，图片不能暗示第二套资源。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_010",
+    "priority": "P0",
+    "category": "UI/资源图标",
+    "name": "ui_resource_energy_cell",
+    "displayName": "可用能量资源图标",
+    "requirements": "旧式收容电池或短蓄能管的竖向轮廓，墨黑边、米纸与脏绿平涂，内部一道简洁电能折线；保持窄高比例。它代表可用能量，不画金币、钻石或另一种货币。电池不分刻度、不烘焙剩余电量。",
+    "source": "src/ui/FacilityHUD.ts::constructor/render，facility-wallet；src/facility.css::.facility-funds；public/art/ui/ui_terminal_icons.svg#energy"
+  },
+  {
+    "state": "HP语义图标",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_001"
+    ],
+    "acceptance": "24×24 px可与精神思绪符号区分；单色灰度下也能靠轮廓辨认。当前HP为程序条，本图是后续可选标识替换，不声称已接入。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_011",
+    "priority": "P1",
+    "category": "UI/HP-SP识别",
+    "name": "ui_meter_health_symbol",
+    "displayName": "体力HP静态识别符号",
+    "requirements": "简化不写实的小心形生命符号，略不对称手绘轮廓，铁锈红填色与墨边；避免伤口、器官质感或滴血。只用于体力读数旁的语义识别，不生成血条底槽、填充长度或百分比。",
+    "source": "src/ui/FacilityHUD.ts::renderInspector，employee-numbers；src/facility.css::.employee-meters .hp；src/scenes/ContainmentFacilityScene.ts::drawEmployee"
+  },
+  {
+    "state": "SP语义图标",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_011"
+    ],
+    "acceptance": "24×24 px与HP心形及恐慌图标明显不同；HP/SP条长、上限和恢复量全部由程序绘制。当前为可选替换素材，需后续接入。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_012",
+    "priority": "P1",
+    "category": "UI/HP-SP识别",
+    "name": "ui_meter_sanity_symbol",
+    "displayName": "精神SP静态识别符号",
+    "requirements": "简化侧向头部外轮廓内一条收束思绪线，浅青填色与墨边；线团不可过密。与恐慌图标相比轮廓安定完整，不带惊恐表情或破裂提示。只标识精神值，不含条槽、填充、读数。",
+    "source": "src/ui/FacilityHUD.ts::renderInspector，employee-numbers；src/facility.css::.employee-meters .sp；src/scenes/ContainmentFacilityScene.ts::drawEmployee"
+  },
+  {
+    "state": "IDLE",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_013",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_idle_badge",
+    "displayName": "员工待命状态",
+    "requirements": "正面小制服胸牌与稳定大头轮廓，米纸色中性墨描边；不画完整员工立绘或个人发型，避免替代场内角色。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#idle；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "MOVING / RETREAT",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 2,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 本行quantity=2，分别命名ui_status_walk_badge.png与ui_status_retreat_badge.png；两次生成、两份独立文件，非动画两帧。",
+    "id": "UI_014",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_movement_badge",
+    "displayName": "移动与撤退状态图标组",
+    "requirements": "分两次独立生成：walk为前倾迈步的简化侧身小人；retreat为同线宽的返回门口箭头。两张保持同画布和视觉重量，不把两图拼在一张画布。散步与玩家移动共用walk；明确撤退改用retreat。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#walk/retreat；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "WORKING",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_015",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_work_badge",
+    "displayName": "员工工作状态",
+    "requirements": "小型记录板配一支斜笔，略歪的纸边与浅青点缀；不写笔记、不画计时器、星级或收入符号。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#work；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "SUPPRESSING",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_016",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_suppress_badge",
+    "displayName": "员工镇压状态",
+    "requirements": "两根简化制式警棍或工具形成清晰交叉轮廓，低饱和米纸/铁锈点缀；用力量方向表达正在镇压，不画炸弹、枪械升级或新武器。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#combat；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "PANICKED",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_PANIC"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_017",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_panic_badge",
+    "displayName": "员工恐慌状态",
+    "requirements": "不规则头部轮廓、睁大双眼与张口，少量紫色断裂短线；恐慌表情明确但无恐怖写实细节。与SP普通图标相比形状失稳。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#panic；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "INCAPACITATED",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体占画布约70%，四周留透明安全边",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "中心(0.5,0.5)；引擎后续设置",
+    "quantity": 1,
+    "deliveryType": "图标",
+    "dependsOn": [
+      "UI_003"
+    ],
+    "acceptance": "缩至22×26 px仍易识别，不能只靠颜色区分；透明边距一致；状态切换与实际EmployeeStatus/RETREAT命令绑定，不能以绘图替代真实状态。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不画骷髅、墓碑或永久死亡标记。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "UI_018",
+    "priority": "P0",
+    "category": "UI/员工状态",
+    "name": "ui_status_incapacitated_badge",
+    "displayName": "员工重伤倒地状态",
+    "requirements": "横放的包扎/绷带标识或伏倒小人二选一，建议沿用现有绷带辨识；铁锈红、米纸、墨色三色以内。表达本日失去行动能力，不表达永久死亡。",
+    "source": "src/ui/FacilityHUD.ts::statusIcon/renderInspector；public/art/ui/ui_terminal_icons.svg#injury；src/facility.css::.employee-icon"
+  },
+  {
+    "state": "实际HP/SP或镇压HP损失时的短促受击",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH"
+    ],
+    "canvas": "512×512 px；图形包围盒约320×240 px，中心留直径约90 px空白",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "命中中心(0.5,0.5)，运行时定位实际受击实体躯干",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [],
+    "acceptance": "缩到约40–70世界像素仍看出一次短促命中，不遮住血条和脸；素材无自带循环节奏，寿命由实际hurtUntil/模拟时间驱动。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 后续拆碎片或做2–3个形变帧属于后处理，不计作图像模型一次生成完整动画；四伤害可共享此母版。",
+    "id": "VFX_001",
+    "priority": "P0",
+    "category": "VFX/受击",
+    "name": "vfx_hit_ink_key",
+    "displayName": "墨迹受击爆点关键图",
+    "requirements": "单个紧凑墨迹爆点：外侧5–7根长短不一的粗墨短划，2–3片小纸屑，中心留空使受击者面部和躯干可见；椭圆方向略横向，最多墨黑/米纸/低饱和铁锈三色。禁止画角色或武器。先定一张峰值关键图，再由后处理准备可旋转的小碎片，运行时根据真实受击控制淡出。",
+    "source": "src/art/effects.ts::drawInkImpact；src/scenes/ContainmentFacilityScene.ts::syncActors/drawEffects；src/scenes/facility/actors.ts::drawHuman(pose.hurt)"
+  },
+  {
+    "state": "实际PANICKED",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_PANIC"
+    ],
+    "canvas": "512×512 px；主体宽约360 px、高约170 px；中部保留透明面部通道",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "头顶锚点(0.5,0.65)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "不覆盖头脸、发型、状态条；只有实际PANICKED出现，恢复后退出；暂停时相位与图形位置均停止，不能用CSS现实时间闪烁。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "VFX_002",
+    "priority": "P0",
+    "category": "VFX/恐慌",
+    "name": "vfx_panic_smear_key",
+    "displayName": "恐慌思绪涂抹关键图",
+    "requirements": "围绕头顶的断裂紫黑思绪圈与两处短促锯齿，中心大面积透明；略椭圆，线条不规则但不形成完整魔法阵。仅画外圈涂抹，不画员工、不画文字惊叹号。程序在员工头顶绑定，可对同一原图做微小相位偏移。",
+    "source": "src/art/effects.ts::drawPanicMarks；src/scenes/ContainmentFacilityScene.ts::drawEmployee；src/scenes/facility/actors.ts::drawHuman(panic)"
+  },
+  {
+    "state": "房间BREACHED",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH"
+    ],
+    "canvas": "1024×256 px；有效条带高度约70 px；两端自然断开，避免拼接硬缝",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "条带中心(0.5,0.5)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "不把普通高压误表现为失效；无全屏遮挡，室内可交互轮廓仍清楚；同一条带可按五室尺寸复用，停产/恢复文字继续程序生成。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。 不生成熔毁爆炸、火灾扩散、倒计时、传播网络或独立异常实体。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。",
+    "id": "VFX_003",
+    "priority": "P0",
+    "category": "VFX/收容失效",
+    "name": "vfx_breach_scan_tear_key",
+    "displayName": "收容失效扫描撕裂关键图",
+    "requirements": "只画一段横向的手绘扫描撕裂边，短粗铁锈红墨线与少量米纸断片，透明中心和上下留边；设计成可镜像复用的局部条带，不画整个屏幕或整间房。实际失效房间的上沿和左右边缘由程序重复布置，保持门口、员工和敌人可读。",
+    "source": "src/art/effects.ts::drawBreachFrame；src/scenes/ContainmentFacilityScene.ts::drawRoom(breached)"
+  },
+  {
+    "state": "抵达工作位后的EXECUTING",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体约180×160 px，透明留白大于70%",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "操作接触点(0.5,0.65)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "只在实际进入室内并EXECUTING时出现，前往途中不显示作业成功；实际产能完成的+能量数字由程序产生；缩至16–30世界像素不抢异常体注意力。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 当前工作动作主要由拆件绘制完成，本项为可选的低密度装饰素材，后续接入不改变结算。",
+    "id": "VFX_004",
+    "priority": "P1",
+    "category": "VFX/工作反馈",
+    "name": "vfx_work_motion_tick_key",
+    "displayName": "工作交互短划关键图",
+    "requirements": "三根轻巧手绘动作短划或一小撮纸屑，米纸/浅青低对比，表达记录、互动、安抚的轻微操作；无工具本体、角色、能量币和数字。共用一张中性关键图，按动作锚点与少量旋转缩放复用，不为三工作类型分别生成完整动画。",
+    "source": "src/scenes/facility/actors.ts::drawHuman(workType)；src/scenes/ContainmentFacilityScene.ts::drawEmployee/syncActors(work income)"
+  },
+  {
+    "state": "RED",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH"
+    ],
+    "canvas": "512×512 px；主体不超过360×360 px，中心附近留透明空隙",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "命中中心(0.5,0.5)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "缩至40–70世界像素时四类仍可通过轮廓区分；不得改变碰撞、射程、伤害类型或频率；箭头/连线端点、击退路径与命中时刻由程序计算。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 当前实现以damageColors与程序线条区分四伤害；这是对应视觉的可替换关键图需求，尚未接入。运行时缩放/旋转/着色与淡出按模拟时间完成，不能要求模型一张图内拼四伤害。",
+    "id": "VFX_005",
+    "priority": "P1",
+    "category": "VFX/四伤害",
+    "name": "vfx_damage_red_key",
+    "displayName": "红伤命中短弧",
+    "requirements": "单个短而粗的锯齿冲击弧，外沿墨黑、内沿低饱和铁锈红，末端两枚小碎屑；形状偏直接钝击，不画喷血、火焰或燃烧。 只画一次命中表现的单张关键图；不包含精确攻击范围、伤害数字、目标、武器或角色。四种图共享墨线粗细与冲击中心，优先复用受击母版。",
+    "source": "src/scenes/ContainmentFacilityScene.ts::drawEffects/drawTelegraphs，damageColors；contracts/data-contract.ts::DamageType；src/art/effects.ts::drawInkImpact"
+  },
+  {
+    "state": "WHITE",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH"
+    ],
+    "canvas": "512×512 px；主体不超过360×360 px，中心附近留透明空隙",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "命中中心(0.5,0.5)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "缩至40–70世界像素时四类仍可通过轮廓区分；不得改变碰撞、射程、伤害类型或频率；箭头/连线端点、击退路径与命中时刻由程序计算。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 当前实现以damageColors与程序线条区分四伤害；这是对应视觉的可替换关键图需求，尚未接入。运行时缩放/旋转/着色与淡出按模拟时间完成，不能要求模型一张图内拼四伤害。",
+    "id": "VFX_006",
+    "priority": "P1",
+    "category": "VFX/四伤害",
+    "name": "vfx_damage_white_key",
+    "displayName": "白伤精神脉冲",
+    "requirements": "一对不闭合的柔白/米纸短波纹，边缘破碎但疏朗，辅以少量浅紫墨线；强调精神冲击，不画天使圣光、冰冻或恢复符号。 只画一次命中表现的单张关键图；不包含精确攻击范围、伤害数字、目标、武器或角色。四种图共享墨线粗细与冲击中心，优先复用受击母版。",
+    "source": "src/scenes/ContainmentFacilityScene.ts::drawEffects/drawTelegraphs，damageColors；contracts/data-contract.ts::DamageType；src/art/effects.ts::drawInkImpact"
+  },
+  {
+    "state": "BLACK",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体不超过360×360 px，中心附近留透明空隙",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "命中中心(0.5,0.5)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "缩至40–70世界像素时四类仍可通过轮廓区分；不得改变碰撞、射程、伤害类型或频率；箭头/连线端点、击退路径与命中时刻由程序计算。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 当前实现以damageColors与程序线条区分四伤害；这是对应视觉的可替换关键图需求，尚未接入。运行时缩放/旋转/着色与淡出按模拟时间完成，不能要求模型一张图内拼四伤害。",
+    "id": "VFX_007",
+    "priority": "P1",
+    "category": "VFX/四伤害",
+    "name": "vfx_damage_black_key",
+    "displayName": "黑伤复合裂痕",
+    "requirements": "一小束交错深紫黑碎裂短线，少量米纸负形裂隙，轮廓紧凑；与红伤短弧和白伤开口波纹有形状差异，不画烟墙、毒雾或新持续伤害。 只画一次命中表现的单张关键图；不包含精确攻击范围、伤害数字、目标、武器或角色。四种图共享墨线粗细与冲击中心，优先复用受击母版。",
+    "source": "src/scenes/ContainmentFacilityScene.ts::drawEffects/drawTelegraphs，damageColors；contracts/data-contract.ts::DamageType；src/art/effects.ts::drawInkImpact"
+  },
+  {
+    "state": "PALE",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×512 px；主体不超过360×360 px，中心附近留透明空隙",
+    "export": "透明PNG，RGBA；一文件一个独立图形",
+    "pivot": "命中中心(0.5,0.5)",
+    "quantity": 1,
+    "deliveryType": "VFX关键图",
+    "dependsOn": [
+      "VFX_001"
+    ],
+    "acceptance": "缩至40–70世界像素时四类仍可通过轮廓区分；不得改变碰撞、射程、伤害类型或频率；箭头/连线端点、击退路径与命中时刻由程序计算。",
+    "negative": "禁止任何中文、英文、数字、快捷键、价格、血量、进度填充、水印；禁止角色或房间混入UI图；禁止照片、3D写实、霓虹粒子、复杂底纹、过细轮廓；不直接复制商业游戏图案。",
+    "notes": "先生成单张关键图并确认轮廓；再由美术/工具清理透明边、统一边距与尺寸。图像模型不承担真正SVG、可编辑PSD分层、九宫格切片文件或完整动画导出。 当前实现以damageColors与程序线条区分四伤害；这是对应视觉的可替换关键图需求，尚未接入。运行时缩放/旋转/着色与淡出按模拟时间完成，不能要求模型一张图内拼四伤害。",
+    "id": "VFX_008",
+    "priority": "P1",
+    "category": "VFX/四伤害",
+    "name": "vfx_damage_pale_key",
+    "displayName": "蓝伤苍白切痕",
+    "requirements": "一道偏竖向的苍白浅青细长切痕，外围粗墨不完整包边与极少纸片；以修长轮廓区别前三类，不画电击链、激光、冻结或新的贯穿机制。 只画一次命中表现的单张关键图；不包含精确攻击范围、伤害数字、目标、武器或角色。四种图共享墨线粗细与冲击中心，优先复用受击母版。",
+    "source": "src/scenes/ContainmentFacilityScene.ts::drawEffects/drawTelegraphs，damageColors；contracts/data-contract.ts::DamageType；src/art/effects.ts::drawInkImpact"
+  },
+  {
+    "state": "所有实时状态",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_ARCHIVE"
+    ],
+    "canvas": "不适用；采用运行时1600×900逻辑布局并适配1280×720",
+    "export": "不导出图像；保留程序实现",
+    "pivot": "由实际DOM布局/实体坐标决定",
+    "quantity": 0,
+    "deliveryType": "程序保留",
+    "dependsOn": [
+      "UI_001",
+      "UI_002",
+      "UI_003"
+    ],
+    "acceptance": "任意血量、精神、压力、累计产能和冷却变化均实时准确；数字与进度不受贴图像素限制；按钮稳定DOM更新策略不变。",
+    "negative": "不发给图像模型生成；不把实际状态或未来猜测读数烘焙到素材。",
+    "notes": "quantity=0是明确禁止重复出图的责任边界，不算缺失资产；相邻HP/SP识别图标可以生成，实际条形进度与文本必须留在程序。",
+    "id": "PROG_UI_001",
+    "priority": "P0",
+    "category": "程序保留/动态信息",
+    "name": "runtime_text_and_meters",
+    "displayName": "文字数值与全部进度条保留程序绘制",
+    "requirements": "禁止生成文字标签、员工名、异常名、HP/SP数字、血条或精神条填充、敌人镇压HP、能量/产能/压力、工作进度、技能费用/热键/冷却、时钟和日志。它们继续来自真实状态，用DOM/Canvas文字与几何条绘制；资源仅提供空白底框或静态语义图标。锁定/选中/禁用按钮和档案已解锁标签由程序切换。",
+    "source": "src/ui/FacilityHUD.ts::render/renderInspector/renderModal；src/scenes/ContainmentFacilityScene.ts::drawRoom/drawEmployee/drawEnemy/label；src/facility.css"
+  },
+  {
+    "state": "攻击WINDUP / 技能瞄准 / 选择 / 移动",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "不适用；世界坐标与相机投影实时计算",
+    "export": "不导出图像；保留程序几何",
+    "pivot": "目标/实际范围中心，由引擎计算",
+    "quantity": 0,
+    "deliveryType": "程序保留",
+    "dependsOn": [],
+    "acceptance": "缩放、移动相机后提示与逻辑射程/路径一致；暂停冻结蓄力与模拟动画，选人/相机仍可操作；贴图替换不能导致假命中区域。",
+    "negative": "不发给图像模型；禁止固定攻击圈、假路径、虚构射程数字、地图红点或范围内预画多名敌人。",
+    "notes": "quantity=0；装饰VFX与规则提示分层，前者不能遮住后者。",
+    "id": "PROG_UI_002",
+    "priority": "P0",
+    "category": "程序保留/精确空间提示",
+    "name": "runtime_ranges_selection_and_routes",
+    "displayName": "精确范围、选中圈、路径与小地图保留程序绘制",
+    "requirements": "攻击范围圆与蓄力进度、技能半径预览、单体目标圈、当前选中圈、房间选中边、移动目的地标记、真实路径虚线、小地图节点/员工点/相机框必须按实时世界坐标投影生成；无固定烘焙光圈。N03/N05范围从配置读取，N04全设施提示按安全室排除规则绘制。允许程序沿线复用墨线笔触，但精确边界不得由装饰贴图决定。",
+    "source": "src/scenes/ContainmentFacilityScene.ts::drawTelegraphs/drawSkillPreview/drawSelectedRoute/drawEffects/drawMapInterface；src/scenes/facility/actors.ts::drawHuman(pose.selected)"
+  },
+  {
+    "state": "N04/N05视觉残影；N01真实分身实例",
+    "referenceObject": "现有游戏实机与原始UI，只参考轮廓、信息密度、低饱和配色；不复制画面上的文字数值",
+    "referenceIds": [
+      "REF_N01_BREACH",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "不适用；复用已审定异常体单张/拆件sprite",
+    "export": "不导出新图；运行时复用原sprite",
+    "pivot": "沿用原sprite脚底或实体锚点；不得改变逻辑位置",
+    "quantity": 0,
+    "deliveryType": "程序保留",
+    "dependsOn": [],
+    "acceptance": "N04/N05残影只增强轮廓，不被误认为真实多单位；N01仍只有实际1主样本+2分身及各自状态；暂停时残影相位冻结。",
+    "negative": "不发给图像模型生成多只合成图；禁止新增N04/N05分身机制、传播网络、变异或额外敌人。",
+    "notes": "quantity=0；这是未来sprite替换的复用约束。现有程序角色绘制与真实EnemyRuntime数量仍为事实来源，不把残影要求描述成已实现的新玩法。",
+    "id": "PROG_UI_003",
+    "priority": "P0",
+    "category": "程序保留/残影复用",
+    "name": "runtime_sprite_echo_reuse",
+    "displayName": "残影与分身的运行时精灵复用",
+    "requirements": "N04/N05仅从各自已交付的单体原sprite运行时复制低透明度残影，按模拟时间做轻微偏移/错帧，不请求多只独立敌人图片，不增加敌人数量。N01真实主样本与两分身分别绑定引擎现有实体，复用同源素材及允许的缩放/色差，不把三只角色画成一张图。任何残影都不附带独立血条或虚假碰撞。",
+    "source": "src/art/characters/abnormalities.ts::drawCreature；src/scenes/ContainmentFacilityScene.ts::syncActors/drawEnemy；contracts/data-contract.ts::EnemyRuntime.isClone"
+  }
+]

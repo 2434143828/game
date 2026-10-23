@@ -1,0 +1,53 @@
+{
+  "id": "ABN_N05_03__approved",
+  "rowId": "ABN_N05_03",
+  "file": "abn_gugu_gaga_breach_01_approved.png",
+  "row": {
+    "id": "ABN_N05_03",
+    "priority": "P0",
+    "category": "五物/失控定稿",
+    "name": "abn_gugu_gaga_breach_01",
+    "displayName": "N05 咕咕嘎嘎 失控定稿",
+    "state": "BREACHED",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 躯干纵向拉伸，空眼更大且左右不对称，鳍和围巾位置产生少量断帧感；中心企鹅保持完整清晰；冷灰青偏移轮廓与横向扫描断线保留为引擎效果，不烘焙进透明 PNG，不画透明幽灵或多只企鹅。",
+    "referenceObject": "当前 咕咕嘎嘎 真实 enemy 形态，对照其平静定稿",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_N05_BREACH"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 主体定稿；虚影/错帧效果仅放附属说明，实际主体不带不可拆多重残像。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [
+      "ABN_N05_01"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05（m.breached）",
+    "acceptance": "平静/失控灰度对比时，仅看剪影与脸部也可分辨；不增加肢体数量、不改变角色物种；主体轮廓不被残影盖没。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "失控以实际 enemy 存在为准。PATROL_AOE 的移动和范围判定沿用现有模拟；不画冻结、减速、召唤冰块等装备/技能外的新功能。扫描线、残影和受控标记由引擎生成。"
+  },
+  "unit": {
+    "suffix": "approved",
+    "displayName": "咕咕嘎嘎 失控定稿",
+    "canvas": "1024 × 1024 px",
+    "focus": "本次只画一只完整失控 咕咕嘎嘎 主体，严格体现本行眼口和轮廓变化；不含分身、重影、受控星标或范围；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: precise-object-edit. Keep exactly the supplied grotesque ink penguin identity, blue-gray body, pale belly, teal scarf, full body, feet, open crying beak and side-view. CHANGE ONLY: both eyes become asymmetrical SOLID BLACK EMPTY OVALS, absolutely no white sclera and no tiny pupil; stretch the torso vertically by 15% while keeping feet on baseline. This is the corrupted breach state, visibly uncanny. One opaque character only on genuine transparent background; no ghosts, duplicate bodies, staff, icons or text.",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-25f2335a-57bf-4815-ab54-0741c0381074.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-37d043f1-ea53-404c-a75d-6f53009d894d.png",
+  "visualReview": {
+    "status": "pending"
+  },
+  "priorAttempts": [
+    {
+      "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-25f2335a-57bf-4815-ab54-0741c0381074.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent 2D game enemy breach-state approval art.\nReference image 1 is the APPROVED CALM identity. Preserve its exact species, muted colors, hatch/ink style, body proportions and recognizable accessories, modifying only the required breach morphology. Keep one isolated right-facing character. No staff.\n本次只画一只完整失控 咕咕嘎嘎 主体，严格体现本行眼口和轮廓变化；不含分身、重影、受控星标或范围；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nRequired transformation: 原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 躯干纵向拉伸，空眼更大且左右不对称，鳍和围巾位置产生少量断帧感；中心企鹅保持完整清晰；冷灰青偏移轮廓与横向扫描断线保留为引擎效果，不烘焙进透明 PNG，不画透明幽灵或多只企鹅。\nFull body with feet fully visible and at least 8% clear transparent margin on every side, no cut-off. Keep right-facing side-view with slight front-face visibility. Body color fully opaque, actual clear alpha outside, no ground shadow or glow. No ghosts, duplicates, text, UI, room, multi-panel layout.\n不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+      "reason": "Visual inspection: missing separation or insufficient breach eyes."
+    }
+  ]
+}

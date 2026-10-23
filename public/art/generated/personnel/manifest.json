@@ -1,0 +1,2901 @@
+[
+  {
+    "id": "STA_001",
+    "key": "agent_base_idle_01_approved",
+    "filename": "agent_base_idle_01_approved.png",
+    "displayName": "员工基型定稿",
+    "kind": "定稿",
+    "state": "IDLE",
+    "priority": "P0",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 约 3 头身，大头、小而窄的工业外套躯干、细长四肢和厚底短靴；头略前倾、肩线不对称、神经质但仍是可工作的普通员工。灰绿制服 #68716c、旧纸肤色 #d9c6a5、少量铁锈/米白；不画英雄盔甲。用一位中性员工确定标准头颅、颈、肩、髋与手掌比例，服装含翻领、细领带和小工牌。",
+    "canvas": "1024 × 1024 px",
+    "focus": "本次只画一名完整的中性工业员工，待机站立，约三头身、神经质前倾，大头细长四肢；发型以 E01 为示意，不带专属装备；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "脚底地面中心；1024 × 1024 定稿统一注册点 (512, 896)，朝右；左向由引擎镜像。",
+    "dependsOn": [],
+    "sourcePath": "art-production/generated/personnel/agent_base_idle_01_approved.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 373,
+      "top": 23,
+      "width": 532,
+      "height": 1203
+    },
+    "url": "/art/generated/personnel/agent_base_idle_01_approved.png",
+    "width": 226,
+    "height": 512,
+    "runtimeBytes": 143784,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T06:56:10.459Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_head",
+    "filename": "agent_base_parts_01_head.png",
+    "displayName": "无发无表情头",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画共用员工的无发、无眉眼嘴头部，含耳与颈连接余量，完整补齐头皮；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_head.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 259,
+      "top": 125,
+      "width": 749,
+      "height": 1028
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_head.png",
+    "width": 187,
+    "height": 256,
+    "runtimeBytes": 62189,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T06:58:33.291Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_torso",
+    "filename": "agent_base_parts_01_torso.png",
+    "displayName": "制服躯干",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画共用员工的灰绿制服躯干，含翻领、领带、工牌和衣摆，不含头及四肢；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_torso.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 343,
+      "top": 229,
+      "width": 597,
+      "height": 780
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_torso.png",
+    "width": 196,
+    "height": 256,
+    "runtimeBytes": 90390,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:06.599Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_upper_arm_left",
+    "filename": "agent_base_parts_01_upper_arm_left.png",
+    "displayName": "左上臂",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左上臂制服袖件，从肩根到肘，补齐连接区；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_upper_arm_left.png",
+    "sourceDimensions": [
+      1238,
+      1271
+    ],
+    "alphaBounds": {
+      "left": 440,
+      "top": 145,
+      "width": 406,
+      "height": 985
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_upper_arm_left.png",
+    "width": 106,
+    "height": 256,
+    "runtimeBytes": 33435,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:07.656Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_upper_arm_right",
+    "filename": "agent_base_parts_01_upper_arm_right.png",
+    "displayName": "右上臂",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右上臂制服袖件，从肩根到肘，补齐连接区；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_upper_arm_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 458,
+      "top": 209,
+      "width": 388,
+      "height": 828
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_upper_arm_right.png",
+    "width": 120,
+    "height": 256,
+    "runtimeBytes": 42863,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:08.692Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_forearm_left",
+    "filename": "agent_base_parts_01_forearm_left.png",
+    "displayName": "左前臂",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左前臂袖件，从肘到腕，保留袖口；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_forearm_left.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 474,
+      "top": 226,
+      "width": 334,
+      "height": 835
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_forearm_left.png",
+    "width": 102,
+    "height": 256,
+    "runtimeBytes": 31796,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:09.737Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_forearm_right",
+    "filename": "agent_base_parts_01_forearm_right.png",
+    "displayName": "右前臂",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右前臂袖件，从肘到腕，保留袖口；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_forearm_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 507,
+      "top": 293,
+      "width": 304,
+      "height": 665
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_forearm_right.png",
+    "width": 117,
+    "height": 256,
+    "runtimeBytes": 40962,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:10.774Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_hand_left",
+    "filename": "agent_base_parts_01_hand_left.png",
+    "displayName": "左手",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左手简化手掌，保持可握持姿态和腕根，不附带道具；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_hand_left.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 467,
+      "top": 408,
+      "width": 432,
+      "height": 515
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_hand_left.png",
+    "width": 215,
+    "height": 256,
+    "runtimeBytes": 69897,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:11.831Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_hand_right",
+    "filename": "agent_base_parts_01_hand_right.png",
+    "displayName": "右手",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右手简化手掌，保持可握持姿态和腕根，不附带道具；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_hand_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 384,
+      "top": 338,
+      "width": 510,
+      "height": 648
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_hand_right.png",
+    "width": 201,
+    "height": 256,
+    "runtimeBytes": 75787,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:05:12.879Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_thigh_left",
+    "filename": "agent_base_parts_01_thigh_left.png",
+    "displayName": "左大腿",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左大腿制服裤件，髋到膝的细长轮廓；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_thigh_left.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 437,
+      "top": 87,
+      "width": 431,
+      "height": 1022
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_thigh_left.png",
+    "width": 108,
+    "height": 256,
+    "runtimeBytes": 30489,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:13.430Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_thigh_right",
+    "filename": "agent_base_parts_01_thigh_right.png",
+    "displayName": "右大腿",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右大腿制服裤件，髋到膝的细长轮廓；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_thigh_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 449,
+      "top": 166,
+      "width": 357,
+      "height": 883
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_thigh_right.png",
+    "width": 104,
+    "height": 256,
+    "runtimeBytes": 35559,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:14.452Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_shin_left",
+    "filename": "agent_base_parts_01_shin_left.png",
+    "displayName": "左小腿",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左小腿制服裤件，膝到踝，保留膝连接余量；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_shin_left.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 474,
+      "top": 136,
+      "width": 313,
+      "height": 987
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_shin_left.png",
+    "width": 81,
+    "height": 256,
+    "runtimeBytes": 24427,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:15.544Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_shin_right",
+    "filename": "agent_base_parts_01_shin_right.png",
+    "displayName": "右小腿",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右小腿制服裤件，膝到踝，保留膝连接余量；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_shin_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 516,
+      "top": 166,
+      "width": 273,
+      "height": 916
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_shin_right.png",
+    "width": 76,
+    "height": 256,
+    "runtimeBytes": 26476,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:16.584Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_boot_left",
+    "filename": "agent_base_parts_01_boot_left.png",
+    "displayName": "左鞋",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画左脚厚底工业短靴，脚底水平，保留踝挂点；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_boot_left.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 308,
+      "top": 304,
+      "width": 735,
+      "height": 682
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_boot_left.png",
+    "width": 256,
+    "height": 238,
+    "runtimeBytes": 82270,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:17.615Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_boot_right",
+    "filename": "agent_base_parts_01_boot_right.png",
+    "displayName": "右鞋",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画右脚厚底工业短靴，脚底水平，保留踝挂点；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_boot_right.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 300,
+      "top": 344,
+      "width": 697,
+      "height": 634
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_boot_right.png",
+    "width": 256,
+    "height": 233,
+    "runtimeBytes": 78568,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:18.669Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_starter_baton",
+    "filename": "agent_base_parts_01_starter_baton.png",
+    "displayName": "制式短棍 W00",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画朴素铁灰和锈色制式短棍，不含手和发光效果；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_starter_baton.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 567,
+      "top": 107,
+      "width": 124,
+      "height": 1042
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_starter_baton.png",
+    "width": 30,
+    "height": 256,
+    "runtimeBytes": 18220,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:19.699Z"
+  },
+  {
+    "id": "STA_002",
+    "key": "agent_base_parts_01_clipboard",
+    "filename": "agent_base_parts_01_clipboard.png",
+    "displayName": "观察夹板",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "承接 STA_001，交付 14 个身体件：无发无表情头 1、含制服躯干 1、上臂左右 2、前臂左右 2、手左右 2、大腿左右 2、小腿左右 2、鞋左右 2；另交制式短棍 W00 1、观察夹板 1，共 16 件。关节内侧补全被遮区域，袖口与手掌连接清楚。夹板为旧纸矩形、金属夹和两道手写痕，不生成可读字。短棍是朴素铁灰/锈色棍，不带能量核心。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "身体装配母版 1024 × 1024 px；各身体件与手持物在相同坐标画布分别导出",
+    "focus": "本次只画旧纸夹板、金属夹和两道不可读笔迹，不含手和可读文字；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "装配根为脚底 (512, 896)；头颈、肩、肘、腕、髋、膝、踝分别记录像素挂点；两道具记录握柄点。",
+    "dependsOn": [
+      "STA_001"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_base_parts_01_clipboard.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 285,
+      "top": 135,
+      "width": 712,
+      "height": 1011
+    },
+    "url": "/art/generated/personnel/agent_base_parts_01_clipboard.png",
+    "width": 180,
+    "height": 256,
+    "runtimeBytes": 75493,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:10:20.744Z"
+  },
+  {
+    "id": "STA_003",
+    "key": "agent_hair_quiff_01_hair",
+    "filename": "agent_hair_quiff_01_hair.png",
+    "displayName": "E01 向上尖束",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 深灰发，前额一束不等长尖峰向上偏前，后脑轮廓压低；不要对称刺猬头。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E01 一整片前高后低的深灰向上尖束头发，不含头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_quiff_01_hair.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 49,
+      "top": 96,
+      "width": 1185,
+      "height": 973
+    },
+    "url": "/art/generated/personnel/agent_hair_quiff_01_hair.png",
+    "width": 256,
+    "height": 210,
+    "runtimeBytes": 51641,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:09.001Z"
+  },
+  {
+    "id": "STA_004",
+    "key": "agent_hair_side_fringe_01_hair",
+    "filename": "agent_hair_side_fringe_01_hair.png",
+    "displayName": "E02 侧扫斜刘海",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P0",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 棕锈发，大块斜刘海由高侧扫到低侧，另一侧耳根露出；长度短，不盖住双眼和眼镜挂点。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E02 棕锈色侧扫斜刘海整体发片，不含头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_side_fringe_01_hair.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 73,
+      "top": 126,
+      "width": 1156,
+      "height": 891
+    },
+    "url": "/art/generated/personnel/agent_hair_side_fringe_01_hair.png",
+    "width": 256,
+    "height": 197,
+    "runtimeBytes": 61634,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:10.176Z"
+  },
+  {
+    "id": "STA_005",
+    "key": "agent_hair_bob_glasses_01_hair",
+    "filename": "agent_hair_bob_glasses_01_hair.png",
+    "displayName": "E03 波波头",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 浅灰褐短波波头，下半部向外略鼓、两侧长度不一；附一副深墨细框眼镜独立透明件，不把镜片变成发型。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E03 浅灰褐不对称短波波头发片，不含眼镜和头脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_bob_glasses_01_hair.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 60,
+      "top": 127,
+      "width": 1140,
+      "height": 965
+    },
+    "url": "/art/generated/personnel/agent_hair_bob_glasses_01_hair.png",
+    "width": 256,
+    "height": 217,
+    "runtimeBytes": 68827,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:11.299Z"
+  },
+  {
+    "id": "STA_005",
+    "key": "agent_hair_bob_glasses_01_glasses",
+    "filename": "agent_hair_bob_glasses_01_glasses.png",
+    "displayName": "E03 眼镜",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 浅灰褐短波波头，下半部向外略鼓、两侧长度不一；附一副深墨细框眼镜独立透明件，不把镜片变成发型。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画一副深墨简化细框眼镜透明叠层，不含脸、头发和多余文字；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_bob_glasses_01_glasses.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 45,
+      "top": 445,
+      "width": 1175,
+      "height": 510
+    },
+    "url": "/art/generated/personnel/agent_hair_bob_glasses_01_glasses.png",
+    "width": 256,
+    "height": 111,
+    "runtimeBytes": 19863,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:12.418Z"
+  },
+  {
+    "id": "STA_006",
+    "key": "agent_hair_messy_ponytail_01_front_hair",
+    "filename": "agent_hair_messy_ponytail_01_front_hair.png",
+    "displayName": "E04 乱翘前发",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 暗紫灰乱翘前发和后脑短马尾；前额尖束与后侧尾束构成两个明显方向。前发与后马尾分层，避免尾束压在脸前。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E04 暗紫灰乱翘的前层头发，不含马尾、头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_messy_ponytail_01_front_hair.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 158,
+      "top": 110,
+      "width": 1070,
+      "height": 995
+    },
+    "url": "/art/generated/personnel/agent_hair_messy_ponytail_01_front_hair.png",
+    "width": 256,
+    "height": 238,
+    "runtimeBytes": 57792,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:13.499Z"
+  },
+  {
+    "id": "STA_008",
+    "key": "agent_hair_bun_01_front_hair",
+    "filename": "agent_hair_bun_01_front_hair.png",
+    "displayName": "E06 贴头前发",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰棕发，侧分贴头前发与后上方圆形松盘髻；髻偏离头中心，保留几根不规则碎发；前发与后髻分层。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E06 灰棕贴头侧分前发，不含后髻、头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_bun_01_front_hair.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 34,
+      "top": 61,
+      "width": 1209,
+      "height": 987
+    },
+    "url": "/art/generated/personnel/agent_hair_bun_01_front_hair.png",
+    "width": 256,
+    "height": 209,
+    "runtimeBytes": 56383,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:16.677Z"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_neutral",
+    "filename": "agent_face_states_01_neutral.png",
+    "displayName": "中性紧张面部",
+    "kind": "拆件",
+    "state": "IDLE / PANICKED / HURT / INCAPACITATED",
+    "priority": "P1",
+    "requirements": "同一头颅上分别交付：中性紧张（不等大眼、短抿嘴）、恐慌（眼张大、张口、眉眼歪斜）、受伤（单眼收紧、嘴压低，不改变头形）、本日重伤倒地（闭眼或低垂眼、嘴放松）四组面部叠层。各表情眼、鼻、嘴位置有共同基准，五官数量正常；不用真实伤口或流血来区别状态。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（同员工装配母版），面部局部透明叠层",
+    "focus": "本次只画中性紧张的眉眼鼻嘴透明叠层，不等大眼与短抿嘴，不含头脸肤色；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "与共用头骨注册点相同，面部局部原点不随表情移动。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_face_states_01_neutral.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 319,
+      "top": 288,
+      "width": 708,
+      "height": 669
+    },
+    "url": "/art/generated/personnel/agent_face_states_01_neutral.png",
+    "width": 256,
+    "height": 242,
+    "runtimeBytes": 62789,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:18.986Z"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_panic",
+    "filename": "agent_face_states_01_panic.png",
+    "displayName": "恐慌面部",
+    "kind": "拆件",
+    "state": "IDLE / PANICKED / HURT / INCAPACITATED",
+    "priority": "P1",
+    "requirements": "同一头颅上分别交付：中性紧张（不等大眼、短抿嘴）、恐慌（眼张大、张口、眉眼歪斜）、受伤（单眼收紧、嘴压低，不改变头形）、本日重伤倒地（闭眼或低垂眼、嘴放松）四组面部叠层。各表情眼、鼻、嘴位置有共同基准，五官数量正常；不用真实伤口或流血来区别状态。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（同员工装配母版），面部局部透明叠层",
+    "focus": "本次只画恐慌的眉眼鼻嘴透明叠层，歪斜张大眼和张口，不含头脸肤色；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "与共用头骨注册点相同，面部局部原点不随表情移动。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_face_states_01_panic.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 307,
+      "top": 208,
+      "width": 751,
+      "height": 855
+    },
+    "url": "/art/generated/personnel/agent_face_states_01_panic.png",
+    "width": 225,
+    "height": 256,
+    "runtimeBytes": 54630,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:20.085Z"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_hurt",
+    "filename": "agent_face_states_01_hurt.png",
+    "displayName": "受伤面部",
+    "kind": "拆件",
+    "state": "IDLE / PANICKED / HURT / INCAPACITATED",
+    "priority": "P1",
+    "requirements": "同一头颅上分别交付：中性紧张（不等大眼、短抿嘴）、恐慌（眼张大、张口、眉眼歪斜）、受伤（单眼收紧、嘴压低，不改变头形）、本日重伤倒地（闭眼或低垂眼、嘴放松）四组面部叠层。各表情眼、鼻、嘴位置有共同基准，五官数量正常；不用真实伤口或流血来区别状态。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（同员工装配母版），面部局部透明叠层",
+    "focus": "本次只画受伤的眉眼鼻嘴透明叠层，一眼收紧与压低嘴角，不含伤口和头脸肤色；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "与共用头骨注册点相同，面部局部原点不随表情移动。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_face_states_01_hurt.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 319,
+      "top": 272,
+      "width": 781,
+      "height": 687
+    },
+    "url": "/art/generated/personnel/agent_face_states_01_hurt.png",
+    "width": 256,
+    "height": 225,
+    "runtimeBytes": 54361,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:21.200Z"
+  },
+  {
+    "id": "STA_009",
+    "key": "agent_face_states_01_incapacitated",
+    "filename": "agent_face_states_01_incapacitated.png",
+    "displayName": "本日倒地面部",
+    "kind": "拆件",
+    "state": "IDLE / PANICKED / HURT / INCAPACITATED",
+    "priority": "P1",
+    "requirements": "同一头颅上分别交付：中性紧张（不等大眼、短抿嘴）、恐慌（眼张大、张口、眉眼歪斜）、受伤（单眼收紧、嘴压低，不改变头形）、本日重伤倒地（闭眼或低垂眼、嘴放松）四组面部叠层。各表情眼、鼻、嘴位置有共同基准，五官数量正常；不用真实伤口或流血来区别状态。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（同员工装配母版），面部局部透明叠层",
+    "focus": "本次只画本日重伤倒地的闭眼、放松嘴面部透明叠层，不含头脸肤色及死亡符号；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "与共用头骨注册点相同，面部局部原点不随表情移动。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_face_states_01_incapacitated.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 345,
+      "top": 343,
+      "width": 733,
+      "height": 596
+    },
+    "url": "/art/generated/personnel/agent_face_states_01_incapacitated.png",
+    "width": 256,
+    "height": 208,
+    "runtimeBytes": 44066,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:20:22.246Z"
+  },
+  {
+    "id": "EQ_W01",
+    "key": "weapon_nailong_repeater_01_held",
+    "filename": "weapon_nailong_repeater_01_held.png",
+    "displayName": "W01 复读器",
+    "kind": "拆件",
+    "state": "手持/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 金旧黄的不规则块状机头，短握柄，前面三道深墨栅格；轮廓略向前倾，不画成枪管或收音机背包。大小以员工单手可握为准。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "focus": "本次只画W01 复读器 这一件完整手持武器，严格使用主表所写轮廓和颜色；无手、无人、无攻击效果；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N01_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/weapon_nailong_repeater_01_held.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 270,
+      "top": 181,
+      "width": 808,
+      "height": 901
+    },
+    "url": "/art/generated/personnel/weapon_nailong_repeater_01_held.png",
+    "width": 230,
+    "height": 256,
+    "runtimeBytes": 87738,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:49.430Z"
+  },
+  {
+    "id": "EQ_W02",
+    "key": "weapon_maodie_claw_01_held",
+    "filename": "weapon_maodie_claw_01_held.png",
+    "displayName": "W02 哈气爪",
+    "kind": "拆件",
+    "state": "手持/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 锈色手背套与三根长而弯的浅色爪，爪尖参差、根部包住手背；侧视能认清三爪，掌心/握点留空。不要猫爪手套、毛绒整臂或五指刀。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "focus": "本次只画W02 哈气爪 这一件完整手持武器，严格使用主表所写轮廓和颜色；无手、无人、无攻击效果；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/weapon_maodie_claw_01_held.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 158,
+      "top": 174,
+      "width": 1024,
+      "height": 939
+    },
+    "url": "/art/generated/personnel/weapon_maodie_claw_01_held.png",
+    "width": 256,
+    "height": 235,
+    "runtimeBytes": 66844,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:49.991Z"
+  },
+  {
+    "id": "EQ_W03",
+    "key": "weapon_big_dog_barker_01_held",
+    "filename": "weapon_big_dog_barker_01_held.png",
+    "displayName": "W03 吠声器",
+    "kind": "拆件",
+    "state": "手持/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿色宽口喇叭，前口明显外扩、内部墨黑，后端收窄连接短握柄；厚重钝边、少量铁锈，形成大狗宽口来源。不要现代冲锋枪或音响背包。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "focus": "本次只画W03 吠声器 这一件完整手持武器，严格使用主表所写轮廓和颜色；无手、无人、无攻击效果；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N03_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/weapon_big_dog_barker_01_held.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 101,
+      "top": 106,
+      "width": 1101,
+      "height": 1063
+    },
+    "url": "/art/generated/personnel/weapon_big_dog_barker_01_held.png",
+    "width": 256,
+    "height": 247,
+    "runtimeBytes": 83043,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:50.505Z"
+  },
+  {
+    "id": "EQ_W04",
+    "key": "weapon_dingdong_notification_horn_01_held",
+    "filename": "weapon_dingdong_notification_horn_01_held.png",
+    "displayName": "W04 通知喇叭",
+    "kind": "拆件",
+    "state": "手持/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 旧纸米色与锈红的钟铃/通知扩音器混合小器件，轮廓是口沿稍宽的扁钟壳、短柄和小天线/铃舌；可见小块栅格但不写字。与 W03 的宽深筒喇叭明确不同。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "focus": "本次只画W04 通知喇叭 这一件完整手持武器，严格使用主表所写轮廓和颜色；无手、无人、无攻击效果；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N04_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/weapon_dingdong_notification_horn_01_held.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 224,
+      "top": 119,
+      "width": 833,
+      "height": 1021
+    },
+    "url": "/art/generated/personnel/weapon_dingdong_notification_horn_01_held.png",
+    "width": 209,
+    "height": 256,
+    "runtimeBytes": 76492,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:51.601Z"
+  },
+  {
+    "id": "EQ_W05",
+    "key": "weapon_gugu_resonator_01_held",
+    "filename": "weapon_gugu_resonator_01_held.png",
+    "displayName": "W05 嘎嘎共振器",
+    "kind": "拆件",
+    "state": "手持/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 浅冷蓝椭圆共振头，中央一条深墨锯齿裂口，细短握柄；外形紧凑、有歪斜刻线，边缘不发强光。与 W01 方块头、W03/W04 喇叭口区别。 单个朝右侧视手持物，和员工的粗墨线、低饱和工业材质一致；最终约 20–35 世界像素的读形要靠外轮廓而非细密纹理。",
+    "canvas": "1024 × 1024 px，握点周围保留足够旋转透明边距",
+    "focus": "本次只画W05 嘎嘎共振器 这一件完整手持武器，严格使用主表所写轮廓和颜色；无手、无人、无攻击效果；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要额外手臂、枪弹、文字数值、被动技能、光环或装备功能示意。",
+    "pivot": "手掌握柄/腕套中心为旋转根，建议母版 (384, 640)；武器向右伸展；攻击时跟随实际 hand/facing/angle。",
+    "dependsOn": [
+      "STA_002",
+      "STA_013",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/weapon_gugu_resonator_01_held.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 310,
+      "top": 135,
+      "width": 703,
+      "height": 998
+    },
+    "url": "/art/generated/personnel/weapon_gugu_resonator_01_held.png",
+    "width": 180,
+    "height": 256,
+    "runtimeBytes": 51252,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:52.666Z"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_torso",
+    "filename": "armor_nailong_uniform_parts_01_torso.png",
+    "displayName": "奶龙服躯干层",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配旧金/奶油小面积肩章、短胸襟和不对称圆钝缝边；轮廓轻软，引用奶龙色群但不变成恐龙套装。 制服躯干覆盖层 1、近侧圆钝肩片 1、远侧肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A01 灰绿/旧金短胸襟与制服躯干覆盖层，不含身体及肩片；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N01_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_nailong_uniform_parts_01_torso.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 318,
+      "top": 206,
+      "width": 656,
+      "height": 852
+    },
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_torso.png",
+    "width": 197,
+    "height": 256,
+    "runtimeBytes": 87154,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:53.731Z"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_torso_collar",
+    "filename": "armor_maodie_uniform_parts_01_torso_collar.png",
+    "displayName": "耄耋服躯干与领圈",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A02 灰绿/锈色躯干覆盖层及相连围巾领圈，不含围巾尾和肩片；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_maodie_uniform_parts_01_torso_collar.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 277,
+      "top": 94,
+      "width": 692,
+      "height": 1064
+    },
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_torso_collar.png",
+    "width": 166,
+    "height": 256,
+    "runtimeBytes": 72703,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:54.808Z"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_torso",
+    "filename": "armor_big_dog_uniform_parts_01_torso.png",
+    "displayName": "大狗服厚胸襟",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿/灰褐厚胸襟呈简短盒形，明显方形护领，厚但不夸张的双肩；宽块轮廓比其他套装更稳重，员工身高和四肢长度不变。 躯干胸襟层 1、方形护领 1、近/远肩片 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A03 脏绿灰褐盒形厚胸襟躯干覆盖层，不含护领和肩片；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N03_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_big_dog_uniform_parts_01_torso.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 242,
+      "top": 182,
+      "width": 777,
+      "height": 869
+    },
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_torso.png",
+    "width": 229,
+    "height": 256,
+    "runtimeBytes": 99109,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:55.901Z"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_torso",
+    "filename": "armor_dingdong_uniform_parts_01_torso.png",
+    "displayName": "叮咚鸡服躯干层",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 低饱和灰绿制服配旧纸米色/暗紫灰边条，肩部有圆形小扬声器/钟面装饰轮廓，胸襟短直；装饰只刻线不画可读表盘数字或信号灯。 躯干覆盖层 1、近侧圆形肩片 1、远侧圆形肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A04 灰绿与米色暗紫灰窄边的短直胸襟躯干覆盖层；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N04_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_dingdong_uniform_parts_01_torso.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 227,
+      "top": 170,
+      "width": 824,
+      "height": 951
+    },
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_torso.png",
+    "width": 222,
+    "height": 256,
+    "runtimeBytes": 103307,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:57.022Z"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_torso_collar",
+    "filename": "armor_gugu_uniform_parts_01_torso_collar.png",
+    "displayName": "咕咕嘎嘎服躯干与领圈",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A05 灰蓝绿制服躯干覆盖层及相连浅冷色领圈，不含披带和肩片；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_gugu_uniform_parts_01_torso_collar.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 313,
+      "top": 151,
+      "width": 631,
+      "height": 916
+    },
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_torso_collar.png",
+    "width": 176,
+    "height": 256,
+    "runtimeBytes": 74072,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:29:58.124Z"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_shoulder_near",
+    "filename": "armor_nailong_uniform_parts_01_shoulder_near.png",
+    "displayName": "奶龙服近侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配旧金/奶油小面积肩章、短胸襟和不对称圆钝缝边；轮廓轻软，引用奶龙色群但不变成恐龙套装。 制服躯干覆盖层 1、近侧圆钝肩片 1、远侧肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A01 近侧旧金圆钝肩片，不含其他衣服；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N01_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_nailong_uniform_parts_01_shoulder_near.png",
+    "sourceDimensions": [
+      1312,
+      1199
+    ],
+    "alphaBounds": {
+      "left": 268,
+      "top": 106,
+      "width": 787,
+      "height": 984
+    },
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_shoulder_near.png",
+    "width": 205,
+    "height": 256,
+    "runtimeBytes": 79037,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:17.811Z"
+  },
+  {
+    "id": "EQ_A01",
+    "key": "armor_nailong_uniform_parts_01_shoulder_far",
+    "filename": "armor_nailong_uniform_parts_01_shoulder_far.png",
+    "displayName": "奶龙服远侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配旧金/奶油小面积肩章、短胸襟和不对称圆钝缝边；轮廓轻软，引用奶龙色群但不变成恐龙套装。 制服躯干覆盖层 1、近侧圆钝肩片 1、远侧肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A01 远侧旧金圆钝肩片，配合侧视遮挡，不含其他衣服；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N01_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_nailong_uniform_parts_01_shoulder_far.png",
+    "sourceDimensions": [
+      1312,
+      1199
+    ],
+    "alphaBounds": {
+      "left": 304,
+      "top": 194,
+      "width": 784,
+      "height": 827
+    },
+    "url": "/art/generated/personnel/armor_nailong_uniform_parts_01_shoulder_far.png",
+    "width": 243,
+    "height": 256,
+    "runtimeBytes": 84076,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:18.885Z"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_shoulder_near",
+    "filename": "armor_maodie_uniform_parts_01_shoulder_near.png",
+    "displayName": "耄耋服近侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A02 近侧斜切肩片，尖角短而清楚；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_maodie_uniform_parts_01_shoulder_near.png",
+    "sourceDimensions": [
+      1418,
+      1109
+    ],
+    "alphaBounds": {
+      "left": 218,
+      "top": 88,
+      "width": 994,
+      "height": 945
+    },
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_shoulder_near.png",
+    "width": 256,
+    "height": 243,
+    "runtimeBytes": 68380,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:19.978Z"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_shoulder_far",
+    "filename": "armor_maodie_uniform_parts_01_shoulder_far.png",
+    "displayName": "耄耋服远侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A02 远侧斜切肩片，配合侧视遮挡；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_maodie_uniform_parts_01_shoulder_far.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 226,
+      "top": 192,
+      "width": 829,
+      "height": 864
+    },
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_shoulder_far.png",
+    "width": 246,
+    "height": 256,
+    "runtimeBytes": 60203,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:21.040Z"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_scarf_long",
+    "filename": "armor_maodie_uniform_parts_01_scarf_long.png",
+    "displayName": "耄耋服围巾长尾",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A02 不等长围巾的长尾件，根部补全；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_maodie_uniform_parts_01_scarf_long.png",
+    "sourceDimensions": [
+      1010,
+      1557
+    ],
+    "alphaBounds": {
+      "left": 254,
+      "top": 59,
+      "width": 590,
+      "height": 1454
+    },
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_scarf_long.png",
+    "width": 104,
+    "height": 256,
+    "runtimeBytes": 22608,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:22.091Z"
+  },
+  {
+    "id": "EQ_A02",
+    "key": "armor_maodie_uniform_parts_01_scarf_short",
+    "filename": "armor_maodie_uniform_parts_01_scarf_short.png",
+    "displayName": "耄耋服围巾短尾",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰绿基底配锈色/灰褐窄边，斜切肩片和不等长短围巾；比 A01 更尖、更碎，但不加猫耳头套。 含围巾领圈的躯干覆盖层 1、近/远肩片 2、长/短围巾尾 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A02 不等长围巾的短尾件，根部补全；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N02_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_maodie_uniform_parts_01_scarf_short.png",
+    "sourceDimensions": [
+      1024,
+      1536
+    ],
+    "alphaBounds": {
+      "left": 221,
+      "top": 111,
+      "width": 695,
+      "height": 1316
+    },
+    "url": "/art/generated/personnel/armor_maodie_uniform_parts_01_scarf_short.png",
+    "width": 135,
+    "height": 256,
+    "runtimeBytes": 31190,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:23.159Z"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_collar",
+    "filename": "armor_big_dog_uniform_parts_01_collar.png",
+    "displayName": "大狗服方形护领",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿/灰褐厚胸襟呈简短盒形，明显方形护领，厚但不夸张的双肩；宽块轮廓比其他套装更稳重，员工身高和四肢长度不变。 躯干胸襟层 1、方形护领 1、近/远肩片 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A03 方形短护领独立件，不含头和躯干；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N03_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_big_dog_uniform_parts_01_collar.png",
+    "sourceDimensions": [
+      1536,
+      1024
+    ],
+    "alphaBounds": {
+      "left": 118,
+      "top": 178,
+      "width": 1300,
+      "height": 670
+    },
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_collar.png",
+    "width": 256,
+    "height": 132,
+    "runtimeBytes": 42458,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:24.276Z"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_shoulder_near",
+    "filename": "armor_big_dog_uniform_parts_01_shoulder_near.png",
+    "displayName": "大狗服近侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿/灰褐厚胸襟呈简短盒形，明显方形护领，厚但不夸张的双肩；宽块轮廓比其他套装更稳重，员工身高和四肢长度不变。 躯干胸襟层 1、方形护领 1、近/远肩片 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A03 厚重短方近侧肩片，不改变员工手臂长度；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N03_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_near.png",
+    "sourceDimensions": [
+      1312,
+      1199
+    ],
+    "alphaBounds": {
+      "left": 212,
+      "top": 87,
+      "width": 917,
+      "height": 971
+    },
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_near.png",
+    "width": 242,
+    "height": 256,
+    "runtimeBytes": 80901,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:25.359Z"
+  },
+  {
+    "id": "EQ_A03",
+    "key": "armor_big_dog_uniform_parts_01_shoulder_far",
+    "filename": "armor_big_dog_uniform_parts_01_shoulder_far.png",
+    "displayName": "大狗服远侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 脏绿/灰褐厚胸襟呈简短盒形，明显方形护领，厚但不夸张的双肩；宽块轮廓比其他套装更稳重，员工身高和四肢长度不变。 躯干胸襟层 1、方形护领 1、近/远肩片 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A03 厚重短方远侧肩片，配合侧视遮挡；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N03_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_far.png",
+    "sourceDimensions": [
+      1504,
+      1046
+    ],
+    "alphaBounds": {
+      "left": 317,
+      "top": 94,
+      "width": 959,
+      "height": 873
+    },
+    "url": "/art/generated/personnel/armor_big_dog_uniform_parts_01_shoulder_far.png",
+    "width": 256,
+    "height": 233,
+    "runtimeBytes": 71852,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:26.459Z"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_shoulder_near",
+    "filename": "armor_dingdong_uniform_parts_01_shoulder_near.png",
+    "displayName": "叮咚鸡服近侧圆肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 低饱和灰绿制服配旧纸米色/暗紫灰边条，肩部有圆形小扬声器/钟面装饰轮廓，胸襟短直；装饰只刻线不画可读表盘数字或信号灯。 躯干覆盖层 1、近侧圆形肩片 1、远侧圆形肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A04 近侧圆形肩片，有无字扬声器/钟面刻线，不含光效；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N04_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_near.png",
+    "sourceDimensions": [
+      1367,
+      1150
+    ],
+    "alphaBounds": {
+      "left": 281,
+      "top": 167,
+      "width": 812,
+      "height": 825
+    },
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_near.png",
+    "width": 252,
+    "height": 256,
+    "runtimeBytes": 107242,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:27.572Z"
+  },
+  {
+    "id": "EQ_A04",
+    "key": "armor_dingdong_uniform_parts_01_shoulder_far",
+    "filename": "armor_dingdong_uniform_parts_01_shoulder_far.png",
+    "displayName": "叮咚鸡服远侧圆肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 低饱和灰绿制服配旧纸米色/暗紫灰边条，肩部有圆形小扬声器/钟面装饰轮廓，胸襟短直；装饰只刻线不画可读表盘数字或信号灯。 躯干覆盖层 1、近侧圆形肩片 1、远侧圆形肩片 1。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A04 远侧圆形肩片，侧视层级明确，不含光效；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N04_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_far.png",
+    "sourceDimensions": [
+      1312,
+      1199
+    ],
+    "alphaBounds": {
+      "left": 147,
+      "top": 132,
+      "width": 1046,
+      "height": 934
+    },
+    "url": "/art/generated/personnel/armor_dingdong_uniform_parts_01_shoulder_far.png",
+    "width": 256,
+    "height": 229,
+    "runtimeBytes": 81899,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:28.749Z"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_shoulder_near",
+    "filename": "armor_gugu_uniform_parts_01_shoulder_near.png",
+    "displayName": "咕咕嘎嘎服近侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A05 窄弯近侧肩片，浅冷色局部边缘，不发光；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_gugu_uniform_parts_01_shoulder_near.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 195,
+      "top": 175,
+      "width": 892,
+      "height": 891
+    },
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_shoulder_near.png",
+    "width": 256,
+    "height": 256,
+    "runtimeBytes": 78409,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:29.871Z"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_shoulder_far",
+    "filename": "armor_gugu_uniform_parts_01_shoulder_far.png",
+    "displayName": "咕咕嘎嘎服远侧肩片",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A05 窄弯远侧肩片，浅冷色局部边缘，不发光；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_gugu_uniform_parts_01_shoulder_far.png",
+    "sourceDimensions": [
+      1290,
+      1219
+    ],
+    "alphaBounds": {
+      "left": 156,
+      "top": 217,
+      "width": 980,
+      "height": 816
+    },
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_shoulder_far.png",
+    "width": 256,
+    "height": 213,
+    "runtimeBytes": 62126,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:30.958Z"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_ribbon_long",
+    "filename": "armor_gugu_uniform_parts_01_ribbon_long.png",
+    "displayName": "咕咕嘎嘎服长披带",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A05 短披带中的较长一片，长度只到躯干附近；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_gugu_uniform_parts_01_ribbon_long.png",
+    "sourceDimensions": [
+      1040,
+      1512
+    ],
+    "alphaBounds": {
+      "left": 266,
+      "top": 75,
+      "width": 616,
+      "height": 1383
+    },
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_ribbon_long.png",
+    "width": 114,
+    "height": 256,
+    "runtimeBytes": 22097,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:32.029Z"
+  },
+  {
+    "id": "EQ_A05",
+    "key": "armor_gugu_uniform_parts_01_ribbon_short",
+    "filename": "armor_gugu_uniform_parts_01_ribbon_short.png",
+    "displayName": "咕咕嘎嘎服短披带",
+    "kind": "拆件",
+    "state": "穿戴/通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿制服配浅冷色领口与不等长短披带/围巾，肩片窄而弯，轮廓呼应企鹅围巾；低亮度浅色边不能像持续发光护盾。 含领圈的躯干覆盖层 1、近/远肩片 2、长/短披带 2。 沿用员工共用骨架；只改衣服色块和外部件，不替换皮肤、脸、发型、手脚。接缝补足隐藏区，长带只到躯干附近，不能遮住脚底或拖地。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版），每件同坐标透明导出",
+    "focus": "本次只画A05 短披带中的较短一片，与长片形成不对称轮廓；只交这一独立单元，不画其他零件、人物、对照图、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要动物头套、动力甲、翅膀、持续护盾、速度喷焰、回血或吸血装置、武器绑定；不要把数值抗性画成新的功能。",
+    "pivot": "躯干与共用 torso 完全对齐；肩片分别随肩根；领圈随躯干，围巾/披带根在领圈连接处，挂点独立记录。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "ABN_N05_01"
+    ],
+    "sourcePath": "art-production/generated/personnel/armor_gugu_uniform_parts_01_ribbon_short.png",
+    "sourceDimensions": [
+      1040,
+      1512
+    ],
+    "alphaBounds": {
+      "left": 388,
+      "top": 80,
+      "width": 421,
+      "height": 1329
+    },
+    "url": "/art/generated/personnel/armor_gugu_uniform_parts_01_ribbon_short.png",
+    "width": 81,
+    "height": 256,
+    "runtimeBytes": 21107,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:40:33.136Z"
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_idle_inhale",
+    "filename": "agent_locomotion_reference_01_idle_inhale.png",
+    "displayName": "待机吸气",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画同一完整员工待机吸气姿，胸部和头部仅小幅抬高，双脚不移；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_idle_inhale.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 384,
+      "top": 24,
+      "width": 550,
+      "height": 1203
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_idle_inhale.png",
+    "width": 234,
+    "height": 512,
+    "runtimeBytes": 139953,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:00.190Z"
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_idle_exhale",
+    "filename": "agent_locomotion_reference_01_idle_exhale.png",
+    "displayName": "待机呼气",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工待机呼气姿，肩稍落、身体轻前倾，双脚站稳；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_idle_exhale.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 440,
+      "top": 26,
+      "width": 449,
+      "height": 1199
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_idle_exhale.png",
+    "width": 192,
+    "height": 512,
+    "runtimeBytes": 135973,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:01.968Z"
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_walk_left_contact",
+    "filename": "agent_locomotion_reference_01_walk_left_contact.png",
+    "displayName": "行走左脚接触",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工行走的左脚接触姿，右臂前摆、右脚准备提起；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_walk_left_contact.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 351,
+      "top": 36,
+      "width": 597,
+      "height": 1174
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_walk_left_contact.png",
+    "width": 260,
+    "height": 512,
+    "runtimeBytes": 154046,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:03.870Z"
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_climb_left_high",
+    "filename": "agent_locomotion_reference_01_climb_left_high.png",
+    "displayName": "攀爬左手高",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工攀爬姿，左手高握、右手低握、腿交替支撑；不画梯子；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_climb_left_high.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 392,
+      "top": 14,
+      "width": 610,
+      "height": 1212
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_climb_left_high.png",
+    "width": 258,
+    "height": 512,
+    "runtimeBytes": 144973,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:06.794Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_observe_raise",
+    "filename": "agent_work_reference_01_observe_raise.png",
+    "displayName": "观察举板",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工观察举板姿，夹板在胸前接近视线，目光落在夹板或样本方向；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_observe_raise.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 450,
+      "top": 18,
+      "width": 454,
+      "height": 1208
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_observe_raise.png",
+    "width": 192,
+    "height": 512,
+    "runtimeBytes": 137287,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:10.681Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_observe_rest",
+    "filename": "agent_work_reference_01_observe_rest.png",
+    "displayName": "观察收板",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画同一完整员工观察收板姿，夹板略降、头轻微偏向样本方向；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_observe_rest.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 422,
+      "top": 26,
+      "width": 481,
+      "height": 1201
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_observe_rest.png",
+    "width": 205,
+    "height": 512,
+    "runtimeBytes": 136528,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:12.414Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_interact_reach",
+    "filename": "agent_work_reference_01_interact_reach.png",
+    "displayName": "互动探手",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工互动探手姿，一手试探前伸、上身略靠近，双脚不移；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_interact_reach.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 405,
+      "top": 56,
+      "width": 691,
+      "height": 1152
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_interact_reach.png",
+    "width": 307,
+    "height": 512,
+    "runtimeBytes": 156874,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:14.252Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_interact_retract",
+    "filename": "agent_work_reference_01_interact_retract.png",
+    "displayName": "互动收手",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工互动收手姿，前伸手收回胸前，双脚不移；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_interact_retract.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 431,
+      "top": 30,
+      "width": 460,
+      "height": 1190
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_interact_retract.png",
+    "width": 198,
+    "height": 512,
+    "runtimeBytes": 131694,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:16.163Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_soothe_open",
+    "filename": "agent_work_reference_01_soothe_open.png",
+    "displayName": "安抚张手",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工安抚张手姿，双手低位缓慢打开、身体略后倾；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_soothe_open.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 441,
+      "top": 11,
+      "width": 540,
+      "height": 1220
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_soothe_open.png",
+    "width": 227,
+    "height": 512,
+    "runtimeBytes": 137241,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:18.032Z"
+  },
+  {
+    "id": "STA_011",
+    "key": "agent_work_reference_01_soothe_settle",
+    "filename": "agent_work_reference_01_soothe_settle.png",
+    "displayName": "安抚落手",
+    "kind": "动作参考",
+    "state": "OBSERVE / INTERACT / SOOTHE",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考，每类起/落两姿：观察将夹板靠胸或举至面前、视线落在样本；互动一手试探前伸再收回、上身小幅靠近；安抚双手低位缓慢张开、身体略后倾。用不同手势节奏区别工作，不增加法杖、扫描枪、仪式或魔法。作业双脚留在相同工作点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工安抚落手姿，双手降低并收拢，肩线放松但仍紧张；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格相同脚底根节点；夹板挂腕/手掌，前伸只改变肢体局部，不改变工作点。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_work_reference_01_soothe_settle.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 419,
+      "top": 27,
+      "width": 495,
+      "height": 1199
+    },
+    "url": "/art/generated/personnel/agent_work_reference_01_soothe_settle.png",
+    "width": 211,
+    "height": 512,
+    "runtimeBytes": 132393,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:19.891Z"
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_panic_idle",
+    "filename": "agent_distress_reference_01_panic_idle.png",
+    "displayName": "恐慌站立",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工恐慌站立姿，歪斜大眼、张口、一手护头，双脚不协调但仍接地；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_panic_idle.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 382,
+      "top": 47,
+      "width": 616,
+      "height": 1161
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_panic_idle.png",
+    "width": 272,
+    "height": 512,
+    "runtimeBytes": 176633,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:21.738Z"
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_panic_walk",
+    "filename": "agent_distress_reference_01_panic_walk.png",
+    "displayName": "恐慌踉跄",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工恐慌行走的单个踉跄姿，四肢不协调，不能新增爬行或实际减速；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_panic_walk.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 258,
+      "top": 30,
+      "width": 828,
+      "height": 1182
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_panic_walk.png",
+    "width": 359,
+    "height": 512,
+    "runtimeBytes": 190884,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:23.525Z"
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_hit_recoil",
+    "filename": "agent_distress_reference_01_hit_recoil.png",
+    "displayName": "受击回缩",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工受击瞬间回缩姿，上身后撤、手臂收紧，以少量墨痕辅助；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_hit_recoil.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 431,
+      "top": 32,
+      "width": 523,
+      "height": 1186
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_hit_recoil.png",
+    "width": 226,
+    "height": 512,
+    "runtimeBytes": 154179,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:25.256Z"
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_incapacitated_fall",
+    "filename": "agent_distress_reference_01_incapacitated_fall.png",
+    "displayName": "本日重伤落姿",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工重伤倒地的一个落地姿，身体倾倒、四肢收起，无血腥或死亡符号；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_incapacitated_fall.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 145,
+      "top": 265,
+      "width": 1046,
+      "height": 843
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_incapacitated_fall.png",
+    "width": 512,
+    "height": 413,
+    "runtimeBytes": 242738,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:28.636Z"
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_incapacitated_rest",
+    "filename": "agent_distress_reference_01_incapacitated_rest.png",
+    "displayName": "本日重伤卧倒",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工本日重伤后稳定卧倒姿，闭眼，身体围绕原脚底根节点，无自动站起效果；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_incapacitated_rest.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 76,
+      "top": 292,
+      "width": 1161,
+      "height": 796
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_incapacitated_rest.png",
+    "width": 512,
+    "height": 351,
+    "runtimeBytes": 199051,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:30.865Z"
+  },
+  {
+    "id": "STA_013",
+    "key": "agent_weapon_attack_reference_01_ready",
+    "filename": "agent_weapon_attack_reference_01_ready.png",
+    "displayName": "持械准备",
+    "kind": "动作参考",
+    "state": "SUPPRESSING / WINDUP / IMPACT",
+    "priority": "P0",
+    "requirements": "分别生成四个独立单姿参考：持械准备、前摇收臂、命中前送、收势。以制式短棍示范手、肘、肩的共用结构；爪套、喇叭与共振器的握点由拆件元数据说明，不再画五套完整人形。保持头部不突变、脚底不脱离实际位置，攻击动作不能暗示冲刺或位移技能。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工持制式短棍的准备姿，握柄和腕根清楚；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "全身根=脚底；武器根=握柄点；前后手层级明确。",
+    "dependsOn": [
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_weapon_attack_reference_01_ready.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 261,
+      "top": 34,
+      "width": 687,
+      "height": 1188
+    },
+    "url": "/art/generated/personnel/agent_weapon_attack_reference_01_ready.png",
+    "width": 296,
+    "height": 512,
+    "runtimeBytes": 159631,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:32.727Z"
+  },
+  {
+    "id": "STA_013",
+    "key": "agent_weapon_attack_reference_01_windup",
+    "filename": "agent_weapon_attack_reference_01_windup.png",
+    "displayName": "攻击前摇",
+    "kind": "动作参考",
+    "state": "SUPPRESSING / WINDUP / IMPACT",
+    "priority": "P0",
+    "requirements": "分别生成四个独立单姿参考：持械准备、前摇收臂、命中前送、收势。以制式短棍示范手、肘、肩的共用结构；爪套、喇叭与共振器的握点由拆件元数据说明，不再画五套完整人形。保持头部不突变、脚底不脱离实际位置，攻击动作不能暗示冲刺或位移技能。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工攻击前摇收臂姿，短棍后收，上身轻后倾，脚底不移；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "全身根=脚底；武器根=握柄点；前后手层级明确。",
+    "dependsOn": [
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_weapon_attack_reference_01_windup.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 255,
+      "top": 40,
+      "width": 737,
+      "height": 1170
+    },
+    "url": "/art/generated/personnel/agent_weapon_attack_reference_01_windup.png",
+    "width": 323,
+    "height": 512,
+    "runtimeBytes": 168572,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:33.680Z"
+  },
+  {
+    "id": "STA_013",
+    "key": "agent_weapon_attack_reference_01_impact",
+    "filename": "agent_weapon_attack_reference_01_impact.png",
+    "displayName": "攻击命中",
+    "kind": "动作参考",
+    "state": "SUPPRESSING / WINDUP / IMPACT",
+    "priority": "P0",
+    "requirements": "分别生成四个独立单姿参考：持械准备、前摇收臂、命中前送、收势。以制式短棍示范手、肘、肩的共用结构；爪套、喇叭与共振器的握点由拆件元数据说明，不再画五套完整人形。保持头部不突变、脚底不脱离实际位置，攻击动作不能暗示冲刺或位移技能。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工短棍前送命中姿，肘腕连贯，脚底不移；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "全身根=脚底；武器根=握柄点；前后手层级明确。",
+    "dependsOn": [
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_weapon_attack_reference_01_impact.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 176,
+      "top": 45,
+      "width": 1037,
+      "height": 1165
+    },
+    "url": "/art/generated/personnel/agent_weapon_attack_reference_01_impact.png",
+    "width": 456,
+    "height": 512,
+    "runtimeBytes": 186040,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:35.508Z"
+  },
+  {
+    "id": "STA_013",
+    "key": "agent_weapon_attack_reference_01_recover",
+    "filename": "agent_weapon_attack_reference_01_recover.png",
+    "displayName": "攻击收势",
+    "kind": "动作参考",
+    "state": "SUPPRESSING / WINDUP / IMPACT",
+    "priority": "P0",
+    "requirements": "分别生成四个独立单姿参考：持械准备、前摇收臂、命中前送、收势。以制式短棍示范手、肘、肩的共用结构；爪套、喇叭与共振器的握点由拆件元数据说明，不再画五套完整人形。保持头部不突变、脚底不脱离实际位置，攻击动作不能暗示冲刺或位移技能。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工攻击后的回收姿，短棍回到身体侧前，无冲刺效果；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "全身根=脚底；武器根=握柄点；前后手层级明确。",
+    "dependsOn": [
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_weapon_attack_reference_01_recover.png",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "alphaBounds": {
+      "left": 409,
+      "top": 27,
+      "width": 503,
+      "height": 1192
+    },
+    "url": "/art/generated/personnel/agent_weapon_attack_reference_01_recover.png",
+    "width": 216,
+    "height": 512,
+    "runtimeBytes": 147121,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T07:58:37.502Z"
+  },
+  {
+    "id": "STA_006",
+    "key": "agent_hair_messy_ponytail_01_rear_ponytail",
+    "filename": "agent_hair_messy_ponytail_01_rear_ponytail.png",
+    "displayName": "E04 短马尾",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 暗紫灰乱翘前发和后脑短马尾；前额尖束与后侧尾束构成两个明显方向。前发与后马尾分层，避免尾束压在脸前。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E04 后层短马尾发束，不含前发、头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_messy_ponytail_01_rear_ponytail.png",
+    "sourceDimensions": [
+      1326,
+      1186
+    ],
+    "alphaBounds": {
+      "left": 500,
+      "top": 222,
+      "width": 658,
+      "height": 754
+    },
+    "url": "/art/generated/personnel/agent_hair_messy_ponytail_01_rear_ponytail.png",
+    "width": 223,
+    "height": 256,
+    "runtimeBytes": 43585,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:34.609Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_hair_messy_ponytail_01_rear_ponytail_1792570054556.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6f1b8e47-47f3-427e-a52f-d6b3772bcfc7.png",
+        "generatedAt": "2026-10-21T07:20:14.545Z"
+      }
+    ]
+  },
+  {
+    "id": "STA_007",
+    "key": "agent_hair_close_crop_01_hair",
+    "filename": "agent_hair_close_crop_01_hair.png",
+    "displayName": "E05 贴头短发",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰蓝绿贴头短发，额线偏斜，一侧鬓角更短；整体高度最低，以平、短的外轮廓区别 E01/E04。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E05 灰蓝绿贴头偏分短发发片，整体高度低，不含头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_close_crop_01_hair.png",
+    "sourceDimensions": [
+      1433,
+      1098
+    ],
+    "alphaBounds": {
+      "left": 220,
+      "top": 146,
+      "width": 1119,
+      "height": 738
+    },
+    "url": "/art/generated/personnel/agent_hair_close_crop_01_hair.png",
+    "width": 256,
+    "height": 169,
+    "runtimeBytes": 46032,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:35.673Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_hair_close_crop_01_hair_1792570055622.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-63de2c47-bba0-4035-b5b6-d6bffdfb68c4.png",
+        "generatedAt": "2026-10-21T07:20:15.598Z"
+      }
+    ]
+  },
+  {
+    "id": "STA_008",
+    "key": "agent_hair_bun_01_rear_bun",
+    "filename": "agent_hair_bun_01_rear_bun.png",
+    "displayName": "E06 后侧盘髻",
+    "kind": "拆件",
+    "state": "通用",
+    "priority": "P1",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 灰棕发，侧分贴头前发与后上方圆形松盘髻；髻偏离头中心，保留几根不规则碎发；前发与后髻分层。 所有发型套用同一头颅，不改变脸长、颈部或眼位；发色低饱和。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "canvas": "1024 × 1024 px（沿用员工装配母版）；实际内容仅头部附近",
+    "focus": "本次只画E06 后上方偏心圆盘髻发件，不含前发、头和脸；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "跟随共用头骨/颈部挂点；保留母版像素位置，头部旋转时不滑离头皮。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_hair_bun_01_rear_bun.png",
+    "sourceDimensions": [
+      1329,
+      1183
+    ],
+    "alphaBounds": {
+      "left": 149,
+      "top": 89,
+      "width": 759,
+      "height": 767
+    },
+    "url": "/art/generated/personnel/agent_hair_bun_01_rear_bun.png",
+    "width": 253,
+    "height": 256,
+    "runtimeBytes": 80587,
+    "generated": true,
+    "referenceOnly": false,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:36.738Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_hair_bun_01_rear_bun_1792570056676.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-97e4b9ef-e4a3-417d-80bf-ac275cb5bc28.png",
+        "generatedAt": "2026-10-21T07:20:17.829Z"
+      }
+    ]
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_walk_right_contact",
+    "filename": "agent_locomotion_reference_01_walk_right_contact.png",
+    "displayName": "行走右脚接触",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工行走的右脚接触姿，左臂前摆、左脚准备提起；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_walk_right_contact.png",
+    "sourceDimensions": [
+      957,
+      1644
+    ],
+    "alphaBounds": {
+      "left": 14,
+      "top": 6,
+      "width": 934,
+      "height": 1623
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_walk_right_contact.png",
+    "width": 295,
+    "height": 512,
+    "runtimeBytes": 137427,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:37.891Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_locomotion_reference_01_walk_right_contact_1792570057791.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2733f40f-03a4-428b-9931-b1cea97d82c2.png",
+        "generatedAt": "2026-10-21T07:58:05.028Z"
+      }
+    ]
+  },
+  {
+    "id": "STA_010",
+    "key": "agent_locomotion_reference_01_climb_right_high",
+    "filename": "agent_locomotion_reference_01_climb_right_high.png",
+    "displayName": "攀爬右手高",
+    "kind": "动作参考",
+    "state": "IDLE / MOVING / TRANSIT",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：待机呼气/吸气 2 姿；行走左脚接触/右脚接触 2 姿；攀爬左手高/右手高 2 姿。保持大头小身与前倾；行走手脚反向、短而清楚的脚步；攀爬手脚沿竖直连接设施交替，不画跳跃、飞行或瞬移。每姿使用相同地面基线，攀爬显示参考握点。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工攀爬姿，右手高握、左手低握、腿交替支撑；不画梯子；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "pivot": "每格脚底基准相同；攀爬显示根节点与握点，不能烘焙相机或楼梯背景。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_locomotion_reference_01_climb_right_high.png",
+    "sourceDimensions": [
+      883,
+      1780
+    ],
+    "alphaBounds": {
+      "left": 18,
+      "top": 15,
+      "width": 865,
+      "height": 1759
+    },
+    "url": "/art/generated/personnel/agent_locomotion_reference_01_climb_right_high.png",
+    "width": 252,
+    "height": 512,
+    "runtimeBytes": 134185,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:39.033Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_locomotion_reference_01_climb_right_high_1792570058952.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-38e6961c-3766-48cd-8303-c1d493a86554.png",
+        "generatedAt": "2026-10-21T07:58:08.914Z"
+      }
+    ]
+  },
+  {
+    "id": "STA_012",
+    "key": "agent_distress_reference_01_low_hp_guard",
+    "filename": "agent_distress_reference_01_low_hp_guard.png",
+    "displayName": "低 HP 护身",
+    "kind": "动作参考",
+    "state": "PANICKED / HURT / LOW_HP / INCAPACITATED",
+    "priority": "P0",
+    "requirements": "分别生成六个独立单姿参考：恐慌站立和踉跄行走 2 姿（夸张张口、护头手、步态不协调）；受击瞬间回缩 1 姿；低 HP 弯腰护身但保持可移动 1 姿；本日重伤倒地的落姿与稳定倒地 2 姿。仅用少量抽象墨痕和衣物皱折；倒地身体卧倒在脚底注册点附近。不要把低 HP 画成拄杖或新增爬行状态。 每个独立交付文件只能含一个姿势；按 characters_units.json 对应 focus 逐张生成。",
+    "canvas": "1024 × 1024 px，每个姿势独立一张，统一脚底 (512, 896)",
+    "focus": "本次只画完整员工低 HP 弯腰护身姿，仍可站立行走，不能增加拐杖或暗示速度变慢；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 不要永久死亡、自动医疗复活、血腥内脏、以低血量动画改变真实移动速度。",
+    "pivot": "倒地仍围绕原脚底根节点；直立姿与落姿保持同一坐标基准，不横向传送。",
+    "dependsOn": [
+      "STA_001",
+      "STA_002",
+      "STA_009"
+    ],
+    "sourcePath": "art-production/generated/personnel/agent_distress_reference_01_low_hp_guard.png",
+    "sourceDimensions": [
+      1024,
+      1536
+    ],
+    "alphaBounds": {
+      "left": 58,
+      "top": 12,
+      "width": 923,
+      "height": 1516
+    },
+    "url": "/art/generated/personnel/agent_distress_reference_01_low_hp_guard.png",
+    "width": 312,
+    "height": 512,
+    "runtimeBytes": 164265,
+    "generated": true,
+    "referenceOnly": true,
+    "status": "GENERATED",
+    "generatedAt": "2026-10-21T08:07:40.141Z",
+    "revisions": [
+      {
+        "sourcePath": "art-production/revisions/personnel/agent_distress_reference_01_low_hp_guard_1792570060051.png",
+        "originalGenerationPath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0a3526fe-c903-47c1-8069-929e33a6e3e7.png",
+        "generatedAt": "2026-10-21T07:58:26.968Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "requirements": 105,
+  "files": 288,
+  "procedural": 3,
+  "p0": 64,
+  "referenceImages": 16,
+  "sheets": 4,
+  "maxPromptLength": 1280,
+  "counts": [
+    "需求组",
+    105,
+    null,
+    "独立 PNG / 单姿势图",
+    288,
+    null,
+    "P0 生成需求组",
+    64,
+    null,
+    "程序保留组",
+    3
+  ]
+}

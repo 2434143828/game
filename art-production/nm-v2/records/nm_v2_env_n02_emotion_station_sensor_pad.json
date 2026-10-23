@@ -1,0 +1,10 @@
+{
+  "filename": "nm_v2_env_n02_emotion_station_sensor_pad.png",
+  "displayName": "壁面情绪传感贴片",
+  "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：壁面情绪传感贴片。本次只画512×512的一只扁平圆角壁面传感器，冷白边与少量脏粉标识，不画抓痕或评论；单件独立PNG，不附其他同组部件、人物或背景。\n风格和造型：二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。灰暖白/低饱和脏粉点缀的现代情绪反应观测架，轮廓稍紧凑但仍洁净；两个小监测头属于同一设备塔。独立壁面传感贴片替代破坏抓痕，屏幕内容不烘焙。比其他房略收敛光照，不做牢笼。\n参考对象：现代情绪反应实验室的紧凑多点观测架、非接触壁面传感器，参考小监测头与支架安装关系，以暖灰和少量脏粉形成区别。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\n建议制作尺寸：512×512 px。单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nFINAL OBJECT CHECK: 壁面情绪传感贴片. This is a newly drawn single game asset. Strict flat orthographic elevation. Do not draw an L-shaped frame unless this specific object is an L-shaped frame. A wall cladding texture is a full plain rectangular surface with no border, no frame, no cutout, no background. Only the named object; no extra device, no glow outside its silhouette.",
+  "transparent": true,
+  "scope": "environment",
+  "referenceOnly": false,
+  "references": [],
+  "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a5458678-56a1-44b9-b83a-6c76b4327413.png"
+}

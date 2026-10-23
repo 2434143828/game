@@ -1,0 +1,12 @@
+{
+  "filename": "nm_v2_armor_dingdong_torso.png",
+  "displayName": "躯干层",
+  "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：躯干层。只画本张：蓝灰短制服躯干，明黄窄识别带和小型无字提示红胸标，肩根短余量，无完整袖子或头；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构的专业防护制服，保持共用员工2.5—3头身和轻便关节空间。蓝灰短制服、明黄/橙黄窄识别带、少量提示红圆角胸标与两块短肩层；类似现代播报系统值班服，不做黄铜警报装甲 本组是3张独立部件；每张只画当前unit。防具相应躯干/肩层替代职业层，不叠两套衣服，不新增腿、发型或面部素材。\n参考对象：现代研究设施的轻便工作制服、圆角织物护肩、无字身份色块；蓝灰短制服、明黄/橙黄窄识别带、少量提示红圆角胸标与两块短肩层；类似现代播报系统值班服，不做黄铜警报装甲 与新版员工基型共用肩宽、领口与腰线。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画重型士兵护甲、满身动物皮、永久发光护盾、疗愈光环、治疗十字、属性数字或技能按钮。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 躯干层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent.",
+  "transparent": true,
+  "scope": "equipment",
+  "referenceOnly": false,
+  "references": [
+    "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+  ],
+  "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-79d7ab0e-6dc8-46f5-94a3-56b57ab30386.png"
+}

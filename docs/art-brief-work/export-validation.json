@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "sheets": [
+    "素材需求",
+    "逐张提示词",
+    "生成规范",
+    "参考图"
+  ],
+  "requirements": 105,
+  "generationTasks": 288,
+  "embeddedImages": 16,
+  "formulas": 869,
+  "errorCells": [],
+  "freezePanes": {
+    "素材需求": {
+      "xSplit": "4",
+      "ySplit": "7",
+      "topLeftCell": "E8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "逐张提示词": {
+      "xSplit": "3",
+      "ySplit": "7",
+      "topLeftCell": "D8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "生成规范": {
+      "ySplit": "3",
+      "topLeftCell": "A4",
+      "activePane": "bottomLeft",
+      "state": "frozen"
+    },
+    "参考图": {
+      "ySplit": "4",
+      "topLeftCell": "A5",
+      "activePane": "bottomLeft",
+      "state": "frozen"
+    }
+  },
+  "bytes": 2957109
+}

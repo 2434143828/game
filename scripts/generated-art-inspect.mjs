@@ -1,0 +1,15 @@
+import {chromium} from '@playwright/test';
+import {mkdir,writeFile} from 'node:fs/promises';
+const out='art-production/inspection';await mkdir(out,{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader']});
+const page=await browser.newPage({viewport:{width:1600,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+await page.goto('http://127.0.0.1:4173/',{waitUntil:'networkidle'});
+await page.waitForFunction(()=>window.__facilityTest?.scene.getEmployeeScreenPoint('E01'));
+if(await page.evaluate(()=>window.__facilityTest.controller.state.timeScale!==0))await page.locator('[data-action="pause"]').click();
+await page.screenshot({path:`${out}/current-default.png`});
+await page.locator('[data-employee="E01"]').click();await page.keyboard.press('f');
+await page.mouse.move(684,490);await page.mouse.wheel(0,-700);await page.waitForTimeout(250);
+await page.screenshot({path:`${out}/current-personnel.png`});
+await writeFile(`${out}/state.json`,JSON.stringify(await page.evaluate(()=>({art:window.__facilityTest.scene.getGeneratedArtState(),camera:window.__facilityTest.scene.getCameraState()})),null,2));
+console.log(JSON.stringify({out,errors}));await browser.close();

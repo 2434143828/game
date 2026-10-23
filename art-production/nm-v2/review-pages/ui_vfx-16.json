@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_ui_skill_icon_s05_calm.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-930565af-0436-4996-a8b2-c0d94e31063a.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_skill_icon_s05_calm.png",
+    "scope": "ui_vfx",
+    "displayName": "S05 咕咕嘎嘎",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S05 咕咕嘎嘎。本次只交一张独立PNG：浅蓝粉白的柔和思维弧被两片软翼包住，表达精神安抚而非HP治疗。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s03_howl.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-970447f0-9ec0-4673-b5c8-0861a2efad5c.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_skill_icon_s03_howl.png",
+    "scope": "ui_vfx",
+    "displayName": "S03 大狗叫",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S03 大狗叫。本次只交一张独立PNG：简化犬口向外推出两段声波，红橙粉白，表达范围冲击和击退但不画精确范围圈。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_work_tick_key.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-c3ad255b-fbc8-4620-a735-36f88e207c6b.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_work_tick_key.png",
+    "scope": "ui_vfx",
+    "displayName": "工作轻扫描关键图",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：工作轻扫描关键图。本次只交一张独立PNG：一片克制的冷青终端短扫描亮片，透明背景，无工具与文字。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。一个小型冷青短扫描亮片，包含两三段规整短光线与一个轻触点；保留透明中心，不含平板本体、员工、手或房间。用于既有工作动作的小反馈；同图复用三种工作，不分别重复生成。\n参考对象：现代平板终端被操作时的小型扫描亮片；仅轻触与短扫描信号，不含终端或人物本体。\n建议制作尺寸：512×512 px；图形小而疏朗。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s04_notice.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5188db3b-cd34-4a9b-b227-001906f46bac.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_ui_skill_icon_s04_notice.png",
+    "scope": "ui_vfx",
+    "displayName": "S04 叮咚通知",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S04 叮咚通知。本次只交一张独立PNG：简洁通知铃与两条前进速度线，明黄橙黄，表达全员移动加速而非伤害。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_hit_tick_key.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-06602246-4974-4764-a235-6aa8f543e4e0.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_hit_tick_key.png",
+    "scope": "ui_vfx",
+    "displayName": "通用命中刻线关键图",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：通用命中刻线关键图。本次只交一张独立PNG：一个中心留空的短折线冲击刻痕，无爆炸、伤口或数字。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。一小组方向清楚的冷白/金属灰折线冲击刻痕，中心透明，最多少量短碎片，整体像界面信号被打断的瞬间；不使用墨污、鲜血、火焰或魔法光球。真实受击时只短暂出现。\n参考对象：数字界面短促信号受扰的折线刻痕；小范围直接命中感，透明中心保留目标可见。\n建议制作尺寸：512×512 px；主体约300 px。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_panic_signal_key.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6a3e95f6-f66d-4e9c-a7ec-a4ac049bd7bc.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_panic_signal_key.png",
+    "scope": "ui_vfx",
+    "displayName": "恐慌信号关键图",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：恐慌信号关键图。本次只交一张独立PNG：一组断续浅紫信号弧，中心透明，不含文字与人物。不拼图，不含其他单元。\n风格和造型：冷白与少量亮紫#9C6BFF的两段不闭合信号弧，轻微错位、断续，中心大面积透明；表现员工精神失稳，不画具体员工、数字或拟声字，不把头部遮成噪声云。\n参考对象：头顶附近断续的思维信号弧；克制的紫白错位感，区分普通稳定状态，不含具体员工。\n建议制作尺寸：1024×512 px；横向疏朗。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_damage_type_white.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-93393c23-170c-4e59-b48e-f49229e91328.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_damage_type_white.png",
+    "scope": "ui_vfx",
+    "displayName": "白伤开口双弧",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：白伤开口双弧。本次只交一张独立PNG：一对冷白开口信号弧，表达精神冲击，不画治愈十字。不拼图，不含其他单元。\n风格和造型：四张独立紧凑信号片段，靠轮廓同时区分而非仅换色；RED异常红短折角、WHITE冷白开口双弧、BLACK深紫交错数据裂片、PALE浅青修长切痕。与现代底图保持线条一致，不再使用旧纸墨屑；没有范围、文字、武器、角色或场景。\n参考对象：四种不同几何命中语汇：红色折角、白色开口弧、深紫交错裂片、浅青修长切痕；统一现代数字信号质感。\n建议制作尺寸：每张512×512 px；统一中心与视觉重量。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_damage_type_red.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b33328b6-e6a5-4b34-8397-b4428e4ddd98.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_damage_type_red.png",
+    "scope": "ui_vfx",
+    "displayName": "红伤短折角",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：红伤短折角。本次只交一张独立PNG：一个异常红短折角冲击片，表达直接命中，不画火焰或血液。不拼图，不含其他单元。\n风格和造型：四张独立紧凑信号片段，靠轮廓同时区分而非仅换色；RED异常红短折角、WHITE冷白开口双弧、BLACK深紫交错数据裂片、PALE浅青修长切痕。与现代底图保持线条一致，不再使用旧纸墨屑；没有范围、文字、武器、角色或场景。\n参考对象：四种不同几何命中语汇：红色折角、白色开口弧、深紫交错裂片、浅青修长切痕；统一现代数字信号质感。\n建议制作尺寸：每张512×512 px；统一中心与视觉重量。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_damage_type_pale.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-060c8c59-b6b9-419d-aa57-c61b641c6263.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_damage_type_pale.png",
+    "scope": "ui_vfx",
+    "displayName": "苍白伤修长切痕",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：苍白伤修长切痕。本次只交一张独立PNG：一道修长浅青白切痕，中心留空，不画激光长度或冻结。不拼图，不含其他单元。\n风格和造型：四张独立紧凑信号片段，靠轮廓同时区分而非仅换色；RED异常红短折角、WHITE冷白开口双弧、BLACK深紫交错数据裂片、PALE浅青修长切痕。与现代底图保持线条一致，不再使用旧纸墨屑；没有范围、文字、武器、角色或场景。\n参考对象：四种不同几何命中语汇：红色折角、白色开口弧、深紫交错裂片、浅青修长切痕；统一现代数字信号质感。\n建议制作尺寸：每张512×512 px；统一中心与视觉重量。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_damage_type_black.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-73ab9a43-4122-4d6e-b272-38fcfc186267.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_damage_type_black.png",
+    "scope": "ui_vfx",
+    "displayName": "黑伤交错裂片",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：黑伤交错裂片。本次只交一张独立PNG：一束紧凑深紫与冷白负形交错的数据裂片，不画烟墙。不拼图，不含其他单元。\n风格和造型：四张独立紧凑信号片段，靠轮廓同时区分而非仅换色；RED异常红短折角、WHITE冷白开口双弧、BLACK深紫交错数据裂片、PALE浅青修长切痕。与现代底图保持线条一致，不再使用旧纸墨屑；没有范围、文字、武器、角色或场景。\n参考对象：四种不同几何命中语汇：红色折角、白色开口弧、深紫交错裂片、浅青修长切痕；统一现代数字信号质感。\n建议制作尺寸：每张512×512 px；统一中心与视觉重量。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_poll_n01_repeat_comment_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2718725d-8a94-4a71-9dc9-c005af782f95.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_poll_n01_repeat_comment_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "奶龙空白圆角评论",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：奶龙空白圆角评论。本次只交一张独立PNG：一个暖黄奶白的软圆角空白评论气泡，不含任何表情字或台词。不拼图，不含其他单元。\n风格和造型：暖黄#FFD84D与奶白主色；圆角、软边、轻柔却重复的低龄内容平台语汇。两张母版：圆角评论气泡与空白推荐卡。推荐卡仅含一个空缩略图窗、空标题带，不能画完整奶龙缩略图或播放数。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：奶龙的暖黄奶白、圆润低龄内容气质；对应软圆角评论气泡与无字推荐卡，亲和但重复形成压迫。\n建议制作尺寸：每张1024×512 px；内容区至少70%留白。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_vfx_local_signal_tear_key.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-9706f66b-7ffa-46bc-b4f4-7eeb6f57ff02.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_vfx_local_signal_tear_key.png",
+    "scope": "ui_vfx",
+    "displayName": "局部信号撕裂关键图",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：局部信号撕裂关键图。本次只交一张独立PNG：一条透明背景的视频压缩错位边，只含小矩形与短扫描线。不拼图，不含其他单元。\n风格和造型：一段小型视频信号错位片：少量矩形压缩块、断续短扫描线、窄RGB边缘偏移，背景透明；中性色为主，异常色由程序少量着色。可在不同房间边缘复用，无整屏破裂、长噪声墙或具体平台标题。\n参考对象：短视频信号的局部压缩碎块与小段RGB错位边；只参考互联网故障感，不做完整播放界面或全屏噪声。\n建议制作尺寸：1024×256 px；仅单条横向片段。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_poll_n02_argument_comment_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4e8e22c8-d56c-4d2c-86ef-f0bf51c12888.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_poll_n02_argument_comment_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "耄耋空白争吵气泡",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：耄耋空白争吵气泡。本次只交一张独立PNG：一个暖灰脏粉尖角评论空框，尾部方向鲜明，无字。不拼图，不含其他单元。\n风格和造型：暖灰、脏粉与少量异常红#FF5B6E；尖角气泡、短促插入的情绪标签，表现爆炸性发言和争吵感。仅两张空形状，不含脏话、攻击对象、现实用户头像或感叹号文字。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：耄耋的暖灰脏粉、情绪性爆发气质；对应尖锐争吵气泡与短促斜标签，不含实际用户或攻击性文字。\n建议制作尺寸：每张1024×512 px；气泡内空白。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_poll_n01_repeat_recommend_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-80b90787-0142-40ea-8f70-40cac349afd5.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_poll_n01_repeat_recommend_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "奶龙空白推荐卡",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：奶龙空白推荐卡。本次只交一张独立PNG：一张暖黄色空推荐卡，缩略图窗和标题带都留白，不含播放按钮数字或角色。不拼图，不含其他单元。\n风格和造型：暖黄#FFD84D与奶白主色；圆角、软边、轻柔却重复的低龄内容平台语汇。两张母版：圆角评论气泡与空白推荐卡。推荐卡仅含一个空缩略图窗、空标题带，不能画完整奶龙缩略图或播放数。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：奶龙的暖黄奶白、圆润低龄内容气质；对应软圆角评论气泡与无字推荐卡，亲和但重复形成压迫。\n建议制作尺寸：每张1024×512 px；内容区至少70%留白。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_poll_n02_argument_emotion_tag_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5d862774-f12a-4661-953b-81532e7ec519.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_poll_n02_argument_emotion_tag_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "耄耋空白情绪标签",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：耄耋空白情绪标签。本次只交一张独立PNG：一枚短促倾斜的情绪标签空框，异常红只作边缘强调，无标点字。不拼图，不含其他单元。\n风格和造型：暖灰、脏粉与少量异常红#FF5B6E；尖角气泡、短促插入的情绪标签，表现爆炸性发言和争吵感。仅两张空形状，不含脏话、攻击对象、现实用户头像或感叹号文字。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：耄耋的暖灰脏粉、情绪性爆发气质；对应尖锐争吵气泡与短促斜标签，不含实际用户或攻击性文字。\n建议制作尺寸：每张1024×512 px；气泡内空白。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  },
+  {
+    "filename": "nm_v2_poll_n03_live_live_corner_blank.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-72f4695a-d030-41b2-8d98-27f7129af6db.png",
+    "candidate": "art-production/nm-v2/candidates/ui_vfx/nm_v2_poll_n03_live_live_corner_blank.png",
+    "scope": "ui_vfx",
+    "displayName": "大狗无字直播角标",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：大狗无字直播角标。本次只交一张独立PNG：一个红橙粉白直播式角标空底，可含简化摄像机图形，不含字与计数。不拼图，不含其他单元。\n风格和造型：红橙#FF8A3D、粉红#FF4FA3与打call白；一个直播式空角标底座、一颗简化应援爱心，轮廓轻快，表现围观与应援涌入。角标可有纯图形摄像机轮廓但不含LIVE/直播中/观看数；不增加真实直播功能。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：大狗的红橙粉白、热闹直播应援气质；对应直播式角标和单颗爱心，声浪与围观感强但无真实平台标识。\n建议制作尺寸：1024×512 px。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nProduction rule: FLAT 2D graphic, hard clean alpha edge. No ambient shadow, no studio lighting, no halo, no bevel, no bloom. Only requested object."
+  }
+]

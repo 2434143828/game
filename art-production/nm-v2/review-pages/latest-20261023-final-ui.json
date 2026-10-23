@@ -1,0 +1,41 @@
+[
+  {
+    "filename": "nm_v2_ui_skill_icon_s03_howl.png",
+    "scope": "ui_vfx",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S03 大狗叫。本次只交一张独立PNG：简化犬口向外推出两段声波，红橙粉白，表达范围冲击和击退但不画精确范围圈。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d3833b07-66d7-4c03-b427-9a71ab158d4c.png"
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s01_stun.png",
+    "scope": "ui_vfx",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S01 我是奶龙。本次只交一张独立PNG：一个暖黄圆润角色停顿手势加静止短线，表达单目标停止，不画伤害爆炸。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7c073d8b-ffb4-41ff-9de0-ed69d65f0998.png"
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s05_calm.png",
+    "scope": "ui_vfx",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：S05 咕咕嘎嘎。本次只交一张独立PNG：浅蓝粉白的柔和思维弧被两片软翼包住，表达精神安抚而非HP治疗。不拼图，不含其他单元。\n风格和造型：常态统一深灰黑#12161C、蓝灰#1E2630、金属灰#39424E、冷白#D9E1EA、冷青蓝#57B8FF；扁平、清洁、克制、现代研究机构。五个独立技能符号，保留S01–S05 ID、热键与现有能力。图标可按五物色彩点缀，但不含按钮框、冷却层、数字、名称或射程。使用暂停姿/爪痕/声波/通知加速/安抚思维五种不同轮廓，不能把所有技能统一做成魔法攻击。\n参考对象：五物专属符号的同风格技能组：暖黄暂停姿、脏粉爪痕、红橙犬口声波、黄橙铃铛加速、浅蓝粉白思维安抚；保持五种轮廓区别。\n建议制作尺寸：每张512×512 px；24–32 px显示验收。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-40ba4477-11da-458b-a2a9-93c9f0e7416d.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_scarf_long.png",
+    "scope": "equipment",
+    "prompt": "One isolated narrow cloth strip, dusty muted pink with warm gray shaded underside, hanging vertically with a gentle S curve. Top cut edge is straight and narrow; bottom is one single tapered end. Exactly one strip. NO collar, NO ring, NO neck wrap, NO knot, NO second tail. Modular tiny 2D character clothing accessory. Clean flat cel shades, thin navy outline, modern research facility game. Transparent background, no glow, no shadow, no text.",
+    "reference": null,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-50f55922-ea20-4a29-9ead-24657b36e40d.png"
+  },
+  {
+    "filename": "nm_v2_show_compression_shard_key.png",
+    "scope": "ui_vfx",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：共享压缩插入关键图。本次只交一张独立PNG：一个透明为主的矩形压缩故障片，只含少量RGB边缘与信号碎块。不拼图，不含其他单元。\n风格和造型：一张疏朗矩形压缩块关键图，局部RGB错位、少量冷白切片，单个独立片段；可裁切/镜像/缩放复用，不能画全屏故障贴图或角色拖影。表现平台信号挤入现实的插入感，不承担攻击效果。仅局部装饰覆盖层，禁止创建按钮命中区；DOM pointer-events:none/Phaser不setInteractive。文字、计数、波形、播放进度全由程序，不烘焙进PNG。保护员工/收容物位置、门口、房间编号与状态、HP/SP、技能可用性和当日目标。\n参考对象：视频局部压缩错误的疏朗矩形片段；少量RGB错位与冷白切片，透明占优，不遮蔽主体。\n建议制作尺寸：1024×512 px；至少70%透明。透明PNG（RGBA）；一单元一张独立图，非多格sheet。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：不生成任何中文/英文/数字/价格/热键/平台名称/水印/可读文字；不画真实平台商标，不复刻真实社交产品界面；禁止旧纸、锈蚀、粗墨边、手写档案、地牢、柴油朋克、满屏霓虹、写实3D、整张网页或假实机截图。 \n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1abf6dfc-e430-4753-84ac-0291be664883.png"
+  }
+]

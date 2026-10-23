@@ -1,0 +1,44 @@
+{
+  "id": "ABN_N05_01__approved",
+  "rowId": "ABN_N05_01",
+  "file": "abn_gugu_gaga_idle_01_approved.png",
+  "row": {
+    "id": "ABN_N05_01",
+    "priority": "P0",
+    "category": "五物/平静定稿",
+    "name": "abn_gugu_gaga_idle_01",
+    "displayName": "N05 咕咕嘎嘎 平静定稿",
+    "state": "CONTAINED / IDLE",
+    "requirements": "原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 冷灰蓝企鹅轮廓，梨形大身、略小的偏头，旧纸白不对称腹面和脸块；不等大眼、小角形喙、短鳍、滑稽宽扁双足。灰青围巾两端长短不一；深体 #394950、淡腹 #d9d8c4、围巾 #7faaa9。不要礼帽、可爱红领结或写实羽毛。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。",
+    "referenceObject": "当前 咕咕嘎嘎 室内未作业形态",
+    "referenceIds": [
+      "REF_N05_CALM"
+    ],
+    "canvas": "1024 × 1024 px",
+    "export": "1 个透明 RGBA PNG 定稿；主体完整、无底座、无环境阴影；附三色主色票说明。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。",
+    "quantity": 1,
+    "deliveryType": "定稿",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05",
+    "acceptance": "缩至约 100 世界像素高（大狗约 1.06 倍）仍可凭轮廓认出 咕咕嘎嘎；与其他四物的头、肢体、外形不混同；不超出已有脚底对齐逻辑。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "平静定稿是所有衍生姿态的形体基准。PATROL_AOE 的移动和范围判定沿用现有模拟；不画冻结、减速、召唤冰块等装备/技能外的新功能。扫描线、残影和受控标记由引擎生成。"
+  },
+  "unit": {
+    "suffix": "approved",
+    "displayName": "咕咕嘎嘎 平静定稿",
+    "canvas": "1024 × 1024 px",
+    "focus": "本次只画一只完整平静 咕咕嘎嘎，严格采用本行具体形状与三色群，不含动作对照或其他角色；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: stylized-concept. Asset type: transparent 2D game creature approval art, one isolated subject, not gameplay screenshot.\nReference image 1 is STYLE ONLY: preserve its original grotesque ink hatching, matte muted painted fill and coarse uneven outlines. Do not depict the employee or copy his pose.\nSubject: N05 咕咕嘎嘎 平静定稿. 本次只画一只完整平静 咕咕嘎嘎，严格采用本行具体形状与三色群，不含动作对照或其他角色；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\n原创怪诞手绘收容风：不均匀粗墨外轮廓、较细结构线、局部不对称、平涂和少量排线；轮廓在游戏缩小尺寸仍清楚。 冷灰蓝企鹅轮廓，梨形大身、略小的偏头，旧纸白不对称腹面和脸块；不等大眼、小角形喙、短鳍、滑稽宽扁双足。灰青围巾两端长短不一；深体 #394950、淡腹 #d9d8c4、围巾 #7faaa9。不要礼帽、可爱红领结或写实羽毛。 侧视略带正脸可读性，所有部位围绕单一脚底根节点，不画房间。\nComposition: full body, right facing side view with slightly visible front face, feet on a common baseline near 88% canvas height, generous transparent margin; no ground shadow. Canvas requested: 1024 × 1024 px.\nAvoid: 不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。 No typography, no staff, no environment, no multi-panel sheet. Real alpha transparency, not a checkerboard painted into pixels.",
+  "references": [
+    "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-46d75ded-52fc-432b-a150-fdb80953e761.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-c5760131-877d-42bf-9a87-ce828de64002.png",
+  "visualReview": {
+    "status": "inspected",
+    "notes": "主体、风格与形态合格；已实际查看工具生成图。"
+  }
+}

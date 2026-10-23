@@ -1,0 +1,12 @@
+{
+  "filename": "nm_v2_abn_nailong_base_parts_tail.png",
+  "displayName": "柔软短尾",
+  "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：柔软短尾。只画本张：一条柔软短尾，尾根有接合余量，无身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 暖黄圆润短胖身体、奶白腹部、短手短脚、柔软小尾巴、圆眼与轻松小嘴；像低龄内容里的软玩偶，但有清楚的手足和足底，不是只画一个圆团。 旧ABN_N01_04的长颈、裂口、空眼替换为同体型常态9件加污染面部2件；保留短肢可动骨架。主形和分身只复用同一资源，定稿不得直接代替活动实体。 每张只画units当前部件，头部/脸层分离，不能把组内完整角色或其他部件带入本张。\n参考对象：圆润暖黄软胶玩偶与低龄动画吉祥物；奶白肚皮、短肢、圆眼、柔软尾巴，参考现代儿童内容的干净平面形状，避免恐怖版恐龙。 以NMV2_ABN_N01_01的新常态定稿核对轮廓与配色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 柔软短尾. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette.",
+  "transparent": true,
+  "scope": "abnormalities",
+  "referenceOnly": false,
+  "references": [
+    "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_nailong_calm_identity_approved.png"
+  ],
+  "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d46b83f7-d541-4bf4-9e13-b6fcd37a7bca.png"
+}

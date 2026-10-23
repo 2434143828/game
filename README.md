@@ -2,9 +2,9 @@
 
 当前默认运行 **多层大型设施演练**：3600×2500世界中错落分布五间收容室、五个大厅、医疗休整区和三条竖向通路。奶龙、耄耋、大狗、叮咚鸡、咕咕嘎嘎共用真实通路，六名员工直接点选调度并在空闲时散步。顶栏可切换**三日值班**，按原配置从第一日四人、两间开放收容室开始。
 
-本轮按用户对规模和区域分布的要求，新增不规则多层地图、相机缩放/拖动/跟随、小地图与空闲散步；各区使用不同体量、结构与照明。原有五物、工作、战斗、装备、技能、三日和存档继续复用。保留旧版回归入口和历史证据。
+当前已按v2需求表接入**现代新媒体研究设施**：冷蓝灰建筑、制服员工和局部平台污染。307/307张素材已导入（241张运行素材、66张参考），五物、四类岗位制服、五套装备及技能图标均已替换。真实改令→入室工作→失效→镇压→撤退、五套装备及生产包验证通过；本轮未重跑完整三日和全部技能组合，详见[当前美术验收与实机证据](docs/NM_V2_ART_ACCEPTANCE.md)。
 
-![多层设施真实运行截图](docs/showcase/facility-overview.png)
+![当前v2真实游戏画面](docs/showcase/nm-v2-facility.png)
 
 ## 从仓库开始
 
@@ -65,7 +65,11 @@ npm run preview
 
 新增 `config/facility.json` 统一定义真实世界坐标、房间、图连接、镜头和散步参数。大地图会增加真实通勤距离；原七份玩法配置中的速度、射程、工作时间、伤害和经济不变。员工与异常按同一张图换层，普通攻击和大狗技能只作用于同段走廊；叮咚鸡全局广播、咕咕嘎嘎技能原世界半径规则保持。逻辑固定0.05秒推进，画面动作读取同一份状态。场景没有基于动画回调的收入或伤害结算。
 
-角色与设施为原创程序绘制概念造型，采用粗描边、明暗分区、黑制服和警戒配色；员工包含头、身体、四肢、制服、手持武器及实际动作。没有使用《脑叶公司》的贴图、角色或界面资源；当前仍无角色原声或音乐，不获取摄像头/麦克风，不下载外部IP素材。
+角色、设施、UI和特效使用内置图像模型生成的独立PNG；员工包含头、身体、四肢、制服、手持武器及实际关节动作。受击墨迹、恐慌涂线、失效撕裂和选择路径读取实际模拟状态，暂停时冻结。文字、数值、血条填充、选中圈和范围提示保留精确的程序绘制。重伤倒地仍是本日离场、重试或次日恢复；没有增加永久死亡或熔毁玩法。没有抓取《饥荒》或《脑叶公司》的贴图、角色、界面资源；当前仍无角色原声或音乐，不获取摄像头/麦克风。
+
+素材按105组需求拆成288个PNG单元：206个运行素材、82个定稿与动作制作参考。实际游戏素材在 `public/art/generated/`，原图和处理记录在 `art-production/generated/`，完整命名、尺寸与SHA256见[生产索引](art-production/production-index.csv)。参考姿态用于制作核对，场内动画由同一份真实游戏状态驱动；没有把整张动作参考图当作战斗结算。详细结构见[素材交接](art-production/README.md)。
+
+美术入口：[风格指南](docs/ART_STYLE_GUIDE.md)、[替换计划](docs/ASSET_REPLACEMENT_PLAN.md)、[资源命名](docs/ASSET_NAMING_CONVENTION.md)、[界面规范](docs/UI_STYLE_GUIDE.md)、[五物视觉规则](docs/ABNORMALITY_VISUAL_RULES.md)、[资源映射](public/art/asset_mapping.json)。默认设施接入本轮美术，`?slice=1`仍保留旧版单室回归表现。
 
 ## 验证
 
@@ -87,13 +91,30 @@ node scripts/large-facility-campaign-proof.mjs
 node scripts/large-facility-production-smoke.mjs
 ```
 
-以上脚本依次运行，避免多组录屏争用机器资源。脚本使用独立Chrome测试窗口、真实鼠标键盘与实际时间，输出截图、视频和操作记录到 `docs/large-facility-evidence-2026-10-20/` 的独立运行目录；开发桥仅用于读取实际状态，不改模拟状态、注入命令、赠送资源或加速模拟时钟来伪造试玩。2倍速通过游戏本身的速度按钮选择。生产包不包含开发测试桥。此前 `facility-*` 脚本及证据保留为旧地图历史记录。
+本轮生成美术专项（dev服务器启动后，脚本依次运行）：
+
+```powershell
+$env:FACILITY_URL = 'http://127.0.0.1:5173/'
+$env:FACILITY_EVIDENCE_ROOT = 'docs/generated-art-evidence-2026-10-21'
+node scripts/generated-art-proof.mjs
+node scripts/generated-equipment-proof.mjs
+node scripts/art-personnel-proof.mjs
+# 关闭dev并在4173启动生产preview后：
+$env:FACILITY_URL = 'http://127.0.0.1:4173/'
+node scripts/large-facility-production-smoke.mjs
+```
+
+美术专项通过真实UI触发五物失效，员工实际承受伤害后展示恐慌与重伤倒地；装备专项通过真实工作赚取经费后按原价采购、换装。不直接改写状态。截图、连续录像与状态/输入记录写入独立目录，保留失败记录。环境变量只改变访问地址或证据目录，不改变游戏。运行前确认生成素材已经齐全；开发服务器启动后新增的public文件可能需要重启服务才能识别。
+
+以上脚本依次运行，避免多组录屏争用机器资源。脚本使用独立Chrome测试窗口、真实鼠标键盘与实际时间；本轮生成美术证据在 `docs/generated-art-evidence-2026-10-21/`，旧版证据目录继续保留。开发桥仅用于读取实际状态，不改模拟状态、注入命令、赠送资源或加速模拟时钟来伪造试玩。2倍速通过游戏本身的速度按钮选择。生产包不包含开发测试桥。此前 `facility-*` 脚本及证据保留为旧地图历史记录。
 
 生产烟测固定使用Chrome的SwiftShader渲染参数，便于逐像素复核暂停画面；只使用DOM、截图和真实输入，不读取模拟对象。该参数仅用于截图测试，不改变正常试玩的GPU渲染。
 
 旧版单室的115秒连续记录仍保存在 `docs/spatial-evidence/`，属于此前版本证据。新场景验证范围、通过/失败记录与尚未验证项目分别记在 STATUS 和本轮验收记录中。
 
 - [实施状态](STATUS.md)
+- [本轮生成美术、素材清单与实际操作验收](docs/GENERATED_ART_ACCEPTANCE.md)
+- [上一版程序手绘美术验收](docs/ART_ACCEPTANCE.md)
 - [多层设施与空闲散步验收](docs/LARGE_FACILITY_ACCEPTANCE.md)
 - [五物设施、新版美术与实际连续操作验收](docs/FACILITY_ACCEPTANCE.md)
 - [上一版两人单室验收、截图与连续录屏](docs/SPATIAL_ACCEPTANCE.md)

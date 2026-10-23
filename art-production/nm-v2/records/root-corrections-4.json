@@ -1,0 +1,48 @@
+[
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_left.png",
+    "displayName": "左前臂",
+    "prompt": "Use case: precise-object-edit. Keep ONLY the light gray LOWER sleeve from elbow to cuff. Delete the ENTIRE dark upper sleeve with cyan stripe and all projecting white tabs. Upper edge of remaining light gray lower sleeve must be a rounded solid overlap cap. One light gray tapered forearm tube, 2 times as tall as wide, cuff at bottom. NO dark shoulder sleeve, NO cyan stripe, NO hand, NO upper arm. Same clean flat shading, transparent background.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4651f284-4bcb-4a70-b43c-2f5f45b1b834.png"
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_right.png",
+    "displayName": "右前臂",
+    "prompt": "Use case: precise-object-edit. Keep ONLY the light gray LOWER sleeve from elbow to cuff. Delete the ENTIRE dark upper sleeve with cyan stripe and all projecting white tabs. Upper edge of remaining light gray lower sleeve must be a rounded solid overlap cap. One light gray tapered forearm tube, 2 times as tall as wide, cuff at bottom. NO dark shoulder sleeve, NO cyan stripe, NO hand, NO upper arm. Same clean flat shading, transparent background.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-53c83031-957c-4404-b379-bf071fa939ca.png"
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_thigh_right.png",
+    "displayName": "右大腿",
+    "prompt": "Use case: precise-object-edit. One isolated right thigh for cutout animation. Remove belt, buckle, waist, crotch, side pocket and other leg, retain ONLY a single dark-blue-gray trouser-covered upper leg hip-to-knee, with narrow white outer side stripe. Rounded solid overlap cap at top and bottom. No torso, no belt, no other limb. Vertical, height 2 times width, transparent background. Same palette and flat shading.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-48aff2e7-19dd-4f3f-b363-7033ebba5965.png"
+  },
+  {
+    "filename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+    "displayName": "常态完整形象",
+    "prompt": "Use case: background-extraction. REMOVE THE ENTIRE BACKGROUND and ALL ORANGE AND WHITE GLOW outside this dog. Keep ONLY the opaque dog silhouette. Fully transparent alpha zero everywhere outside the dog, including gaps between legs. Preserve character colors, pose, and flat shading. No replacement background, no halo, no shadow. Transparent cutout only.",
+    "transparent": true,
+    "scope": "abnormalities",
+    "referenceOnly": true,
+    "references": [],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0fc8f993-3b1a-4776-abbf-87dda41106d3.png"
+  }
+]

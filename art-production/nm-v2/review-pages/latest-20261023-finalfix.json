@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "nm_v2_ui_skill_icon_s01_stun.png",
+    "scope": "ui_vfx",
+    "prompt": "Clean simple flat 2D game skill icon, only 3 or 4 large shapes, dark blue gray thin contour, readable at 24 pixels. No frame, no text, no digits, no logo, no glow, no gradients, no shiny 3D, transparent background. A cute warm yellow chubby dinosaur head with cream muzzle and a small raised rounded three-finger palm in stop gesture next to it. Two tiny white horizontal stillness bars behind palm. Friendly simple normal eyes. Only head and palm; no full body, no attack effect, no energy rings.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-54391275-09dd-4ae3-8174-12585c13d43a.png"
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s03_howl.png",
+    "scope": "ui_vfx",
+    "prompt": "Clean simple flat 2D game skill icon, only 3 or 4 large shapes, dark blue gray thin contour, readable at 24 pixels. No frame, no text, no digits, no logo, no glow, no gradients, no shiny 3D, transparent background. A minimal orange-red beagle muzzle and one floppy ear, cream chin, mouth open to the right, exactly TWO separate simple pink-white curved sound arcs in front of mouth. Rounded harmless silhouette. No sharp teeth, no wolf, no pointy ears, no full body, no explosion, no red flames.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8778783b-902a-4cb9-8ea8-d6ef70527db3.png"
+  },
+  {
+    "filename": "nm_v2_ui_skill_icon_s05_calm.png",
+    "scope": "ui_vfx",
+    "prompt": "Clean simple flat 2D game skill icon, only 3 or 4 large shapes, dark blue gray thin contour, readable at 24 pixels. No frame, no text, no digits, no logo, no glow, no gradients, no shiny 3D, transparent background. Two simple smooth pastel light-blue PENGUIN FLIPPERS gently enclosing ONE pink-white calm thought curl. Flippers are smooth rounded leaf-shaped paddles with NO individual feathers. Wide transparent spaces. Symbol of mental reassurance. NO bird wings, NO feathers, NO heart, NO medical cross, NO HP healing, no complex magic wisps.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-287bfe28-17a1-423b-85f3-9a0e3e561893.png"
+  },
+  {
+    "filename": "nm_v2_abn_gugu_gaga_combat_reference_walk_right_support.png",
+    "scope": "abnormalities",
+    "reference": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/art-production/nm-v2/originals/abnormalities/nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+    "prompt": "Full-body single pose reference of the same pastel blue cream penguin wearing pink cream scarf. Right-facing three-quarter WALKING: the NEAR foot at lower LEFT is planted flat on ground bearing weight, FAR foot is lifted behind at screen LEFT, both feet clearly separate in depth. The near flipper swings forward across belly, far flipper backward. Do not repeat the pose with foot lifted ahead to right. Mild tearful normal eyes, mouth small and open. Keep short normal legs. Clean flat cel shading, transparent background, no shadow, no motion lines, no text, no extra objects.",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-322e4913-d730-4835-8a1d-fc3c93a10343.png"
+  }
+]

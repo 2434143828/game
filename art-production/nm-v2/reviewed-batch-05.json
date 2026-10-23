@@ -1,0 +1,4 @@
+[
+  {"sheet":"ui_vfx-16","indices":[2,3,4,5,6,7,8,9,10,11,12,13,14,15],"review":"Checkerboard review: clean alpha, correct UI and pollution identity; excludes rejected S03 and S05 icons."},
+  {"sheet":"ui_vfx-32","indices":[0,1,2,3,4,5],"review":"Checkerboard review: clean alpha and correct pollution overlay shapes."}
+]

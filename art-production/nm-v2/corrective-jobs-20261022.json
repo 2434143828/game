@@ -1,0 +1,654 @@
+{
+  "cloth": [
+    {
+      "filename": "nm_v2_role_security_parts_torso.png",
+      "focus": "唯一对象：安全员躯干层。只画本张：安全员的深蓝灰短外套与薄型胸护片、窄冷青边线，稳重但不过度装甲躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：安全员躯干层。只画本张：安全员的深蓝灰短外套与薄型胸护片、窄冷青边线，稳重但不过度装甲躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_role_security_parts_shoulder_near.png",
+      "focus": "唯一对象：安全员近肩层。只画本张：安全员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：安全员近肩层。只画本张：安全员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_security_parts_shoulder_far.png",
+      "focus": "唯一对象：安全员远肩层。只画本张：安全员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：安全员远肩层。只画本张：安全员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_research_parts_torso.png",
+      "focus": "唯一对象：研究员躯干层。只画本张：研究员的冷白轻科研外套与蓝灰内搭、柔和短翻领、无字工牌，袖口轻便躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：研究员躯干层。只画本张：研究员的冷白轻科研外套与蓝灰内搭、柔和短翻领、无字工牌，袖口轻便躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_role_research_parts_shoulder_near.png",
+      "focus": "唯一对象：研究员近肩层。只画本张：研究员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：研究员近肩层。只画本张：研究员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_research_parts_shoulder_far.png",
+      "focus": "唯一对象：研究员远肩层。只画本张：研究员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：研究员远肩层。只画本张：研究员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_technical_parts_torso.png",
+      "focus": "唯一对象：技术员躯干层。只画本张：技术员的金属灰工作背心、冷青小口袋、腰部扁平工具收纳轮廓，现代整洁躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：技术员躯干层。只画本张：技术员的金属灰工作背心、冷青小口袋、腰部扁平工具收纳轮廓，现代整洁躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_role_technical_parts_shoulder_near.png",
+      "focus": "唯一对象：技术员近肩层。只画本张：技术员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：技术员近肩层。只画本张：技术员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_technical_parts_shoulder_far.png",
+      "focus": "唯一对象：技术员远肩层。只画本张：技术员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：技术员远肩层。只画本张：技术员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_medical_parts_torso.png",
+      "focus": "唯一对象：医疗员躯干层。只画本张：医疗员的冷白与浅蓝短制服、圆角浅蓝支援识别块，舒适友好，不是治疗装置躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：医疗员躯干层。只画本张：医疗员的冷白与浅蓝短制服、圆角浅蓝支援识别块，舒适友好，不是治疗装置躯干外观叠层，领口/腰部识别细节并入躯干；仅肩根余量，无头、完整袖子或四肢；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_role_medical_parts_shoulder_near.png",
+      "focus": "唯一对象：医疗员近肩层。只画本张：医疗员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：医疗员近肩层。只画本张：医疗员的近侧短肩片/袖根外观叠层，沿用共用肩宽，冷色块克制；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_role_medical_parts_shoulder_far.png",
+      "focus": "唯一对象：医疗员远肩层。只画本张：医疗员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "personnel",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：医疗员远肩层。只画本张：医疗员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_nailong_torso.png",
+      "focus": "唯一对象：躯干层。只画本张：蓝灰短制服躯干、奶白领边和暖黄圆角胸块；只有肩根接合余量，无袖子、头或四肢；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干、奶白领边和暖黄圆角胸块；只有肩根接合余量，无袖子、头或四肢；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_armor_nailong_shoulder_near.png",
+      "focus": "唯一对象：近肩层。只画本张：一块近侧暖黄/奶白柔软短肩层，克制圆角形，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧暖黄/奶白柔软短肩层，克制圆角形，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_nailong_shoulder_far.png",
+      "focus": "唯一对象：远肩层。只画本张：一块远侧暖黄/奶白柔软短肩层，透视略窄，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧暖黄/奶白柔软短肩层，透视略窄，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_maodie_torso_collar.png",
+      "focus": "唯一对象：躯干与短领。只画本张：蓝灰短制服躯干和暖灰短立领，少量脏粉边线，肩根余量完整，无整臂、头或围领垂片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干与短领。只画本张：蓝灰短制服躯干和暖灰短立领，少量脏粉边线，肩根余量完整，无整臂、头或围领垂片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_armor_maodie_shoulder_near.png",
+      "focus": "唯一对象：近肩层。只画本张：一块近侧脏粉/暖灰短肩层，简洁利落边角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧脏粉/暖灰短肩层，简洁利落边角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_maodie_shoulder_far.png",
+      "focus": "唯一对象：远肩层。只画本张：一块远侧脏粉/暖灰短肩层，略窄轮廓，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧脏粉/暖灰短肩层，略窄轮廓，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_maodie_scarf_long.png",
+      "focus": "唯一对象：围领长垂片。只画本张：一条较长但不到腰的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围领长垂片。只画本张：一条较长但不到腰的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached."
+    },
+    {
+      "filename": "nm_v2_armor_maodie_scarf_short.png",
+      "focus": "唯一对象：围领短垂片。只画本张：一条较短的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围领短垂片。只画本张：一条较短的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached."
+    },
+    {
+      "filename": "nm_v2_armor_big_dog_torso.png",
+      "focus": "唯一对象：躯干层。只画本张：蓝灰短制服躯干与红橙边线，胸前小块粉白识别面，无领圈、整臂、头或肩片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干与红橙边线，胸前小块粉白识别面，无领圈、整臂、头或肩片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_armor_big_dog_shoulder_near.png",
+      "focus": "唯一对象：近肩层。只画本张：一块近侧红橙/粉白短肩层，结构轻便，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧红橙/粉白短肩层，结构轻便，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_big_dog_shoulder_far.png",
+      "focus": "唯一对象：远肩层。只画本张：一块远侧红橙/粉白短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧红橙/粉白短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_dingdong_torso.png",
+      "focus": "唯一对象：躯干层。只画本张：蓝灰短制服躯干，明黄窄识别带和小型无字提示红胸标，肩根短余量，无完整袖子或头；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干，明黄窄识别带和小型无字提示红胸标，肩根短余量，无完整袖子或头；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_armor_dingdong_shoulder_near.png",
+      "focus": "唯一对象：近肩层。只画本张：一块近侧明黄/橙黄短肩层，清爽直线配圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧明黄/橙黄短肩层，清爽直线配圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_dingdong_shoulder_far.png",
+      "focus": "唯一对象：远肩层。只画本张：一块远侧明黄/橙黄短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧明黄/橙黄短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_gugu_torso_collar.png",
+      "focus": "唯一对象：躯干与短领。只画本张：蓝灰结构的浅蓝/粉白短制服躯干与舒适短领，肩根短余量，无头、完整袖子或飘带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干与短领。只画本张：蓝灰结构的浅蓝/粉白短制服躯干与舒适短领，肩根短余量，无头、完整袖子或飘带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece."
+    },
+    {
+      "filename": "nm_v2_armor_gugu_shoulder_near.png",
+      "focus": "唯一对象：近肩层。只画本张：一块近侧浅蓝/粉白轻肩层，柔软圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧浅蓝/粉白轻肩层，柔软圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_gugu_shoulder_far.png",
+      "focus": "唯一对象：远肩层。只画本张：一块远侧浅蓝/粉白轻肩层，轮廓略窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧浅蓝/粉白轻肩层，轮廓略窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch."
+    },
+    {
+      "filename": "nm_v2_armor_gugu_ribbon_long.png",
+      "focus": "唯一对象：较长织带。只画本张：一条较长但不拖地的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：较长织带。只画本张：一条较长但不拖地的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached."
+    },
+    {
+      "filename": "nm_v2_armor_gugu_ribbon_short.png",
+      "focus": "唯一对象：较短织带。只画本张：一条较短的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "equipment",
+      "referenceFilename": "nm_v2_agent_base_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：较短织带。只画本张：一条较短的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached."
+    }
+  ],
+  "abnormalities": [
+    {
+      "filename": "nm_v2_abn_nailong_base_parts_body.png",
+      "focus": "唯一对象：身体与奶白腹部。只画本张：暖黄圆润躯干及奶白腹色，保留短肩根和颈根接合余量，不含头、手臂、脚或尾巴；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_nailong_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：身体与奶白腹部。只画本张：暖黄圆润躯干及奶白腹色，保留短肩根和颈根接合余量，不含头、手臂、脚或尾巴；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_maodie_base_parts_body.png",
+      "focus": "唯一对象：短躯干。只画本张：暖灰猫躯干，脏粉腹部小色块，肩颈和后腿根留余量，无头、肢体或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_maodie_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：短躯干。只画本张：暖灰猫躯干，脏粉腹部小色块，肩颈和后腿根留余量，无头、肢体或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_maodie_base_parts_calm_face.png",
+      "focus": "唯一对象：常态脸层。只画本张：一套正常眉眼鼻嘴，略不耐烦但没有狂怒，透明底，无脸部底色或耳；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_maodie_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：常态脸层。只画本张：一套正常眉眼鼻嘴，略不耐烦但没有狂怒，透明底，无脸部底色或耳；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_maodie_pollution_parts_outburst_face.png",
+      "focus": "唯一对象：情绪爆发脸层。只画本张：耄耋一套愤怒眉眼与正常猫嘴张口的面部覆盖层，像爆炸性发言表情包，透明底，无长牙、黑洞眼、完整头或伤口；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_maodie_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：情绪爆发脸层。只画本张：耄耋一套愤怒眉眼与正常猫嘴张口的面部覆盖层，像爆炸性发言表情包，透明底，无长牙、黑洞眼、完整头或伤口；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_body.png",
+      "focus": "唯一对象：大体量躯干。只画本张：红橙犬躯干与粉白胸腹，留颈根和腿根余量，无头、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：大体量躯干。只画本张：红橙犬躯干与粉白胸腹，留颈根和腿根余量，无头、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_head_ears.png",
+      "focus": "唯一对象：头与垂耳。只画本张：宽圆犬头和正常垂耳一体，留空眼区及口鼻铰接区，无眼、上下口鼻或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：头与垂耳。只画本张：宽圆犬头和正常垂耳一体，留空眼区及口鼻铰接区，无眼、上下口鼻或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_eyes.png",
+      "focus": "唯一对象：常态眼层。只画本张：一对有神友好犬眼和简洁眉线，透明底，无头部底色或嘴；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：常态眼层。只画本张：一对有神友好犬眼和简洁眉线，透明底，无头部底色或嘴；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_upper_muzzle.png",
+      "focus": "唯一对象：上口鼻。只画本张：正常宽度粉白上口鼻与鼻尖，嘴沿圆钝、没有獠牙，留铰接余量，无完整头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：上口鼻。只画本张：正常宽度粉白上口鼻与鼻尖，嘴沿圆钝、没有獠牙，留铰接余量，无完整头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_lower_muzzle.png",
+      "focus": "唯一对象：下颌口鼻。只画本张：正常尺度粉白下颌和圆钝嘴沿，可小角度开合，无獠牙或上口鼻；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：下颌口鼻。只画本张：正常尺度粉白下颌和圆钝嘴沿，可小角度开合，无獠牙或上口鼻；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_tongue.png",
+      "focus": "唯一对象：舌头。只画本张：一条自然短舌，粉红、圆端、舌根明确，无嘴或唾液；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：舌头。只画本张：一条自然短舌，粉红、圆端、舌根明确，无嘴或唾液；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_front_leg.png",
+      "focus": "唯一对象：可复用前腿。只画本张：一条正常粗细犬前腿与圆足一体，腿根可接躯干，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：可复用前腿。只画本张：一条正常粗细犬前腿与圆足一体，腿根可接躯干，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_hind_leg.png",
+      "focus": "唯一对象：可复用后腿。只画本张：一条正常粗细犬后腿与圆足一体，后膝轮廓自然，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：可复用后腿。只画本张：一条正常粗细犬后腿与圆足一体，后膝轮廓自然，供前后层复用，无其他腿；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_tail.png",
+      "focus": "唯一对象：犬尾。只画本张：一条柔软有体量的红橙犬尾，尾根清楚，无身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：犬尾。只画本张：一条柔软有体量的红橙犬尾，尾根清楚，无身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_base_parts_collar_tag.png",
+      "focus": "唯一对象：项圈与识别牌。只画本张：一条现代简洁粉白项圈和小型无字圆角识别牌作为单部件，无头或胸腹；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：项圈与识别牌。只画本张：一条现代简洁粉白项圈和小型无字圆角识别牌作为单部件，无头或胸腹；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_work_reference_greet.png",
+      "focus": "唯一对象：抬爪问候回应。只画本张：一只完整常态大狗朝右轻抬一只前爪问候，其他足稳定支撑，表情友好；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：抬爪问候回应。只画本张：一只完整常态大狗朝右轻抬一只前爪问候，其他足稳定支撑，表情友好；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_work_reference_relax.png",
+      "focus": "唯一对象：安静吐舌回应。只画本张：一只完整常态大狗微吐短舌、尾巴放松，正常口鼻与体型，适合工作交互的温和反馈；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：安静吐舌回应。只画本张：一只完整常态大狗微吐短舌、尾巴放松，正常口鼻与体型，适合工作交互的温和反馈；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_pollution_identity_approved.png",
+      "focus": "唯一对象：污染状态完整形象。只画本张：一只完整失效大狗；保持其常态物种、肢体和体型，通过直播打call般兴奋目光与正常张嘴表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：污染状态完整形象。只画本张：一只完整失效大狗；保持其常态物种、肢体和体型，通过直播打call般兴奋目光与正常张嘴表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_pollution_parts_hype_eyes.png",
+      "focus": "唯一对象：直播兴奋眼层。只画本张：大狗一对兴奋有神的眼睛，允许小块应援亮点但保持眼球结构，透明底，无黑洞眼、完整头、爱心喷泉或外晕；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：直播兴奋眼层。只画本张：大狗一对兴奋有神的眼睛，允许小块应援亮点但保持眼球结构，透明底，无黑洞眼、完整头、爱心喷泉或外晕；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_combat_reference_walk_left_support.png",
+      "focus": "唯一对象：巡游步态左足支撑。只画本张：一只完整失效大狗朝右行走关键姿势，左侧足支撑、另一足自然前移，正常肢体长度，足底与地面基准一致；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：巡游步态左足支撑。只画本张：一只完整失效大狗朝右行走关键姿势，左侧足支撑、另一足自然前移，正常肢体长度，足底与地面基准一致；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_combat_reference_walk_right_support.png",
+      "focus": "唯一对象：巡游步态右足支撑。只画本张：一只完整失效大狗朝右行走另一关键姿势，右侧足支撑、另一足自然前移，正常肢体长度，不画运动残影；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：巡游步态右足支撑。只画本张：一只完整失效大狗朝右行走另一关键姿势，右侧足支撑、另一足自然前移，正常肢体长度，不画运动残影；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_combat_reference_windup.png",
+      "focus": "唯一对象：攻击前摇参考。只画本张：一只完整失效大狗抬起头、胸部吸气、正常下颌开始打开，准备一次打call式嚎叫，四足仍稳定；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击前摇参考。只画本张：一只完整失效大狗抬起头、胸部吸气、正常下颌开始打开，准备一次打call式嚎叫，四足仍稳定；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_combat_reference_attack_peak.png",
+      "focus": "唯一对象：攻击命中姿势参考。只画本张：一只完整失效大狗向右张开正常大小的嘴发声，胸部挺起、表情兴奋，不画扩张巨口、声浪、爱心或观众；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击命中姿势参考。只画本张：一只完整失效大狗向右张开正常大小的嘴发声，胸部挺起、表情兴奋，不画扩张巨口、声浪、爱心或观众；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_big_dog_combat_reference_hit_recoil.png",
+      "focus": "唯一对象：受击反馈参考。只画本张：一只完整失效大狗受到一次现有攻击后的短促收缩/偏头姿势，足底不传送，无伤口、血液或死亡形态；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_big_dog_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：受击反馈参考。只画本张：一只完整失效大狗受到一次现有攻击后的短促收缩/偏头姿势，足底不传送，无伤口、血液或死亡形态；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_base_parts_body.png",
+      "focus": "唯一对象：黄鸡躯干。只画本张：明黄鸡躯干与橙黄腹部小色块，胸部留徽章区，无头、翅、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：黄鸡躯干。只画本张：明黄鸡躯干与橙黄腹部小色块，胸部留徽章区，无头、翅、腿或尾；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_base_parts_head_neck.png",
+      "focus": "唯一对象：头颈与常态眼。只画本张：鸡头短颈与一只可见正常眼的一体部件，喙部留空铰点，无鸡冠、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：头颈与常态眼。只画本张：鸡头短颈与一只可见正常眼的一体部件，喙部留空铰点，无鸡冠、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_base_parts_lower_beak_wattle.png",
+      "focus": "唯一对象：下喙与小肉垂。只画本张：短下喙及小型红橙肉垂的一体部件，铰点明确，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：下喙与小肉垂。只画本张：短下喙及小型红橙肉垂的一体部件，铰点明确，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_base_parts_wing.png",
+      "focus": "唯一对象：可复用翅膀。只画本张：一只短鸡翅，明黄平面羽片轮廓，翅根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：可复用翅膀。只画本张：一只短鸡翅，明黄平面羽片轮廓，翅根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_base_parts_tail_feathers.png",
+      "focus": "唯一对象：尾羽。只画本张：一束简洁橙黄尾羽作为一个部件，尾根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：尾羽。只画本张：一束简洁橙黄尾羽作为一个部件，尾根完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_pollution_identity_approved.png",
+      "focus": "唯一对象：污染状态完整形象。只画本张：一只完整失效叮咚鸡；保持其常态物种、肢体和体型，通过循环播报式开喙与胸牌局部提示红表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：污染状态完整形象。只画本张：一只完整失效叮咚鸡；保持其常态物种、肢体和体型，通过循环播报式开喙与胸牌局部提示红表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_dingdong_chicken_combat_reference_windup.png",
+      "focus": "唯一对象：攻击前摇参考。只画本张：一只完整失效叮咚鸡原地仰头、短喙微开、翅膀收紧准备播报，通知胸牌局部提示红，双脚留在原位；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_dingdong_chicken_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击前摇参考。只画本张：一只完整失效叮咚鸡原地仰头、短喙微开、翅膀收紧准备播报，通知胸牌局部提示红，双脚留在原位；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_body_belly.png",
+      "focus": "唯一对象：身体与粉白腹部。只画本张：浅蓝短圆企鹅躯干与粉白腹部，肩根和腿根可接，无头、鳍或足；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：身体与粉白腹部。只画本张：浅蓝短圆企鹅躯干与粉白腹部，肩根和腿根可接，无头、鳍或足；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_head_face_patch.png",
+      "focus": "唯一对象：头与浅色脸斑。只画本张：短圆企鹅头及粉白脸斑，眼睛与喙区留空，无眼、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：头与浅色脸斑。只画本张：短圆企鹅头及粉白脸斑，眼睛与喙区留空，无眼、喙或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_upper_beak.png",
+      "focus": "唯一对象：小上喙。只画本张：一只正常短小上喙，柔和橙色、铰点明确，无头或下喙；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：小上喙。只画本张：一只正常短小上喙，柔和橙色、铰点明确，无头或下喙；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_lower_beak.png",
+      "focus": "唯一对象：小下喙。只画本张：一只正常短小下喙，可小角度开合，圆钝边缘，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：小下喙。只画本张：一只正常短小下喙，可小角度开合，圆钝边缘，无上喙或头；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_flipper_left.png",
+      "focus": "唯一对象：远侧短鳍。只画本张：远侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远侧短鳍。只画本张：远侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_flipper_right.png",
+      "focus": "唯一对象：近侧短鳍。只画本张：近侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近侧短鳍。只画本张：近侧浅蓝短鳍，鳍根余量完整，无躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_foot_left.png",
+      "focus": "唯一对象：远侧短足。只画本张：远侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远侧短足。只画本张：远侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_foot_right.png",
+      "focus": "唯一对象：近侧短足。只画本张：近侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近侧短足。只画本张：近侧柔和橙色企鹅短足，足底明确，无腿长或躯干；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_collar.png",
+      "focus": "唯一对象：围巾领圈。只画本张：一段柔软粉白围巾领圈，颈部前后层边界明确，无头、身体或长垂片；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围巾领圈。只画本张：一段柔软粉白围巾领圈，颈部前后层边界明确，无头、身体或长垂片；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_long.png",
+      "focus": "唯一对象：围巾长垂片。只画本张：一条围巾较长软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围巾长垂片。只画本张：一条围巾较长软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_base_parts_scarf_short.png",
+      "focus": "唯一对象：围巾短垂片。只画本张：一条围巾较短软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围巾短垂片。只画本张：一条围巾较短软垂片，根部清楚，不含领圈或身体；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_work_reference_flippers_up.png",
+      "focus": "唯一对象：举鳍回应。只画本张：一只完整常态咕咕嘎嘎轻举双短鳍看向员工，小喙闭合，双足稳定；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：举鳍回应。只画本张：一只完整常态咕咕嘎嘎轻举双短鳍看向员工，小喙闭合，双足稳定；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_work_reference_settled.png",
+      "focus": "唯一对象：安抚后放松。只画本张：一只完整常态咕咕嘎嘎双鳍放下、眉眼放松，短圆体型和正常眼睛不变；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：安抚后放松。只画本张：一只完整常态咕咕嘎嘎双鳍放下、眉眼放松，短圆体型和正常眼睛不变；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_pollution_identity_approved.png",
+      "focus": "唯一对象：污染状态完整形象。只画本张：一只完整失效咕咕嘎嘎；保持其常态物种、肢体和体型，通过含泪眼睛与短喙哭闹表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：污染状态完整形象。只画本张：一只完整失效咕咕嘎嘎；保持其常态物种、肢体和体型，通过含泪眼睛与短喙哭闹表现平台污染，不附带评论框或额外特效对象；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_pollution_parts_cry_eyes.png",
+      "focus": "唯一对象：哭闹眼层。只画本张：咕咕嘎嘎一对带泪光、略皱起的正常眼睛，少量粉色情绪色，透明底，无泪弹、黑洞眼、完整头或外部气泡；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": false,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：哭闹眼层。只画本张：咕咕嘎嘎一对带泪光、略皱起的正常眼睛，少量粉色情绪色，透明底，无泪弹、黑洞眼、完整头或外部气泡；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_combat_reference_walk_left_support.png",
+      "focus": "唯一对象：巡游步态左足支撑。只画本张：一只完整失效咕咕嘎嘎朝右行走关键姿势，左侧足支撑、另一足自然前移，正常肢体长度，足底与地面基准一致；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：巡游步态左足支撑。只画本张：一只完整失效咕咕嘎嘎朝右行走关键姿势，左侧足支撑、另一足自然前移，正常肢体长度，足底与地面基准一致；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_combat_reference_walk_right_support.png",
+      "focus": "唯一对象：巡游步态右足支撑。只画本张：一只完整失效咕咕嘎嘎朝右行走另一关键姿势，右侧足支撑、另一足自然前移，正常肢体长度，不画运动残影；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：巡游步态右足支撑。只画本张：一只完整失效咕咕嘎嘎朝右行走另一关键姿势，右侧足支撑、另一足自然前移，正常肢体长度，不画运动残影；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_combat_reference_windup.png",
+      "focus": "唯一对象：攻击前摇参考。只画本张：一只完整失效咕咕嘎嘎双鳍向胸前靠拢，小嘴将开、正常眼睛含泪，身体略压低但不改变脚底锚点；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击前摇参考。只画本张：一只完整失效咕咕嘎嘎双鳍向胸前靠拢，小嘴将开、正常眼睛含泪，身体略压低但不改变脚底锚点；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_combat_reference_attack_peak.png",
+      "focus": "唯一对象：攻击命中姿势参考。只画本张：一只完整失效咕咕嘎嘎短喙张开、双鳍轻扬，呈现一次哭闹发声瞬间，不画外部气泡、泪弹或长颈；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：攻击命中姿势参考。只画本张：一只完整失效咕咕嘎嘎短喙张开、双鳍轻扬，呈现一次哭闹发声瞬间，不画外部气泡、泪弹或长颈；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    },
+    {
+      "filename": "nm_v2_abn_gugu_gaga_combat_reference_hit_recoil.png",
+      "focus": "唯一对象：受击反馈参考。只画本张：一只完整失效咕咕嘎嘎受到一次现有攻击后的短促收缩/偏头姿势，足底不传送，无伤口、血液或死亡形态；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。",
+      "referenceOnly": true,
+      "scope": "abnormalities",
+      "referenceFilename": "nm_v2_abn_gugu_gaga_calm_identity_approved.png",
+      "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern friendly mascot cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：受击反馈参考。只画本张：一只完整失效咕咕嘎嘎受到一次现有攻击后的短促收缩/偏头姿势，足底不传送，无伤口、血液或死亡形态；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "module": "environment",
+  "expected": 81,
+  "tool": "built-in image_gen",
+  "records": [
+    {
+      "index": 0,
+      "id": "ENV_V2_001",
+      "name": "nm_v2_env_room_shell_corner_top_left",
+      "prompt": "Use case: stylized-concept. Asset type: production-ready modular sprite for an original 2D side-view facility game, modern new-media containment institute.\nGenerate exactly ONE image: 房框左上切角. 本次只画512×512的左上切角金属框，上梁接口向右、侧壁接口向下，冷白内沿朝右下；单件独立PNG，不附其他同组部件、人物或背景。\n二维正交侧视剖面游戏素材，现代新媒体收容机构；清洁金属、细窄接缝、冷白玻璃与克制平涂，避免写实摄影。基础色#12161C/#1E2630/#39424E/#D9E1EA，#57B8FF仅作少量指示。每个unit独立生成一张PNG，不在一张图里排列多个交付件；不含人物、异常实体或完整关卡。建议画布像素仅用于纹理制作，不改变3600×2500逻辑地图。金属蓝灰厚框配冷白窄内沿；上角小切角、下角方正，接口严格平直。框内完全留空；梁可横向重复，壁可竖向重复；不能靠横向拉伸角件凑宽度。\nReference object: 现代科研楼模块化金属门厅框、洁净室铝合金围护框与细窄冷白内衬，参考平直拼接端和切角连接结构。只参考结构，按本版色板绘制为二维正交侧视素材，不照搬对象的原配色、品牌或文字。\nCanvas: 512×512 px. 单张RGBA透明PNG，sRGB，8bit；画布外缘和非主体区域透明。\nComposition: flat orthographic front elevation of this side-view architectural component, no perspective, polished clean cel-shaded game illustration. Blue-gray metal, cold white narrow inner trim, no photoreal noise. Complete object with only a small transparent border; preserve straight join edges. Text: none.\nAvoid: 禁止古典工业、重锈、脏污旧铁皮、地牢监狱、柴油朋克、纸质档案馆、CRT、模拟指针仪表、赛博城市霓虹和厚重歪墨线；禁止人物/怪物烘焙、HUD、完整房间假截图、透视缩短、等距视角、多视图拼图、品牌Logo、水印、乱码和数据数字；不得把门开关、持续灯闪或动画序列烘焙进一张图。",
+      "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-154c-7612-8a75-4ecb0fd69f9c\\exec-4e2ced86-44a4-4ab3-9f57-58e9d32f825f.png",
+      "original": "art-production/nm-v2/originals/environment/nm_v2_env_room_shell_corner_top_left.png",
+      "runtime": "public/art/nm-v2/environment/nm_v2_env_room_shell_corner_top_left.png",
+      "size": "512×512 px",
+      "transparent": true,
+      "status": "accepted",
+      "inspection": "已查看原图：正交单个左上金属切角、蓝灰冷白、透明内口，无文字或旧锈；保留原始输出，后处理仅透明边裁切与按批准尺寸缩放。"
+    }
+  ]
+}

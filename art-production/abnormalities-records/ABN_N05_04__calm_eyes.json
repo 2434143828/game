@@ -1,0 +1,48 @@
+{
+  "id": "ABN_N05_04__calm_eyes",
+  "rowId": "ABN_N05_04",
+  "file": "abn_gugu_gaga_parts_01_calm_eyes.png",
+  "row": {
+    "id": "ABN_N05_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_gugu_gaga_parts_01",
+    "displayName": "N05 咕咕嘎嘎 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干含腹块 1、头含脸块 1、常态眼组 1、空眼组 1、喙 1、左右鳍 2、左右扁足 2、围巾领圈 1、围巾长短端 2，共 12 件。腹块可并入躯干，脸块可并入头；不逐块碎拆。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "咕咕嘎嘎 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_N05_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N05_01",
+      "ABN_N05_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / penguin；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N05",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  "unit": {
+    "suffix": "calm_eyes",
+    "displayName": "咕咕嘎嘎常态眼",
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "focus": "本次只画企鹅常态大小不等眼组，透明眼间区域；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-c5760131-877d-42bf-9a87-ce828de64002.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Derive ONE isolated rigging cutout from the reference, preserving the approved creature identity, muted industrial palette, coarse hand ink contours and hatched paper texture. The reference is a guide for color and anatomy, NOT a request to redraw the whole creature.\n本次只画企鹅常态大小不等眼组，透明眼间区域；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nSTRICT PART BOUNDARY: ONLY the two unequal calm penguin eyes, grouped in one overlay. White sclera, small black pupils. Fully transparent between and around the eyes. No skin patch, head, beak or facial silhouette.\nOnly this one component on true transparent alpha background. Keep object fill fully opaque. Center it with 15% transparent margin; enlarge this single part to fill roughly 65% of a 1024 square canvas. No sheet, no duplicates, no other parts, no labels, no text, no background, no drop shadow, no glow or exterior dark halo. Clean complete silhouette; concealed overlap/root must be fully drawn. Preserve right-facing rig orientation.",
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-41d5eea7-ae8a-496d-9189-996da77f1cde.png",
+  "visualReview": {
+    "status": "pending",
+    "notes": "Awaiting visual inspection"
+  }
+}

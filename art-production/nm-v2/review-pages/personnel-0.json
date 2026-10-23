@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "nm_v2_agent_base_parts_torso.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b625a868-bbb0-45a9-9f0f-2541293aa453.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_torso.png",
+    "scope": "personnel",
+    "displayName": "基础制服躯干",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. Edit this game character torso cutout. Remove BOTH entire sleeves and both arms, leaving a compact SLEEVELESS torso with only small rounded shoulder attachment tabs. Keep the blue-gray modern jacket, cold white inner shirt, cyan lanyard, blank badge, belt, clean flat color style and same front-three-quarter orientation. No head, arms, hands, legs. Exactly one torso only, transparent background. Do not replace removed sleeves with other parts."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_upper_arm_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ed11afd0-7058-48f5-9002-77ce623ad5cd.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_upper_arm_left.png",
+    "scope": "personnel",
+    "displayName": "左上臂",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. Redraw ONLY the dark blue-gray short UPPER ARM sleeve from this reference. Shoulder to elbow ONLY: a compact vertically oriented capsule, height about 1.6 times width, rounded shoulder cap at TOP and elbow overlap at BOTTOM. Small cyan stripe. REMOVE all white lower sleeve, all forearm, wrist cuff, hand, torso and collar. One short upper-arm bone sprite for LEFT/far arm. Clean 2D flat shading, same palette and linework, transparent background."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_upper_arm_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f4b418eb-8df5-4ebf-95ca-599f8450727a.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_upper_arm_right.png",
+    "scope": "personnel",
+    "displayName": "右上臂",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. Redraw ONLY the dark blue-gray short UPPER ARM sleeve from this reference. Shoulder to elbow ONLY: a compact vertically oriented capsule, height about 1.6 times width, rounded shoulder cap at TOP and elbow overlap at BOTTOM. Small cyan stripe. REMOVE all white lower sleeve, all forearm, wrist cuff, hand, torso and collar. One short upper-arm bone sprite for RIGHT/near arm. Clean 2D flat shading, same palette and linework, transparent background."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4651f284-4bcb-4a70-b43c-2f5f45b1b834.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_forearm_left.png",
+    "scope": "personnel",
+    "displayName": "左前臂",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. Keep ONLY the light gray LOWER sleeve from elbow to cuff. Delete the ENTIRE dark upper sleeve with cyan stripe and all projecting white tabs. Upper edge of remaining light gray lower sleeve must be a rounded solid overlap cap. One light gray tapered forearm tube, 2 times as tall as wide, cuff at bottom. NO dark shoulder sleeve, NO cyan stripe, NO hand, NO upper arm. Same clean flat shading, transparent background."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_forearm_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-53c83031-957c-4404-b379-bf071fa939ca.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_forearm_right.png",
+    "scope": "personnel",
+    "displayName": "右前臂",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. Keep ONLY the light gray LOWER sleeve from elbow to cuff. Delete the ENTIRE dark upper sleeve with cyan stripe and all projecting white tabs. Upper edge of remaining light gray lower sleeve must be a rounded solid overlap cap. One light gray tapered forearm tube, 2 times as tall as wide, cuff at bottom. NO dark shoulder sleeve, NO cyan stripe, NO hand, NO upper arm. Same clean flat shading, transparent background."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_hand_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6bc599fe-38c7-477b-a005-70c2e4cb7ddc.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_hand_left.png",
+    "scope": "personnel",
+    "displayName": "左手",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：左手。只画本张：左简化可握持手掌与短腕根，手指轮廓清楚；不带道具、袖子或手臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_hand_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-c4209698-f315-4f3b-b997-aea231c4204e.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_hand_right.png",
+    "scope": "personnel",
+    "displayName": "右手",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：右手。只画本张：右简化可握持手掌与短腕根，手指轮廓清楚；不带道具、袖子或手臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_thigh_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-86af0459-d399-4880-8c12-de813cf1af6b.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_thigh_left.png",
+    "scope": "personnel",
+    "displayName": "左大腿",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：左大腿。只画本张：左蓝灰制服裤大腿段，仅髋到膝，适中宽度，非骨柴腿；无小腿、鞋、躯干；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_thigh_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-48aff2e7-19dd-4f3f-b363-7033ebba5965.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_thigh_right.png",
+    "scope": "personnel",
+    "displayName": "右大腿",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: precise-object-edit. One isolated right thigh for cutout animation. Remove belt, buckle, waist, crotch, side pocket and other leg, retain ONLY a single dark-blue-gray trouser-covered upper leg hip-to-knee, with narrow white outer side stripe. Rounded solid overlap cap at top and bottom. No torso, no belt, no other limb. Vertical, height 2 times width, transparent background. Same palette and flat shading."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_shin_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-586e4a60-4999-4c92-960e-3f649cc4c28a.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_shin_left.png",
+    "scope": "personnel",
+    "displayName": "左小腿",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：左小腿。只画本张：左制服裤小腿段，仅膝到踝，关节内侧补全；无大腿、鞋、躯干；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_shin_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-5d321d2d-970f-40a1-b52b-7007cc17da3f.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_shin_right.png",
+    "scope": "personnel",
+    "displayName": "右小腿",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：右小腿。只画本张：右制服裤小腿段，仅膝到踝，关节内侧补全；无大腿、鞋、躯干；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_boot_left.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7e8b47e7-d77d-4be5-9ef5-5bf9048b73d4.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_boot_left.png",
+    "scope": "personnel",
+    "displayName": "左鞋",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：左鞋。只画本张：左现代轻便防滑工作鞋，深蓝灰与冷白小接边，水平足底朝右；仅短踝余量，无整条腿；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_boot_right.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-fccdec79-4c62-4dc2-b344-096a1bc1b7d5.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_boot_right.png",
+    "scope": "personnel",
+    "displayName": "右鞋",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：右鞋。只画本张：右现代轻便防滑工作鞋，深蓝灰与冷白小接边，水平足底朝右；仅短踝余量，无整条腿；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_starter_baton.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-fdf8a710-14a5-4d4f-846f-041f31afbd51.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_starter_baton.png",
+    "scope": "personnel",
+    "displayName": "W00制式短棍",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：W00制式短棍。只画本张：一根现代深灰制式短棍，防滑握柄与钝头，握点可定位；无手、能量核心、发光或特效；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_base_parts_tablet.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-10a1f06b-a6c3-4099-8da6-adf4b99bdda6.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_base_parts_tablet.png",
+    "scope": "personnel",
+    "displayName": "观察平板",
+    "status": "generated_pending_runtime_review",
+    "recordPrompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：观察平板。只画本张：一块薄型冷灰平板，屏幕仅低对比几何占位，握持边清楚；无可读文字、纸张、手或角色；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 保留14身体件的关节结构，W00重画为现代制式短棍，旧纸观察夹板改轻型平板。躯干只留肩根短余量、不含整袖；上臂仅肩到肘，前臂仅肘到腕；无新增功能器件。\n参考对象：现代机构员工的人体简化拆件，圆角肩、正常手掌与短鞋；蓝灰布料与冷白内搭，常见平板电脑和圆钝制式短棍。按新版员工定稿比例，单张只画一个当前部位。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nInput image is STYLE REFERENCE only. Draw solely this named isolated bone/prop. Do NOT include adjacent body parts. For a forearm: only light-gray elbow-to-wrist lower sleeve with rounded overlap at top and cuff at bottom, no upper arm or hand. For a thigh: only hip-to-knee. For a shin: only knee-to-ankle, no foot. For a hand: hand only with short wrist overlap. For a boot: foot only. All limb bones vertical, proximal joint at TOP, distal joint at BOTTOM. For baton/tablet no hand holding it."
+  },
+  {
+    "filename": "nm_v2_agent_hair_quiff_hair.png",
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-87ff0585-e5e8-4b98-ac4e-a9d5b0f66e0b.png",
+    "candidate": "art-production/nm-v2/candidates/personnel/nm_v2_agent_hair_quiff_hair.png",
+    "scope": "personnel",
+    "displayName": "E01上扬短束 hair",
+    "status": "pending",
+    "recordPrompt": "Use case: stylized-concept. ONE isolated cutout animation part for a 2D game employee, adult chibi 2.75-head proportions, head facing RIGHT in mild three-quarter side view. A SHORT BLACK QUIFF: short sides, small swept-up crest at front-right, a compact fitted scalp cap; NO long hair, NO ponytail, NO bun. Clean flat cel-shaded shapes, moderate dark outlines, muted dark blue-gray highlights, at most two tones, consistent modern research-facility game art. Absolutely no face, skin, ears, neck, body, accessories other than the requested object. Transparent background. All empty regions alpha zero, no glow, no shadow, no text."
+  }
+]

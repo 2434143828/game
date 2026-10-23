@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "sheets": [
+    "素材需求",
+    "逐张提示词",
+    "生成规范",
+    "程序与动效",
+    "验收清单"
+  ],
+  "groups": 112,
+  "pngs": 307,
+  "runtime": 241,
+  "reference": 66,
+  "program": 8,
+  "P0常态": 252,
+  "P1局部污染": 50,
+  "P2扩展演出": 5,
+  "formulas": 1342,
+  "errorCells": [],
+  "maxRowHeightPt": 342.75,
+  "maxPromptChars": 1665,
+  "bytes": 185928,
+  "freezePanes": {
+    "素材需求": {
+      "xSplit": "3",
+      "ySplit": "7",
+      "topLeftCell": "D8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "逐张提示词": {
+      "xSplit": "2",
+      "ySplit": "7",
+      "topLeftCell": "C8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "生成规范": {
+      "xSplit": "1",
+      "ySplit": "4",
+      "topLeftCell": "B5",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "程序与动效": {
+      "xSplit": "1",
+      "ySplit": "7",
+      "topLeftCell": "B8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    },
+    "验收清单": {
+      "xSplit": "2",
+      "ySplit": "7",
+      "topLeftCell": "C8",
+      "activePane": "bottomRight",
+      "state": "frozen"
+    }
+  },
+  "priorityCounts": {
+    "P0常态": 252,
+    "P1局部污染": 50,
+    "P2扩展演出": 5
+  }
+}

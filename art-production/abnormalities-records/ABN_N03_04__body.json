@@ -1,0 +1,47 @@
+{
+  "id": "ABN_N03_04__body",
+  "rowId": "ABN_N03_04",
+  "file": "abn_big_dog_parts_01_body.png",
+  "row": {
+    "id": "ABN_N03_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_big_dog_parts_01",
+    "displayName": "N03 大狗 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干 1、头含双耳 1、平静口鼻 1、失控上颌 1、失控下颌 1、舌 1、可见前腿 1、可见后腿 1、尾 1、项圈与牌 1，共 10 件。上下颌独立，牙齿可并入对应颌，不单颗拆分。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "大狗 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N03_CALM",
+      "REF_N03_BREACH"
+    ],
+    "canvas": "1536 × 1024 px（横向宽体） 装配母版；全部零件沿用原坐标透明导出",
+    "export": "10 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "根节点为身体支撑投影的地面中心；母版 (768, 896)，朝右；口鼻可前伸但不移动根。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 10,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N03_01",
+      "ABN_N03_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / dog；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N03",
+    "acceptance": "独立 PNG 恰为 10 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  "unit": {
+    "suffix": "body",
+    "displayName": "大狗躯干",
+    "canvas": "1536 × 1024 px，每张单独姿势/零件，共用 (768, 896) 根",
+    "focus": "本次只画大狗厚重低背宽肩躯干，灰褐绿，补全颈与腿接口；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: precise-object-edit. Reference is an approved hand-drawn ink dog creature, identity/style only. Produce ONE isolated anatomical/game equipment cutout.\n本次只画大狗厚重低背宽肩躯干，灰褐绿，补全颈与腿接口；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nCRITICAL PART BOUNDARY: TRUNK ONLY. NO collar, NO head, NO legs, NO feet, NO tail; cap attachment seams.\nPreserve gray-brown fur, beige muzzle, ink hatching of source. Right-facing 2D side-view. Center this single part in 1024 square canvas, occupy about 60%, 15% clear transparent margin. Opaque painted object, actual alpha background, no shadow or glow. Do not redraw a complete dog, do not include adjacent anatomy, no sheet, lettering, watermark or other object.",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-8780afdb-d9be-4bad-9ac7-af077c2cfd4d.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-a2cee375-8d68-422e-aec5-c8225824292e.png",
+  "visualReview": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "filename": "nm_v2_agent_hair_quiff_hair.png",
+    "displayName": "E01上扬短束 hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E01上扬短束 hair。只画本张：前高后低的深蓝黑整片短发，前额一束圆钝上扬，后脑压低；无头脸；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：简洁蓬松短发，额前一小簇向上发束；现代职场发型，深蓝黑与低饱和冷灰阴影，无尖锐漫画刺发。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-6362a05b-a422-472f-a293-708cdde0de1d.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_side_fringe_hair.png",
+    "displayName": "E02侧分短发 hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E02侧分短发 hair。只画本张：自然暖棕侧扫斜刘海整体发片，另一侧耳根留空，眼位无遮挡；无头脸；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：干净侧分短刘海、耳边利落的现代职场短发；深棕与冷灰阴影，不遮主要眼区。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-41ac8539-fcf5-4553-8da8-9442b6015563.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_bob_glasses_hair.png",
+    "displayName": "E03短波波头与眼镜 hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E03短波波头与眼镜 hair。只画本张：柔和灰褐短波波头，耳下整洁发缘，无头脸或眼镜；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：利落圆角短波波头和现代细框眼镜；头发与镜框分图，镜片清透、无多余脸部底色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0ac970d1-6580-46ba-ae0d-1220a2d7978d.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_bob_glasses_glasses.png",
+    "displayName": "E03短波波头与眼镜 glasses",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E03短波波头与眼镜 glasses。只画本张：一副细蓝灰框眼镜，镜片透明，眼间留空，无头脸和头发；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：利落圆角短波波头和现代细框眼镜；头发与镜框分图，镜片清透、无多余脸部底色。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b7f92beb-2ed3-42b1-b27a-077f48f414ba.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_ponytail_front_hair.png",
+    "displayName": "E04束发与短马尾 front_hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E04束发与短马尾 front_hair。只画本张：深棕前层束发，少量自然发束、额头干净；无头脸和马尾；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：舒适扎起的中短马尾，前发沿额头、后马尾有清楚发根；自然不凌乱，不遮职业领口。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-53c321a1-1bb7-4cba-a3e6-7cbf1bee958f.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_ponytail_rear_ponytail.png",
+    "displayName": "E04束发与短马尾 rear_ponytail",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E04束发与短马尾 rear_ponytail。只画本张：一束后层短马尾，扎点与下垂尾端明确；无头脸和前发；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：舒适扎起的中短马尾，前发沿额头、后马尾有清楚发根；自然不凌乱，不遮职业领口。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b34389ce-536a-42a7-8155-bffc5b11fe82.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_close_crop_hair.png",
+    "displayName": "E05贴头短发 hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E05贴头短发 hair。只画本张：低矮贴头短发整体，灰蓝黑发色与整洁额线；不画成光头或头盔，无头脸；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：简洁贴头短寸发，头皮轮廓自然、深色块克制，适合现代设施职员。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bef0c978-4eb8-4bc3-a2e9-a23e4e7b1b83.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_bun_front_hair.png",
+    "displayName": "E06盘发 front_hair",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E06盘发 front_hair。只画本张：自然棕灰侧分前发片，额线舒适、眼位留空；无头脸或盘髻；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：现代职场的小圆盘髻与整齐前发；发髻在后上方、根部明确，前后层分图，不做夸张古装头饰。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-25e45e1a-0235-475a-9c68-510cf0c77cb0.png"
+  },
+  {
+    "filename": "nm_v2_agent_hair_bun_rear_bun.png",
+    "displayName": "E06盘发 rear_bun",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：E06盘发 rear_bun。只画本张：后上方小圆盘髻，扎点清楚，少量碎发；无头脸或前发；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 发型共用同一头壳与五官挂点；轮廓区别优先于发色差异，头发干净自然，不用杂乱尖刺和病态发色。\n参考对象：现代职场的小圆盘髻与整齐前发；发髻在后上方、根部明确，前后层分图，不做夸张古装头饰。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-916162d0-ddf8-428d-ab67-d7131aa77e6a.png"
+  },
+  {
+    "filename": "nm_v2_agent_face_states_neutral.png",
+    "displayName": "专注中性面部",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：专注中性面部。只画本张：自然专注的眉眼鼻嘴透明叠层，眼睛大小接近、嘴角平静；无肤色面片或头壳；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 四组五官共用眼鼻嘴基准；中性神情专注而舒适，恐慌与受伤明确但不鬼脸化，倒地仍为本日失去行动能力。\n参考对象：简化可读的现代卡通人脸眉眼口，正常亲和、惊慌、受击、重伤闭眼四种表情；保持同一眼距与脸部挂点，透明覆盖层不带完整头。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-bd74e08b-0d21-4b49-9cb8-5e8b6a5ce57d.png"
+  },
+  {
+    "filename": "nm_v2_agent_face_states_panic.png",
+    "displayName": "恐慌面部",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：恐慌面部。只画本张：眉抬高、双眼睁大、短张口的惊慌五官透明叠层；无空眼、鬼脸、肤色面片；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 四组五官共用眼鼻嘴基准；中性神情专注而舒适，恐慌与受伤明确但不鬼脸化，倒地仍为本日失去行动能力。\n参考对象：简化可读的现代卡通人脸眉眼口，正常亲和、惊慌、受击、重伤闭眼四种表情；保持同一眼距与脸部挂点，透明覆盖层不带完整头。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-09f803f8-ec6d-4c21-b3bf-46800380e94d.png"
+  },
+  {
+    "filename": "nm_v2_agent_face_states_hurt.png",
+    "displayName": "受击/低HP面部",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：受击/低HP面部。只画本张：轻皱眉、一眼微收、嘴角收紧的五官透明叠层；无血、伤口、肤色面片；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 四组五官共用眼鼻嘴基准；中性神情专注而舒适，恐慌与受伤明确但不鬼脸化，倒地仍为本日失去行动能力。\n参考对象：简化可读的现代卡通人脸眉眼口，正常亲和、惊慌、受击、重伤闭眼四种表情；保持同一眼距与脸部挂点，透明覆盖层不带完整头。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-43338451-d892-4864-9f05-12b372bec5d6.png"
+  },
+  {
+    "filename": "nm_v2_agent_face_states_incapacitated.png",
+    "displayName": "本日离场面部",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：本日离场面部。只画本张：闭眼或低垂眼、放松嘴的五官透明叠层，仍是活着的受伤员工；无死亡符号、肤色面片；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 四组五官共用眼鼻嘴基准；中性神情专注而舒适，恐慌与受伤明确但不鬼脸化，倒地仍为本日失去行动能力。\n参考对象：简化可读的现代卡通人脸眉眼口，正常亲和、惊慌、受击、重伤闭眼四种表情；保持同一眼距与脸部挂点，透明覆盖层不带完整头。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nReference image is ONLY identity/style guide. Draw ONLY specified hair overlay, glasses overlay, or facial-feature overlay. NO skin, NO head shape, NO neck, NO clothing, NO background. Facial overlay must include only eyes/brows/nose/mouth floating on transparent alpha, with face-outline area empty. Hair overlay only hair cap or requested separate ponytail/bun. Keep three-quarter RIGHT facing orientation and clean flat cartoon linework.",
+    "transparent": true,
+    "scope": "personnel",
+    "referenceOnly": false,
+    "references": [
+      "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+    ],
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-de339ec4-f5a0-4b20-b52b-9e940c571538.png"
+  }
+]

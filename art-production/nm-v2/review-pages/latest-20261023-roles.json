@@ -1,0 +1,98 @@
+[
+  {
+    "filename": "nm_v2_role_security_parts_torso.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated sleeveless chest-to-waist vest-shaped torso for a modular 2D chibi uniform puppet. dark blue-gray fabric, tiny muted cyan piping; small flat protective chest panel. Top neck opening, small collar, waist edge, clean armhole cuts at both sides; absolutely no sleeves or shoulder caps, no arms, no head, no legs. Torso only, no mannequin. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-0dfdfb18-3d89-43f5-82d5-882394a03249.png"
+  },
+  {
+    "filename": "nm_v2_role_security_parts_shoulder_near.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. dark blue-gray fabric, tiny muted cyan piping; small flat protective chest panel. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Three-quarter view for the near shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-e27e080a-0c95-40de-99c6-3c2b416516ba.png"
+  },
+  {
+    "filename": "nm_v2_role_security_parts_shoulder_far.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. dark blue-gray fabric, tiny muted cyan piping; small flat protective chest panel. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Narrower side view for the far shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1511d937-788f-4d65-bb04-2a69090ada28.png"
+  },
+  {
+    "filename": "nm_v2_role_research_parts_torso.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated sleeveless chest-to-waist vest-shaped torso for a modular 2D chibi uniform puppet. cool white fabric, blue-gray inner shirt, small pale blue trim, short soft lapels. Top neck opening, small collar, waist edge, clean armhole cuts at both sides; absolutely no sleeves or shoulder caps, no arms, no head, no legs. Torso only, no mannequin. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8b87f4c1-f5d0-4c99-9815-02e5ac1ef70a.png"
+  },
+  {
+    "filename": "nm_v2_role_technical_parts_torso.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated sleeveless chest-to-waist vest-shaped torso for a modular 2D chibi uniform puppet. slate blue-gray fabric, restrained pale teal stitching and small utility seam. Top neck opening, small collar, waist edge, clean armhole cuts at both sides; absolutely no sleeves or shoulder caps, no arms, no head, no legs. Torso only, no mannequin. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-10a2726f-59bb-48fc-a499-d8a97867cb9a.png"
+  },
+  {
+    "filename": "nm_v2_role_research_parts_shoulder_near.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. cool white fabric, blue-gray inner shirt, small pale blue trim, short soft lapels. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Three-quarter view for the near shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3ef44af6-2a08-4ae6-9cc5-a9f0a295bdb3.png"
+  },
+  {
+    "filename": "nm_v2_role_technical_parts_shoulder_near.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. slate blue-gray fabric, restrained pale teal stitching and small utility seam. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Three-quarter view for the near shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-931fa499-f675-4a91-936b-a0c2691fd041.png"
+  },
+  {
+    "filename": "nm_v2_role_research_parts_shoulder_far.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. cool white fabric, blue-gray inner shirt, small pale blue trim, short soft lapels. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Narrower side view for the far shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2413dbcb-fd3a-4f77-8d28-e33a7b8fd273.png"
+  },
+  {
+    "filename": "nm_v2_role_technical_parts_shoulder_far.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. slate blue-gray fabric, restrained pale teal stitching and small utility seam. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Narrower side view for the far shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-ed91974b-3f0f-4208-afec-814d2411fcdb.png"
+  },
+  {
+    "filename": "nm_v2_role_medical_parts_torso.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated sleeveless chest-to-waist vest-shaped torso for a modular 2D chibi uniform puppet. cool off-white fabric, soft desaturated mint trim, no red cross or logos. Top neck opening, small collar, waist edge, clean armhole cuts at both sides; absolutely no sleeves or shoulder caps, no arms, no head, no legs. Torso only, no mannequin. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-237163f7-7dc1-4cc4-afec-4be87dce4ca9.png"
+  },
+  {
+    "filename": "nm_v2_role_medical_parts_shoulder_near.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. cool off-white fabric, soft desaturated mint trim, no red cross or logos. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Three-quarter view for the near shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-83a4261f-1662-498a-a135-a35ff644deba.png"
+  },
+  {
+    "filename": "nm_v2_role_medical_parts_shoulder_far.png",
+    "scope": "personnel",
+    "prompt": "ONE isolated small rounded shoulder sleeve-cap patch for a modular 2D chibi uniform puppet. cool off-white fabric, soft desaturated mint trim, no red cross or logos. Exactly one curved trapezoid patch, rounded top, flat bottom seam, width roughly equals height. Narrower side view for the far shoulder. No collar, neck, chest, torso, other sleeve, upper arm, forearm, cuff or hand. Patch only. Clean modern media research facility uniform, thin dark navy contour, flat color and two gentle cel shades, readable at tiny scale. Facing screen right. No tactical armor bulk, no texture, no letters, no background, no shadow, no glow. True transparent PNG.",
+    "reference": "art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png",
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-23e9770e-6a06-4f51-9b72-9fac5eb5b1bc.png"
+  }
+]

@@ -223,7 +223,7 @@ export class Simulation {
     room.mode = 'BREACHED'; this.releaseWork(room, false, '收容失效');
     for (const e of this.state.employees) {
       const ambient = this.ambientPlans.get(e.id);
-      if (ambient?.active) { ambient.active = false; e.path = []; e.status = 'IDLE'; }
+      if (ambient?.active) this.interruptAmbient(e, ambient);
     }
     const a = anomalyById[room.anomalyId], b = a.breach, now = this.state.simulationTimeSec;
     const breachId = this.id('breach'), mainId = this.id('enemy');
@@ -277,12 +277,29 @@ export class Simulation {
     const fraction = ((Number(e.id.slice(1)) * 31 + cycle * 17) % 101) / 100;
     return cfg.waitMinSec + (cfg.waitMaxSec - cfg.waitMinSec) * fraction;
   }
+  private interruptAmbient(e: EmployeeRuntime, plan: AmbientPlan): void {
+    plan.active = false;
+    // 闲逛可在平台停下；梯井中断则沿真实路线走完到最近平台，避免成为无法交战的滞留目标。
+    // 复用普通移动命令，因此暂停会冻结，玩家的停止、移动或撤退也可立即覆盖。
+    if (e.location.zone === 'TRANSIT') {
+      const landing = this.navigation.nearestCorridor(e.location);
+      const path = landing && this.navigation.route(e.location, landing);
+      if (landing && path?.length) {
+        e.order = { kind: 'MOVE', destination: landing };
+        e.path = path;
+        e.status = 'MOVING';
+        this.log('ORDER', `${e.displayName} 结束闲逛，沿连接通道移动至最近平台。`);
+        return;
+      }
+    }
+    e.path = []; e.status = 'IDLE';
+  }
   private updateAmbient(e: EmployeeRuntime): void {
     if (!this.options.ambient || !this.navigation.idlePoints.length) return;
     const plan = this.ambientPlan(e), now = this.state.simulationTimeSec;
     const incident = this.state.enemies.length > 0 || this.state.rooms.some(room => room.mode === 'BREACHED' || room.mode === 'RECOVERING');
     if (incident) {
-      if (plan.active) { e.path = []; e.status = 'IDLE'; plan.active = false; }
+      if (plan.active) this.interruptAmbient(e, plan);
       plan.nextAtSec = now + this.ambientDelay(e, plan.cycle);
       return;
     }
@@ -324,11 +341,16 @@ export class Simulation {
     }
     return current;
   }
+  private isMutualApproach(employee: EmployeeRuntime, enemy: EnemyRuntime): boolean {
+    const ai = anomalyById[enemy.sourceAnomalyId].breach.ai;
+    return enemy.targetEmployeeId === employee.id && (ai === 'CHASE' || ai === 'APPROACH_AND_AOE');
+  }
   private meetingLanding(enemy: EnemyRuntime): Location | null {
     const meeting = this.meetingLandings.get(enemy.id);
     if (!meeting) return null;
     const employee = this.employee(meeting.employeeId);
     if (!employee || !this.controllable(employee) || employee.order.kind !== 'SUPPRESS' || employee.order.enemyId !== enemy.id
+      || !this.isMutualApproach(employee, enemy)
       || Number.isFinite(this.navigation.combatDistance(employee.location, enemy.location))) {
       this.meetingLandings.delete(enemy.id);
       return null;
@@ -337,12 +359,12 @@ export class Simulation {
   }
   private approachPoint(employee: EmployeeRuntime, enemy: EnemyRuntime, range: number): Point {
     let landing = this.meetingLanding(enemy);
-    if (!landing && enemy.location.zone === 'TRANSIT') {
+    if (!landing && enemy.location.zone === 'TRANSIT' && this.isMutualApproach(employee, enemy)) {
       landing = this.navigation.nearestCorridor(enemy.location);
       if (landing) this.meetingLandings.set(enemy.id, { point: landing, employeeId: employee.id });
     }
-    // Both participants finish the real connector traversal before taking combat positions.
-    // Keeping this anchor avoids an opposing pair chasing each other's moving stair position.
+    // 只有双方互相追击才约定落脚点；追第三人或巡逻的敌人继续原路线，员工跟随。
+    // 否则会把路过敌人反复拉回梯口，刚落地又离开，导致员工前摇永远落空。
     if (landing) return landing;
     const candidates = [this.navigation.knockback(enemy.location, -range), this.navigation.knockback(enemy.location, range)];
     candidates.sort((a, b) => this.navigation.travelDistance(employee.location, a) - this.navigation.travelDistance(employee.location, b));

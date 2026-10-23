@@ -1,0 +1,12 @@
+{
+  "filename": "nm_v2_abn_maodie_pollution_parts_outburst_face.png",
+  "displayName": "情绪爆发脸层",
+  "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：情绪爆发脸层。只画本张：耄耋一套愤怒眉眼与正常猫嘴张口的面部覆盖层，像爆炸性发言表情包，透明底，无长牙、黑洞眼、完整头或伤口；单一交付对象/姿势，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代2D设施中的网梗收容物，简洁明确轮廓、干净色块、克制柔和阴影。常态可爱或荒诞；局部平台污染通过重复表情、色彩强调和外部覆盖层呈现，保留物种结构与正常肢体长度。 像评论区争吵突然爆发的情绪表情包：眉眼和张嘴形状夸张，局部脏粉/异常红提升；感叹号、争吵气泡、负面评论由外部污染层呈现，不绘成角色新增武器。 只增加必要的面部/胸牌局部层，不能生成另一具身体；显示本层时隐藏对应普通层，避免双眼双嘴叠印。\n参考对象：暖灰短毛猫的三角耳、圆角方脸与翘尾；结合情绪表情包里不耐烦、震惊、气鼓鼓的眉眼，使用简洁扁平色块和脏粉耳内色。 参考NMV2_ABN_N02_04批准的单角色污染表情/胸牌，严格沿用同一面部挂点。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nCUTOUT BOUNDARY: draw ONLY 情绪爆发脸层. The input is only an identity/palette guide. Do not copy the whole creature. All other body parts absent. Closed solid shapes at attachment joints. No shadows or glow outside the silhouette.",
+  "transparent": true,
+  "scope": "abnormalities",
+  "referenceOnly": false,
+  "references": [
+    "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\abnormalities\\nm_v2_abn_maodie_calm_identity_approved.png"
+  ],
+  "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-745effe0-07d4-49d1-9a1c-46a2e0f6205c.png"
+}

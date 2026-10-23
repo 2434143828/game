@@ -1,0 +1,62 @@
+{
+  "counts": {
+    "groups": 112,
+    "pngs": 307,
+    "runtime": 241,
+    "reference": 66,
+    "program": 8,
+    "P0常态": 252,
+    "P1局部污染": 50,
+    "P2扩展演出": 5
+  },
+  "inspected": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "j1yigv",
+      "target": {
+        "id": "wb/lknwkp",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "region",
+        "tokens": [
+          "region"
+        ]
+      },
+      "include": {
+        "tokens": []
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  },
+  "errors": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "j99bvq",
+      "target": {
+        "id": "wb/ucanfc",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "match",
+        "tokens": [
+          "match"
+        ]
+      },
+      "include": {
+        "tokens": []
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  }
+}

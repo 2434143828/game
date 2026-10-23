@@ -1,0 +1,162 @@
+[
+  {
+    "filename": "nm_v2_armor_nailong_torso.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干、奶白领边和暖黄圆角胸块；只有肩根接合余量，无袖子、头或四肢；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-25d78090-6a68-4786-ba82-46f7665edd7a.png"
+  },
+  {
+    "filename": "nm_v2_armor_nailong_shoulder_near.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧暖黄/奶白柔软短肩层，克制圆角形，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7d7b4224-be79-456d-bccd-195f446054bb.png"
+  },
+  {
+    "filename": "nm_v2_armor_nailong_shoulder_far.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧暖黄/奶白柔软短肩层，透视略窄，不含整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-914d5eee-dbac-46df-b6b3-3d3658d995b9.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_torso_collar.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干与短领。只画本张：蓝灰短制服躯干和暖灰短立领，少量脏粉边线，肩根余量完整，无整臂、头或围领垂片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-587d3485-e40f-4d84-852d-3d2a33376b27.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_shoulder_far.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧脏粉/暖灰短肩层，略窄轮廓，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-37613faa-18cf-46ba-b1c7-84ebb20e81e0.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_shoulder_near.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧脏粉/暖灰短肩层，简洁利落边角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-269cdeb0-9730-4256-a357-37491a59bfd2.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_scarf_long.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围领长垂片。只画本张：一条较长但不到腰的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1941a259-86c5-484a-8e58-e7f52259f15e.png"
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_torso.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干与红橙边线，胸前小块粉白识别面，无领圈、整臂、头或肩片；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-8904dc29-5e9e-4e7f-a872-2fc9615fd7cd.png"
+  },
+  {
+    "filename": "nm_v2_armor_maodie_scarf_short.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：围领短垂片。只画本张：一条较短的现代柔软围领垂片，暖灰脏粉配色、根部明确，无领圈或躯干；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-42302ecf-53b9-499d-bf33-fb20a628e586.png"
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_shoulder_near.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧红橙/粉白短肩层，结构轻便，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-70159a94-57df-449c-a51b-649274d42d57.png"
+  },
+  {
+    "filename": "nm_v2_armor_big_dog_shoulder_far.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧红橙/粉白短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-accd6b1d-3ee7-417b-861f-86efb1fe825b.png"
+  },
+  {
+    "filename": "nm_v2_armor_dingdong_torso.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干层。只画本张：蓝灰短制服躯干，明黄窄识别带和小型无字提示红胸标，肩根短余量，无完整袖子或头；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-1c0c7038-ce6a-4207-87c0-3826bf0992d4.png"
+  },
+  {
+    "filename": "nm_v2_armor_dingdong_shoulder_near.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧明黄/橙黄短肩层，清爽直线配圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-39b051b6-10f5-4382-9aaf-98d3ed2b2825.png"
+  },
+  {
+    "filename": "nm_v2_weapon_gugu_held.png",
+    "scope": "equipment",
+    "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：嘎嘎共振器。只画本张：浅蓝/粉白的短身圆角共振器，双层圆环或软边栅格构成正向发声面，下方握把清晰，像机构专用便携声音仪器；不画奶瓶、婴儿、治疗喷头或魔法法杖，侧向朝右，单件器械完整可握持；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。\n风格和造型：现代机构专用手持器械，干净色块和少量明暗面，克制轮廓。浅蓝/粉白的短身圆角共振器，双层圆环或软边栅格构成正向发声面，下方握把清晰，像机构专用便携声音仪器；不画奶瓶、婴儿、治疗喷头或魔法法杖 小尺寸先靠轮廓区分5种器械，再用对应收容物色点缀；透明镂空正常，主体不能半透明。\n参考对象：现代便携音频设备、圆角实验室手持仪器和舒适实握把；浅蓝/粉白的短身圆角共振器，双层圆环或软边栅格构成正向发声面，下方握把清晰，像机构专用便携声音仪器；不画奶瓶、婴儿、治疗喷头或魔法法杖 以新版员工手掌尺寸验证握持，不借用旧锈蚀、墨线排线或生物武器造型。\n建议制作尺寸：1024×512 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。 不画魔法光束、火焰、弹药、光环、状态图标或文字面板；不把手画进武器，不把武器图当技能功能说明。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3f8627b4-fd1a-4ccf-ad31-4d2a2687d302.png"
+  },
+  {
+    "filename": "nm_v2_armor_dingdong_shoulder_far.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧明黄/橙黄短肩层，轮廓稍窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-a417b632-060a-4ec7-bd31-5a55d2309113.png"
+  },
+  {
+    "filename": "nm_v2_armor_gugu_torso_collar.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：躯干与短领。只画本张：蓝灰结构的浅蓝/粉白短制服躯干与舒适短领，肩根短余量，无头、完整袖子或飘带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: fully sleeveless vest-shaped trunk, top neck opening and waist edge. Both side edges cut cleanly at armhole seam. Absolutely NO projecting sleeve caps, shoulder armor, arms, hands, head, or legs. Draw only the central chest-to-waist piece.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3ff7bd69-d8e7-4469-9422-2a731631fd92.png"
+  },
+  {
+    "filename": "nm_v2_armor_gugu_ribbon_long.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：较长织带。只画本张：一条较长但不拖地的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-17795590-9a61-4e14-9f01-53046c87402f.png"
+  },
+  {
+    "filename": "nm_v2_armor_gugu_shoulder_near.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：近肩层。只画本张：一块近侧浅蓝/粉白轻肩层，柔软圆角，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-996f2d87-f1bb-4b2f-86d1-5d9432a57491.png"
+  },
+  {
+    "filename": "nm_v2_armor_gugu_ribbon_short.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：较短织带。只画本张：一条较短的浅蓝粉白柔软织带，根部明确，无制服、领圈或另一条带；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: only the ONE specified fabric strip. NO collars or other strip attached.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-b5f9d4d3-92b5-4f57-908c-293b1963d973.png"
+  },
+  {
+    "filename": "nm_v2_armor_gugu_shoulder_far.png",
+    "scope": "equipment",
+    "prompt": "Create ONE isolated cutout for a modular 2D game puppet, NOT a costume catalogue, NOT a whole character. Clean modern research facility cartoon, medium thin dark blue-gray contour, flat colors with two cel shadow values, tiny readable shapes. Exactly ONE component on a truly transparent canvas, no glow, no shadow, no label, no mannequin, no other clothing pieces. Three-quarter view facing screen right. 唯一对象：远肩层。只画本张：一块远侧浅蓝/粉白轻肩层，轮廓略窄，无整臂；单一独立物件，不含员工、其他零件、对照款式、sheet、文字、背景或地面投影。 CRITICAL: draw only ONE small rounded sleeve-cap patch, a simple curved trapezoid with a rounded top and flat lower seam. Height equals width. NO neck, collar, chest, torso, long sleeve, forearm, cuff, hands, or second shoulder. Fill canvas with only this small patch.",
+    "reference": null,
+    "transparent": true,
+    "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d639e540-e65d-4a2d-86f5-232ceec35a2c.png"
+  }
+]

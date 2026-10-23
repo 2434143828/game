@@ -1,0 +1,12 @@
+{
+  "filename": "nm_v2_role_research_parts_shoulder_far.png",
+  "displayName": "研究员远肩层",
+  "prompt": "Use case: stylized-concept. Production game asset, ONE isolated unit only.\n唯一对象：研究员远肩层。只画本张：研究员的远侧短肩片/袖根外观叠层，与近肩同材质但遮挡轮廓略窄；无躯干或整臂；本张仅这一独立交付单元，不含其他零件、对照姿势、sheet、文字、背景或地面投影。\n风格和造型：现代新媒体收容机构员工，2.5—3头身，头、躯干、手脚轮廓明确；自然站姿、舒展肩颈、可亲而专业，简洁中等深色轮廓与平整色块，最多两级柔和阴影。基础色 #12161C/#1E2630/#39424E/#D9E1EA，冷青 #57B8FF 仅小面积识别；不沿用神经质前倾、纸纹、锈色排线。 冷白轻科研外套与蓝灰内搭、柔和短翻领、无字工牌，袖口轻便；只交躯干与近/远肩3件，手脚/发型/身体骨架共用。装备A01—A05的已装备躯干/肩片优先显示，职业不得与装备双重套壳。\n参考对象：现代研究员的冷白轻便短科研外套与蓝灰内搭，干净理性但亲和，不像特工；与新版员工基型同肩宽、同腰线，六发型和手脚直接共用。\n建议制作尺寸：1024×1024 px / 每张。每个 units 条目独立交付一张 PNG，RGBA/sRGB/真透明背景，主体不半透明；命名=name+'_'+suffix+'.png'。PNG 不合并成图集。挂点/朝向/trim 记录是附属元数据，不计 PNG 数量；允许技术裁边，但必须同步挂点，原图保留。\n现代新媒体科研机构，清洁、清晰、舒服的二维平涂游戏美术，稳定适度轮廓、最多两级柔和阴影。单张只画限定对象，不要组内其他角色或零件。\n禁止：禁止古典工业、重锈蚀、旧纸排线、地牢、军工/特工装、满身霓虹、写实恐怖、空洞黑眼、獠牙裂嘴、长肢畸变、血腥、假实机截图、平台商标水印、背景或投影。禁止一张图塞多姿势/多零件/sheet；需要可读文字的区域留空，由程序排版。\n不要添加任何文字、数字、标签、背景棋盘格或水印。真正透明背景。\nEXTRACTION BOUNDARY: only 研究员远肩层. Do NOT copy the full reference character. Draw only this isolated part; closed solid overlap edges where it attaches. Everything else absent and transparent.",
+  "transparent": true,
+  "scope": "personnel",
+  "referenceOnly": false,
+  "references": [
+    "C:\\Users\\SEASUN\\Downloads\\wanggeng_codex_dev_spec_v0_1\\wanggeng_demo_spec_v0_1\\art-production\\nm-v2\\originals\\personnel\\nm_v2_agent_base_identity_approved.png"
+  ],
+  "source": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-f5607cb7-48cc-47c2-af3d-699e84bf64c2.png"
+}

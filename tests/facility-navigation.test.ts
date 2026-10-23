@@ -125,6 +125,102 @@ describe('large facility graph: real, connected, orthogonal movement', () => {
 });
 
 describe('multi-floor combat and skill topology', () => {
+  function chaseWithRemoteTarget() {
+    const sim = large();
+    sim.forceBreach('N01');
+    const enemy = sim.state.enemies.find(unit => !unit.isClone)!;
+    // Isolate the main sample from clone damage; reproduce the browser's actual stair positions.
+    sim.state.enemies = [enemy];
+    const suppressor = employee(sim), remote = employee(sim, 'E04');
+    suppressor.location = at('a-top');
+    remote.location = at('hub-center');
+    enemy.location = nav.locate({ x: 1400, y: 464.25 })!;
+    enemy.targetEmployeeId = remote.id;
+    send(sim, { type: 'SUPPRESS', employeeIds: [suppressor.id], enemyId: enemy.id });
+    return { sim, enemy, suppressor, remote };
+  }
+
+  it('keeps its remote chase target and lets the suppressor follow to a shared corridor instead of oscillating at the ladder', () => {
+    const { sim, enemy, suppressor, remote } = chaseWithRemoteTarget();
+    const hp = enemy.suppressionHp;
+    for (let step = 0; step < 10 / dt && enemy.suppressionHp === hp; step++) {
+      sim.step();
+      if (enemy.location.zone === 'TRANSIT') expect(enemy.windupEndsAtSec).toBeNull();
+      if (suppressor.location.zone === 'TRANSIT') expect(suppressor.windupEndsAtSec).toBeNull();
+    }
+    expect(enemy.suppressionHp).toBeLessThan(hp);
+    expect(enemy.targetEmployeeId).toBe(remote.id);
+    expect(enemy.location).toMatchObject({ y: at('a-hub').y, zone: 'CORRIDOR' });
+    expect(suppressor.location).toMatchObject({ y: at('a-hub').y, zone: 'CORRIDOR' });
+    expect(Number.isFinite(nav.combatDistance(suppressor.location, enemy.location))).toBe(true);
+  });
+
+  it.each(['STOP', 'RETREAT'] as const)('does not pull a remote chaser back to the landing after %s cancels suppression', command => {
+    const { sim, enemy, suppressor, remote } = chaseWithRemoteTarget();
+    sim.step();
+    expect(enemy.location.zone).toBe('TRANSIT');
+    const stopped = { ...suppressor.location };
+    expect(send(sim, { type: command, employeeIds: [suppressor.id] }).ok).toBe(true);
+    const hp = enemy.suppressionHp;
+    ticks(sim, 1);
+    expect(enemy.location.zone).toBe('TRANSIT');
+    expect(enemy.location.y).toBeGreaterThan(at('a-top').y);
+    expect(enemy.targetEmployeeId).toBe(remote.id);
+    expect(enemy.suppressionHp).toBe(hp);
+    expect(suppressor.windupEndsAtSec).toBeNull();
+    if (command === 'STOP') expect(suppressor.location).toEqual(stopped);
+    else expect(suppressor.location.y).toBeGreaterThan(at('a-top').y);
+  });
+
+  it('does not transfer an existing single-target windup when the rendezvous owner retreats onto a connector', () => {
+    const { sim, enemy, suppressor, remote } = chaseWithRemoteTarget();
+    enemy.targetEmployeeId = suppressor.id;
+    remote.location = at('a-top');
+    walkUntil(sim, () => enemy.windupEndsAtSec !== null, 3);
+    const hp = suppressor.hp, sp = suppressor.sp;
+    const remoteHp = remote.hp, remoteSp = remote.sp;
+    expect(send(sim, { type: 'RETREAT', employeeIds: [suppressor.id] }).ok).toBe(true);
+    ticks(sim, anomalyById.N01.breach.windupSec);
+    expect(enemy.targetEmployeeId).toBe(suppressor.id);
+    expect(suppressor.location.zone).toBe('TRANSIT');
+    expect(suppressor.hp).toBe(hp);
+    expect(suppressor.sp).toBe(sp);
+    expect(remote.hp).toBe(remoteHp);
+    expect(remote.sp).toBe(remoteSp);
+    expect(enemy.windupEndsAtSec).toBeNull();
+  });
+
+  it('also finishes a mutual approach with the area-attack dog on a connector before attacking', () => {
+    const sim = large();
+    sim.forceBreach('N03');
+    const enemy = sim.state.enemies[0], e = employee(sim);
+    enemy.location = nav.locate({ x: 1400, y: 487 })!;
+    e.location = nav.locate({ x: 1400, y: 487 })!;
+    enemy.targetEmployeeId = e.id;
+    send(sim, { type: 'SUPPRESS', employeeIds: [e.id], enemyId: enemy.id });
+    const hp = enemy.suppressionHp;
+    ticks(sim, 3);
+    expect(enemy.suppressionHp).toBeLessThan(hp);
+    expect(enemy.location.zone).toBe('CORRIDOR');
+    expect(e.location.zone).toBe('CORRIDOR');
+  });
+
+  it('does not divert a patrolling enemy to the suppressor\'s nearest stair landing', () => {
+    const sim = large();
+    sim.forceBreach('N05');
+    const enemy = sim.state.enemies[0], e = employee(sim);
+    enemy.location = nav.locate({ x: 1400, y: 656 })!;
+    e.location = at('a-hub');
+    enemy.targetEmployeeId = e.id;
+    send(sim, { type: 'SUPPRESS', employeeIds: [e.id], enemyId: enemy.id });
+    sim.step();
+    // The patrol's first real destination is N01 above; nearest-landing anchoring would pull it down.
+    expect(enemy.location.zone).toBe('TRANSIT');
+    expect(enemy.location.y).toBeLessThan(656);
+    expect(enemy.windupEndsAtSec).toBeNull();
+    expect(e.windupEndsAtSec).toBeNull();
+  });
+
   it.each([
     { employeeY: 487, enemyY: 487, landingY: 460 },
     { employeeY: 654, enemyY: 656, landingY: 850 },
@@ -181,7 +277,7 @@ describe('multi-floor combat and skill topology', () => {
     enemy.location = nav.locate({ x: 1400, y: 656 })!;
     e.location = nav.locate({ x: 1400, y: 654 })!;
     send(sim, { type: 'SUPPRESS', employeeIds: [e.id], enemyId: enemy.id });
-    sim.step();
+    walkUntil(sim, () => e.path.at(-1)?.y === at('a-hub').y, 1);
     expect(e.path.at(-1)).toMatchObject({ x: at('a-hub').x, y: at('a-hub').y });
     expect(send(sim, { type: command, employeeIds: [e.id] }).ok).toBe(true);
     const before = { ...e.location };
@@ -290,6 +386,84 @@ describe('multi-floor combat and skill topology', () => {
 });
 
 describe('ambient movement: deterministic simulation, explicit command priority', () => {
+  function wanderingOnUpperStair() {
+    const sim = large(true), e = employee(sim, 'E04');
+    walkUntil(sim, () => e.location.zone === 'TRANSIT' && e.location.segmentId === 'edge:a-top:a-hub'
+      && e.location.y > 700 && e.location.y < 750, 100);
+    return { sim, e };
+  }
+
+  it('finishes an interrupted ambient stair traversal at the nearest real landing, without teleporting or moving while paused', () => {
+    const { sim, e } = wanderingOnUpperStair();
+    const before = { ...e.location }, landing = nav.nearestCorridor(e.location)!;
+    sim.forceBreach('N01');
+    expect(e.location).toEqual(before);
+    expect(e.order).toMatchObject({ kind: 'MOVE', destination: landing });
+    expect(e.path.at(-1)).toMatchObject({ x: landing.x, y: landing.y });
+    expect(e.status).toBe('MOVING');
+    // A second incident must not erase the short automatic route already in progress.
+    const path = structuredClone(e.path);
+    sim.forceBreach('N02');
+    expect(e.path).toEqual(path);
+    sim.setPaused(true);
+    sim.advance(1);
+    expect(e.location).toEqual(before);
+    expect(e.path).toEqual(path);
+    sim.setPaused(false);
+    sim.step();
+    expect(distance(before, e.location)).toBeCloseTo(config.game.employee.moveSpeedPxPerSec * dt);
+    walkUntil(sim, () => e.location.zone === 'CORRIDOR', 5);
+    expect(e.location).toMatchObject(landing);
+    expect(e.order.kind).toBe('IDLE');
+    expect(e.path).toEqual([]);
+    expect(sim.state.producedToday).toBe(0);
+    expect(sim.state.logs.some(log => log.message.includes(e.displayName) && log.message.includes('最近平台'))).toBe(true);
+  });
+
+  it.each(['STOP', 'MOVE', 'RETREAT'] as const)('lets %s immediately replace automatic stair completion after an incident', command => {
+    const { sim, e } = wanderingOnUpperStair();
+    sim.forceBreach('N01');
+    expect(e.order.kind).toBe('MOVE');
+    const before = { ...e.location };
+    const result = command === 'MOVE'
+      ? send(sim, { type: 'MOVE', employeeIds: [e.id], point: at('a-top') })
+      : send(sim, { type: command, employeeIds: [e.id] });
+    expect(result.ok).toBe(true);
+    if (command === 'STOP') {
+      ticks(sim, 2);
+      expect(e.location).toEqual(before);
+      expect(e.order.kind).toBe('IDLE');
+      expect(e.path).toEqual([]);
+    } else {
+      const destination = command === 'MOVE' ? at('a-top') : nav.safePoint;
+      expect(e.path.at(-1)).toMatchObject({ x: destination.x, y: destination.y });
+      sim.step();
+      expect(e.location).not.toEqual(before);
+      expect(e.path.at(-1)).toMatchObject({ x: destination.x, y: destination.y });
+    }
+  });
+
+  it('resolves third-party suppression after the remote ambient target completes its interrupted stair route', () => {
+    const { sim, e: remote } = wanderingOnUpperStair();
+    sim.forceBreach('N01');
+    const enemy = sim.state.enemies.find(unit => !unit.isClone)!;
+    sim.state.enemies = [enemy];
+    const suppressor = employee(sim);
+    send(sim, { type: 'STOP', employeeIds: [suppressor.id] });
+    suppressor.location = at('a-top');
+    enemy.location = nav.locate({ x: 1400, y: 464.25 })!;
+    enemy.targetEmployeeId = remote.id;
+    send(sim, { type: 'SUPPRESS', employeeIds: [suppressor.id], enemyId: enemy.id });
+    const hp = enemy.suppressionHp;
+    walkUntil(sim, () => enemy.suppressionHp < hp, 10);
+    expect(enemy.targetEmployeeId).toBe(remote.id);
+    expect(remote.location).toMatchObject(at('a-hub'));
+    expect(remote.order.kind).toBe('IDLE');
+    expect(enemy.location.zone).toBe('CORRIDOR');
+    expect(suppressor.location.zone).toBe('CORRIDOR');
+    expect(Number.isFinite(nav.combatDistance(suppressor.location, enemy.location))).toBe(true);
+  });
+
   it('starts real walks after configured idle waits, at the configured stroll speed, without jobs or income', () => {
     const sim = large(true), e = employee(sim);
     ticks(sim, facilityDefinition.ambient.waitMinSec);

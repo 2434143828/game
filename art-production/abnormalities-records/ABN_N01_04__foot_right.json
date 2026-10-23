@@ -1,0 +1,44 @@
+{
+  "id": "ABN_N01_04__foot_right",
+  "rowId": "ABN_N01_04",
+  "file": "abn_nailong_parts_01_foot_right.png",
+  "row": {
+    "id": "ABN_N01_04",
+    "priority": "P0",
+    "category": "五物/角色拆件",
+    "name": "abn_nailong_parts_01",
+    "displayName": "N01 奶龙 双形态共用拆件",
+    "state": "IDLE / WORKING / BREACHED",
+    "requirements": "躯干 1、平静头颈 1、失控头颈 1、平静口鼻 1、失控裂嘴 1、常态/空眼两组眼部 2、左右短臂 2、左右脚 2、尾 1，共 12 件。头颈、眼、口分层，裂嘴不与选中圈或残影合并。 沿用两份已批准定稿的线宽与体积，关节背面补全；可复用部位只交一份，不为每个动作复制整身。完整定稿仅作组合校对，不额外计独立交付单位。 以上为整套构成；每次只生成 characters_units.json 对应 focus 指定的一个独立件，不画整套平铺图。",
+    "referenceObject": "奶龙 已批准平静与失控定稿",
+    "referenceIds": [
+      "REF_N01_CALM",
+      "REF_N01_BREACH"
+    ],
+    "canvas": "1024 × 1024 px 装配母版；全部零件沿用原坐标透明导出",
+    "export": "12 个独立 RGBA 透明 PNG + 关联分层源文件/挂点清单；不裁去各件共同定位信息；同名件不可合层。",
+    "pivot": "脚底地面中心；母版 (512, 896)，朝右；全部形态共享同一根节点。 另记录头颈、四肢、口部或钟针等实际旋转挂点。",
+    "quantity": 12,
+    "deliveryType": "拆件",
+    "dependsOn": [
+      "ABN_N01_01",
+      "ABN_N01_03"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/art/characters/abnormalities.ts :: drawCreature / nailong；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/anomalies.json :: N01",
+    "acceptance": "独立 PNG 恰为 12 件，能无缝组回两形态；旋转连接处有遮盖余量；缩小后细线不糊为一团。",
+    "negative": "不要照片、3D 渲染、像素风、光滑矢量图标风或高饱和日漫；不要复制现成游戏的角色、脸型或官方 IP 素材；不要背景、文字、水印、UI、血条、黄色选中圈或攻击范围；不要以红色滤镜代替形变。",
+    "notes": "此清单只申请绘制需要的最小拆件；引擎仍须接入素材装配。阴影、选中圈、受击射线、受控星标、故障残影继续复用程序绘制，不重复生成静态图。"
+  },
+  "unit": {
+    "suffix": "foot_right",
+    "displayName": "奶龙右脚",
+    "canvas": "1024 × 1024 px，每张单独姿势/零件，共用 (512, 896) 根",
+    "focus": "本次只画奶龙右宽扁脚，脚底水平；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。"
+  },
+  "status": "generated",
+  "prompt": "Use case: precise-object-edit. Asset type: ONE isolated cutout bone-part for a 2D game puppet, not a complete character.\nReference image 1 is the approved identity/style source. Extract or redraw ONLY the requested existing body part; preserve its exact yellow/cream colors, ink line and hatching, right-facing orientation.\nTHE ONLY OBJECT TO DRAW: 本次只画奶龙右宽扁脚，脚底水平；只交这一独立单元，不画其他零件、对照姿、sheet、文字或背景。保持主表指定造型、朝向与挂点。\nNeighboring anatomy must be absent. A torso has NO arms, NO legs, NO feet, NO tail, NO neck or head; cap joints with a tiny overlap. A head-neck part has NO body, arms or limbs; keep blank yellow face surface if eyes/mouth are separate. Eye groups contain eyes ONLY, transparent between them, no face-shaped skin plate. A mouth piece has the mouth/muzzle ONLY, no head/eyes/neck. Arms include only shoulder-to-hand, feet only ankle-and-foot, tail only tail.\nFill the center 60% of a square 1024x1024 transparent canvas with this SINGLE part, leaving 15% clear margin on all sides, not in its original full-body position. Opaque painted part, genuine alpha outside. No floor shadow, glow, alignment crosses, typography, sheet, extra parts or whole animal.",
+  "references": [
+    "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-ac8224df-7343-4fb1-9630-046f631c1e5f.png"
+  ],
+  "sourcePath": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a9-3f88-7142-80fc-4d8583eaff91\\exec-7b470a89-1ed9-41f6-beb3-321334992357.png"
+}

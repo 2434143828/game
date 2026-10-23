@@ -1,0 +1,733 @@
+[
+  {
+    "id": "ENV_001",
+    "priority": "P0",
+    "category": "结构模块",
+    "name": "room_shell_edges_a",
+    "displayName": "房间外壳边框与切角",
+    "state": "静态结构",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。拆成四角、上梁、下梁、左壁、右壁八件；深灰褐厚外壳、细窄旧纸色内沿，切角只发生在顶角。边界接缝平直、可拼接；框内留空，不含墙面、门、楼板或房间文字。",
+    "referenceObject": "设施总览中五间收容室和五个部门大厅的外围厚壳；保留各自宽高与不齐整分布。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "四角各512×512 px；上下梁各1024×256 px；左右壁各256×1024 px，逐件生成。",
+    "export": "透明PNG，8件分开；记录每件直边拼接线。",
+    "pivot": "角件以连接内角为锚；梁/壁以拼接直边起点为锚。",
+    "quantity": 8,
+    "deliveryType": "模块",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#shell；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms/halls/safeRect",
+    "acceptance": "能拼成N01 550×260、N02 540×300、N03 720×300、N04 600×350、N05 640×300逻辑外框；所有侧门处由装配保留缺口；转角不侵入工作位和通路。",
+    "notes": "框的画布分件不等于新房型；只替换既有地图外观。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_002",
+    "priority": "P0",
+    "category": "结构模块",
+    "name": "room_wall_panel_muted_a",
+    "displayName": "低饱和墙面与墙裙",
+    "state": "静态底层",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。灰褐、脏绿、暗灰蓝、灰紫四种墙面，按同一板缝尺度绘制；每种上墙和暗墙裙分别交付。墙面以平整色块为主，仅边角少量划线，中央留大面积干净区域给人物与状态文字。",
+    "referenceObject": "总览内五大厅与收容室的墙面分区，不借用角色轮廓作为墙纸。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "上墙各1024×1024 px；墙裙各1024×256 px，4色×2件。",
+    "export": "可平铺背景PNG；上墙水平/竖向可接，墙裙至少水平可接。",
+    "pivot": "左上角(0,0)，上下墙交界高度由装配决定。",
+    "quantity": 8,
+    "deliveryType": "背景",
+    "dependsOn": [
+      "ENV_001"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#shell/drawHall/drawRoom/drawMedical；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/geometry.ts#ROOM_COLORS",
+    "acceptance": "相邻三块拼接无明显亮缝或重复污点；背景明暗不压过约66逻辑像素员工；N01/02/03/04/05点缀分别参考#bda35a/#a67467/#819170/#938b9b/#7d9ba3，不能整墙使用高饱和色。",
+    "notes": "墙面不含灯光、实体影子、警报或文字；部门配色可在引擎中小幅着色复用。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_003",
+    "priority": "P0",
+    "category": "结构模块",
+    "name": "floor_bearing_strip_a",
+    "displayName": "地板承重面与端头",
+    "state": "静态承重结构",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。水平地面中段、左端、右端三件；上沿为明确平直的员工脚底基准，厚暗下沿与少量斜划线表达层厚。墨线只在表面细节微歪，不让可走面出现台阶、洞或弧度。",
+    "referenceObject": "总览中所有真实水平通道的地板边缘。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "中段1024×256 px；两端各256×256 px。",
+    "export": "透明PNG；中段水平可平铺，端头独立。",
+    "pivot": "承重基准线左端；在交付说明标出基准线的画布Y像素。",
+    "quantity": 3,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_001"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#floor/drawArchitecture；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#edges",
+    "acceptance": "按原edge.y装配后，人物脚底仍落在已有厚走道范围；拼接端无错层；上下层之间不增加假可走线。",
+    "notes": "当前绘制地板覆盖基准y-12到y+35附近，贴图装配需对齐原函数，不将纹理高度当新楼层间距。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_004",
+    "priority": "P0",
+    "category": "通路模块",
+    "name": "corridor_wall_segment_a",
+    "displayName": "走廊背景中段与端段",
+    "state": "静态通路背景",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄走廊背墙中段与左右封边三件，灰绿钢板、稀疏检修盖，不含前景障碍、门或地板。保留横向连续的干净人物活动带；结构可重复，视觉上与较高的大堂明显区分。",
+    "referenceObject": "总览里的细支廊；当前CORRIDOR边背墙约高119逻辑单位。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "中段1024×512 px；左右封边各256×512 px。",
+    "export": "透明PNG；中段水平平铺。",
+    "pivot": "背墙下边左端，装配到真实走道基准。",
+    "quantity": 3,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_002",
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawCorridors；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#edges[kind=CORRIDOR]",
+    "acceptance": "中段连接后保留连续走道；不新增门洞、前景栏杆或楼梯图案；与约66逻辑像素人物叠放时躯干和武器可辨。",
+    "notes": "左右端段只是美术拼接边，不是封闭现有路线的碰撞墙。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_005",
+    "priority": "P0",
+    "category": "门窗模块",
+    "name": "containment_side_door_frame_a",
+    "displayName": "侧视收容安全门框",
+    "state": "不随开关改变的固定门框",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄侧视安全门框，厚旧钢铁立柱、顶端独立灯座和少量斜向警戒纹；框内留出门扇区域。不能画成宽大的正面双开门；左右朝向由无文字的同一底稿镜像适配。",
+    "referenceObject": "五室门点与医疗入口的窄侧门轮廓。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "512×1024 px，门框主体保持窄高比例，四周透明留边。",
+    "export": "透明PNG；不含门扇、发光警报与文字。",
+    "pivot": "门口地面基准中心，沿用doorNode.x/doorNode.y。",
+    "quantity": 1,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_001",
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#sealDoor；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.*.doorNodeId/safe-door",
+    "acceptance": "可映射到当前约38宽、137高的门框视觉包围范围，开关门不移动门中心；透过开门区域仍能看见真实员工。",
+    "notes": "门状态由场景动态层控制，不能与房间墙面合成；医疗门仅换点缀色，不新增医院玩法。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_006",
+    "priority": "P0",
+    "category": "门窗模块",
+    "name": "containment_door_leaf_a",
+    "displayName": "可分离安全门扇",
+    "state": "关闭门扇基底；敞开时移开或隐藏",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。独立窄门扇一件，暗钢板、窄观察孔、简洁滑轨感；边缘和ENV_005门框匹配。只画门扇本身，不另绘整间“开门/关门房间”。",
+    "referenceObject": "同一安全门的门扇厚度与观察孔；参照人物比例。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "256×1024 px，窄门扇单独生成。",
+    "export": "透明PNG，单静态部件；开门运动由程序平移/隐藏。",
+    "pivot": "门扇底边中心；与门框使用同一地面基准。",
+    "quantity": 1,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_005"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#sealDoor；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/ContainmentFacilityScene.ts#drawRoom",
+    "acceptance": "关闭态覆盖原门扇区域，移开后能完整露出可通行开口；无烘焙人物或红色警报；无左右位置漂移。",
+    "notes": "不要求图像模型生成开关动画帧；冻结/开关表现仍服从真实状态。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_007",
+    "priority": "P0",
+    "category": "门窗模块",
+    "name": "observation_window_layers_a",
+    "displayName": "观察窗框、玻璃和反光层",
+    "state": "静态分层",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。矩形粗墨钢框、灰绿半透明玻璃、稀疏斜反光三层独立交付。框略不规整但内口清晰；反光只占边角，中央留空；不把收容物、监控画面或牢笼阴影画进玻璃。",
+    "referenceObject": "收容室实体背后的观察窗及大厅长窗。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N01_CALM",
+      "REF_N03_CALM"
+    ],
+    "canvas": "三层同为1024×768 px，同画布同内口位置；窗口端边可按九宫格装配。",
+    "export": "透明PNG三件，玻璃与反光保留真实Alpha。",
+    "pivot": "统一窗口左上角，三层完全重合配准。",
+    "quantity": 3,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_001",
+      "ENV_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#glass/drawRoom/drawHall",
+    "acceptance": "在204逻辑宽常规窗、272逻辑宽大狗窗和590逻辑宽大厅长窗中可复用；纹理拉伸仅中区，边框不失真；玻璃不遮挡异常轮廓。",
+    "notes": "若模型未直接输出透明度，后期需抠出边框并重建玻璃Alpha；白底不是透明交付。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_008",
+    "priority": "P0",
+    "category": "通路模块",
+    "name": "transit_ladder_vertical_a",
+    "displayName": "联络井梯架与深色井壁",
+    "state": "静态可拼接竖向结构",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。竖向梯架和深色井壁分别交付；梯架含连续侧轨、清楚横档与少量固定扣。两端横档间距必须能连续拼接，攀爬中心空出；不能加入电梯厢或封闭梯井的前景铁门。",
+    "referenceObject": "总览A/B/C三条真实联络井，以及员工攀梯比例。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "梯架512×1024 px；井壁512×1024 px，逐件生成并竖向可平铺。",
+    "export": "梯架透明PNG；井壁可平铺背景PNG。",
+    "pivot": "梯架中轴上端；井壁左上角；拼接节距另标。",
+    "quantity": 2,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_003",
+      "ENV_004"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawLadder；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#edges[kind=TRANSIT]",
+    "acceptance": "按现有122逻辑宽井道装配，中轴保持A=1400、B=2350、C=1040；上下每一真实竖向边完整贯通，不出现断梯或虚假新增分支。",
+    "notes": "只替换外观，不变更员工攀梯位置、速度、路线或联络井高度。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_009",
+    "priority": "P0",
+    "category": "通路模块",
+    "name": "transit_landing_grate_a",
+    "displayName": "梯井落脚平台格栅",
+    "state": "静态节点平台",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄厚水平格栅，可站立上沿清楚，两端能接地板；中间用稀疏格纹表达竖井连通。不要画完整厚水泥盖堵住梯井，也不画自动开合机构。",
+    "referenceObject": "联络井与各层走廊交汇的落脚节点。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "1024×256 px，横向长条主体。",
+    "export": "透明PNG。",
+    "pivot": "平台上方承重基准中心，装配到真实TRANSIT连接节点。",
+    "quantity": 1,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_003",
+      "ENV_008"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawArchitecture（junctions平台绘制）；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#nodes",
+    "acceptance": "映射至现有136逻辑宽、约11高的平台范围；支持人物脚底且不盖住上下梯架；各层复用后边界无高低跳变。",
+    "notes": "这是既有节点的支撑外观，不新增可开合平台逻辑。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_010",
+    "priority": "P0",
+    "category": "照明设备",
+    "name": "industrial_lamp_layers_a",
+    "displayName": "克制顶灯灯壳与发光条",
+    "state": "常态灯具；亮度由场景控制",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。略歪梯形金属灯罩一件，窄米黄发光条一件；灯罩深灰褐，灯管柔和。两层对齐；不画大面积体积光、动态闪烁或整间房的明暗。",
+    "referenceObject": "收容室顶部、走廊和部门大厅的线形灯具。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "两件同为1024×256 px，保持相同安装基准。",
+    "export": "透明PNG两件。",
+    "pivot": "顶部安装线中心。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_001"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#lamp",
+    "acceptance": "缩小后仍看见灯罩轮廓和灯条；发光不抢过危险预警与角色；各部门只调色或亮度，无烘焙报警。",
+    "notes": "红色警报和故障效果由独立状态层实现，不属于本条静态灯具。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_011",
+    "priority": "P1",
+    "category": "管线设备",
+    "name": "industrial_pipe_connectors_a",
+    "displayName": "工业管线直段、弯头与阀门",
+    "state": "静态装饰连接件",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。水平直管、竖直管、90度弯头、手轮阀四件；灰绿旧钢、粗墨外边、单侧短刻线；接口口径一致，无油液喷射。主体干净，可在房间顶棚和墙侧组合。",
+    "referenceObject": "顶棚细管、N05制冷管线与空腔远景管线的共同语言。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N05_CALM"
+    ],
+    "canvas": "水平段1024×256 px；竖段256×1024 px；弯头和手轮各512×512 px。",
+    "export": "透明PNG四件；直段沿长度可平铺。",
+    "pivot": "直管中心轴起点；弯头两接口交点；阀门轮心。",
+    "quantity": 4,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_001"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#pipe/drawVoid/drawRoom(N05)",
+    "acceptance": "接口无明显粗细变化；管线能贴顶棚/侧墙装配，不压住房间标题、工作位和观察窗；阀门不被误认成可交互新装置。",
+    "notes": "不新增管网、温控或自动化玩法；图像仅是现有环境装饰。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_012",
+    "priority": "P0",
+    "category": "工作设备",
+    "name": "operator_console_desk_a",
+    "displayName": "通用工作控制台",
+    "state": "静态工作设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。低矮斜面旧控制台，深灰绿底座、旧纸灰斜面、空白窄屏和三颗小指示按钮；外轮廓略歪，中央操作面留空。台前不画椅子、操作者或操作动作。",
+    "referenceObject": "五室员工工作点旁的小控制台，以及指挥中枢长控制台。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF",
+      "REF_N01_CALM"
+    ],
+    "canvas": "1024×512 px，正交侧剖斜台面；建议可拉伸的中段与固定端边标注。",
+    "export": "透明PNG。",
+    "pivot": "底座落地线中心；后续按不同宽度装配。",
+    "quantity": 1,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#consoleDesk/drawRoom/drawHall",
+    "acceptance": "以当前约60逻辑高为尺度，员工手臂能在原工作位旁显得可操作；81、108、115、210逻辑宽场景中端边不被任意拉粗；不挡员工全身。",
+    "notes": "工作动作、能量条、按钮亮色由程序叠加；素材本身无生产或科研功能。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_013",
+    "priority": "P0",
+    "category": "控制设备",
+    "name": "crt_wall_terminal_layers_a",
+    "displayName": "旧CRT墙面终端与空白屏幕",
+    "state": "静态机壳与屏幕分层",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。厚旧CRT机壳一件，暗绿空白屏一件；右侧旋钮、小灯、下方少量散热刻线。轮廓有轻微不对称；不画真实数字、代码、二维码或故障警报。",
+    "referenceObject": "指挥中枢监控墙和各收容室工作监视器。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "两层同为1024×768 px，机壳和屏幕内口配准。",
+    "export": "透明PNG两件，屏幕独立便于叠加程序内容。",
+    "pivot": "终端外壳左上角；屏幕相对偏移随交付记录。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002",
+      "ENV_012"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#wallMonitor/drawHall(control)/drawRoom",
+    "acceptance": "缩至78×53、132×76、244×78等现有视觉范围时仍有CRT厚壳与屏幕；屏幕内容可被独立替换，纹理不伪造运行数值。",
+    "notes": "文本及真实状态由引擎绘制；此处不要求图像模型生成可读数据库界面。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_014",
+    "priority": "P1",
+    "category": "控制设备",
+    "name": "analog_wall_gauge_a",
+    "displayName": "旧式圆形指针表",
+    "state": "静态仪表外观",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。略扁的不规则圆表壳与米灰表盘一件，单根深墨指针一件；少量无数字短刻度，脏绿外圈，不做警报红表盘。",
+    "referenceObject": "指挥中枢圆表及奶龙室壁挂圆表。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N01_CALM"
+    ],
+    "canvas": "两件同为512×512 px。",
+    "export": "透明PNG两件；指针轮心准确对齐表盘。",
+    "pivot": "表盘和指针均以圆心为锚。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawHall(control)/drawRoom(N01)",
+    "acceptance": "表盘在约26到86逻辑宽中可读，指针与刻度不粘连；不出现数字温度、压力等未经游戏状态提供的数据。",
+    "notes": "原实现是静态设备；分出指针只为可编辑交付，不承诺新增仪表玩法。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_015",
+    "priority": "P1",
+    "category": "大厅结构",
+    "name": "operations_buttress_a",
+    "displayName": "调度大厅壁柱与顶横架",
+    "state": "静态后景结构",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。略倾斜但落点清楚的壁柱一件、横向顶架一件；暗灰蓝钢架、粗外线与少量短划线。放在背景设备层，不构成前景栅栏，不画门或另一个走道。",
+    "referenceObject": "调度大厅长窗之间的深壁柱和上方横架。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "壁柱512×1024 px；顶架1024×256 px。",
+    "export": "透明PNG两件。",
+    "pivot": "壁柱底部中点；顶架左安装端。",
+    "quantity": 2,
+    "deliveryType": "模块",
+    "dependsOn": [
+      "ENV_001",
+      "ENV_007"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawHall(operations)",
+    "acceptance": "与大厅1470×220逻辑区域适配，不挡A/B井口和水平通路；柱宽保持背景尺度，角色66逻辑像素高时能清楚分离。",
+    "notes": "只用于既有大厅的层次，不新增承重建造、可破坏柱或捷径。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_016",
+    "priority": "P1",
+    "category": "公共设备",
+    "name": "facility_waiting_bench_a",
+    "displayName": "设施木铁长椅",
+    "state": "静态家具",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄高靠背、两根细腿、旧灰绿坐面；略歪墨线和两三道接缝，座面和地面水平。单独家具，无坐着的人、靠垫图案或前景投影大块。",
+    "referenceObject": "指挥中枢、调度大厅和医疗区的小长椅。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "1024×512 px。",
+    "export": "透明PNG。",
+    "pivot": "两腿着地线的中点。",
+    "quantity": 1,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#bench",
+    "acceptance": "按现有约48逻辑高、99至175逻辑宽装配，人物从前面经过仍可见；腿不延伸到下层通道。",
+    "notes": "坐下互动不在当前功能中，素材只提供环境识别。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_017",
+    "priority": "P0",
+    "category": "医疗设备",
+    "name": "medical_recovery_bed_a",
+    "displayName": "医疗休整床",
+    "state": "静态空床",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。旧米色薄床垫与铁床架合为主件，简洁小枕头单独一件；低矮侧视，轻微塌陷感和一角刻线阴影，床上保持空白。不要画受伤人员、血迹、绷带人体或医疗UI。",
+    "referenceObject": "医疗休整区左右两张既有空床。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "床体1024×512 px；枕头512×256 px。",
+    "export": "透明PNG两件。",
+    "pivot": "床脚落地线中心；枕头底边中心。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawMedical；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#safeRect",
+    "acceptance": "床体映射当前约129逻辑宽、70高，床腿正确落地；安全区680×280逻辑范围内通路仍空出，恢复中的员工不被床贴图遮挡。",
+    "notes": "床不替代安全区实际恢复判定，不新增躺卧治疗动作要求。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_018",
+    "priority": "P0",
+    "category": "医疗设备",
+    "name": "medical_supply_cabinet_a",
+    "displayName": "医疗药柜与空白记录夹",
+    "state": "静态识别设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。脏绿窄药柜一件，淡米色无文字记录夹一件；柜上用简洁无品牌医护十字/交叉标识，门缝、短把手与少量阴影清楚；纸页只给空白线栏。",
+    "referenceObject": "医疗区带十字的柜体和墙上记录夹。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_STAFF"
+    ],
+    "canvas": "药柜512×1024 px；记录夹512×768 px。",
+    "export": "透明PNG两件。",
+    "pivot": "药柜底边中心；记录夹上方夹扣安装点。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002",
+      "ENV_017"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawMedical",
+    "acceptance": "缩到当前约56×92逻辑柜体仍能识别医疗功能；记录夹不与“医疗休整区”标题或玻璃重叠；无模型生成的可读病历。",
+    "notes": "记录夹不显示人员真实数据，界面信息仍由HUD承担。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_019",
+    "priority": "P0",
+    "category": "档案设备",
+    "name": "archive_drawer_cabinet_a",
+    "displayName": "旧档案柜与纸质文件夹",
+    "state": "静态收纳设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。两层抽屉档案柜一件、歪放文件夹一件、空白纸标签一件；灰紫柜体、旧纸色文件，粗墨外框、细短把手。标签独立，柜上不生成房间编号或可读文字。",
+    "referenceObject": "记录回廊中重复的文件柜和顶上薄文件夹。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "柜体1024×768 px；文件夹512×256 px；标签512×128 px。",
+    "export": "透明PNG三件。",
+    "pivot": "柜体底边中心；文件夹和标签左下角。",
+    "quantity": 3,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002",
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawHall(records)",
+    "acceptance": "柜体缩至当前约130×80逻辑范围仍可识别抽屉；重复摆放能留出B井画面空隙；纸张低于角色与警报对比度。",
+    "notes": "只有装饰档案设备，不新增数据库经营或科研系统。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_020",
+    "priority": "P0",
+    "category": "广播设备",
+    "name": "security_broadcast_horn_a",
+    "displayName": "防卫联络厅旧式广播喇叭",
+    "state": "静态广播识别设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。不对称扩音喇叭、细支架和小底盒作为一个完整静态设备；灰褐喇叭口、深墨内腔、旧纸色底盒，2D侧视。造型可以轻度怪诞，不画人脸、鸡、声波或大面积放射线。",
+    "referenceObject": "防卫联络厅已有独立支架喇叭。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N04_CALM"
+    ],
+    "canvas": "768×1024 px。",
+    "export": "透明PNG。",
+    "pivot": "底盒底边中心。",
+    "quantity": 1,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_003"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawHall(broadcast)",
+    "acceptance": "仅凭轮廓能辨识扩音设备；缩到当前约84×110逻辑外观不糊成黑块；喇叭不与真实异常实体混淆。",
+    "notes": "实际全设施广播危害只来自叮咚鸡真实敌方状态，本设备不新增伤害源。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_021",
+    "priority": "P0",
+    "category": "冷却设备",
+    "name": "cooling_relay_fan_a",
+    "displayName": "冷却中继风机机箱",
+    "state": "静态机箱与可编辑叶轮",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。方形旧机箱一件、四叶低饱和风轮一件；灰绿与灰蓝钢铁，圆形内腔轮廓略不对称，厚外边稀疏内部线。风轮与机箱同心，正面圆盘作为设备侧视中的平面构件。",
+    "referenceObject": "冷却中继站两台已有圆形风机。",
+    "referenceIds": [
+      "REF_OVERVIEW",
+      "REF_N05_CALM"
+    ],
+    "canvas": "两件同为1024×1024 px。",
+    "export": "透明PNG两件。",
+    "pivot": "机箱以底边中心；风轮以转轴圆心，并附其相对机箱偏移。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_003",
+      "ENV_011"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawHall(cold)",
+    "acceptance": "机箱缩至当前104×106逻辑尺寸仍看得出圆形风轮；摆在原位置不盖住C井；风轮所有叶片无裁切。",
+    "notes": "拆出叶轮便于制作，是否转动由后续表现实现决定，不新增温控数值。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_022",
+    "priority": "P1",
+    "category": "收容室个性装饰",
+    "name": "nailong_containment_meter_cabinet_a",
+    "displayName": "奶龙室暖黄校准柜",
+    "state": "静态个性设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄高灰绿校准柜，圆仪表安装凹位、底部少量散热刻线；局部旧黄铜点缀，对应奶龙房温吞荒诞气质。仪表凹位留空，复用独立圆表，不画奶龙图案、龙形把手或高饱和金色。",
+    "referenceObject": "N01房间两侧窄校准柜；奶龙平静图只参考环境与主体之间的对比关系。",
+    "referenceIds": [
+      "REF_N01_CALM",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "512×1024 px。",
+    "export": "透明PNG。",
+    "pivot": "柜体底边中心；表盘安装圆心另标。",
+    "quantity": 1,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_014"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawRoom(N01)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.N01",
+    "acceptance": "缩至当前44×81逻辑柜体范围成立；房间逻辑550×260、员工(450,460)、样本(650,460)与右门(800,460)保持；柜体不挡这些实体。",
+    "notes": "暖黄点缀参考#bda35a；显示的仪表只是环境外观，不输出实际压力读数。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_023",
+    "priority": "P1",
+    "category": "收容室个性装饰",
+    "name": "maodie_wall_perch_a",
+    "displayName": "耄耋室歪斜壁架与抓痕",
+    "state": "静态个性装饰",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。竖直旧立杆和上下两个略歪踏架为主件，三道少量墙面抓痕另件；灰褐、旧木灰和小面积锈红。抓痕不能画成血迹，架子不伸入员工行走带。",
+    "referenceObject": "N02右侧已有双层壁架与左侧墙面划痕；耄耋平静轮廓只用于比例。",
+    "referenceIds": [
+      "REF_N02_CALM",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "壁架768×1024 px；抓痕512×512 px。",
+    "export": "透明PNG两件。",
+    "pivot": "立杆底部中轴；抓痕图层中心。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawRoom(N02)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.N02",
+    "acceptance": "房间540×300逻辑范围内，工作(2730,640)、样本(2850,640)、左门(2450,640)保持清楚；踏架能从墙面识别，但不会被误认作玩家路线。",
+    "notes": "仅背景壁架；不新增员工或耄耋攀爬该架的导航，色点缀参考#a67467。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_024",
+    "priority": "P1",
+    "category": "收容室个性装饰",
+    "name": "big_dog_acoustic_panel_a",
+    "displayName": "大狗室吸音板与固定环",
+    "state": "静态个性设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄竖吸音板一件、墙脚固定环一件；脏绿软板、短斜刻线，墨线边框。板上不画密集细格，固定环不连接牵引绳和狗；空出工作监视器与大观察窗。",
+    "referenceObject": "N03减密后的吸音板与样本旁小固定环。",
+    "referenceIds": [
+      "REF_N03_CALM",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "吸音板256×1024 px；固定环512×512 px。",
+    "export": "透明PNG两件。",
+    "pivot": "吸音板左上角；固定环中心。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002",
+      "ENV_007"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawRoom(N03)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.N03",
+    "acceptance": "板缩至25×83逻辑尺度仍清楚；房间720×300逻辑范围和工作(520,1360)、样本(780,1360)、右门(1000,1360)不受遮挡；吸音板排列不覆盖左工作屏。",
+    "notes": "吸音只是房间视觉识别，不产生减伤、隔音或新的技能功能；点缀参考#819170。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_025",
+    "priority": "P1",
+    "category": "收容室个性装饰",
+    "name": "dingdong_chicken_speaker_clock_a",
+    "displayName": "叮咚鸡室双振膜音箱与挂钟",
+    "state": "静态个性设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。窄高双振膜音箱一件、旧挂钟表壳与无数字表盘一件、钟针一件。音箱灰紫，振膜深墨；钟面旧纸黄，轮廓轻微歪斜。三件分开，不画鸡或声波特效。",
+    "referenceObject": "N04两侧音箱与位于标题下方的旧挂钟。",
+    "referenceIds": [
+      "REF_N04_CALM",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "音箱512×1024 px；表盘512×512 px；钟针512×512 px同心画布。",
+    "export": "透明PNG三件。",
+    "pivot": "音箱底边中心；表盘/钟针共同圆心。",
+    "quantity": 3,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_002"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawRoom(N04)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.N04",
+    "acceptance": "音箱按66×132、挂钟按约58×61逻辑尺度可辨；挂钟位于r.y+154附近，不穿过标题带；工作(2790,1600)、样本(2970,1600)、左门(2550,1600)保持。",
+    "notes": "房间600×350逻辑尺寸不改；点缀#938b9b。静态环境钟与收容物胸前钟是不同资产。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_026",
+    "priority": "P1",
+    "category": "收容室个性装饰",
+    "name": "gugu_gaga_cold_vent_a",
+    "displayName": "咕咕嘎嘎室制冷百叶箱与淡霜贴花",
+    "state": "静态个性设备",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。低矮制冷百叶箱一件、两三枚稀疏淡霜划痕贴花一件；灰蓝和脏绿，百叶条数克制。霜只在角落点缀，不画满屏冰雪、企鹅剪影或寒气动画。",
+    "referenceObject": "N05墙脚制冷箱、靠墙冷却管与观察窗边的小淡霜符号。",
+    "referenceIds": [
+      "REF_N05_CALM",
+      "REF_OVERVIEW"
+    ],
+    "canvas": "百叶箱1024×768 px；淡霜贴花512×512 px。",
+    "export": "透明PNG两件；霜贴花保留低Alpha。",
+    "pivot": "箱体底边中心；贴花中心。",
+    "quantity": 2,
+    "deliveryType": "设备",
+    "dependsOn": [
+      "ENV_011"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawRoom(N05)；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#rooms.N05",
+    "acceptance": "百叶箱缩至87×66逻辑尺度不糊；房间640×300逻辑、工作(1580,2240)、样本(1790,2240)、左门(1320,2240)保持清楚；管道仍贴顶y+47与侧墙，不穿标题。",
+    "notes": "点缀#7d9ba3；霜不代表新冰冻地形或额外状态，危险特效继续来自真实模拟。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_027",
+    "priority": "P2",
+    "category": "低优先背景",
+    "name": "facility_void_backdrop_a",
+    "displayName": "地下设施深暗空腔底图",
+    "state": "静态最远背景",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。深暗灰蓝的低对比平涂空腔，极轻微手绘明暗起伏，远处灰褐污面仅作边角变化；无具体房间、门、通道、管道、人物或发光点。四边低频连续，作为设施背后的最远底层。",
+    "referenceObject": "设施总览中亮房间之间的大块暗空腔，只参考层级与色调。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "2048×2048 px，单张可平铺底图。",
+    "export": "可平铺背景PNG，不要求Alpha。",
+    "pivot": "左上角(0,0)。",
+    "quantity": 1,
+    "deliveryType": "背景",
+    "dependsOn": [],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawVoid；C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/config/facility.json#bounds",
+    "acceptance": "覆盖3600×2500逻辑地图时无明显接缝、棋盘纹或重复焦点；亮度低于所有可走廊道，不能误示新房间。",
+    "notes": "不是整幅游戏截图或关卡海报；生成尺寸可以和地图尺寸不同，由底层平铺覆盖。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  },
+  {
+    "id": "ENV_028",
+    "priority": "P2",
+    "category": "低优先背景",
+    "name": "facility_distant_framework_a",
+    "displayName": "远景支柱与交叉撑架",
+    "state": "静态远景装饰",
+    "requirements": "二维正交侧视、怪诞手绘工业收容风；深墨外轮廓略歪但整体结构清楚，大块低饱和平涂，仅局部刻线阴影。长竖柱与横向联梁一件、对角撑架一件，黑灰蓝剪影、少量低对比边线，形状比可走结构更暗更简略。无门窗、扶梯、地板标线、文字或亮色检修灯。",
+    "referenceObject": "总览暗空腔中的稀疏钢骨架；对齐现有drawVoid装饰层。",
+    "referenceIds": [
+      "REF_OVERVIEW"
+    ],
+    "canvas": "竖柱联梁512×2048 px；对角撑架1024×1024 px。",
+    "export": "透明PNG两件，竖柱纵向可延伸拼接。",
+    "pivot": "柱件中轴下端；撑架左下连接点。",
+    "quantity": 2,
+    "deliveryType": "背景",
+    "dependsOn": [
+      "ENV_027"
+    ],
+    "source": "C:/Users/SEASUN/Downloads/wanggeng_codex_dev_spec_v0_1/wanggeng_demo_spec_v0_1/src/scenes/facility/architecture.ts#drawVoid/drawArchitecture（房间下方撑架）",
+    "acceptance": "在Home总览下只形成设施纵深，不与真实可走地板争抢视觉；画在所有真实房间/走廊之后，不遮住A/B/C井。",
+    "notes": "远景架不是额外楼层或可探索区域，不能据此修改导航图。 建议画布尺寸是生成纹理的像素数，不修改现有3600×2500逻辑地图。每件单独生成和导出，不要求图像模型一次输出连续序列帧；quantity是独立交付文件数，不是地图中的摆放次数。",
+    "negative": "不画员工、收容物、HUD、可读文字或水印；不做俯视/等距透视、写实金属、高饱和霓虹、密集污渍或其他游戏的标志图案；不要把整间房与设备烘焙成一张不可拆大图。"
+  }
+]
