@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "boundary": "Five DEV art fixtures, explicitly labelled and isolated from saves. Unlocks/wallet supplied at fixture creation; actual CAPTURE startup, simulation, cards, entities, input and rendering. This is visual acceptance, not five campaign unlock/capture wins.",
+  "checks": [
+    {
+      "id": "N01",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N01",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N01-queued",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N01-action",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N01-action",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N01",
+      "check": "Real native card cast, owner movement and successful effect",
+      "cardId": "T03",
+      "simulationTime": 0.49999999999999994
+    },
+    {
+      "id": "N01-enemy-windup",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N01-enemy-windup",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N01-reload",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N02",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N02",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N02-queued",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N02-action",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N02-action",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N02",
+      "check": "Real native card cast, owner movement and successful effect",
+      "cardId": "T03",
+      "simulationTime": 0.49999999999999994
+    },
+    {
+      "id": "N02-enemy-windup",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N02-enemy-windup",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N02-reload",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N03",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N03",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N03-queued",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N03-action",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N03-action",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N03",
+      "check": "Real native card cast, owner movement and successful effect",
+      "cardId": "T03",
+      "simulationTime": 0.44999999999999996
+    },
+    {
+      "id": "N03-enemy-windup",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N03-enemy-windup",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N03-reload",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N04",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N04",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N04-queued",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N04-action",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N04-action",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N04",
+      "check": "Real native card cast, owner movement and successful effect",
+      "cardId": "T03",
+      "simulationTime": 0.44999999999999996
+    },
+    {
+      "id": "N04-enemy-windup",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N04-enemy-windup",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N04-reload",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N05",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N05",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N05-queued",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N05-action",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N05-action",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N05",
+      "check": "Real native card cast, owner movement and successful effect",
+      "cardId": "T03",
+      "simulationTime": 0.49999999999999994
+    },
+    {
+      "id": "N05-enemy-windup",
+      "check": "Paused simulation/entities/pollution all frozen for 600ms"
+    },
+    {
+      "id": "N05-enemy-windup",
+      "check": "No storage API calls; sentinel unchanged"
+    },
+    {
+      "id": "N05-reload",
+      "check": "No storage API calls; sentinel unchanged"
+    }
+  ],
+  "errors": [],
+  "storageCalls": [],
+  "report": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/report.json",
+  "normalCampaign": {
+    "report": "docs/gameplay-v03-evidence/run-2026-10-23T14-17-47.136Z/report.json",
+    "checks": [
+      {
+        "name": "paused-simulation-and-render-frozen",
+        "detail": {
+          "time": 0.3,
+          "wallMs": 750
+        }
+      },
+      {
+        "name": "paused-simulation-and-render-frozen",
+        "detail": {
+          "time": 0.3,
+          "wallMs": 750
+        }
+      },
+      {
+        "name": "card-ownership-and-hit-cooldown",
+        "detail": {
+          "owner": "E03",
+          "card": "T03",
+          "cooldown": 2.45
+        }
+      },
+      {
+        "name": "07-nailong-real-battle-victory",
+        "detail": {
+          "elapsed": 17.000000000000107,
+          "rank": 2,
+          "damageEvents": 39,
+          "cardEvents": 6,
+          "interrupted": false
+        }
+      },
+      {
+        "name": "11-cat-real-battle-victory",
+        "detail": {
+          "elapsed": 15.000000000000078,
+          "rank": 1,
+          "damageEvents": 66,
+          "cardEvents": 11,
+          "interrupted": true
+        }
+      },
+      {
+        "name": "P1-P2-shared-engine",
+        "detail": {
+          "wallet": 2.3699999999987877,
+          "rooms": [
+            {
+              "anomalyId": "N01",
+              "owned": true,
+              "rank": 2,
+              "state": "STABLE"
+            },
+            {
+              "anomalyId": "N02",
+              "owned": true,
+              "rank": 1,
+              "state": "STABLE"
+            },
+            {
+              "anomalyId": "N03",
+              "owned": false,
+              "rank": 0,
+              "state": "LOCKED"
+            },
+            {
+              "anomalyId": "N04",
+              "owned": false,
+              "rank": 0,
+              "state": "LOCKED"
+            },
+            {
+              "anomalyId": "N05",
+              "owned": false,
+              "rank": 0,
+              "state": "LOCKED"
+            }
+          ],
+          "weaponTier": 2
+        }
+      },
+      {
+        "name": "refresh-abandons-no-reward",
+        "detail": {
+          "rank": 2,
+          "message": "退出中的战斗按放弃处理：无挑战奖励、无离线产能，已返回设施；能量、装备、阶级及生命精神保留。"
+        }
+      },
+      {
+        "name": "1280-real-layout",
+        "detail": {
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "buttons": [
+            {
+              "bottom": 688.7999877929688,
+              "right": 262.23752212524414
+            },
+            {
+              "bottom": 688.7999877929688,
+              "right": 510.88751220703125
+            },
+            {
+              "bottom": 688.7999877929688,
+              "right": 759.5250244140625
+            },
+            {
+              "bottom": 688.7999877929688,
+              "right": 1008.1625366210938
+            },
+            {
+              "bottom": 688.7999877929688,
+              "right": 1256.800048828125
+            }
+          ]
+        }
+      }
+    ],
+    "fieldTransitions": [
+      {
+        "shot": "04-three-staff-nine-cards",
+        "field": null
+      },
+      {
+        "shot": "10-cat-capture-entry",
+        "field": {
+          "theme": "N02",
+          "texture": "field-v1:N02",
+          "loaded": true,
+          "simulationTimeSec": 37.550000000000004,
+          "windup": false,
+          "pulse": 0.9215835539801855,
+          "background": {
+            "x": 0,
+            "y": 55,
+            "width": 1300,
+            "height": 650
+          },
+          "groundY": 500
+        }
+      },
+      {
+        "shot": "12-new-room-passive-production",
+        "field": null
+      }
+    ]
+  },
+  "productionReport": "docs/gameplay-v03-evidence/production-2026-10-23T14-25-51.968Z/report.json",
+  "screenshots": [
+    {
+      "path": "docs/showcase/field-v1-n01.png",
+      "source": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/N01-04-enemy-windup-pollution.png",
+      "sha256": "ce5a797d8092886794dc13f717f233a601cb685cf1d71f9d02907acead7bc1bd"
+    },
+    {
+      "path": "docs/showcase/field-v1-n02.png",
+      "source": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/N02-04-enemy-windup-pollution.png",
+      "sha256": "183ec9862d9b4b01c7811bb26db1d5d54ea2ce1e2d8e2fd46de527160478785a"
+    },
+    {
+      "path": "docs/showcase/field-v1-n03.png",
+      "source": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/N03-04-enemy-windup-pollution.png",
+      "sha256": "4060735c9d9ba979285505ae282902a05f166920b015f6d1b055825af774aa6e"
+    },
+    {
+      "path": "docs/showcase/field-v1-n04.png",
+      "source": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/N04-04-enemy-windup-pollution.png",
+      "sha256": "2239e0f1f9689657601047516d44542bb1ae46240a0f17ceb8572d3d07d93ae8"
+    },
+    {
+      "path": "docs/showcase/field-v1-n05.png",
+      "source": "docs/gameplay-v03-evidence/field-art-2026-10-23T14-14-15.981Z/N05-04-enemy-windup-pollution.png",
+      "sha256": "3d0476e3a1732d6b4c19235ac5b922e2f874f939282c7a14db655c4937c04472"
+    },
+    {
+      "path": "docs/showcase/field-v1-community-live-capture.png",
+      "source": "docs/gameplay-v03-evidence/run-2026-10-23T14-17-47.136Z/11-cat-card-interrupt.png",
+      "sha256": "667c8b4a3c50b660bb360a9b4252dad959c158edd2dfd579b1a047d51524f5ff"
+    }
+  ]
+}

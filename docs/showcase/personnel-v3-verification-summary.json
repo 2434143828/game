@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "scope": "Employee v3 appearance revision, not full three-day acceptance",
+  "newRuntimeAssets": 12,
+  "tests": 153,
+  "designAssertions": 760,
+  "formulaExamples": 20,
+  "continuous": {
+    "report": "docs/personnel-v3-evidence-2026-10-23/run-2026-10-23T10-31-05.949Z/report.json",
+    "checks": 8,
+    "inputs": 63,
+    "screenshots": 19
+  },
+  "personnel": {
+    "report": "docs/personnel-v3-evidence-2026-10-23/personnel/2026-10-23T10-31-05.939Z/suite.json",
+    "cases": [
+      {
+        "name": "lineup",
+        "status": "PASS",
+        "report": "lineup/report.json",
+        "checks": 1,
+        "samples": 238,
+        "video": "lineup/video\\page@8e12daa39e96c98a334e99de6b81823d.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "panic",
+        "status": "PASS",
+        "report": "panic/report.json",
+        "checks": 2,
+        "samples": 118,
+        "video": "panic/video\\page@cdb509c559b32897b029d1432c61c52a.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      },
+      {
+        "name": "incapacitated",
+        "status": "PASS",
+        "report": "incapacitated/report.json",
+        "checks": 2,
+        "samples": 140,
+        "video": "incapacitated/video\\page@939111edd61712577862ba250e07a327.webm",
+        "errors": {
+          "pageErrors": 0,
+          "consoleErrors": 0,
+          "failedRequests": 0,
+          "httpErrors": 0,
+          "samplingErrors": 0
+        }
+      }
+    ]
+  },
+  "equipment": {
+    "report": "docs/personnel-v3-evidence-2026-10-23/equipment-2026-10-23T10-33-38.523Z/report.json",
+    "status": "PASS"
+  },
+  "production": {
+    "report": "docs/personnel-v3-evidence-2026-10-23/production-2026-10-23T10-33-38.531Z/report.json",
+    "checks": 15,
+    "pausePixels": {
+      "identical": true,
+      "before": "b53d44ecc3cfa13e13c0776690b1e4c996143a0f7c0b8a448e50d6125d78c250",
+      "after": "b53d44ecc3cfa13e13c0776690b1e4c996143a0f7c0b8a448e50d6125d78c250",
+      "clockBefore": "SIM / 本日\n00:04",
+      "clockAfter": "SIM / 本日\n00:04",
+      "pauseButton": "继续 ▷",
+      "realWaitMs": 700,
+      "difference": {
+        "changedPixels": 0,
+        "totalPixels": 956160,
+        "maxChannelDelta": 0,
+        "boundsWithinCapture": null,
+        "boundsOnCanvas": null,
+        "regions": {
+          "employeeAnchor": 0,
+          "topNavigation": 0,
+          "bottomHelp": 0,
+          "minimap": 0,
+          "remainingWorld": 0
+        },
+        "changedPixelSamples": [],
+        "changedTiles": []
+      }
+    }
+  },
+  "screenshots": [
+    {
+      "file": "personnel-v3-lineup.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/personnel/2026-10-23T10-31-05.939Z/lineup/01-six-hairstyles-and-uniforms.png",
+      "sha256": "1ee65fe1b02171b1e2255d7d387458c55d2b913bb96e2ba973bf9a98d6da3e01"
+    },
+    {
+      "file": "personnel-v3-work.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/run-2026-10-23T10-31-05.949Z/05-employee-inside-room-working.png",
+      "sha256": "4862805669b64b5dfe3bd510e23168b780237c6c540a05d4ab79941a15ea1b85"
+    },
+    {
+      "file": "personnel-v3-combat.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/run-2026-10-23T10-31-05.949Z/08-actual-suppression-hit.png",
+      "sha256": "9ea1111648a139cc73872a0ce76ca081aff0cb6b85f3ce1f1b05abb8edcfeb91"
+    },
+    {
+      "file": "personnel-v3-retreat.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/run-2026-10-23T10-31-05.949Z/09-retreating-after-suppression.png",
+      "sha256": "78a04b80cce991e485013a6dfad432105c4149bcfa5af71370808bf658bd4764"
+    },
+    {
+      "file": "personnel-v3-panic.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/personnel/2026-10-23T10-31-05.939Z/panic/02-panic-retreat-clear-of-enemies.png",
+      "sha256": "ae11526c1d8adebdc689729cf18c554e63b5e3111f51393696aebc3012ec2057"
+    },
+    {
+      "file": "personnel-v3-incapacitated.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/personnel/2026-10-23T10-31-05.939Z/incapacitated/02-incapacitated-body-after-cat-leaves.png",
+      "sha256": "77ed5c6e073d767307823aa280f6757b7e35968f2a63c1177e2602252ee1de22"
+    },
+    {
+      "file": "personnel-v3-equipment.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/equipment-2026-10-23T10-33-38.523Z/equipment-W01-A01.png",
+      "sha256": "2ce8108da9f37b4adee1a3b3eed2fece84e88bbda5228f345b95f388b36a8bec"
+    },
+    {
+      "file": "personnel-v3-facility.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/production-2026-10-23T10-33-38.531Z/01-production-central-view.png",
+      "sha256": "f4f9ac99f13222f6af43b6649b960c066823c46b8bd12181e88e5c6fde6ea9ab"
+    },
+    {
+      "file": "personnel-v3-day-one.png",
+      "source": "docs/personnel-v3-evidence-2026-10-23/production-2026-10-23T10-33-38.531Z/15-formal-day-one-started.png",
+      "sha256": "8eba600b8265649d13e1b6d7f50663cf3bfb6588054ec83102f332c4763e274a"
+    }
+  ],
+  "limits": [
+    "Neutral face per employee; panic/injury/down use live body pose and UI feedback",
+    "No full three-day or all skill/weapon attack combinations rerun",
+    "Legacy slice remains old rendering"
+  ]
+}

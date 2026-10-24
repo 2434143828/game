@@ -2,7 +2,37 @@
 
 这些图片均为真实Chrome运行截图的直接副本，没有生成、补画或重绘游戏画面。源文件与副本通过SHA256核对。
 
-## 当前现代新媒体 v2｜2026-10-23
+## 当前玩法 v0.3｜2026-10-23
+
+最新外勤：[正常进度耄耋抓捕](field-v1-community-live-capture.png)；五物调试截图 [商场](field-v1-n01.png)、[社区](field-v1-n02.png)、[宠物广场](field-v1-n03.png)、[广播通道](field-v1-n04.png)、[母婴儿童角](field-v1-n05.png)。调试图均带明确标记，不代表全进度通关。[验收](../FIELD_ART_V1_ACCEPTANCE.md) / [来源与哈希](field-v1-verification-summary.json)。
+
+最新卡牌修复与20秒平衡：[重叠友方可正常施牌](gameplay-v03-card-target-fix.png)、[奶龙17.1秒胜利](gameplay-v03-nailong-17s.png)。[本轮记录与边界](../GAMEPLAY_V03_CARD_BALANCE_FIX.md)。下方首版截图/摘要保留历史血量。
+
+奶龙升阶与耄耋首次抓捕真实连续操作通过，详见 [玩法验收](../GAMEPLAY_V03_ACCEPTANCE.md)。不代表五物全阶级均已实玩。
+
+- [设施画面](gameplay-v03-facility.png)：生产包默认大型设施。
+- [真实战斗](gameplay-v03-combat.png)：三员工、奶龙主样本与两分身，实际预警和共享手牌。
+- [奶龙升阶](gameplay-v03-rank-II.png)、[耄耋抓捕胜利](gameplay-v03-cat-capture.png)、[新增稳定产能](gameplay-v03-two-rooms.png)。
+- [验证摘要和截图SHA256](gameplay-v03-verification-summary.json)。
+
+## 历史员工 v3｜2026-10-23
+
+按用户参考图重做白大褂员工和头像。详细范围见[人物修订验收](../PERSONNEL_V3_ART_ACCEPTANCE.md)。
+
+| 文件 | 实际内容 |
+|---|---|
+| [personnel-v3-lineup.png](personnel-v3-lineup.png) | 六人通过实际移动、停止后分散站位 |
+| [personnel-v3-work.png](personnel-v3-work.png) | 员工到达室内工作位后开始作业 |
+| [personnel-v3-combat.png](personnel-v3-combat.png) | 真实命中、伤害与武器姿态 |
+| [personnel-v3-retreat.png](personnel-v3-retreat.png) | 实际镇压后改令撤退 |
+| [personnel-v3-panic.png](personnel-v3-panic.png) | 精神归零后恐慌撤退 |
+| [personnel-v3-incapacitated.png](personnel-v3-incapacitated.png) | 体力归零后的场内倒地 |
+| [personnel-v3-equipment.png](personnel-v3-equipment.png) | 实际赚取经费、购买并穿戴五套装备 |
+| [personnel-v3-facility.png](personnel-v3-facility.png) | 最终生产包默认设施 |
+| [personnel-v3-day-one.png](personnel-v3-day-one.png) | 正式第一日仍为四员工 |
+| [personnel-v3-verification-summary.json](personnel-v3-verification-summary.json) | 报告来源、检查范围和截图SHA256 |
+
+## 历史现代新媒体 v2｜2026-10-23
 
 307张需求素材已导入（241运行+66参考）。这些截图来自全量接入后的真实运行；完整范围和未验证项见[验收报告](../NM_V2_ART_ACCEPTANCE.md)。
 

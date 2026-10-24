@@ -1,0 +1,403 @@
+{
+  "version": "0.3.0",
+  "combat": {
+    "squadSize": 3,
+    "startingHand": 3,
+    "handLimit": 4,
+    "drawIntervalSec": 5,
+    "globalCardCooldownSec": 2.5,
+    "panicDurationSec": 3,
+    "panicRecoverFraction": 0.35,
+    "hitFeedbackSec": 0.2,
+    "actionFeedbackSec": 0.25
+  },
+  "facility": {
+    "offlineEarningCapSec": 7200,
+    "maxRank": 3,
+    "idleWaitSec": 4,
+    "idleSpeedMultiplier": 0.55
+  },
+  "arena": {
+    "minX": 120,
+    "maxX": 1180,
+    "y": 500,
+    "employeeSpawnX": [
+      240,
+      320,
+      400
+    ],
+    "enemySpawnX": 920
+  },
+  "tier": {
+    "damageMultipliers": [
+      1,
+      1.25,
+      1.55
+    ],
+    "armorMultipliers": [
+      1,
+      0.9,
+      0.8
+    ]
+  },
+  "production": {
+    "N01": [
+      2,
+      4,
+      7
+    ],
+    "N02": [
+      3,
+      6,
+      10
+    ],
+    "N03": [
+      5,
+      9,
+      15
+    ],
+    "N04": [
+      8,
+      14,
+      23
+    ],
+    "N05": [
+      12,
+      20,
+      32
+    ]
+  },
+  "captureCosts": {
+    "N01": 0,
+    "N02": 50,
+    "N03": 130,
+    "N04": 250,
+    "N05": 430
+  },
+  "weaponCards": {
+    "W00": [
+      "T01",
+      "T02",
+      "T03"
+    ],
+    "W01": [
+      "N01_1",
+      "N01_2",
+      "N01_3"
+    ],
+    "W02": [
+      "N02_1",
+      "N02_2",
+      "N02_3"
+    ],
+    "W03": [
+      "N03_1",
+      "N03_2",
+      "N03_3"
+    ],
+    "W04": [
+      "N04_1",
+      "N04_2",
+      "N04_3"
+    ],
+    "W05": [
+      "N05_1",
+      "N05_2",
+      "N05_3"
+    ]
+  },
+  "cards": {
+    "T01": {
+      "id": "T01",
+      "name": "普通打击",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "近身造成8红伤",
+      "rangePx": 75,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 8
+      }
+    },
+    "T02": {
+      "id": "T02",
+      "name": "简易格挡",
+      "target": "SELF",
+      "effect": "BLOCK",
+      "description": "自身减伤20%，持续3秒",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 0.2,
+      "durationSec": 3
+    },
+    "T03": {
+      "id": "T03",
+      "name": "紧急鼓舞",
+      "target": "ALLY",
+      "effect": "HEAL",
+      "description": "恢复单体6精神",
+      "rangePx": 280,
+      "windupSec": 0.35,
+      "amount": 6
+    },
+    "N01_1": {
+      "id": "N01_1",
+      "name": "自我介绍",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "造成14白伤",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "WHITE",
+        "kind": "FLAT",
+        "amount": 14
+      }
+    },
+    "N01_2": {
+      "id": "N01_2",
+      "name": "打断复读",
+      "target": "ENEMY",
+      "effect": "STUN",
+      "description": "打断蓄力并控制2秒",
+      "rangePx": 260,
+      "windupSec": 0.15,
+      "durationSec": 2
+    },
+    "N01_3": {
+      "id": "N01_3",
+      "name": "复制粘贴",
+      "target": "ENEMY",
+      "effect": "COPY",
+      "description": "复制最近成功攻击牌50%伤害；不能递归",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 0.5
+    },
+    "N02_1": {
+      "id": "N02_1",
+      "name": "哈气突袭",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "近身造成20红伤",
+      "rangePx": 75,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 20
+      }
+    },
+    "N02_2": {
+      "id": "N02_2",
+      "name": "炸毛格挡",
+      "target": "SELF",
+      "effect": "BLOCK",
+      "description": "自身减伤40%，持续3秒",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 0.4,
+      "durationSec": 3
+    },
+    "N02_3": {
+      "id": "N02_3",
+      "name": "暴怒反击",
+      "target": "SELF",
+      "effect": "COUNTER",
+      "description": "5秒内受击后反击22红伤，仅一次",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 22,
+      "durationSec": 5
+    },
+    "N03_1": {
+      "id": "N03_1",
+      "name": "大狗叫",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "目标周围120范围造成12红伤",
+      "rangePx": 220,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 12
+      },
+      "radiusPx": 120
+    },
+    "N03_2": {
+      "id": "N03_2",
+      "name": "声波震退",
+      "target": "ENEMY",
+      "effect": "KNOCKBACK",
+      "description": "打断蓄力并击退100距离",
+      "rangePx": 260,
+      "windupSec": 0.15,
+      "amount": 100
+    },
+    "N03_3": {
+      "id": "N03_3",
+      "name": "全力嚎叫",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "目标周围180范围造成26红伤",
+      "rangePx": 220,
+      "windupSec": 1,
+      "damage": {
+        "type": "RED",
+        "kind": "FLAT",
+        "amount": 26
+      },
+      "radiusPx": 180
+    },
+    "N04_1": {
+      "id": "N04_1",
+      "name": "消息轰炸",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "造成12黑伤；敌方镇压值只扣一次",
+      "rangePx": 240,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "BLACK",
+        "kind": "FLAT",
+        "amount": 12
+      }
+    },
+    "N04_2": {
+      "id": "N04_2",
+      "name": "紧急通知",
+      "target": "ENEMY",
+      "effect": "DELAY",
+      "description": "目标下一次攻击延后2秒",
+      "rangePx": 300,
+      "windupSec": 0.15,
+      "durationSec": 2
+    },
+    "N04_3": {
+      "id": "N04_3",
+      "name": "循环播放",
+      "target": "TEAM",
+      "effect": "AMPLIFY",
+      "description": "本队下一张攻击卡伤害+30%，仅一次",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 0.3
+    },
+    "N05_1": {
+      "id": "N05_1",
+      "name": "嘎嘎声波",
+      "target": "ENEMY",
+      "effect": "DAMAGE",
+      "description": "造成10白伤",
+      "rangePx": 240,
+      "windupSec": 0.35,
+      "damage": {
+        "type": "WHITE",
+        "kind": "FLAT",
+        "amount": 10
+      }
+    },
+    "N05_2": {
+      "id": "N05_2",
+      "name": "安抚一下",
+      "target": "ALLY",
+      "effect": "HEAL",
+      "description": "恢复单体18精神",
+      "rangePx": 320,
+      "windupSec": 0.35,
+      "amount": 18
+    },
+    "N05_3": {
+      "id": "N05_3",
+      "name": "集体安抚",
+      "target": "TEAM",
+      "effect": "HEAL",
+      "description": "全队恢复10精神",
+      "rangePx": 170,
+      "windupSec": 0.35,
+      "amount": 10
+    }
+  },
+  "enemies": {
+    "N01": {
+      "hp": 190,
+      "rankHpMultiplier": 0.12,
+      "attackPeriodSec": 3,
+      "rangePx": 90,
+      "moveSpeedPxPerSec": 48,
+      "windupSec": 1.2,
+      "firstAttackDelaySec": 3,
+      "specialEvery": 3,
+      "specialName": "复读爆发",
+      "specialDamageMultiplier": 1.8,
+      "specialRangeMultiplier": 1.7,
+      "cloneCount": 2,
+      "cloneHp": 35,
+      "cloneDamageMultiplier": 0.3,
+      "cloneAttackPeriodSec": 5,
+      "cloneSpawnOffsets": [
+        90,
+        160
+      ]
+    },
+    "N02": {
+      "hp": 180,
+      "rankHpMultiplier": 0.12,
+      "attackPeriodSec": 2,
+      "rangePx": 65,
+      "moveSpeedPxPerSec": 88,
+      "windupSec": 1.2,
+      "firstAttackDelaySec": 3,
+      "specialEvery": 3,
+      "specialName": "连续抓击",
+      "specialDamageMultiplier": 1.8,
+      "specialRangeMultiplier": 1.7,
+      "cloneCount": 0
+    },
+    "N03": {
+      "hp": 170,
+      "rankHpMultiplier": 0.12,
+      "attackPeriodSec": 6,
+      "rangePx": 170,
+      "moveSpeedPxPerSec": 36,
+      "windupSec": 1.2,
+      "firstAttackDelaySec": 3,
+      "specialEvery": 2,
+      "specialName": "震荡吠叫",
+      "specialDamageMultiplier": 1.8,
+      "specialRangeMultiplier": 1.7,
+      "cloneCount": 0
+    },
+    "N04": {
+      "hp": 160,
+      "rankHpMultiplier": 0.12,
+      "attackPeriodSec": 8,
+      "rangePx": 1100,
+      "moveSpeedPxPerSec": 0,
+      "windupSec": 1.2,
+      "firstAttackDelaySec": 3,
+      "specialEvery": 2,
+      "specialName": "全场广播",
+      "specialDamageMultiplier": 1.8,
+      "specialRangeMultiplier": 1.7,
+      "cloneCount": 0
+    },
+    "N05": {
+      "hp": 160,
+      "rankHpMultiplier": 0.12,
+      "attackPeriodSec": 5,
+      "rangePx": 190,
+      "moveSpeedPxPerSec": 44,
+      "windupSec": 1.2,
+      "firstAttackDelaySec": 3,
+      "specialEvery": 2,
+      "specialName": "哭闹共振",
+      "specialDamageMultiplier": 1.8,
+      "specialRangeMultiplier": 1.7,
+      "cloneCount": 0
+    }
+  }
+}

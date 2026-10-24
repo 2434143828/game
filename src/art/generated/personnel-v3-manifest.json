@@ -1,0 +1,50 @@
+[
+  {
+    "key": "personnel_v3_head_e01",
+    "url": "/art/personnel-v3/head_e01.png"
+  },
+  {
+    "key": "personnel_v3_head_e02",
+    "url": "/art/personnel-v3/head_e02.png"
+  },
+  {
+    "key": "personnel_v3_head_e03",
+    "url": "/art/personnel-v3/head_e03.png"
+  },
+  {
+    "key": "personnel_v3_head_e04",
+    "url": "/art/personnel-v3/head_e04.png"
+  },
+  {
+    "key": "personnel_v3_head_e05",
+    "url": "/art/personnel-v3/head_e05.png"
+  },
+  {
+    "key": "personnel_v3_head_e06",
+    "url": "/art/personnel-v3/head_e06.png"
+  },
+  {
+    "key": "personnel_v3_torso",
+    "url": "/art/personnel-v3/torso.png"
+  },
+  {
+    "key": "personnel_v3_upper_arm",
+    "url": "/art/personnel-v3/upper_arm.png"
+  },
+  {
+    "key": "personnel_v3_forearm",
+    "url": "/art/personnel-v3/forearm.png"
+  },
+  {
+    "key": "personnel_v3_thigh",
+    "url": "/art/personnel-v3/thigh.png"
+  },
+  {
+    "key": "personnel_v3_shin",
+    "url": "/art/personnel-v3/shin.png"
+  },
+  {
+    "key": "personnel_v3_boot",
+    "url": "/art/personnel-v3/boot.png"
+  }
+]

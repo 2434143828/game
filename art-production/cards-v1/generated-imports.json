@@ -1,0 +1,92 @@
+[
+  {
+    "cardId": "T01",
+    "path": "public/art/cards-v1/t01.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-d6de6f9d-faf3-459e-b027-93b46022142c.png"
+  },
+  {
+    "cardId": "T02",
+    "path": "public/art/cards-v1/t02.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-72b6764d-1ce3-458f-81a7-eb9cda1bf9b4.png"
+  },
+  {
+    "cardId": "T03",
+    "path": "public/art/cards-v1/t03.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2e535dec-bf66-4684-82eb-76f98c5d341b.png"
+  },
+  {
+    "cardId": "N01_1",
+    "path": "public/art/cards-v1/n01_1.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-63b4baf1-013b-450c-aa39-c4e6f26a409c.png"
+  },
+  {
+    "cardId": "N01_2",
+    "path": "public/art/cards-v1/n01_2.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-7a5aec33-af6b-4f8b-b1b6-d1f4c58bd864.png"
+  },
+  {
+    "cardId": "N01_3",
+    "path": "public/art/cards-v1/n01_3.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-179d6780-a2c2-4f57-96bf-ac8edf191e4c.png"
+  },
+  {
+    "cardId": "N02_1",
+    "path": "public/art/cards-v1/n02_1.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-dc856adb-4bec-4264-9453-6ed71272e76f.png"
+  },
+  {
+    "cardId": "N02_2",
+    "path": "public/art/cards-v1/n02_2.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-73e433a8-60be-4465-9059-3b01f8d5f5f5.png"
+  },
+  {
+    "cardId": "N02_3",
+    "path": "public/art/cards-v1/n02_3.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3742d097-d9f8-427a-822f-d3907af66a75.png"
+  },
+  {
+    "cardId": "N03_1",
+    "path": "public/art/cards-v1/n03_1.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-618d908c-e56f-43b6-b0bf-84355a5dd002.png"
+  },
+  {
+    "cardId": "N03_2",
+    "path": "public/art/cards-v1/n03_2.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-4233abbc-3131-4ce0-89db-3b0e23eac3d0.png"
+  },
+  {
+    "cardId": "N03_3",
+    "path": "public/art/cards-v1/n03_3.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-db460d9d-5194-441c-8769-755d2afdc623.png"
+  },
+  {
+    "cardId": "N04_1",
+    "path": "public/art/cards-v1/n04_1.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-02930008-c788-4c28-b0ff-bcb7be6d7e6c.png"
+  },
+  {
+    "cardId": "N04_2",
+    "path": "public/art/cards-v1/n04_2.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-342bec46-aeec-4c2f-94e4-733da61aa050.png"
+  },
+  {
+    "cardId": "N04_3",
+    "path": "public/art/cards-v1/n04_3.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-2eded7e9-f05c-4297-814d-b22c130f8499.png"
+  },
+  {
+    "cardId": "N05_1",
+    "path": "public/art/cards-v1/n05_1.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-e55b4a59-42d1-498e-bd87-18784d788dbf.png"
+  },
+  {
+    "cardId": "N05_2",
+    "path": "public/art/cards-v1/n05_2.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-3771449b-21c7-44f5-9957-23e730c704a2.png"
+  },
+  {
+    "cardId": "N05_3",
+    "path": "public/art/cards-v1/n05_3.png",
+    "original": "C:\\Users\\SEASUN\\.codex\\generated_images\\01a144a7-9b8e-7ec0-91c1-cb1e9446d500\\exec-cd676ee6-fd5c-407d-acd8-55b37a903cde.png"
+  }
+]

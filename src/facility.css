@@ -189,6 +189,9 @@ button.active { color: var(--ink); background: var(--paper); border-color: var(-
 .facility-employee.unavailable { opacity: .74; }
 .employee-stripe { width: 3px; border-right: 1px solid var(--ink); }
 .employee-icon { width: 22px; height: 26px; color: var(--paper); }
+.employee-portrait { position: relative; flex: 0 0 30px; height: 30px; border-radius: 3px; background: #354352; }
+.employee-portrait > img { width: 100%; height: 100%; object-fit: contain; }
+.employee-portrait .employee-icon { position: absolute; right: -3px; bottom: -1px; width: 11px; height: 13px; background: #1b2732; border-radius: 2px; }
 .facility-employee > span:nth-child(2) { min-width: 0; }
 .employee-identity { flex: 0 0 59px; }
 .facility-employee b { color: var(--paper-light); font-size: 12px; letter-spacing: .7px; }

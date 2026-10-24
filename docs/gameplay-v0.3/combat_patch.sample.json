@@ -1,0 +1,58 @@
+{
+  "patchVersion": "0.3.0-prototype",
+  "combat": {
+    "squadSize": 3,
+    "cardsPerEquippedWeapon": 3,
+    "startingHand": 3,
+    "handLimit": 4,
+    "drawIntervalSec": 5.0,
+    "globalCardCooldownSec": 2.5,
+    "individualCardCooldownEnabled": false,
+    "reshuffleDiscardWhenDrawEmpty": true,
+    "freezeDrawTimerAtFullHand": true,
+    "queuedCardLimitWhilePaused": 1,
+    "timeScales": [0, 1, 2],
+    "enemyTelegraphMinSec": 0.8,
+    "enemyTelegraphMaxSec": 1.5,
+    "targetBattleDurationSec": [60, 120],
+    "battleModeIds": ["CAPTURE", "BREACH_CHALLENGE"],
+    "pauseFacilityProduction": true
+  },
+  "facility": {
+    "offlineEarningCapSec": 7200,
+    "requiresManualBreach": true,
+    "automaticBreachEnabled": false,
+    "legacyDailyQuotaMainlineEnabled": false,
+    "captureAndBreachShareCombatEngine": true
+  },
+  "progression": {
+    "initialOwnedAnomaly": "N01",
+    "prototypeMaxRank": 3,
+    "energyPerMinuteByRank": {
+      "N01": [2, 4, 7],
+      "N02": [3, 6, 10],
+      "N03": [5, 9, 15],
+      "N04": [8, 14, 23],
+      "N05": [12, 20, 32]
+    },
+    "captureCost": {
+      "N02": 50,
+      "N03": 130,
+      "N04": 250,
+      "N05": 430
+    }
+  },
+  "anomalyNames": {
+    "N01": "奶龙",
+    "N02": "耄耋",
+    "N03": "大狗",
+    "N04": "叮咚鸡",
+    "N05": "咕咕嘎嘎"
+  },
+  "contentRequirements": {
+    "egoCardsPerWeaponExactly": 3,
+    "prototypeWeaponRanks": 3,
+    "includeThreeTrainingWeapons": true,
+    "enemyMechanicsDataDriven": true
+  }
+}

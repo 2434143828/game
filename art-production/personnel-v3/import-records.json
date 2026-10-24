@@ -1,0 +1,182 @@
+[
+  {
+    "key": "head_e01",
+    "source": "art-production/personnel-v3/head_e01.png",
+    "sha256": "74f970ef376f699204a4da6c2d3eca4ba4f513b229411c45cdc83d4025c48540",
+    "trim": [
+      121,
+      73,
+      1215,
+      1135
+    ],
+    "runtimeSize": [
+      512,
+      497
+    ]
+  },
+  {
+    "key": "head_e02",
+    "source": "art-production/personnel-v3/head_e02.png",
+    "sha256": "38991654a9d2c2681a2b23fa4823c15e83f85847197b430da2cce760636c0e3c",
+    "trim": [
+      115,
+      62,
+      1217,
+      1121
+    ],
+    "runtimeSize": [
+      512,
+      492
+    ]
+  },
+  {
+    "key": "head_e03",
+    "source": "art-production/personnel-v3/head_e03.png",
+    "sha256": "7d2e8eb799bc8145877318d78a02bd48543579caa38080b1b7457e24c1ab81a7",
+    "trim": [
+      160,
+      75,
+      1191,
+      1094
+    ],
+    "runtimeSize": [
+      512,
+      506
+    ]
+  },
+  {
+    "key": "head_e04",
+    "source": "art-production/personnel-v3/head_e04.png",
+    "sha256": "84ffe35a78627745a5224e2a28f36ef2cc50c1fee1bcfddffddf9fc183de930f",
+    "trim": [
+      157,
+      55,
+      1206,
+      1101
+    ],
+    "runtimeSize": [
+      512,
+      511
+    ]
+  },
+  {
+    "key": "head_e05",
+    "source": "art-production/personnel-v3/head_e05.png",
+    "sha256": "5396911ea087d113b49dadfea2b6511b0df9108de1fe3fbe26d2be20e7206bba",
+    "trim": [
+      154,
+      74,
+      1204,
+      1119
+    ],
+    "runtimeSize": [
+      512,
+      510
+    ]
+  },
+  {
+    "key": "head_e06",
+    "source": "art-production/personnel-v3/head_e06.png",
+    "sha256": "684f3d04ba0c0da1d11d32c3b4937f8ff62871f335e03686bcafc37b9916e0f5",
+    "trim": [
+      136,
+      63,
+      1206,
+      1087
+    ],
+    "runtimeSize": [
+      512,
+      490
+    ]
+  },
+  {
+    "key": "torso",
+    "source": "art-production/personnel-v3/torso.png",
+    "sha256": "9921e3b6db560cd579c8370ae565e64ccbfc58b94f3ab22cab4f29b6c5d213bb",
+    "trim": [
+      207,
+      157,
+      880,
+      1365
+    ],
+    "runtimeSize": [
+      285,
+      512
+    ]
+  },
+  {
+    "key": "upper_arm",
+    "source": "art-production/personnel-v3/upper_arm.png",
+    "sha256": "f2881c01fc9926896b852721ebdc2ad79b2e29837ae0277c44e64d8901211a97",
+    "trim": [
+      322,
+      157,
+      701,
+      1362
+    ],
+    "runtimeSize": [
+      161,
+      512
+    ]
+  },
+  {
+    "key": "forearm",
+    "source": "art-production/personnel-v3/forearm.png",
+    "sha256": "bb7721fe6e229e4bcb2557384fbc1dd55f31356bde326194f2b845bfbde7b79b",
+    "trim": [
+      367,
+      175,
+      656,
+      1366
+    ],
+    "runtimeSize": [
+      124,
+      512
+    ]
+  },
+  {
+    "key": "thigh",
+    "source": "art-production/personnel-v3/thigh.png",
+    "sha256": "a06422859f69bea23ed47ea6b3fc431bbc05d145989c4b469f465b5d37a57a8a",
+    "trim": [
+      353,
+      77,
+      713,
+      1410
+    ],
+    "runtimeSize": [
+      138,
+      512
+    ]
+  },
+  {
+    "key": "shin",
+    "source": "art-production/personnel-v3/shin.png",
+    "sha256": "6facfb6a7e77922bb4139e72ab8d2819cbed631cb929ed43cf288521e8451cd5",
+    "trim": [
+      365,
+      81,
+      661,
+      1472
+    ],
+    "runtimeSize": [
+      109,
+      512
+    ]
+  },
+  {
+    "key": "boot",
+    "source": "art-production/personnel-v3/boot.png",
+    "sha256": "59fef24d59426275e3883c4b52a2c9a90071a5bc5e2497f62999af6055fb7f02",
+    "trim": [
+      87,
+      127,
+      1701,
+      776
+    ],
+    "runtimeSize": [
+      512,
+      206
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": "art-production/field-v1/prompts.json",
+  "generation": "Five separate original PNGs. Copied unchanged; no image editing after generation.",
+  "runtime": "CAPTURE chooses target anomaly theme; actors, cards, damage, warnings and animated pollution rendered separately from real simulation state.",
+  "assets": [
+    {
+      "id": "N01",
+      "path": "public/art/field-v1/n01-mall.png",
+      "theme": "商场中庭亲子活动区",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2333902,
+      "sha256": "e096f70ed5c492cc3323bb882530283ccb8b2bd647c2bb21ec4783359390590d",
+      "originalGeneratedPath": "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-9c15ae90-fb29-47a6-8a51-87bd11ad0700.png"
+    },
+    {
+      "id": "N02",
+      "path": "public/art/field-v1/n02-community.png",
+      "theme": "老旧居民区棋牌室外",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3182724,
+      "sha256": "53deb66c47f9298bc132cbe1c5e5ad7ab1d73adb192013de9fa747ffdce1f09d",
+      "originalGeneratedPath": "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-08e24c24-0369-442d-8559-4da28a146ab3.png"
+    },
+    {
+      "id": "N03",
+      "path": "public/art/field-v1/n03-pet-park.png",
+      "theme": "城市宠物公园直播草坪",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2983385,
+      "sha256": "3ed171b98666392ce2bbf69cb2c1dc7bdc3b284a2288be97194148ee9b78aa8c",
+      "originalGeneratedPath": "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-69238a2b-8951-4837-a37f-fee1bc4ce12e.png"
+    },
+    {
+      "id": "N04",
+      "path": "public/art/field-v1/n04-transit.png",
+      "theme": "地铁连通广播区",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2521174,
+      "sha256": "a61671f7515e5bfff60031644172fa3440861e42eed8bf3ad126f16357f3e5bd",
+      "originalGeneratedPath": "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-dd64b4a4-4e29-496d-ba13-7a2aec0159b6.png"
+    },
+    {
+      "id": "N05",
+      "path": "public/art/field-v1/n05-nursery.png",
+      "theme": "商场母婴儿童角",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2141732,
+      "sha256": "5d62fa6ccfacef1822b2eec7c47cfea6e3501bc9738aebe87d037d745145d36b",
+      "originalGeneratedPath": "C:/Users/SEASUN/.codex/generated_images/01a144a7-9b8e-7ec0-91c1-cb1e9446d500/exec-7321d634-84e3-4db3-a7a2-dfb3572023ef.png"
+    }
+  ]
+}

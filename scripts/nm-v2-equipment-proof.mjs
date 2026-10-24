@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {chromium} from '@playwright/test';
-const output=`docs/nm-v2-evidence-2026-10-23/equipment-${new Date().toISOString().replaceAll(':','-')}`;
+const output=`${process.env.FACILITY_EVIDENCE_ROOT??'docs/nm-v2-evidence-2026-10-23'}/equipment-${new Date().toISOString().replaceAll(':','-')}`;
 await mkdir(output,{recursive:true});
 const report={status:'RUNNING',method:'Native inputs and real work earnings. No injected state, commands, resources or time.',inputs:[],checks:[],screenshots:[],errors:[],httpErrors:[]};
 const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader']});

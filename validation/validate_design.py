@@ -104,9 +104,13 @@ def validate_facility() -> None:
 
 def validate() -> int:
     expected = {'game.json', 'days.json', 'anomalies.json', 'equipment.json',
-                'skills.json', 'assets.json', 'localization.zh-CN.json', 'facility.json'}
+                'skills.json', 'assets.json', 'localization.zh-CN.json', 'facility.json',
+                'gameplay-v3.json'}
+    # The independent v0.3 extension has a strict Zod schema in src/v3/config.ts
+    # and malformed-input coverage in tests/v3-config.test.ts. Keep the original
+    # eight files fully validated below; this allowlist still rejects other JSON.
     check({p.name for p in (ROOT / 'config').glob('*.json')} == expected,
-          'config: expected seven original gameplay JSON files and facility.json')
+          'config: expected seven original gameplay JSON files, facility.json and gameplay-v3.json')
     validate_facility()
     g, days, ad, eq, skills, assets, loc = [load(f) for f in (
         'game.json', 'days.json', 'anomalies.json', 'equipment.json',
@@ -254,7 +258,8 @@ def validate() -> int:
         for e in ERRORS: print(' -',e)
         return 1
     print(f'DESIGN VALIDATION PASSED: {CHECKS} assertions')
-    print('JSON files: 8 (7 original gameplay + facility map)')
+    print('JSON files: 9 (8 legacy files validated here + independent gameplay-v3 extension)')
+    print('v0.3 validation: src/v3/config.ts Zod schema and tests/v3-config.test.ts; run npm run test.')
     print('Anomalies: 5; work profiles: 15; special weapons/armors: 5 each; skills: 5; links: 1')
     print(f'Implementation acceptance scenarios specified (not executed): {len(caseids)}')
     print(f'Budget check: initial {econ["initialWallet"]} + quotas {quota_total} = {budget}; fixed unlocks {cost_per*5}; remaining {budget-cost_per*5}')

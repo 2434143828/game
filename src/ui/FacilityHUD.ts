@@ -7,6 +7,7 @@ import artInventory from '../art/generated/nm-v2-runtime-inventory.json';
 type Panel = 'archives' | 'equipment' | 'help' | 'logs' | 'finish' | 'restart' | 'switch' | 'load' | 'transfer' | null;
 const color: Record<AnomalyId, string> = { N01: '#FFD84D', N02: '#C595A1', N03: '#FF8A3D', N04: '#FFC447', N05: '#8EDCF0' };
 const artRoot = `${import.meta.env.BASE_URL}art/ui/`;
+const personnelArtRoot = `${import.meta.env.BASE_URL}art/personnel-v3/`;
 const generatedArtRoot = `${import.meta.env.BASE_URL}art/nm-v2/ui_vfx/`;
 const iconPath = (id: string): string => `${artRoot}ui_terminal_icons.svg#${id}`;
 const generatedIcons: Record<string, string> = {
@@ -168,7 +169,7 @@ export class FacilityHUD {
     const selectedRoom = c.selectedRoomId ?? 'N01';
     const a = anomalyById[selectedRoom], room = s.rooms.find(r => r.anomalyId === selectedRoom)!;
     const status = { LOCKED: `第 ${a.unlockDay} 日开放`, CONTAINED: '收容稳定', BREACHED: '收容失效', RECOVERING: '正在恢复' }[room.mode];
-    this.set('facility-roster', s.employees.map((e, index) => `<button data-employee="${e.id}" class="facility-employee"><span class="employee-stripe" style="background:${['#c5ac70', '#b197c2', '#8ab6b2', '#b77567', '#a3a2bc', '#95a182'][index]}"></span>${icon('idle', 'employee-icon')}<span class="employee-identity"><b>${e.displayName}</b><small class="employee-state"></small></span><span class="employee-meters"><span class="employee-meter-line">${icon('health', 'meter-symbol')}<i class="hp"><em></em></i></span><span class="employee-meter-line">${icon('sanity', 'meter-symbol')}<i class="sp"><em></em></i></span><small class="employee-numbers"></small></span></button>`).join(''));
+    this.set('facility-roster', s.employees.map((e, index) => `<button data-employee="${e.id}" class="facility-employee"><span class="employee-stripe" style="background:${['#c5ac70', '#b197c2', '#8ab6b2', '#b77567', '#a3a2bc', '#95a182'][index]}"></span><span class="employee-portrait"><img src="${personnelArtRoot}head_e0${(Number(e.id.slice(1)) - 1) % 6 + 1}.png" alt="" draggable="false">${icon('idle', 'employee-icon')}</span><span class="employee-identity"><b>${e.displayName}</b><small class="employee-state"></small></span><span class="employee-meters"><span class="employee-meter-line">${icon('health', 'meter-symbol')}<i class="hp"><em></em></i></span><span class="employee-meter-line">${icon('sanity', 'meter-symbol')}<i class="sp"><em></em></i></span><small class="employee-numbers"></small></span></button>`).join(''));
     for (const e of s.employees) {
       const button = this.root.querySelector<HTMLButtonElement>(`[data-employee="${e.id}"]`)!;
       button.classList.toggle('selected', c.selected.has(e.id));

@@ -1,0 +1,2967 @@
+{
+  "method": "Fixed-step actual engine; fresh full-health squad; one unique matching exclusive pair plus two starter pairs; capture uses previous source tier II; no damage, position, timers or cards injected after start; elapsed includes approach; 1x simulation seconds.",
+  "boundary": "N01 starts owned; its capture is not available. Rank I and II challenges grant II and III respectively; max-rank III cannot be challenged again. Fresh full-health baseline is not a guarantee for wounded squads or deliberate retreat. These are simulation tests, not browser proof.",
+  "command": "$env:V3_BALANCE_REPORT=\"1\"; npx vitest run tests/v3-balance.test.ts",
+  "config": {
+    "tier": {
+      "damageMultipliers": [
+        1,
+        1.25,
+        1.55
+      ],
+      "armorMultipliers": [
+        1,
+        0.9,
+        0.8
+      ]
+    },
+    "enemies": {
+      "N01": {
+        "hp": 190,
+        "rankHpMultiplier": 0.12,
+        "attackPeriodSec": 3,
+        "rangePx": 90,
+        "moveSpeedPxPerSec": 48,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 3,
+        "specialEvery": 3,
+        "specialName": "复读爆发",
+        "specialDamageMultiplier": 1.8,
+        "specialRangeMultiplier": 1.7,
+        "cloneCount": 2,
+        "cloneHp": 35,
+        "cloneDamageMultiplier": 0.3,
+        "cloneAttackPeriodSec": 5,
+        "cloneSpawnOffsets": [
+          90,
+          160
+        ]
+      },
+      "N02": {
+        "hp": 180,
+        "rankHpMultiplier": 0.12,
+        "attackPeriodSec": 2,
+        "rangePx": 65,
+        "moveSpeedPxPerSec": 88,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 3,
+        "specialEvery": 3,
+        "specialName": "连续抓击",
+        "specialDamageMultiplier": 1.8,
+        "specialRangeMultiplier": 1.7,
+        "cloneCount": 0
+      },
+      "N03": {
+        "hp": 170,
+        "rankHpMultiplier": 0.12,
+        "attackPeriodSec": 6,
+        "rangePx": 170,
+        "moveSpeedPxPerSec": 36,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 3,
+        "specialEvery": 2,
+        "specialName": "震荡吠叫",
+        "specialDamageMultiplier": 1.8,
+        "specialRangeMultiplier": 1.7,
+        "cloneCount": 0
+      },
+      "N04": {
+        "hp": 160,
+        "rankHpMultiplier": 0.12,
+        "attackPeriodSec": 8,
+        "rangePx": 1100,
+        "moveSpeedPxPerSec": 0,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 3,
+        "specialEvery": 2,
+        "specialName": "全场广播",
+        "specialDamageMultiplier": 1.8,
+        "specialRangeMultiplier": 1.7,
+        "cloneCount": 0
+      },
+      "N05": {
+        "hp": 160,
+        "rankHpMultiplier": 0.12,
+        "attackPeriodSec": 5,
+        "rangePx": 190,
+        "moveSpeedPxPerSec": 44,
+        "windupSec": 1.2,
+        "firstAttackDelaySec": 3,
+        "specialEvery": 2,
+        "specialName": "哭闹共振",
+        "specialDamageMultiplier": 1.8,
+        "specialRangeMultiplier": 1.7,
+        "cloneCount": 0
+      }
+    }
+  },
+  "summary": [
+    {
+      "anomaly": "N01",
+      "autoSeconds": [
+        16.7,
+        16.7
+      ],
+      "cardSeconds": [
+        16.8,
+        18.2
+      ],
+      "wins": 8,
+      "cases": 8
+    },
+    {
+      "anomaly": "N02",
+      "autoSeconds": [
+        13.05,
+        16.05
+      ],
+      "cardSeconds": [
+        12.45,
+        16.2
+      ],
+      "wins": 12,
+      "cases": 12
+    },
+    {
+      "anomaly": "N03",
+      "autoSeconds": [
+        13.55,
+        17.1
+      ],
+      "cardSeconds": [
+        12.3,
+        17.8
+      ],
+      "wins": 12,
+      "cases": 12
+    },
+    {
+      "anomaly": "N04",
+      "autoSeconds": [
+        13.35,
+        17.85
+      ],
+      "cardSeconds": [
+        13.15,
+        18.8
+      ],
+      "wins": 12,
+      "cases": 12
+    },
+    {
+      "anomaly": "N05",
+      "autoSeconds": [
+        16.4,
+        16.4
+      ],
+      "cardSeconds": [
+        15.6,
+        17.9
+      ],
+      "wins": 12,
+      "cases": 12
+    }
+  ],
+  "results": [
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 190,
+      "seconds": 16.7,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 91.36
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 60
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 190,
+      "seconds": 17.3,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 91.36
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 66
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 190,
+      "seconds": 16.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 91.36
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 72
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 190,
+      "seconds": 18.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 84
+        }
+      ],
+      "successfulCards": 5,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 212.8,
+      "seconds": 16.7,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 92.22
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 60
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 212.8,
+      "seconds": 17.4,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 92.22
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 66
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 212.8,
+      "seconds": 16.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 92.22
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 85.6
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 72
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N01",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 212.8,
+      "seconds": 18.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 100,
+          "sp": 84
+        }
+      ],
+      "successfulCards": 5,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 180,
+      "seconds": 13.05,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 62,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 12.45,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 80,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 0
+    },
+    {
+      "anomaly": "N02",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 13.05,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 62,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 14.55,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W01",
+          "armor": "A01",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 62,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 180,
+      "seconds": 16.05,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 89.2,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 15.25,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 89.2,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 16.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 89.2,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 180,
+      "seconds": 15.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 89.2,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 201.60000000000002,
+      "seconds": 15.45,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 90.28,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 201.60000000000002,
+      "seconds": 15.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 90.28,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 201.60000000000002,
+      "seconds": 16.05,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 90.28,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N02",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 201.60000000000002,
+      "seconds": 15.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 90.28,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 82,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 52,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 170,
+      "seconds": 13.55,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 78.83,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 12.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 78.83,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 13.55,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 78.83,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 12.3,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W02",
+          "armor": "A02",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 78.83,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 170,
+      "seconds": 17.1,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 81.1,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 17.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 81.1,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 17.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 81.1,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 170,
+      "seconds": 17.35,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 86,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 86,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 190.4,
+      "seconds": 17.1,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 82.99,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 190.4,
+      "seconds": 17.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 82.99,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 190.4,
+      "seconds": 17.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 82.99,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 60.8,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 60.8,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N03",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 190.4,
+      "seconds": 17.35,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 100,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 86,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 86,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 160,
+      "seconds": 13.35,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 96.4,
+          "sp": 96.4
+        },
+        {
+          "id": "E02",
+          "hp": 96,
+          "sp": 96
+        },
+        {
+          "id": "E03",
+          "hp": 96,
+          "sp": 96
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 13.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 96.4,
+          "sp": 96.4
+        },
+        {
+          "id": "E02",
+          "hp": 96,
+          "sp": 96
+        },
+        {
+          "id": "E03",
+          "hp": 96,
+          "sp": 96
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 0
+    },
+    {
+      "anomaly": "N04",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 13.35,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 96.4,
+          "sp": 96.4
+        },
+        {
+          "id": "E02",
+          "hp": 96,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 96,
+          "sp": 96
+        }
+      ],
+      "successfulCards": 2,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 13.15,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W03",
+          "armor": "A03",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 96.4,
+          "sp": 96.4
+        },
+        {
+          "id": "E02",
+          "hp": 96,
+          "sp": 96
+        },
+        {
+          "id": "E03",
+          "hp": 96,
+          "sp": 96
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 0
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 160,
+      "seconds": 17.25,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.28,
+          "sp": 93.28
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 88.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 88.8
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 17.05,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.28,
+          "sp": 93.28
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 94.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 88.8
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 16.7,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.28,
+          "sp": 93.28
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 92.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 94.8
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 17.25,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.28,
+          "sp": 93.28
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 94.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 88.8
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 179.20000000000002,
+      "seconds": 17.85,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.95,
+          "sp": 93.95
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 88.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 88.8
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 17.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.95,
+          "sp": 93.95
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 94.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 88.8
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 17.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.95,
+          "sp": 93.95
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 92.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 94.8
+        }
+      ],
+      "successfulCards": 4,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N04",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 18.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 93.95,
+          "sp": 93.95
+        },
+        {
+          "id": "E02",
+          "hp": 88.8,
+          "sp": 94.8
+        },
+        {
+          "id": "E03",
+          "hp": 88.8,
+          "sp": 94.8
+        }
+      ],
+      "successfulCards": 5,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 160,
+      "seconds": 16.4,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 84.88,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 15.6,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 84.88,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 16.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 84.88,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "CAPTURE",
+      "startRank": 0,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 16.95,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W04",
+          "armor": "A04",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 84.88,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 160,
+      "seconds": 16.4,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 90.76,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 17.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 87.46,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 77.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 77.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 17,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 87.46,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 77.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 77.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 1,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 160,
+      "seconds": 17.9,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 1
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 87.46,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 77.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 77.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "auto-only",
+      "hp": 179.20000000000002,
+      "seconds": 16.4,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 91.68,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 0,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 1,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 16.4,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 91.68,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 31023,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 16.2,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 91.68,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 83.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 83.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    },
+    {
+      "anomaly": "N05",
+      "mode": "BREACH_CHALLENGE",
+      "startRank": 2,
+      "seed": 84721,
+      "strategy": "useful-cards",
+      "hp": 179.20000000000002,
+      "seconds": 17.8,
+      "result": "VICTORY",
+      "loadout": [
+        {
+          "id": "E01",
+          "weapon": "W05",
+          "armor": "A05",
+          "tier": 2
+        },
+        {
+          "id": "E02",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        },
+        {
+          "id": "E03",
+          "weapon": "W00",
+          "armor": "A00",
+          "tier": 1
+        }
+      ],
+      "survivors": 3,
+      "employeeState": [
+        {
+          "id": "E01",
+          "hp": 88.71,
+          "sp": 100
+        },
+        {
+          "id": "E02",
+          "hp": 77.2,
+          "sp": 100
+        },
+        {
+          "id": "E03",
+          "hp": 77.2,
+          "sp": 100
+        }
+      ],
+      "successfulCards": 3,
+      "specialTelegraphs": 1
+    }
+  ]
+}

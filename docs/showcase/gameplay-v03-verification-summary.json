@@ -1,0 +1,162 @@
+{
+  "status": "P1_P2_VERIFIED_NOT_FULL_GAME_ACCEPTANCE",
+  "functionalReport": "docs/gameplay-v03-evidence/run-2026-10-23T13-02-39.302Z/report.json",
+  "functionalChecks": [
+    {
+      "name": "paused-simulation-and-render-frozen",
+      "detail": {
+        "time": 0.2,
+        "wallMs": 750
+      }
+    },
+    {
+      "name": "paused-simulation-and-render-frozen",
+      "detail": {
+        "time": 0.2,
+        "wallMs": 750
+      }
+    },
+    {
+      "name": "card-ownership-and-hit-cooldown",
+      "detail": {
+        "owner": "E03",
+        "card": "T03",
+        "cooldown": 2.4000000000000004
+      }
+    },
+    {
+      "name": "07-nailong-real-battle-victory",
+      "detail": {
+        "elapsed": 82.74999999999744,
+        "rank": 2,
+        "damageEvents": 215,
+        "cardEvents": 19,
+        "interrupted": true
+      }
+    },
+    {
+      "name": "11-cat-real-battle-victory",
+      "detail": {
+        "elapsed": 80.74999999999756,
+        "rank": 1,
+        "damageEvents": 346,
+        "cardEvents": 40,
+        "interrupted": true
+      }
+    },
+    {
+      "name": "P1-P2-shared-engine",
+      "detail": {
+        "wallet": 6.8083333333318246,
+        "rooms": [
+          {
+            "anomalyId": "N01",
+            "owned": true,
+            "rank": 2,
+            "state": "STABLE"
+          },
+          {
+            "anomalyId": "N02",
+            "owned": true,
+            "rank": 1,
+            "state": "STABLE"
+          },
+          {
+            "anomalyId": "N03",
+            "owned": false,
+            "rank": 0,
+            "state": "LOCKED"
+          },
+          {
+            "anomalyId": "N04",
+            "owned": false,
+            "rank": 0,
+            "state": "LOCKED"
+          },
+          {
+            "anomalyId": "N05",
+            "owned": false,
+            "rank": 0,
+            "state": "LOCKED"
+          }
+        ],
+        "weaponTier": 2
+      }
+    },
+    {
+      "name": "refresh-abandons-no-reward",
+      "detail": {
+        "rank": 2,
+        "message": "退出中的战斗按放弃处理：无挑战奖励、无离线产能，已返回设施；能量、装备、阶级及生命精神保留。"
+      }
+    },
+    {
+      "name": "1280-real-layout",
+      "detail": {
+        "w": 1280,
+        "h": 720,
+        "sw": 1280,
+        "sh": 720,
+        "buttons": [
+          {
+            "bottom": 688.7999877929688,
+            "right": 262.23752212524414
+          },
+          {
+            "bottom": 688.7999877929688,
+            "right": 510.88751220703125
+          },
+          {
+            "bottom": 688.7999877929688,
+            "right": 759.5250244140625
+          },
+          {
+            "bottom": 688.7999877929688,
+            "right": 1008.1625366210938
+          },
+          {
+            "bottom": 688.7999877929688,
+            "right": 1256.800048828125
+          }
+        ]
+      }
+    }
+  ],
+  "inputCount": 109,
+  "productionReport": "docs/gameplay-v03-evidence/production-2026-10-23T13-34-57.499Z/report.json",
+  "stabilityReport": "docs/gameplay-v03-evidence/stability/result.json",
+  "saveReport": "docs/gameplay-v03-evidence/save-reload/report.json",
+  "offlineReport": "docs/gameplay-v03-evidence/offline/report.json",
+  "limits": [
+    "All five objects and ranks not played through in browser",
+    "Card illustrations are glyph placeholders",
+    "Labels polished after continuous run and separately tested"
+  ],
+  "screenshots": [
+    {
+      "file": "gameplay-v03-facility.png",
+      "source": "docs/gameplay-v03-evidence/production-2026-10-23T13-34-57.499Z/01-default-v3-facility.png",
+      "sha256": "8234b91a506bf2dee356c9b89718fffdeba83569d2af9ecede29caee710b7e47"
+    },
+    {
+      "file": "gameplay-v03-combat.png",
+      "source": "docs/gameplay-v03-evidence/visual-polish/separated-target-labels.png",
+      "sha256": "7913e8cbc2eff0766783eb66a2d989d91ae02222ed1cb47d40b10243e574b297"
+    },
+    {
+      "file": "gameplay-v03-rank-II.png",
+      "source": "docs/gameplay-v03-evidence/run-2026-10-23T13-02-39.302Z/08-rank-II-production.png",
+      "sha256": "b0bbefe3910d4502e6053f162501348af73aca78463896c590ef73f21c5c24f7"
+    },
+    {
+      "file": "gameplay-v03-cat-capture.png",
+      "source": "docs/gameplay-v03-evidence/run-2026-10-23T13-02-39.302Z/11-cat-result.png",
+      "sha256": "7c26f77e22c994324b16c7980578ff14add6fe8b5d4b416eb0c7769faf1700b9"
+    },
+    {
+      "file": "gameplay-v03-two-rooms.png",
+      "source": "docs/gameplay-v03-evidence/run-2026-10-23T13-02-39.302Z/12-new-room-passive-production.png",
+      "sha256": "81c6c2ac132bc677612a4b865a7bfe1facd1a2d53b833829f8746f75e331b8ca"
+    }
+  ]
+}

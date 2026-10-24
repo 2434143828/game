@@ -1,5 +1,7 @@
 // 启动前的数据验证或资源载入失败也必须有可见反馈，不能只留空白画布。
-void import('./main').catch((error: unknown) => {
+const entryParams = new URLSearchParams(window.location.search);
+const useClassic = entryParams.get('classic') === '1' || entryParams.has('mode') || entryParams.get('slice') === '1';
+void (useClassic ? import('./main') : import('./v3/main')).catch((error: unknown) => {
   const panel = document.createElement('section');
   panel.setAttribute('role', 'alert');
   panel.style.cssText = 'position:fixed;inset:8%;overflow:auto;background:#f3f1e5;color:#243640;border:2px solid #c86147;padding:32px;white-space:pre-wrap;font:16px/1.7 "Microsoft YaHei",sans-serif;z-index:9999';
