@@ -30,6 +30,9 @@ function play(id: AnomalyId, rank: 0 | 1 | 2, cards: boolean, seed: number) {
   const enc = s.state.encounter!;
   const hp = enc.enemies[0].suppressionHpMax;
   for (let i = 0; i < 4000 && !enc.result; i++) {
+    if (enc.mode === 'CAPTURE' && enc.capturePhase === 'CAPTURABLE' && !enc.captureEmployeeId) {
+      expect(s.startCapture(enc.squadIds[0]).ok).toBe(true);
+    }
     if (cards && !enc.deck.pendingCast && enc.deck.globalCooldown < 1e-7) {
       // Prefer damage, then control/support. A full hand may cycle a defensive card to free a draw slot.
       const ordered = [...enc.deck.hand].sort((a, b) => Number(cardById[b.cardId].effect === 'DAMAGE') - Number(cardById[a.cardId].effect === 'DAMAGE'));

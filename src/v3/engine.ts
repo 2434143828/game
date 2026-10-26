@@ -4,7 +4,7 @@ import { resolveEmployeeDamage, resolveEnemyDamage } from '../simulation/damage'
 import { legacyNavigation, type Navigation } from '../simulation/navigation';
 import { makeState } from '../simulation/state';
 import { anomalyIds, cardById, v3Config as cfg, weaponCards } from './config';
-import type { CardDefinition, CombatCardInstance, CombatEvent, EncounterState, V3Employee, V3Enemy, V3State } from './model';
+import type { CardDefinition, CapturePhase, CombatCardInstance, CombatEvent, EncounterState, NextTarget, V3Employee, V3Enemy, V3State, VictorySummary } from './model';
 
 const EPS = 1e-7;
 const success = (): Result<void> => ({ ok: true, value: undefined });
@@ -12,6 +12,7 @@ const fail = (code: string, message: string): Result<void> => ({ ok: false, code
 const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value));
 const distance = (a: Point, b: Point): number => Math.hypot(a.x-b.x,a.y-b.y);
 const scaled = (damage: DamageSpec, multiplier: number): DamageSpec => ({ ...damage, amount: damage.amount * multiplier });
+const rankLabel = (n: number): string => ['—', 'I', 'II', 'III'][n] ?? String(n);
 
 export function createV3State(navigation: Navigation = legacyNavigation): V3State {
   const spawn = navigation.locate(navigation.safePoint)!;
@@ -34,6 +35,17 @@ export class V3Simulation {
   constructor(snapshot?: V3State, options: { navigation?: Navigation } = {}) {
     this.navigation = options.navigation ?? legacyNavigation;
     this.state = snapshot ? clone(snapshot) : createV3State(this.navigation);
+    // v0.3 snapshots did not persist capture confirmation fields. Normalize
+    // those optional fields at the simulation boundary so old saves continue
+    // to run as ordinary combat encounters.
+    if (this.state.encounter) {
+      const enc = this.state.encounter;
+      enc.capturePhase = enc.capturePhase ?? 'COMBAT';
+      enc.captureEmployeeId = enc.captureEmployeeId ?? null;
+      enc.captureProgressSec = enc.captureProgressSec ?? 0;
+      enc.captureDeadlineSec = enc.captureDeadlineSec ?? null;
+      for (const enemy of enc.enemies) enemy.captureState = enemy.captureState ?? 'ACTIVE';
+    }
   }
   private id(prefix: string): string { return `${prefix}-${++this.state.sequence}`; }
   private log(kind: string, message: string, sourceId?: string, targetId?: string, amount?: number, art?: Pick<CombatEvent,'cardId'|'instanceId'|'sourcePoint'|'targetPoint'>): void {
@@ -61,6 +73,97 @@ export class V3Simulation {
     if (this.state.wallet+EPS<cfg.captureCosts[id]) return `需要 ${cfg.captureCosts[id]} 能量`;
     return null;
   }
+  /**
+   * Derive the next actionable progression target from live state.
+   *
+   * Expansion is preferred once an external target is actually available. If
+   * the first unowned target is still gated, the method points at the first
+   * real prerequisite that can remove that gate (for example N01 II before
+   * N02 capture). This keeps the v0.4 loop readable without inventing a
+   * separate task-progress flag or skipping any cost/condition check.
+   */
+  nextTarget(): NextTarget {
+    const target = (anomalyId: AnomalyId, requirement: string | null): NextTarget => {
+      const room = this.state.rooms.find(r => r.anomalyId === anomalyId)!;
+      return { anomalyId, mode: 'CAPTURE', label: `外勤抓捕 · ${anomalyById[anomalyId].name}`, currentRank: 0, nextRank: 1,
+        energyCost: cfg.captureCosts[anomalyId], requirement, available: requirement === null };
+    };
+    const challenge = (anomalyId: AnomalyId): NextTarget => {
+      const room = this.state.rooms.find(r => r.anomalyId === anomalyId)!;
+      return { anomalyId, mode: 'BREACH_CHALLENGE', label: `主动失效 · ${anomalyById[anomalyId].name}`, currentRank: room.rank,
+        nextRank: room.rank + 1, energyCost: 0, requirement: null, available: true };
+    };
+
+    // The first unowned object is the expansion frontier. Make it the target
+    // immediately when its own prerequisites and wallet are ready.
+    const firstUnowned = anomalyIds.find(id => !this.state.rooms.find(r => r.anomalyId === id)!.owned);
+    if (firstUnowned) {
+      const requirement = this.captureCondition(firstUnowned);
+      if (requirement === null) return target(firstUnowned, null);
+
+      // N02 is gated by the N01 II threshold; surface that exact challenge.
+      if (firstUnowned === 'N02' && this.state.rooms.find(r => r.anomalyId === 'N01')!.rank < 2) {
+        return challenge('N01');
+      }
+      // N03/N04 need the preceding object in the facility. If that preceding
+      // object is not yet owned, the preceding target is the useful action.
+      const index = anomalyIds.indexOf(firstUnowned);
+      if (index > 0) {
+        const previous = anomalyIds[index - 1]!;
+        const previousRoom = this.state.rooms.find(r => r.anomalyId === previous)!;
+        if (!previousRoom.owned) {
+          const previousRequirement = this.captureCondition(previous);
+          if (previousRequirement === null) return target(previous, null);
+          if (previous === 'N02' && this.state.rooms.find(r => r.anomalyId === 'N01')!.rank < 2) return challenge('N01');
+        }
+      }
+      // N05 asks for three II-rank objects. Point at the first owned object
+      // that can still be raised; the requirement remains visible on N05.
+      if (firstUnowned === 'N05') {
+        const upgrade = anomalyIds.find(id => {
+          const room = this.state.rooms.find(r => r.anomalyId === id)!;
+          return room.owned && room.rank < 2;
+        });
+        if (upgrade) return challenge(upgrade);
+      }
+      return target(firstUnowned, requirement);
+    }
+
+    // All objects are owned: finish each remaining rank before reporting the
+    // terminal state.
+    const upgrade = anomalyIds.find(id => this.state.rooms.find(r => r.anomalyId === id)!.rank < cfg.facility.maxRank);
+    if (upgrade) return challenge(upgrade);
+    const terminal = this.state.rooms[this.state.rooms.length - 1];
+    return { anomalyId: terminal.anomalyId, mode: 'BREACH_CHALLENGE', label: '三日流程已完成', currentRank: terminal.rank,
+      nextRank: terminal.rank, energyCost: 0, requirement: '所有收容物已达最高阶', available: false };
+  }
+  /** Result-card data; no reward is applied here. The engine applies rewards in complete() once. */
+  victorySummary(): VictorySummary | null {
+    const enc = this.state.encounter;
+    if (!enc?.result) return null;
+    const room = this.state.rooms.find(r => r.anomalyId === enc.targetAnomalyId)!;
+    const anomaly = anomalyById[enc.targetAnomalyId];
+    const previousOwned = enc.mode === 'BREACH_CHALLENGE';
+    const productionBefore = previousOwned && enc.startRank > 0 ? cfg.production[enc.targetAnomalyId][enc.startRank - 1] : 0;
+    const productionAfter = room.owned && room.rank > 0 ? cfg.production[enc.targetAnomalyId][room.rank - 1] : 0;
+    const rewards: string[] = [];
+    if (enc.result === 'VICTORY') {
+      if (enc.mode === 'CAPTURE') {
+        rewards.push(`首次收容：${anomaly.name}`);
+        rewards.push('E.G.O. 装备上限 I');
+      } else if (room.rank > enc.startRank) {
+        rewards.push(`收容等级 ${rankLabel(enc.startRank)} → ${rankLabel(room.rank)}`);
+        rewards.push(`E.G.O. 装备上限 ${rankLabel(room.rank)}`);
+      }
+      // A rank challenge does not grant another equipment copy. Capture is
+      // the only normal path that newly unlocks the anomaly's E.G.O. pair.
+      if (enc.mode === 'CAPTURE' && this.state.ownedWeapons.includes(anomaly.weaponId)) rewards.push(`解锁专属武器 · ${weaponById[anomaly.weaponId].name}`);
+      if (enc.mode === 'CAPTURE' && this.state.ownedArmors.includes(anomaly.armorId)) rewards.push(`解锁专属防具 · ${armorById[anomaly.armorId].name}`);
+    }
+    return { encounterId: enc.id, result: enc.result, anomalyId: enc.targetAnomalyId, mode: enc.mode,
+      previousOwned, currentOwned: room.owned, previousRank: enc.startRank, currentRank: room.rank,
+      productionBefore, productionAfter, egoTier: room.owned ? room.rank : 0, rewards, nextTarget: this.nextTarget() };
+  }
   startEncounter(mode: EncounterState['mode'], anomalyId: AnomalyId): Result<void> {
     if (this.state.encounter) return fail('BUSY','已有战斗进行中');
     const room=this.state.rooms.find(r=>r.anomalyId===anomalyId);
@@ -74,8 +177,8 @@ export class V3Simulation {
     this.shuffle(cards);
     const ec=cfg.enemies[anomalyId], rank=Math.max(1,room.rank), id=this.id('encounter'), now=this.state.simulationTimeSec;
     const hp=ec.hp*(1+(rank-1)*ec.rankHpMultiplier);
-    const enemy: V3Enemy={ id:this.id('enemy'), sourceAnomalyId:anomalyId, breachInstanceId:id,isClone:false,mainEnemyId:null,location:{x:cfg.arena.enemySpawnX,y:cfg.arena.y,zone:'CORRIDOR'},suppressionHp:hp,suppressionHpMax:hp,targetEmployeeId:null,attackPhase:'RECOVERY',nextAttackStartAtSec:now+ec.firstAttackDelaySec,windupEndsAtSec:null,stunnedUntilSec:0,pendingForcedHowl:false,hitUntilSec:0,actionUntilSec:0,attackOrdinal:0,intent:'接近最近员工',specialAttack:false,warningRangePx:ec.rangePx };
-    this.state.encounter={id,mode,targetAnomalyId:anomalyId,startRank:room.rank,squadIds:squad.map(e=>e.id),paused:this.state.timeScale===0,speed:this.state.speed,deck:{drawPile:cards,hand:[],discardPile:[],exhausted:[],drawTimer:cfg.combat.drawIntervalSec,globalCooldown:0,pendingCast:null},enemies:[enemy],focusEnemyId:enemy.id,result:null,rewardApplied:false,elapsedSec:0,lastAttackCard:null,nextAttackMultiplier:1,casualties:[]};
+    const enemy: V3Enemy={ id:this.id('enemy'), sourceAnomalyId:anomalyId, breachInstanceId:id,isClone:false,mainEnemyId:null,location:{x:cfg.arena.enemySpawnX,y:cfg.arena.y,zone:'CORRIDOR'},suppressionHp:hp,suppressionHpMax:hp,targetEmployeeId:null,attackPhase:'RECOVERY',nextAttackStartAtSec:now+ec.firstAttackDelaySec,windupEndsAtSec:null,stunnedUntilSec:0,pendingForcedHowl:false,hitUntilSec:0,actionUntilSec:0,attackOrdinal:0,intent:'接近最近员工',specialAttack:false,warningRangePx:ec.rangePx,captureState:'ACTIVE' };
+    this.state.encounter={id,mode,targetAnomalyId:anomalyId,startRank:room.rank,squadIds:squad.map(e=>e.id),paused:this.state.timeScale===0,speed:this.state.speed,deck:{drawPile:cards,hand:[],discardPile:[],exhausted:[],drawTimer:cfg.combat.drawIntervalSec,globalCooldown:0,pendingCast:null},enemies:[enemy],focusEnemyId:enemy.id,result:null,rewardApplied:false,elapsedSec:0,lastAttackCard:null,nextAttackMultiplier:1,casualties:[],capturePhase:'COMBAT',captureEmployeeId:null,captureProgressSec:0,captureDeadlineSec:null};
     if(anomalyId==='N01')for(let i=0;i<cfg.enemies.N01.cloneCount;i++)this.state.encounter.enemies.push({...clone(enemy),id:this.id('clone'),isClone:true,mainEnemyId:enemy.id,suppressionHp:cfg.enemies.N01.cloneHp,suppressionHpMax:cfg.enemies.N01.cloneHp,location:{...enemy.location,x:enemy.location.x+cfg.enemies.N01.cloneSpawnOffsets[i]}});
     this.state.phase='ENCOUNTER';
     squad.forEach((e,i)=> { e.home={...e.location};e.location={x:cfg.arena.employeeSpawnX[i],y:cfg.arena.y,zone:'CORRIDOR'};e.path=[];e.order={kind:'SUPPRESS',enemyId:enemy.id};e.status='SUPPRESSING';e.attackPhase='RECOVERY';e.windupEndsAtSec=null;e.nextAttackStartAtSec=now;e.attackTargetId=null;e.removedCards=false;e.blockUntilSec=0;e.counterUntilSec=0;e.panicUntilSec=0; });
@@ -118,6 +221,42 @@ export class V3Simulation {
   }
   cancelCard(reason='施牌取消'): void { const enc=this.state.encounter;if(!enc?.deck.pendingCast)return;const c=enc.deck.hand.find(c=>c.instanceId===enc.deck.pendingCast!.instanceId);const owner=this.state.employees.find(e=>e.id===c?.ownerId);if(owner){owner.windupEndsAtSec=null;owner.attackPhase='RECOVERY';}enc.deck.pendingCast=null;this.log('CANCEL',`${reason}，未消耗卡牌或公共冷却`); }
   focusEnemy(id: string): Result<void> { const enc=this.state.encounter;if(!enc||enc.result||!enc.enemies.some(e=>e.id===id&&e.suppressionHp>0))return fail('TARGET','目标不可选');enc.focusEnemyId=id;const castingOwner=enc.deck.hand.find(c=>c.instanceId===enc.deck.pendingCast?.instanceId)?.ownerId;for(const e of this.state.employees.filter(e=>enc.squadIds.includes(e.id)&&e.hp>0)){e.order={kind:'SUPPRESS',enemyId:id};if(e.id!==castingOwner){e.windupEndsAtSec=null;e.attackPhase='RECOVERY';}}return success(); }
+  /** Current capture confirmation phase. Old saves are treated as ordinary combat. */
+  capturePhase(): CapturePhase | null { return this.state.encounter?.capturePhase ?? (this.state.encounter ? 'COMBAT' : null); }
+  /**
+   * Start the physical capture device. This only changes the shared simulation
+   * state; the selected employee still has to walk into range and hold the
+   * device for the configured progress duration.
+   */
+  startCapture(employeeId?: EmployeeId): Result<void> {
+    const enc=this.state.encounter;
+    if(!enc||enc.mode!=='CAPTURE'||enc.result)return fail('CAPTURE','当前没有可收容的外勤目标');
+    if((enc.capturePhase??'COMBAT')!=='CAPTURABLE')return fail('CAPTURE','目标尚未达到可收容阈值');
+    const target=enc.enemies.find(n=>!n.isClone&&n.suppressionHp>EPS);
+    if(!target)return fail('CAPTURE','目标已失效');
+    const id=employeeId??enc.squadIds.map(id=>this.state.employees.find(e=>e.id===id)).find(e=>e&&this.canAct(e))?.id;
+    const employee=id?this.state.employees.find(e=>e.id===id):undefined;
+    if(!employee||!enc.squadIds.includes(employee.id)||!this.canAct(employee))return fail('CAPTURE','没有可操作的收容员工');
+    const pendingOwner=enc.deck.hand.find(card=>card.instanceId===enc.deck.pendingCast?.instanceId)?.ownerId;
+    if(pendingOwner===employee.id)this.cancelCard('启动收容装置，取消该员工的预备施牌');
+    enc.capturePhase='CAPTURING';enc.captureEmployeeId=employee.id;
+    // An interrupted device action keeps the configured fraction of its
+    // progress. Starting the device again must resume from that value rather
+    // than silently resetting the player's completed work.
+    enc.captureProgressSec=Math.max(0, Math.min(cfg.capture.progressSec, enc.captureProgressSec ?? 0));
+    enc.captureDeadlineSec=this.state.simulationTimeSec+cfg.capture.timeoutSec;
+    employee.order={kind:'MOVE',destination:{x:target.location.x,y:target.location.y}};employee.path=[{x:target.location.x,y:target.location.y}];employee.status='MOVING';employee.windupEndsAtSec=null;employee.attackPhase='RECOVERY';
+    this.log('CAPTURE_START','启动收容装置，员工正在接近目标',employee.id,target.id);
+    return success();
+  }
+  /** Alias used by UI integrations that call the action by its design name. */
+  startContainmentCapture(employeeId?: EmployeeId): Result<void> { return this.startCapture(employeeId); }
+  private interruptCapture(reason: string): void {
+    const enc=this.state.encounter;if(!enc||enc.result||enc.mode!=='CAPTURE'||enc.capturePhase!=='CAPTURING')return;
+    enc.capturePhase='CAPTURABLE';enc.captureEmployeeId=null;enc.captureDeadlineSec=null;
+    enc.captureProgressSec=Math.max(0,(enc.captureProgressSec??0)*cfg.capture.progressRetainFraction);
+    this.log('CAPTURE_INTERRUPTED',reason);
+  }
   moveEmployee(id: EmployeeId,point: Point): Result<void> {
     const e=this.state.employees.find(e=>e.id===id);if(!e||!this.canAct(e)||!Number.isFinite(point.x)||!Number.isFinite(point.y))return fail('EMPLOYEE','员工不可移动');
     let destination=point,path:Point[]|null;
@@ -125,6 +264,7 @@ export class V3Simulation {
     else { if(!this.navigation.corridorAt(point))return fail('PATH','请点击走廊');path=this.navigation.route(e.location,point); }
     if(!path)return fail('PATH','无法到达');
     const pending=this.state.encounter?.deck.pendingCast; if(pending&&this.state.encounter?.deck.hand.find(c=>c.instanceId===pending.instanceId)?.ownerId===id)this.cancelCard();
+    if(this.state.encounter?.capturePhase==='CAPTURING'&&this.state.encounter.captureEmployeeId===id)this.interruptCapture('玩家改变路线，收容装置已取消');
     e.path=path;e.order={kind:'MOVE',destination};e.status='MOVING';e.windupEndsAtSec=null;e.attackPhase='RECOVERY';return success();
   }
   equip(id: EmployeeId,weaponId: WeaponId,armorId: ArmorId,tier=1): Result<void> {
@@ -144,6 +284,9 @@ export class V3Simulation {
     if(s.encounter?.result)return;
     if(!s.encounter){this.facilityStep(dt);return;}
     const enc=s.encounter,d=enc.deck;enc.elapsedSec+=dt;d.globalCooldown=Math.max(0,d.globalCooldown-dt);
+    if(enc.mode==='CAPTURE'&&enc.capturePhase==='CAPTURING'&&enc.captureDeadlineSec!==null&&enc.captureDeadlineSec!==undefined&&s.simulationTimeSec+EPS>=enc.captureDeadlineSec){
+      this.interruptCapture('收容装置超时，目标挣脱');
+    }
     for(const e of s.employees.filter(e=>enc.squadIds.includes(e.id)))this.checkEmployee(e);
     if(d.hand.length<cfg.combat.handLimit){d.drawTimer=Math.max(0,d.drawTimer-dt);if(d.drawTimer<=EPS){this.drawCard();d.drawTimer=cfg.combat.drawIntervalSec;}}
     this.pendingStep(dt);
@@ -153,7 +296,22 @@ export class V3Simulation {
     for(const n of [...enc.enemies]){if(enc.result)break;this.enemyStep(n,dt);this.checkResult();}
     this.checkResult();
   }
-  private facilityStep(dt:number):void{const now=this.state.simulationTimeSec;for(const e of this.state.employees){e.hp=Math.min(e.hpMax,e.hp+config.game.employee.safeHpPerSec*dt);e.sp=Math.min(e.spMax,e.sp+config.game.employee.safeSpPerSec*dt);if(e.status==='INCAPACITATED'||e.status==='PANICKED')e.status='IDLE';if(e.path.length){this.walk(e,dt,config.game.employee.moveSpeedPxPerSec*(e.order.kind==='IDLE'?cfg.facility.idleSpeedMultiplier:1));e.status=e.path.length?'MOVING':'IDLE';if(!e.path.length){e.order={kind:'IDLE'};e.idleNextAtSec=now+cfg.facility.idleWaitSec;}}else if(now>=e.idleNextAtSec&&this.navigation.idlePoints.length){const p=this.navigation.idlePoints[e.idleCycle++%this.navigation.idlePoints.length];e.path=this.navigation.route(e.location,p)??[];e.status=e.path.length?'MOVING':'IDLE';e.idleNextAtSec=now+cfg.facility.idleWaitSec;}}}
+  private facilityStep(dt:number):void{const now=this.state.simulationTimeSec;for(const e of this.state.employees){
+    // Recovery belongs to the safe room. A wounded employee who is still in
+    // a corridor may move, but cannot silently heal while walking the
+    // facility; this keeps the spatial state and the free recovery rule in
+    // sync with the visible safety room.
+    if(e.location.zone==='SAFE'){
+      e.hp=Math.min(e.hpMax,e.hp+config.game.employee.safeHpPerSec*dt);
+      e.sp=Math.min(e.spMax,e.sp+config.game.employee.safeSpPerSec*dt);
+    }
+    // Incapacitated or panicked staff stay put until the safe room gives them
+    // enough recovery to act again. They must not be assigned idle strolls at
+    // zero HP/SP by the ambient movement branch below.
+    if(e.hp<=EPS||e.sp<=EPS){e.status=e.hp<=EPS?'INCAPACITATED':'PANICKED';e.path=[];e.order={kind:'IDLE'};continue;}
+    if(e.status==='INCAPACITATED'||e.status==='PANICKED')e.status='IDLE';
+    if(e.path.length){this.walk(e,dt,config.game.employee.moveSpeedPxPerSec*(e.order.kind==='IDLE'?cfg.facility.idleSpeedMultiplier:1));e.status=e.path.length?'MOVING':'IDLE';if(!e.path.length){e.order={kind:'IDLE'};e.idleNextAtSec=now+cfg.facility.idleWaitSec;}}else if(now>=e.idleNextAtSec&&this.navigation.idlePoints.length){const p=this.navigation.idlePoints[e.idleCycle++%this.navigation.idlePoints.length];e.path=this.navigation.route(e.location,p)??[];e.status=e.path.length?'MOVING':'IDLE';e.idleNextAtSec=now+cfg.facility.idleWaitSec;}}
+  }
   private pendingStep(dt:number):void{
     const enc=this.state.encounter!,p=enc.deck.pendingCast;if(!p)return;
     const card=enc.deck.hand.find(c=>c.instanceId===p.instanceId),owner=this.state.employees.find(e=>e.id===card?.ownerId);
@@ -195,6 +353,28 @@ export class V3Simulation {
   private employeeStep(e:V3Employee,dt:number):void{
     const enc=this.state.encounter!,now=this.state.simulationTimeSec;if(!this.canAct(e))return;
     if(enc.deck.pendingCast&&enc.deck.hand.find(c=>c.instanceId===enc.deck.pendingCast!.instanceId)?.ownerId===e.id)return;
+    // A capture encounter stops lethal auto-attacks once the target reaches
+    // the configured threshold. Only the selected operator may advance the
+    // device; other employees can still be moved manually but never damage the
+    // capturable target by continuing their ordinary suppression loop.
+    if(enc.mode==='CAPTURE'&&(enc.capturePhase??'COMBAT')!=='COMBAT'){
+      if(enc.capturePhase==='CAPTURING'&&enc.captureEmployeeId===e.id){
+        const target=enc.enemies.find(n=>!n.isClone&&n.suppressionHp>EPS);
+        if(!target){this.interruptCapture('目标已离开现场');return;}
+        const d=distance(e.location,target.location);
+        if(d>cfg.capture.deviceRangePx){e.status='MOVING';e.attackPhase='RECOVERY';this.moveTowards(e,target.location,config.game.employee.moveSpeedPxPerSec,dt);return;}
+        e.status='WORKING';e.attackPhase='WINDUP';e.windupEndsAtSec=null;
+        enc.captureProgressSec=(enc.captureProgressSec??0)+dt;
+        if((enc.captureProgressSec??0)+EPS>=cfg.capture.progressSec){
+          enc.capturePhase='CAPTURED';target.captureState='CAPTURED';target.suppressionHp=0;enc.captureProgressSec=cfg.capture.progressSec;
+          this.log('CAPTURE_SUCCESS','收容装置完成，目标已捕获',e.id,target.id);
+          this.complete('VICTORY');
+        }
+        return;
+      }
+      if(e.order.kind==='MOVE'&&e.path.length){this.walk(e,dt,config.game.employee.moveSpeedPxPerSec);e.status='MOVING';return;}
+      e.status='IDLE';e.windupEndsAtSec=null;e.attackPhase='RECOVERY';return;
+    }
     if(e.order.kind==='MOVE'){if(e.path.length){this.walk(e,dt,config.game.employee.moveSpeedPxPerSec);e.status='MOVING';}else{e.status='IDLE';e.attackPhase='RECOVERY';}return;}
     const target=enc.enemies.find(n=>n.id===enc.focusEnemyId&&n.suppressionHp>0)??[...enc.enemies].filter(n=>n.suppressionHp>0).sort((a,b)=>distance(a.location,e.location)-distance(b.location,e.location))[0];if(!target)return;
     const w=weaponById[e.weaponId];e.order={kind:'SUPPRESS',enemyId:target.id};
@@ -214,6 +394,7 @@ export class V3Simulation {
       const base=anomalyById[n.sourceAnomalyId].breach.damage,damage=scaled(base,(n.specialAttack?ec.specialDamageMultiplier:1)*(n.isClone?cfg.enemies.N01.cloneDamageMultiplier:1));
       const aoe=n.specialAttack||['N03','N04','N05'].includes(n.sourceAnomalyId);
       for(const e of alive.filter(e=>(aoe||e.id===target.id)&&distance(e.location,n.location)<=n.warningRangePx+EPS))this.damageEmployee(e,damage,n);
+      if(enc.mode==='CAPTURE'&&enc.capturePhase==='CAPTURING'&&enc.captureEmployeeId===target.id&&target.hp>EPS)this.interruptCapture('目标挣扎命中收容员工');
       n.intent='攻击恢复';return;
     }
     if(now>n.actionUntilSec)n.attackPhase='RECOVERY';
@@ -222,7 +403,27 @@ export class V3Simulation {
     if(distance(chosen.location,n.location)>approachRange){this.moveTowards(n,chosen.location,ec.moveSpeedPxPerSec,dt);n.intent='接近最近员工';return;}
     if(now+EPS>=n.nextAttackStartAtSec){n.attackOrdinal++;n.specialAttack=!n.isClone&&n.attackOrdinal%ec.specialEvery===0;n.warningRangePx=ec.rangePx*(n.specialAttack?ec.specialRangeMultiplier:1);n.intent=n.specialAttack?ec.specialName:'普通攻击';n.attackPhase='WINDUP';n.windupEndsAtSec=now+ec.windupSec;this.log('TELEGRAPH',n.intent,n.id,chosen.id);}
   }
-  private damageEnemy(n:V3Enemy,damage:DamageSpec,sourceId:string):void{if(n.suppressionHp<=0)return;const amount=resolveEnemyDamage(n.suppressionHpMax,damage,anomalyById[n.sourceAnomalyId].resistances);n.suppressionHp=Math.max(0,n.suppressionHp-amount);n.hitUntilSec=this.state.simulationTimeSec+cfg.combat.hitFeedbackSec;this.log('HIT','敌人受击',sourceId,n.id,amount);}
+  private damageEnemy(n:V3Enemy,damage:DamageSpec,sourceId:string):void{
+    if(n.suppressionHp<=0)return;
+    const enc=this.state.encounter;
+    // In capture mode the main target becomes non-lethal at its configured
+    // threshold. This guard is shared by auto attacks and cards, so no second
+    // damage path can accidentally kill the target or bypass CAPTURABLE.
+    if(enc?.mode==='CAPTURE'&&!n.isClone){
+      const phase=enc.capturePhase??'COMBAT';
+      if(phase==='CAPTURABLE'||phase==='CAPTURING'||phase==='CAPTURED')return;
+      const amount=resolveEnemyDamage(n.suppressionHpMax,damage,anomalyById[n.sourceAnomalyId].resistances);
+      const threshold=Math.max(1,n.suppressionHpMax*cfg.capture.thresholdFraction[n.sourceAnomalyId]);
+      n.suppressionHp=Math.max(threshold,n.suppressionHp-amount);n.hitUntilSec=this.state.simulationTimeSec+cfg.combat.hitFeedbackSec;
+      this.log('HIT','敌人受击',sourceId,n.id,amount);
+      if(n.suppressionHp<=threshold+EPS){
+        n.suppressionHp=threshold;n.captureState='CAPTURABLE';enc.capturePhase='CAPTURABLE';enc.captureEmployeeId=null;enc.captureProgressSec=0;enc.captureDeadlineSec=null;
+        this.log('CAPTURABLE','目标已压制，可启动收容装置',n.id);
+      }
+      return;
+    }
+    const amount=resolveEnemyDamage(n.suppressionHpMax,damage,anomalyById[n.sourceAnomalyId].resistances);n.suppressionHp=Math.max(0,n.suppressionHp-amount);n.hitUntilSec=this.state.simulationTimeSec+cfg.combat.hitFeedbackSec;this.log('HIT','敌人受击',sourceId,n.id,amount);
+  }
   private damageEmployee(e:V3Employee,damage:DamageSpec,n:V3Enemy):void{if(e.hp<=0)return;const now=this.state.simulationTimeSec,multiplier=(cfg.tier.armorMultipliers[e.armorTier-1]??1)*(now<e.blockUntilSec?1-e.blockReduction:1),before=e.hp+e.sp;const result=resolveEmployeeDamage(e.hp,e.sp,e.hpMax,scaled(damage,multiplier),armorById[e.armorId].resistances);e.hp=result.hp;e.sp=result.sp;e.hitUntilSec=now+cfg.combat.hitFeedbackSec;this.log('HIT','员工受击',n.id,e.id,before-e.hp-e.sp);if(now<e.counterUntilSec){e.counterUntilSec=0;this.damageEnemy(n,{type:'RED',kind:'FLAT',amount:e.counterDamage},e.id);this.log('COUNTER','暴怒反击',e.id,n.id);}this.checkEmployee(e);}
   private checkEmployee(e:V3Employee):void{
     const enc=this.state.encounter,now=this.state.simulationTimeSec;if(!enc)return;
@@ -230,7 +431,12 @@ export class V3Simulation {
     if(e.sp<=EPS&&e.status!=='PANICKED'){e.status='PANICKED';e.panicUntilSec=now+cfg.combat.panicDurationSec;e.windupEndsAtSec=null;e.attackPhase='RECOVERY';if(enc.deck.pendingCast&&enc.deck.hand.find(c=>c.instanceId===enc.deck.pendingCast!.instanceId)?.ownerId===e.id)this.cancelCard('所属员工恐慌，施牌取消');}
     if(e.status==='PANICKED'&&(now+EPS>=e.panicUntilSec||e.sp>=e.spMax*cfg.combat.panicRecoverFraction)){e.sp=Math.max(e.sp,e.spMax*cfg.combat.panicRecoverFraction);e.status='SUPPRESSING';}
   }
-  private checkResult():void{const enc=this.state.encounter;if(!enc||enc.result)return;if(enc.enemies.find(n=>!n.isClone)?.suppressionHp!<=EPS)this.complete('VICTORY');else if(this.state.employees.filter(e=>enc.squadIds.includes(e.id)).every(e=>e.hp<=EPS))this.complete('DEFEAT');}
+  private checkResult():void{const enc=this.state.encounter;if(!enc||enc.result)return;const main=enc.enemies.find(n=>!n.isClone);if(enc.mode==='CAPTURE'&&(enc.capturePhase??'COMBAT')!=='COMBAT'){
+      // Capture victory is committed only by the physical device action.
+      if(this.state.employees.filter(e=>enc.squadIds.includes(e.id)).every(e=>e.hp<=EPS))this.complete('DEFEAT');
+      return;
+    }
+    if(main&&main.suppressionHp<=EPS)this.complete('VICTORY');else if(this.state.employees.filter(e=>enc.squadIds.includes(e.id)).every(e=>e.hp<=EPS))this.complete('DEFEAT');}
   private complete(result:NonNullable<EncounterState['result']>):void{const enc=this.state.encounter;if(!enc||enc.result)return;this.cancelCard();enc.result=result;for(const e of this.state.employees.filter(e=>enc.squadIds.includes(e.id))){e.windupEndsAtSec=null;e.path=[];e.attackPhase='RECOVERY';}for(const n of enc.enemies){n.windupEndsAtSec=null;n.attackPhase='RECOVERY';}const room=this.state.rooms.find(r=>r.anomalyId===enc.targetAnomalyId)!;if(result==='VICTORY'&&!enc.rewardApplied){if(enc.mode==='CAPTURE'&&!room.owned){room.owned=true;room.rank=1;}else if(enc.mode==='BREACH_CHALLENGE'&&room.rank===enc.startRank){room.rank=Math.min(cfg.facility.maxRank,room.rank+1);}enc.rewardApplied=true;for(const n of enc.enemies)if(n.isClone)n.suppressionHp=0;const a=anomalyById[room.anomalyId];if(!this.state.ownedWeapons.includes(a.weaponId))this.state.ownedWeapons.push(a.weaponId);if(!this.state.ownedArmors.includes(a.armorId))this.state.ownedArmors.push(a.armorId);}room.state=room.owned?'STABLE':'LOCKED';this.log('RESULT',result==='VICTORY'?`${anomalyById[room.anomalyId].name}收容成功，当前 ${room.rank} 阶`:result==='DEFEAT'?'战斗失败，未获得进度':'战斗放弃，无奖励');}
   abandonEncounter():void{this.complete('ABANDONED');}
   finishEncounter():Result<void>{const enc=this.state.encounter;if(!enc?.result)return fail('BATTLE','战斗尚未结束');for(const e of this.state.employees.filter(e=>enc.squadIds.includes(e.id))){e.location={...e.home};e.status=e.hp<=0?'INCAPACITATED':e.sp<=0?'PANICKED':'IDLE';e.order={kind:'IDLE'};e.path=[];e.windupEndsAtSec=null;e.attackPhase='RECOVERY';e.blockUntilSec=0;e.counterUntilSec=0;e.idleNextAtSec=this.state.simulationTimeSec+cfg.facility.idleWaitSec;}this.state.encounter=null;this.state.phase='FACILITY';this.setPaused(false);return success();}

@@ -8,6 +8,8 @@ import { createFieldPreview, fieldPreviewTarget } from './fieldPreview';
 import { createCardArtPreview, cardArtPreviewTarget } from './cardArtPreview';
 import '../slice.css';
 import './style.css';
+import './hud-v06.css';
+import './hud-v07.css';
 
 const frame=document.querySelector<HTMLElement>('#game-frame')!;
 const resize=():void=>{frame.style.transform=`translate(-50%, -50%) scale(${Math.min(innerWidth/1600,innerHeight/900)})`;};

@@ -74,6 +74,19 @@
     "N04": 250,
     "N05": 430
   },
+  "capture": {
+    "thresholdFraction": {
+      "N01": 0.2,
+      "N02": 0.2,
+      "N03": 0.2,
+      "N04": 0.2,
+      "N05": 0.2
+    },
+    "deviceRangePx": 180,
+    "progressSec": 2.5,
+    "timeoutSec": 8,
+    "progressRetainFraction": 0.35
+  },
   "weaponCards": {
     "W00": [
       "T01",

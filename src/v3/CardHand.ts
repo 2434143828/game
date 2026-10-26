@@ -7,12 +7,12 @@ import { escape } from '../ui/format';
 
 const targetNames = { ENEMY: '敌方单体', ALLY: '友方单体', SELF: '施牌者自身', TEAM: '全队' };
 const themes: Record<string, { name: string; color: string; symbol: string }> = {
-  T: { name: '制式训练', color: '#9ac9dd', symbol: '⌖' },
-  N01: { name: '奶龙', color: '#f7cf76', symbol: '◉' },
-  N02: { name: '耄耋', color: '#e6a4b7', symbol: '!' },
-  N03: { name: '大狗', color: '#f28ca9', symbol: '♡' },
-  N04: { name: '叮咚鸡', color: '#f6bb54', symbol: '▶' },
-  N05: { name: '咕咕嘎嘎', color: '#a7d8ee', symbol: '○' },
+  T: { name: '制式训练', color: '#65B8CD', symbol: '⌖' },
+  N01: { name: '奶龙', color: '#E6BE65', symbol: '◉' },
+  N02: { name: '耄耋', color: '#C9767A', symbol: '!' },
+  N03: { name: '大狗', color: '#E98D69', symbol: '♡' },
+  N04: { name: '叮咚鸡', color: '#E7B853', symbol: '▶' },
+  N05: { name: '咕咕嘎嘎', color: '#AA9ACF', symbol: '○' },
 };
 const categories: Record<string, { name: string; symbol: string }> = {
   DAMAGE: { name: '攻击', symbol: '⌖' }, BLOCK: { name: '防御', symbol: '◇' },
@@ -24,6 +24,31 @@ const categories: Record<string, { name: string; symbol: string }> = {
 type Point = { x: number; y: number };
 type HandNode = { button: HTMLButtonElement; card: CombatCardInstance; born: number; previousCooldown: number; readyAt: number };
 type Flight = { element: HTMLElement; born: number; from: Point; to: Point };
+
+// v0.5 nm-v2 assets are source-specific skill motifs rather than complete card
+// frames. The frame, labels and cooldown state remain owned by this component
+// so the visual replacement cannot change card behavior.
+const generatedCardArt: Record<string, string> = {
+  N01: 'nm_v2_ui_skill_icon_s01_stun.png',
+  N02: 'nm_v2_ui_skill_icon_s02_claw.png',
+  N03: 'nm_v2_ui_skill_icon_s03_howl.png',
+  N04: 'nm_v2_ui_skill_icon_s04_notice.png',
+  N05: 'nm_v2_ui_skill_icon_s05_calm.png',
+};
+const dedicatedCardArt = new Set(['T01', 'T02', 'T03', 'N01_1', 'N01_2', 'N01_3']);
+const cardArtPath = (cardId: string): string => {
+  // These six cards have dedicated v0.5 renders. Keep the lookup exact so
+  // the card source/skill image cannot accidentally use another anomaly's
+  // artwork when the hand is rebuilt from a save.
+  if (dedicatedCardArt.has(cardId)) {
+    return `${import.meta.env.BASE_URL}art/cards-v2/${cardId.toLowerCase()}.png`;
+  }
+  const source = cardId.startsWith('T') ? 'T' : cardId.slice(0, 3);
+  const generated = generatedCardArt[source];
+  return generated
+    ? `${import.meta.env.BASE_URL}art/nm-v2/ui_vfx/${generated}`
+    : `${import.meta.env.BASE_URL}art/cards-v1/${cardId.toLowerCase()}.png`;
+};
 
 /** Read-only presentation. No DOM animation may queue, resolve or damage a unit. */
 export class CardHand {
@@ -71,7 +96,7 @@ export class CardHand {
   private face(card: CombatCardInstance): string {
     const def = cardById[card.cardId], theme = themes[card.cardId.startsWith('T') ? 'T' : card.cardId.slice(0, 3)];
     const category = categories[def.effect], owner = this.simulation.state.employees.find(e => e.id === card.ownerId);
-    return `<div class="v3-card-face"><div class="v3-card-source"><i>${theme.symbol}</i><span>${theme.name}<small>${card.cardId.startsWith('T') ? 'STD' : card.cardId.slice(0, 3)} / E.G.O.</small></span><em>${category.symbol}<small>${category.name}</small></em></div><div class="v3-card-art"><img src="${import.meta.env.BASE_URL}art/cards-v1/${card.cardId.toLowerCase()}.png" alt="${escape(def.name)}技能插图" draggable="false"><span class="v3-card-art-grid"></span></div><div class="v3-card-info"><b>${escape(def.name)}</b><p>${escape(def.description)}</p><div class="v3-card-owner">${escape(owner?.displayName ?? card.ownerId)} <span>${['—', 'I', 'II', 'III'][card.tier]}</span></div></div></div>`;
+    return `<div class="v3-card-face"><div class="v3-card-source"><i>${theme.symbol}</i><span>${theme.name}<small>${card.cardId.startsWith('T') ? 'STD' : card.cardId.slice(0, 3)} / E.G.O.</small></span><em>${category.symbol}<small>${category.name}</small></em></div><div class="v3-card-art"><img src="${cardArtPath(card.cardId)}" alt="${escape(def.name)}技能插图" draggable="false"><span class="v3-card-art-grid"></span><span class="v3-card-art-caption">${category.name}</span></div><div class="v3-card-info"><b>${escape(def.name)}</b><p>${escape(def.description)}</p><div class="v3-card-owner">${escape(owner?.displayName ?? card.ownerId)} <span>${['—', 'I', 'II', 'III'][card.tier]}</span></div></div></div>`;
   }
 
   private create(card: CombatCardInstance, now: number, firstHand: boolean): HandNode {
@@ -90,7 +115,7 @@ export class CardHand {
     const def = cardById[node.card.cardId], reason = this.simulation.cardUnavailable(id);
     this.previewId = id; this.preview.hidden = false;
     this.preview.style.setProperty('--source-color', node.button.style.getPropertyValue('--source-color'));
-    this.preview.innerHTML = `<div class="v3-preview-image"><img src="${import.meta.env.BASE_URL}art/cards-v1/${def.id.toLowerCase()}.png" alt=""></div><div><small>${themes[def.id.startsWith('T') ? 'T' : def.id.slice(0, 3)].name} · ${categories[def.effect].name}</small><b>${escape(def.name)}</b><p>${escape(def.description)}</p><small>${targetNames[def.target]} · 射程 ${def.rangePx}<br>准备 ${def.windupSec}s${def.radiusPx ? ` · 范围 ${def.radiusPx}` : ''}</small><p class="v3-preview-condition">${escape(reason ?? '点击选牌，再点击场内目标')}</p></div>`;
+    this.preview.innerHTML = `<div class="v3-preview-image"><img src="${cardArtPath(def.id)}" alt=""></div><div><small>${themes[def.id.startsWith('T') ? 'T' : def.id.slice(0, 3)].name} · ${categories[def.effect].name}</small><b>${escape(def.name)}</b><p>${escape(def.description)}</p><small>${targetNames[def.target]} · 射程 ${def.rangePx}<br>准备 ${def.windupSec}s${def.radiusPx ? ` · 范围 ${def.radiusPx}` : ''}</small><p class="v3-preview-condition">${escape(reason ?? '点击选牌，再点击场内目标')}</p></div>`;
     const rect = this.logicalRect(node.button);
     this.preview.style.left = `${Math.min(1040, Math.max(24, rect.x - 30))}px`;
   }

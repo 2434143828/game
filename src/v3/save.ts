@@ -48,6 +48,8 @@ const enemy = z.object({
   suppressionHp: n, suppressionHpMax: n.positive(), targetEmployeeId: employeeIdSchema.nullable(), attackPhase: attack,
   nextAttackStartAtSec: n, windupEndsAtSec: n.nullable(), stunnedUntilSec: n, pendingForcedHowl: z.boolean(),
   hitUntilSec: n, actionUntilSec: n, attackOrdinal: integer, intent: text, specialAttack: z.boolean(), warningRangePx: n,
+  // Optional for v0.3 saves; v0.4 capture encounters persist this state.
+  captureState: z.enum(['ACTIVE', 'CAPTURABLE', 'CAPTURED']).optional(),
 }).strict();
 const encounter = z.object({
   id: text, mode: z.enum(['CAPTURE', 'BREACH_CHALLENGE']), targetAnomalyId: anomalyIdSchema, startRank: integer.max(v3Config.facility.maxRank),
@@ -58,6 +60,9 @@ const encounter = z.object({
   enemies: z.array(enemy).max(3), focusEnemyId: text.nullable(), result: z.enum(['VICTORY', 'DEFEAT', 'ABANDONED']).nullable(),
   rewardApplied: z.boolean(), elapsedSec: n, lastAttackCard: z.object({ damage, targetId: text }).strict().nullable(),
   nextAttackMultiplier: n, casualties: z.array(employeeIdSchema).max(3),
+  // Optional for old v0.3 snapshots. Runtime normalizes missing fields to COMBAT.
+  capturePhase: z.enum(['COMBAT', 'CAPTURABLE', 'CAPTURING', 'CAPTURED']).optional(),
+  captureEmployeeId: employeeIdSchema.nullable().optional(), captureProgressSec: n.optional(), captureDeadlineSec: n.nullable().optional(),
 }).strict();
 const stateSchema = z.object({
   saveVersion: z.literal(3), phase: z.enum(['FACILITY', 'ENCOUNTER']), wallet: n, simulationTimeSec: n,
@@ -101,6 +106,21 @@ const stateSchema = z.object({
     for (const c of all) {
       const owner = s.employees.find(e => e.id === c.ownerId);
       if (!battle.squadIds.includes(c.ownerId) || owner?.weaponId !== c.sourceWeaponId || owner.weaponTier !== c.tier) fail('卡牌所有者或装备不一致');
+    }
+    if (battle.mode === 'CAPTURE') {
+      const phase = battle.capturePhase ?? 'COMBAT';
+      const main = battle.enemies.find(enemy => !enemy.isClone);
+      if (battle.captureEmployeeId !== undefined && battle.captureEmployeeId !== null && !battle.squadIds.includes(battle.captureEmployeeId)) fail('收容员工必须属于当前小队');
+      if (phase === 'CAPTURING' && !battle.captureEmployeeId) fail('收容进行中必须绑定操作员工');
+      if (phase !== 'CAPTURING' && battle.captureEmployeeId) fail('非收容进行阶段不能绑定操作员工');
+      if ((battle.captureProgressSec ?? 0) > v3Config.capture.progressSec + 1e-7) fail('收容进度超出配置上限');
+      if (phase === 'COMBAT' && (battle.captureProgressSec ?? 0) > 1e-7) fail('战斗阶段不能保留收容进度');
+      if (phase !== 'COMBAT' && !main) fail('收容阶段缺少主目标');
+      if (phase !== 'COMBAT' && main && main.captureState !== (phase === 'CAPTURED' ? 'CAPTURED' : 'CAPTURABLE')) fail('收容阶段与目标状态不一致');
+      if (phase === 'COMBAT' && main?.captureState !== undefined && main.captureState !== 'ACTIVE') fail('战斗阶段目标必须处于活动状态');
+      if (phase === 'CAPTURING' && (battle.captureDeadlineSec === undefined || battle.captureDeadlineSec === null)) fail('收容进行中必须保存截止时间');
+      if (phase !== 'CAPTURING' && battle.captureDeadlineSec !== undefined && battle.captureDeadlineSec !== null) fail('非收容进行阶段不能保留截止时间');
+      if (phase === 'CAPTURED' && Math.abs((battle.captureProgressSec ?? 0) - v3Config.capture.progressSec) > 1e-7) fail('收容完成但进度未达上限');
     }
   }
 });

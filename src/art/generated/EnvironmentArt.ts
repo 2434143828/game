@@ -71,6 +71,15 @@ export const ENVIRONMENT_TEXTURE_NAMES = [
   "facility_distant_framework_a_column_crossbeam",
   "facility_distant_framework_a_diagonal_brace"
 ] as const;
+/** v0.5 vertical-slice backgrounds. These are deliberately separate from the
+ * legacy modular industrial pack so the three approved areas can be reviewed
+ * and rolled out independently. */
+export const FACILITY_V05_SLICE_TEXTURES = {
+  n01Room: 'facility-v05-slice-n01-room',
+  medicalRest: 'facility-v05-slice-medical-rest',
+  connectorCorridor: 'facility-v05-slice-connector-corridor',
+} as const;
+export type FacilityV05SliceTextureName = (typeof FACILITY_V05_SLICE_TEXTURES)[keyof typeof FACILITY_V05_SLICE_TEXTURES];
 const EXTRA_NAMES = ['nm_v2_env_access_reader_reader', 'nm_v2_env_access_reader_indicator',
   'nm_v2_env_maintenance_station_cabinet', 'nm_v2_env_maintenance_station_tool_dock',
   'nm_v2_env_n01_soft_display_display_shelf', 'nm_v2_env_n01_soft_display_soft_object',
@@ -93,6 +102,14 @@ export class EnvironmentArt {
     for (const name of EXTRA_NAMES) {
       if (!scene.textures.exists(EnvironmentArt.key(name))) scene.load.image(EnvironmentArt.key(name), `${import.meta.env.BASE_URL}art/nm-v2/environment/${name}.png`);
     }
+    const slices: Record<FacilityV05SliceTextureName, string> = {
+      [FACILITY_V05_SLICE_TEXTURES.n01Room]: 'n01_wall.png',
+      [FACILITY_V05_SLICE_TEXTURES.medicalRest]: 'medical_wall.png',
+      [FACILITY_V05_SLICE_TEXTURES.connectorCorridor]: 'corridor_wall.png',
+    };
+    for (const [key, file] of Object.entries(slices)) {
+      if (!scene.textures.exists(key)) scene.load.image(key, `${import.meta.env.BASE_URL}art/facility-v05-slice/${file}`);
+    }
   }
 
   constructor(readonly scene: Phaser.Scene, parent?: Phaser.GameObjects.Container) {
@@ -106,6 +123,23 @@ export class EnvironmentArt {
   draw(name: EnvironmentTextureName, x: number, y: number, width: number, height: number, options: EnvironmentDrawOptions = {}): Phaser.GameObjects.Image | null {
     if (!this.has(name)) return null;
     const image = this.scene.add.image(x, y, EnvironmentArt.key(name)).setOrigin(0).setDisplaySize(width, height);
+    image.setAlpha(options.alpha ?? 1).setFlipX(options.flipX ?? false).setFlipY(options.flipY ?? false);
+    if (options.tint !== undefined) image.setTint(options.tint);
+    if (options.rotation !== undefined) image.setRotation(options.rotation);
+    this.container.add(image);
+    this.usage.set(name, (this.usage.get(name) ?? 0) + 1);
+    return image;
+  }
+
+  drawSlice(name: FacilityV05SliceTextureName, x: number, y: number, width: number, height: number, options: EnvironmentDrawOptions = {}, sourceCropHeight?: number): Phaser.GameObjects.Image | null {
+    if (!this.scene.textures.exists(name)) return null;
+    const image = this.scene.add.image(x, y, name).setOrigin(0).setDisplaySize(width, height);
+    // Crop the generated plate's floor margin; the actual floor belongs to the
+    // map and is drawn separately at the exact employee foot coordinate.
+    if (sourceCropHeight) {
+      image.setDisplaySize(width, height * image.frame.height / sourceCropHeight);
+      image.setCrop(0, 0, image.frame.width, sourceCropHeight);
+    }
     image.setAlpha(options.alpha ?? 1).setFlipX(options.flipX ?? false).setFlipY(options.flipY ?? false);
     if (options.tint !== undefined) image.setTint(options.tint);
     if (options.rotation !== undefined) image.setRotation(options.rotation);

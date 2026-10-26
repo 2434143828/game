@@ -65,8 +65,12 @@ export class CardEffects {
       ? enc.enemies.filter(e => e.suppressionHp > 0)
       : state.employees.filter(e => enc.squadIds.includes(e.id) && e.hp > 0 && (def.target !== 'SELF' || e.id === owner.id));
     const pending = enc.deck.pendingCast?.instanceId === card.instanceId ? enc.deck.pendingCast : null;
-    const hovered = pointer ? candidates.filter(e => Math.abs(pointer.x - e.location.x) < 55 && pointer.y >= e.location.y - 120 && pointer.y <= e.location.y + 20)
+    const hoveredHit = pointer ? candidates.filter(e => Math.abs(pointer.x - e.location.x) < 55 && pointer.y >= e.location.y - 120 && pointer.y <= e.location.y + 20)
       .sort((a, b) => Math.abs(pointer.x - a.location.x) - Math.abs(pointer.x - b.location.x))[0] : undefined;
+    // A hitbox match is not enough to make a target legal. Keep the pointer
+    // guide visible when the cursor is over a distant unit, but mark it as an
+    // out-of-range aim so the HUD cannot imply that a click will cast now.
+    const hovered = hoveredHit && Math.hypot(hoveredHit.location.x - p.x, hoveredHit.location.y - p.y) <= def.rangePx + 1e-7 ? hoveredHit : undefined;
     const focused = candidates.find(e => e.id === pending?.targetId) ?? hovered
       ?? candidates.find(e => e.id === (def.target === 'ENEMY' ? enc.focusEnemyId : owner.id));
     const focusedPoint = focused ? { x: focused.location.x, y: focused.location.y - 43 } : null;

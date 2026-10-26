@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网梗收容 · v0.6 主界面实机对照</title>
+  <style>
+    :root{color-scheme:dark;font-family:"Microsoft YaHei",system-ui,sans-serif;color:#e4e9e2;background:#1c2830;--muted:#a2b6b8;--sage:#bdd3c0;--line:#69878044}
+    *{box-sizing:border-box}body{margin:0 auto;max-width:1440px;padding:44px 32px 64px}a{color:var(--sage);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding-bottom:26px}.eyebrow{font-size:12px;letter-spacing:3px;color:#a2c1b0}h1{font-size:29px;letter-spacing:1px;font-weight:600;margin:12px 0}h2{font-size:19px;font-weight:500;margin:0 0 10px}p{font-size:14px;line-height:1.8;color:var(--muted);margin:8px 0}.links{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;font-size:13px}section{margin-top:38px}.metrics{display:flex;gap:38px;padding:24px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}.metric strong{font-size:27px;font-weight:500;display:block;color:#e5ebdf}.metric small{display:block;font-size:12px;color:var(--muted);margin-top:7px}.metric em{font-size:13px;font-style:normal;color:#c4d7a6;margin-left:10px}.comparison,.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}figure{margin:0;min-width:0}figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px;margin-bottom:9px;line-height:1.5}.tag{color:#dddcc0;font-size:11px;letter-spacing:1px}.image{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#142028}.image img{display:block;width:100%;height:auto}.note{font-size:12px}.compact .image{min-height:80px;display:flex;justify-content:center;align-items:flex-start}.compact .image img{width:auto;max-width:100%;max-height:540px;object-fit:contain}.wide{margin-top:18px}.gallery .image img{aspect-ratio:16/9;object-fit:contain}footer{margin-top:40px;border-top:1px solid var(--line);padding-top:18px;font-size:12px;color:var(--muted);line-height:1.9}code{font-family:ui-monospace,monospace;font-size:12px;color:#c5d3c9}@media(max-width:760px){body{padding:28px 18px}h1{font-size:24px}.comparison,.gallery{grid-template-columns:1fr}.metrics{gap:22px}.metric strong{font-size:23px}.compact .image{min-height:0}.links{gap:16px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">MEME CONTAINMENT / HUD 06</div>
+    <h1>主界面 UI · 实机对照</h1>
+    <p>在现有基地样板上整理顶栏、员工概览和收容导航，用统一图标与短标签减少常驻文字。保留玩法与功能入口。</p>
+    <nav class="links" aria-label="相关页面"><a href="/">打开游戏</a><a href="icons.html">查看矢量图标板</a><a href="../UI_V06_ACCEPTANCE.md">阅读运行验收记录</a><a href="after-overview.jpg">查看完整实机截图</a></nav>
+  </header>
+  <div class="metrics" aria-label="主界面文本统计">
+    <div class="metric"><strong>52 → 25 <em>−51.9%</em></strong><small>常驻文本条目</small></div>
+    <div class="metric"><strong>405 → 77 <em>−81.0%</em></strong><small>常驻文本字符</small></div>
+    <div class="metric"><strong>28</strong><small>统一 SVG 图标</small></div>
+  </div>
+  <p class="note">统计范围：主界面可见 DOM 文本；排除 toast、modal、闭合 details、tooltip 和 canvas。条目与字符按同一口径比较，图标、画布文字及二级详情不计入。<a href="text-before.json">优化前记录</a> · <a href="text-after.json">优化后记录</a></p>
+  <section>
+    <h2>01 / 主界面总览</h2>
+    <p>同为 1280 × 720、04:30 暂停、N01 I 的对照场景。基地仍是画面主体，资源和常用操作集中在轻量 HUD 中。</p>
+    <div class="comparison">
+      <figure><figcaption><span>优化前 · 常驻说明与多块面板</span><span class="tag">BEFORE</span></figcaption><a class="image" href="before-overview.jpg"><img src="before-overview.jpg" alt="优化前主界面总览，1280乘720真实游戏截图"></a></figure>
+      <figure><figcaption><span>优化后 · 图标、短标签、收容 Dock</span><span class="tag">AFTER</span></figcaption><a class="image" href="after-overview.jpg"><img src="after-overview.jpg" alt="优化后主界面总览，1280乘720真实游戏截图"></a></figure>
+    </div>
+    <p class="note">点击任意截图可查看原图。以下两组为对应界面区域的裁切对照。</p>
+  </section>
+  <section>
+    <h2>02 / 选中奶龙的右侧栏</h2>
+    <p>员工状态、当前收容物与下一目标分别表达；档案、装备和卡组仍有入口，详细说明进入二级页面。</p>
+    <div class="comparison compact">
+      <figure><figcaption><span>优化前 · 侧栏</span><span class="tag">BEFORE</span></figcaption><a class="image" href="before-sidebar.jpg"><img src="before-sidebar.jpg" alt="优化前选中奶龙时的右侧栏"></a></figure>
+      <figure><figcaption><span>优化后 · 侧栏</span><span class="tag">AFTER</span></figcaption><a class="image" href="after-sidebar.jpg"><img src="after-sidebar.jpg" alt="优化后选中奶龙时的右侧栏"></a></figure>
+    </div>
+  </section>
+  <section>
+    <h2>03 / 底部收容导航</h2>
+    <p>以头像、编号、阶级和状态徽记组织五个收容物。未解锁项目保留锁定状态，条件可进一步查看。</p>
+    <div class="comparison compact">
+      <figure><figcaption><span>优化前 · 底部导航</span><span class="tag">BEFORE</span></figcaption><a class="image" href="before-dock.jpg"><img src="before-dock.jpg" alt="优化前的底部收容导航"></a></figure>
+      <figure><figcaption><span>优化后 · 收容 Dock</span><span class="tag">AFTER</span></figcaption><a class="image" href="after-dock.jpg"><img src="after-dock.jpg" alt="优化后的底部收容导航Dock"></a></figure>
+    </div>
+  </section>
+  <section>
+    <h2>04 / 统一图标系统</h2>
+    <p>28 枚原创 SVG，统一 24px 网格、1.7px 圆角描边及线性 / 半填充语言。图标继承状态色，配合 tooltip 和无障碍名称使用。</p>
+    <figure class="wide"><figcaption><span>36px 主预览 + 16px 小尺寸对照</span><a href="icons.html">打开图标板</a></figcaption><a class="image" href="icon-board.jpg"><img loading="lazy" src="icon-board.jpg" alt="28枚统一SVG图标的实际浏览器展示板"></a></figure>
+  </section>
+  <section>
+    <h2>05 / 二级信息与功能入口</h2>
+    <p>主界面收起说明后，档案、收容须知、员工数值和装备信息仍可查看。下图为实际页面展示，不代表完整战斗流程验收。</p>
+    <div class="gallery">
+      <figure><figcaption>收容物档案 · 身份与核心指标</figcaption><a class="image" href="profile.jpg"><img loading="lazy" src="profile.jpg" alt="收容物独立档案页"></a></figure>
+      <figure><figcaption>展开详情 · 收容须知与更多说明</figcaption><a class="image" href="profile-expanded.jpg"><img loading="lazy" src="profile-expanded.jpg" alt="展开收容物详情后的档案页"></a></figure>
+      <figure><figcaption>员工详情 · 点击后查看</figcaption><a class="image" href="employee-detail.jpg"><img loading="lazy" src="employee-detail.jpg" alt="员工详细信息页"></a></figure>
+      <figure><figcaption>装备 / 卡组 · 保留配置入口</figcaption><a class="image" href="equipment.jpg"><img loading="lazy" src="equipment.jpg" alt="装备与卡组页面"></a></figure>
+      <figure><figcaption>锁定目标 · 条件与当前状态</figcaption><a class="image" href="locked-target.jpg"><img loading="lazy" src="locked-target.jpg" alt="未解锁收容物目标及条件展示"></a></figure>
+    </div>
+  </section>
+  <footer>范围：v0.6 主界面 UI 与图标增量；保留现有基地垂直切片，未批量重绘房间。<br>本轮不修改存档、战斗、寻路和经营规则。截图记录界面实际运行状态；完整战斗、全部数值与三日流程不由本页宣称通过。</footer>
+</body>
+</html>

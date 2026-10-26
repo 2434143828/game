@@ -57,6 +57,16 @@ const configSchema = z.object({
   tier: z.object({ damageMultipliers: z.array(positive), armorMultipliers: z.array(positive) }).strict(),
   production: z.object({ N01: z.array(nonnegative), N02: z.array(nonnegative), N03: z.array(nonnegative), N04: z.array(nonnegative), N05: z.array(nonnegative) }).strict(),
   captureCosts: z.object({ N01: z.literal(0), N02: nonnegative, N03: nonnegative, N04: nonnegative, N05: nonnegative }).strict(),
+  // Capture confirmation is deliberately separate from combat damage.  Keeping
+  // these values in config lets balance iterate without changing the state
+  // machine or making 20% a hidden universal rule.
+  capture: z.object({
+    thresholdFraction: z.object({ N01: positive.max(1), N02: positive.max(1), N03: positive.max(1), N04: positive.max(1), N05: positive.max(1) }).strict(),
+    deviceRangePx: positive,
+    progressSec: positive,
+    timeoutSec: positive,
+    progressRetainFraction: positive.max(1),
+  }).strict(),
   weaponCards: z.object({ W00: threeCards, W01: threeCards, W02: threeCards, W03: threeCards, W04: threeCards, W05: threeCards }).strict(),
   cards: z.record(cardId, cardSchema),
   enemies: z.object({ N01: cloneEnemy, N02: ordinaryEnemy, N03: ordinaryEnemy, N04: ordinaryEnemy, N05: ordinaryEnemy }).strict(),

@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import type { AnomalyId, EmployeeId, Point, Rect } from '../../contracts/data-contract';
 import type { V3Simulation } from './engine';
-import type { V3Employee, V3Enemy } from './model';
+import type { EncounterState, V3Employee, V3Enemy } from './model';
 import { cardById, v3Config } from './config';
 import { anomalyById, weaponById } from '../data/config';
 import facilityMap from '../../config/facility.json';
@@ -102,7 +102,22 @@ export class V3Scene extends Phaser.Scene {
       if (event.code === 'Home') { event.preventDefault(); this.overview(); }
       if (event.code === 'KeyF') { const id = [...this.selected][0]; if (id) this.focusEmployee(id); }
     });
-    this.configureCamera(); this.paint();
+    this.configureCamera();
+    // Repeatable art comparisons only move the camera; entities keep their real state.
+    if (import.meta.env.DEV) {
+      const view = new URLSearchParams(location.search).get('facilityView');
+      const views: Record<string, { x: number; y: number; zoom: number }> = {
+        n01: { x: 620, y: 350, zoom: 1.2 },
+        medical: { x: 1900, y: 1020, zoom: 1.2 },
+        corridor: { x: 1060, y: 400, zoom: 1.5 },
+        integrated: { x: 1280, y: 680, zoom: 0.59 },
+      };
+      if (view && views[view]) {
+        const preset = views[view]; this.center = { x: preset.x, y: preset.y }; this.zoom = preset.zoom; this.applyCamera();
+      }
+    }
+    this.paint();
+    this.game.canvas.dataset.facilityReady = 'true';
   }
   update(_time: number, delta: number): void {
     this.simulation.update(delta);
@@ -285,6 +300,8 @@ export class V3Scene extends Phaser.Scene {
     this.world.clear(); this.effects.clear(); this.cursor = 0;
     this.humanArt.beginFrame(); this.creatureArt.beginFrame(); this.effectArt.beginFrame();
     this.layoutEnemyLabels();
+    const safeDoor = facilityMap.nodes.find(node => node.id === 'safe-door')!;
+    this.environment.setDoorOpen('SAFE', state.employees.some(e => Math.hypot(e.location.x - safeDoor.x, e.location.y - safeDoor.y) < 70));
     if (!combat) for (const room of state.rooms) {
       const r = ROOM_RECTS[room.anomalyId], foot = creatureFeet(room.anomalyId);
       this.environment.setDoorOpen(room.anomalyId, room.owned);
@@ -303,6 +320,7 @@ export class V3Scene extends Phaser.Scene {
       for (const e of state.encounter.enemies) this.drawEnemy(e);
     }
     for (const e of state.employees) if (!combat || state.encounter?.squadIds.includes(e.id)) this.drawEmployee(e);
+    if (combat && field && state.encounter) this.drawCaptureOverlay(state.encounter, time);
     const pointer = this.input.activePointer;
     this.cardEffects.render(state, this.callbacks.cardPresentation?.() ?? null, inRect(pointer, VIEW) ? this.unproject(pointer) : null);
     if (combat && state.encounter?.deck.pendingCast) {
@@ -332,6 +350,28 @@ export class V3Scene extends Phaser.Scene {
     this.humanArt.endFrame(); this.creatureArt.endFrame(); this.effectArt.endFrame();
     for (let i = this.cursor; i < this.labels.length; i++) this.labels[i].setVisible(false);
     this.lastTime = time;
+  }
+  /** Capture feedback is rendered from the live encounter phase and positions. */
+  private drawCaptureOverlay(encounter: EncounterState, time: number): void {
+    const target = encounter.enemies.find(enemy => !enemy.isClone && enemy.suppressionHp > 0);
+    if (!target || encounter.capturePhase === 'COMBAT') return;
+    const phase = encounter.capturePhase ?? 'CAPTURABLE';
+    const color = phase === 'CAPTURING' ? 0x9ee6cf : 0xffcf86;
+    const x = target.location.x, y = target.location.y - 40;
+    const radius = 48 + Math.sin(time * 5) * 4;
+    this.effects.lineStyle(3, color, 0.85).strokeCircle(x, y, radius);
+    this.effects.lineStyle(1, color, 0.42).strokeCircle(x, y, radius + 10);
+    if (phase === 'CAPTURING') {
+      const operator = encounter.captureEmployeeId ? this.simulation.state.employees.find(employee => employee.id === encounter.captureEmployeeId) : undefined;
+      if (operator) {
+        this.effects.lineStyle(2, color, 0.75).lineBetween(operator.location.x, operator.location.y - 38, x, y);
+        const progress = Phaser.Math.Clamp((encounter.captureProgressSec ?? 0) / v3Config.capture.progressSec, 0, 1);
+        this.effects.lineStyle(5, color, 0.95).beginPath().arc(x, y, radius + 7, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * progress).strokePath();
+        this.label(`收容装置 ${Math.round(progress * 100)}%`, operator.location.x, operator.location.y - 116, 13, '#bff0df');
+      }
+    } else {
+      this.label('已压制 · 可启动收容装置', x, y - 70, 13, '#ffdf9a');
+    }
   }
   private drawEmployee(e: V3Employee): void {
     const time = this.simulation.state.simulationTimeSec, a = this.actor(e), selected = this.selected.has(e.id);

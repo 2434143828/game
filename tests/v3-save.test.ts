@@ -109,6 +109,65 @@ describe('v0.3 versioned storage and legacy compatibility', () => {
     const state = createV3State(); state.ownedWeapons.push('W05');
     expect(saveV3(storage(), state, 1000).ok).toBe(false);
   });
+
+  it('rejects inconsistent v0.4 capture metadata instead of loading a soft-locked encounter', () => {
+    const capture = () => {
+      const sim = new V3Simulation();
+      sim.state.rooms[0]!.rank = 2;
+      sim.state.wallet = 100;
+      expect(sim.startEncounter('CAPTURE', 'N02').ok).toBe(true);
+      return sim.state;
+    };
+    const cases = [
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'CAPTURABLE';
+        encounter.captureEmployeeId = 'E04';
+        encounter.enemies[0]!.captureState = 'CAPTURABLE';
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'CAPTURING';
+        encounter.captureEmployeeId = null;
+        encounter.captureDeadlineSec = 8;
+        encounter.enemies[0]!.captureState = 'CAPTURABLE';
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'COMBAT';
+        encounter.captureProgressSec = 0.5;
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'CAPTURABLE';
+        encounter.captureProgressSec = 0;
+        encounter.captureDeadlineSec = 8;
+        encounter.enemies[0]!.captureState = 'CAPTURABLE';
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'CAPTURED';
+        encounter.captureProgressSec = 0;
+        encounter.captureDeadlineSec = null;
+        encounter.enemies[0]!.captureState = 'CAPTURED';
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'CAPTURABLE';
+        encounter.enemies[0]!.captureState = 'ACTIVE';
+      },
+      (state: ReturnType<typeof createV3State>) => {
+        const encounter = state.encounter!;
+        encounter.capturePhase = 'COMBAT';
+        encounter.enemies[0]!.captureState = 'CAPTURABLE';
+      },
+    ];
+    for (const change of cases) {
+      const state = capture();
+      change(state);
+      expect(validateV3Save({ saveVersion: 3, savedAtMs: 1000, state }).ok).toBe(false);
+    }
+  });
 });
 
 describe('v0.3 offline boundaries and battle exits', () => {

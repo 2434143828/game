@@ -4,6 +4,7 @@ import { anomalyById } from '../../data/config';
 import { MAP_DEFINITION, MAP_NODES, ROOM_COLORS, ROOM_RECTS, creatureFeet, roomWorkFeet } from './geometry';
 import { PALETTE, inkBox, inkEllipse, inkLine, inkPolygon, hatch } from '../../art/ink';
 import { EnvironmentArt, type EnvironmentTextureName } from '../../art/generated/EnvironmentArt';
+import { FacilitySliceArt } from '../../art/generated/FacilitySliceArt';
 
 type Sign = (text: string, x: number, y: number, size?: number, color?: string) => void;
 type Graphics = Phaser.GameObjects.Graphics;
@@ -366,6 +367,7 @@ export function drawArchitecture(g: Graphics, sign: Sign, art?: EnvironmentArt):
 /** Modular generated assets, placed on the existing map without changing a single route node. */
 function drawGeneratedArchitecture(g: Graphics, sign: Sign, art: EnvironmentArt): void {
   const d = (name: EnvironmentTextureName, x: number, y: number, w: number, h: number, alpha = 1) => art.draw(name, x, y, w, h, { alpha });
+  const samples = new FacilitySliceArt(art);
   const floorImage = (x: number, y: number, w: number): void => {
     d('floor_bearing_strip_a_middle', x, y - 12, w, 47);
     d('floor_bearing_strip_a_cap_left', x - 6, y - 12, 22, 47);
@@ -418,18 +420,21 @@ function drawGeneratedArchitecture(g: Graphics, sign: Sign, art: EnvironmentArt)
     floorImage(r.x - 6, r.y + r.height, r.width + 12);
   };
   const b = MAP_DEFINITION.bounds;
-  d('facility_void_backdrop_a_void_tile', b.x, b.y, b.width, b.height, 0.23);
-  for (const x of [96, 1180, 2250, 3320]) d('facility_distant_framework_a_column_crossbeam', x, 65, 90, 2310, 0.26);
-  for (const y of [145, 960, 1730, 2375]) pipeImage(90, y, 3440, y, 16, 0.24);
-  pipeImage(200, 520, 200, 2330, 27, 0.24); pipeImage(3300, 240, 3300, 2220, 32, 0.24);
-  for (const [x, y] of [[3300, 780], [200, 1630], [930, 1790], [3120, 915]]) d('industrial_pipe_connectors_a_handwheel_valve', x - 25, y - 25, 50, 50, 0.45);
+  // Keep the generated depth layer subordinate to the authored rooms. The
+  // lower alpha preserves the structure for orientation while leaving the
+  // selected room, workers and live warnings as the visual focus.
+  d('facility_void_backdrop_a_void_tile', b.x, b.y, b.width, b.height, 0.15);
+  for (const x of [96, 1180, 2250, 3320]) d('facility_distant_framework_a_column_crossbeam', x, 65, 90, 2310, 0.18);
+  for (const y of [145, 960, 1730, 2375]) pipeImage(90, y, 3440, y, 16, 0.16);
+  pipeImage(200, 520, 200, 2330, 27, 0.17); pipeImage(3300, 240, 3300, 2220, 32, 0.17);
+  for (const [x, y] of [[3300, 780], [200, 1630], [930, 1790], [3120, 915]]) d('industrial_pipe_connectors_a_handwheel_valve', x - 25, y - 25, 50, 50, 0.32);
   sign('CONTAINMENT COMPLEX', 1630, 130, 44, '#343c48');
   sign('收  容  设  施  /  区 域 07', 1740, 188, 20, '#424953');
   sign('上层观察区', 260, 140, 22, '#747567'); sign('下层安抚区', 1300, 2320, 22, '#4c626e');
 
   for (const edge of MAP_DEFINITION.edges) {
     const a = MAP_NODES[edge.from], end = MAP_NODES[edge.to];
-    if (a.y !== end.y) continue;
+    if (a.y !== end.y || samples.containsEdge(a, end)) continue;
     const x = Math.min(a.x, end.x), w = Math.abs(a.x - end.x), y = a.y;
     const margin = edge.kind === 'CORRIDOR' ? 64 : 11;
     d('corridor_wall_segment_a_middle', x - margin, y - 118, w + margin * 2, 119);
@@ -479,10 +484,18 @@ function drawGeneratedArchitecture(g: Graphics, sign: Sign, art: EnvironmentArt)
       lampImage(913, r.y + 60, 115);
     }
   }
+  // Wall first, then room and stateful door trim across the shared seam.
+  if (samples.enabled) samples.corridor(810, MAP_NODES['n01-entry'].y, 590);
   const roomColors: Record<AnomalyId, WallColor> = { N01: 'taupe', N02: 'taupe', N03: 'moss', N04: 'mauve', N05: 'slate' };
   for (const id of Object.keys(MAP_DEFINITION.rooms) as AnomalyId[]) {
     const r = ROOM_RECTS[id], fy = r.y + r.height, work = roomWorkFeet(id), subject = creatureFeet(id);
     const door = MAP_NODES[MAP_DEFINITION.rooms[id].doorNodeId], side = door.x > work.x ? 1 : -1;
+    if (samples.enabled && id === 'N01') {
+      samples.room(r, 'N01', door.x);
+      sign(`${id}   ${anomalyById[id].name}`, r.x + 25, r.y + 50, 25, '#303d3b');
+      sign('CONTAINMENT 01 / 观察与互动', r.x + 27, r.y + 80, 13, '#53675e');
+      continue;
+    }
     shellImage(r, roomColors[id], side === 1 ? 'right' : 'left');
     sign(`${id}   ${anomalyById[id].name}`, r.x + 25, r.y + 61, 27, '#273849');
     sign(`CONTAINMENT ${id.slice(1)} / 概念样本`, r.x + 27, r.y + 96, 13, '#506176');
@@ -524,21 +537,29 @@ function drawGeneratedArchitecture(g: Graphics, sign: Sign, art: EnvironmentArt)
     doorImage(id, door.x, door.y); sign('入口', door.x - 17, door.y - 158, 13, '#c5c6b4');
   }
   const safe = MAP_DEFINITION.safeRect, fy = safe.y + safe.height;
-  shellImage(safe, 'moss', 'left');
-  sign('医疗休整区', safe.x + 29, safe.y + 69, 27, '#273849'); sign('SAFE / 抵达后恢复', safe.x + 30, safe.y + 105, 15, '#506176');
-  glassImage(safe.x + 249, safe.y + 73, 149, 85);
-  for (const x of [safe.x + 35, safe.x + safe.width - 145]) {
-    d('medical_recovery_bed_a_bed_frame_mattress', x, fy - 70, 129, 70);
-    d('medical_recovery_bed_a_pillow', x + 5, fy - 70, 35, 14);
+  if (samples.enabled) {
+    samples.corridor(1400, fy, 250);
+    samples.room(safe, 'SAFE', MAP_NODES['safe-door'].x);
+    sign('医疗休整区', safe.x + 140, safe.y + 60, 25, '#303d3b');
+    sign('SAFE / 抵达后恢复', safe.x + 141, safe.y + 91, 13, '#53675e');
+  } else {
+    shellImage(safe, 'moss', 'left');
+    sign('医疗休整区', safe.x + 29, safe.y + 69, 27, '#273849'); sign('SAFE / 抵达后恢复', safe.x + 30, safe.y + 105, 15, '#506176');
+    glassImage(safe.x + 249, safe.y + 73, 149, 85);
+    for (const x of [safe.x + 35, safe.x + safe.width - 145]) {
+      d('medical_recovery_bed_a_bed_frame_mattress', x, fy - 70, 129, 70);
+      d('medical_recovery_bed_a_pillow', x + 5, fy - 70, 35, 14);
+    }
+    d('medical_supply_cabinet_a_cabinet', safe.x + 196, fy - 112, 56, 92);
+    d('medical_supply_cabinet_a_blank_chart', safe.x + 466, safe.y + 80, 46, 67);
+    d('nm_v2_env_supply_dispenser_dispenser', safe.x + 260, fy - 92, 28, 92);
+    benchImage(safe.x + 302, fy, 99);
+    doorImage('SAFE', MAP_NODES['safe-door'].x, fy); lampImage(safe.x + 270, safe.y + 44, 147);
   }
-  d('medical_supply_cabinet_a_cabinet', safe.x + 196, fy - 112, 56, 92);
-  d('medical_supply_cabinet_a_blank_chart', safe.x + 466, safe.y + 80, 46, 67);
-  d('nm_v2_env_supply_dispenser_dispenser', safe.x + 260, fy - 92, 28, 92);
-  benchImage(safe.x + 302, fy, 99); doorImage('SAFE', MAP_NODES['safe-door'].x, fy); lampImage(safe.x + 270, safe.y + 44, 147);
   // Repaint every real bridge and transit segment above wall cladding, as in the vector version.
   for (const edge of MAP_DEFINITION.edges) {
     const a = MAP_NODES[edge.from], end = MAP_NODES[edge.to];
-    if (edge.kind === 'CORRIDOR' && a.y === end.y) floorImage(Math.min(a.x, end.x) - 65, a.y, Math.abs(a.x - end.x) + 130);
+    if (edge.kind === 'CORRIDOR' && a.y === end.y && !samples.containsEdge(a, end)) floorImage(Math.min(a.x, end.x) - 65, a.y, Math.abs(a.x - end.x) + 130);
   }
   for (const edge of MAP_DEFINITION.edges) {
     if (edge.kind !== 'TRANSIT') continue;
@@ -557,9 +578,12 @@ function drawGeneratedArchitecture(g: Graphics, sign: Sign, art: EnvironmentArt)
   sign('A / 联络井', MAP_NODES['a-top'].x - 98, MAP_NODES['a-top'].y - 60, 16, '#b0b7ad');
   sign('B / 联络井', MAP_NODES['b-top'].x - 100, MAP_NODES['b-top'].y - 57, 16, '#b0b7ad');
   sign('C / 下行通道', MAP_NODES['c-landing'].x - 110, MAP_NODES['c-landing'].y - 45, 16, '#9bafb1');
-  sign('01  上层观察', 1002, 362, 17, '#a4b5ad'); sign('← N01', 1482, 811, 13, '#d0c4a8');
+  sign('01  上层观察', 1002, samples.enabled ? 318 : 362, 17, samples.enabled ? '#53675e' : '#a4b5ad'); sign('← N01', 1482, 811, 13, '#d0c4a8');
   sign('N02 →', 2110, 813, 13, '#d0c4a8'); sign('← N03   /   下行 N05', 1095, 1320, 14, '#e0d6bd'); sign('N04 →', 2392, 1555, 14, '#e6d6bd');
-  for (const r of Object.values(ROOM_RECTS)) for (const x of [r.x + 35, r.x + r.width - 90]) d('facility_distant_framework_a_diagonal_brace', x, r.y + r.height + 37, 67, 58, 0.52);
+  for (const [id, r] of Object.entries(ROOM_RECTS)) {
+    if (samples.enabled && id === 'N01') continue;
+    for (const x of [r.x + 35, r.x + r.width - 90]) d('facility_distant_framework_a_diagonal_brace', x, r.y + r.height + 37, 67, 58, 0.52);
+  }
   // Graphics remains a backing plane only; runtime actors, text, selection and warnings stay separate.
   g.fillStyle(PALETTE.void).fillRect(b.x, b.y, b.width, b.height);
 }

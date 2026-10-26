@@ -1,0 +1,178 @@
+/* v0.6 HUD only. The 1600 × 900 scene, hit targets and combat hand retain
+   their original geometry; these rules never affect simulation or world art. */
+.v06-ui {
+  --v06-panel: #26353de8;
+  --v06-line: #8da49e40;
+  --v06-ink: #e8e9dc;
+  --v06-muted: #a6b9b6;
+  --v06-sage: #b6cbb9;
+  --v06-warm: #e7cd8e;
+  color: var(--v06-ink);
+  font-size: 12px;
+}
+.v06-ui [hidden] { display: none !important; }
+.v06-ui .v06-icon { display: inline-block; width: 20px; height: 20px; flex: none; vertical-align: middle; }
+.v06-ui button:not(.v3-card) { border-color: var(--v06-line); border-radius: 6px; color: var(--v06-ink); background: #31434c80; box-shadow: none; }
+.v06-ui button:not(.v3-card):hover { border-color: #b6cbb994; background: #40574f; }
+.v06-ui button:not(.v3-card):is(.selected,.active,.armed) { border-color: #c2d2b8; background: #40574f; box-shadow: none; }
+.v06-ui button:focus-visible,.v06-ui summary:focus-visible { outline: 2px solid var(--v06-warm); outline-offset: 3px; }
+.v06-ui button:disabled { opacity: .45; }
+.v06-ui small { color: var(--v06-muted); }
+.v06-ui .v06-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex: none; padding: 5px; }
+.v06-ui .v06-metric { display: inline-flex; align-items: center; gap: 7px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.v06-ui .v06-metric .v06-icon { color: var(--v06-sage); }
+
+/* One quiet line: title, context, production, wallet, clock, playback. */
+.v06-ui .v3-top { height: 50px; gap: 13px; padding: 0 16px; background: #23313be8; border: 1px solid var(--v06-line); border-radius: 8px; box-shadow: none; }
+.v06-ui .v3-brand { display: flex; align-items: center; gap: 10px; margin-right: auto; }
+.v06-ui .v3-brand b { display: inline; font-size: 18px; letter-spacing: 2px; color: var(--v06-ink); font-weight: 650; }
+.v06-ui .v3-brand .v06-icon { color: var(--v06-warm); width: 25px; height: 25px; }
+.v06-ui #v3-mode { color: var(--v06-muted); font-size: 11px; padding: 4px 10px; border-radius: 15px; background: #9fb7a90c; }
+.v06-ui #v3-income { color: var(--v06-ink); font-size: 14px; }
+.v06-ui #v3-wallet { min-width: 99px; color: var(--v06-warm); font-size: 19px; font-weight: 600; }
+.v06-ui #v3-wallet .v06-icon { color: var(--v06-warm); }
+.v06-ui #v3-clock { color: var(--v06-muted); width: 50px; margin: 0 8px; font-size: 11px; }
+.v06-ui .v3-top button { height: 31px; padding: 4px 9px; }
+.v06-ui .v3-top .v06-icon-button { width: 34px; }
+.v06-ui .v3-map-tools { gap: 4px; z-index: 5; }
+.v06-ui .v3-map-tools button { display: flex; align-items: center; justify-content: center; gap: 6px; height: 31px; padding: 5px 9px; background: #23313bca; border-color: #8da49e29; font-size: 11px; }
+
+/* Roster, selection and next goal form a single rail, not nested dashboards. */
+.v06-ui .v3-side { height: auto; max-height: 650px; padding: 12px; background: var(--v06-panel); border: 1px solid var(--v06-line); border-radius: 9px; box-shadow: none; backdrop-filter: none; scrollbar-width: thin; scrollbar-color: #6e8b7f #26353d; }
+.v06-ui.v3-in-combat .v3-side { height: auto; max-height: 560px; }
+.v06-ui .v3-side h3 { margin: 0; color: var(--v06-ink); font-size: 14px; letter-spacing: .4px; }
+.v06-ui .v3-side p { color: var(--v06-muted); }
+.v06-ui .v06-roster > summary { display: flex; align-items: center; gap: 7px; padding: 1px 0 11px; cursor: pointer; color: var(--v06-muted); list-style: none; font-size: 11px; }
+.v06-ui .v06-roster > summary::-webkit-details-marker { display: none; }
+.v06-ui .v06-roster > summary > .v06-icon { margin-left: auto; width: 15px; height: 15px; transform: rotate(90deg); }
+.v06-ui #v06-roster-summary { display: flex; align-items: center; gap: 7px; }
+.v06-ui .v06-safety { display: inline-flex; align-items: center; gap: 4px; margin-left: 11px; color: var(--v06-sage); }
+.v06-ui .v06-safety.warning { color: #e2a497; }
+.v06-ui .v06-safety .v06-icon { width: 16px; height: 16px; }
+.v06-ui .v06-roster:not([open]) > summary { padding-bottom: 2px; }
+.v06-ui .v06-roster:not([open]) > summary > .v06-icon { transform: none; }
+.v06-ui .v06-roster-grid { display: grid; gap: 5px; }
+.v06-ui .v06-staff-row { display: flex; align-items: center; gap: 5px; }
+.v06-ui .v3-staff { position: relative; min-width: 0; width: auto; flex: 1; height: 53px; margin: 0; padding: 5px 7px; gap: 8px; border: 1px solid transparent; background: #a8b9a908; }
+.v06-ui .v3-staff img { width: 35px; height: 40px; object-fit: contain; }
+.v06-ui .v3-staff b { color: var(--v06-ink); font-size: 11px; font-weight: 600; }
+.v06-ui .v06-staff-info { position: relative; min-width: 0; padding-top: 0; }
+.v06-ui .v06-status { position: absolute; right: 0; top: -1px; color: var(--v06-sage); }
+.v06-ui .v06-status .v06-icon { width: 14px; height: 14px; }
+.v06-ui .v3-staff i { height: 3px; border: 0; border-radius: 2px; background: #15262b; margin: 5px 0 0; overflow: hidden; }
+.v06-ui .v3-staff em { background: #d2a39b; border-radius: inherit; }
+.v06-ui .v3-staff .v3-sp em { background: #a6c8bc; }
+.v06-ui .v06-staff-detail { width: 26px; height: 28px; padding: 3px; border-color: transparent !important; background: transparent !important; }
+.v06-ui .v06-staff-detail .v06-icon { width: 16px; height: 16px; color: var(--v06-muted); }
+.v06-ui #v3-room { border-top: 1px solid var(--v06-line); margin-top: 14px; padding-top: 15px; }
+.v06-ui .v06-selected-head { display: flex; align-items: center; gap: 9px; min-height: 59px; }
+.v06-ui .v06-selected-head > :is(img,svg.v06-creature-portrait) { display: block; width: 57px; height: 59px; flex: 0 0 57px; object-fit: contain; background: #bbc8ac12; border-radius: 9px; }
+.v06-ui .v06-selected-head > div { flex: 1; min-width: 0; }
+.v06-ui .v06-selected-head h3 { margin-bottom: 4px; font-size: 16px; }
+.v06-ui .v06-selected-head small { font-size: 10px; }
+.v06-ui .v06-selected-head em { font-style: normal; color: var(--v06-warm); }
+.v06-ui .v06-selected-head > button { width: 26px; height: 29px; padding: 3px; background: transparent; border-color: transparent; }
+.v06-ui .v06-room-metrics { display: flex; align-items: center; justify-content: space-between; padding: 13px 0; gap: 6px; }
+.v06-ui .v06-room-metrics .v06-metric { gap: 4px; font-size: 11px; }
+.v06-ui .v06-room-metrics .v06-icon { width: 17px; height: 17px; }
+.v06-ui .v06-actions { display: grid; gap: 6px; }
+.v06-ui .v3-primary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: #aebfa9 !important; border-color: #bdcdb7 !important; color: #20342f !important; min-height: 32px; font-weight: 600; }
+.v06-ui .v3-primary:hover { background: #c2d1b8 !important; }
+.v06-ui .v06-actions button { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 11px; min-height: 31px; padding: 5px 8px; }
+.v06-ui .v06-actions .v06-icon { width: 17px; height: 17px; }
+.v06-ui .v06-condition { display: flex; align-items: center; gap: 5px; padding-top: 9px; color: var(--v06-muted); font-size: 10px; line-height: 1.6; }
+.v06-ui .v06-condition .v06-icon { width: 14px; height: 14px; }
+.v06-ui .v3-wide { margin-top: 7px; }
+.v06-ui .v3-next-target { display: grid; gap: 10px; margin-top: 16px; padding: 15px 0 0; background: transparent; border: 0; border-top: 1px solid var(--v06-line); box-shadow: none; }
+.v06-ui .v06-target-head { display: flex; align-items: center; gap: 7px; }
+.v06-ui .v06-target-head b { flex: 1; font-size: 12px; font-weight: 500; color: var(--v06-ink); }
+.v06-ui .v06-target-head > .v06-icon { color: var(--v06-warm); width: 18px; height: 18px; }
+.v06-ui .v06-target-head button { margin: 0; width: 28px; height: 28px; padding: 3px; }
+.v06-ui .v06-conditions { display: flex; flex-wrap: wrap; gap: 5px; }
+.v06-ui .v06-conditions span { display: inline-flex; align-items: center; gap: 4px; min-height: 22px; max-width: 100%; padding: 3px 6px; background: #b2c3b40b; border-radius: 4px; color: var(--v06-muted); font-size: 10px; }
+.v06-ui .v06-conditions .v06-icon { width: 13px; height: 13px; }
+.v06-ui .v06-conditions .ready { color: #c4d9bd; }
+
+/* The facility dock is an island below the world, leaving the rest open.
+   Combat overrides in style.css remain intact and continue owning the hand. */
+.v06-ui:not(.v3-in-combat) .v3-bottom { left: 680px; top: 744px; width: auto; height: auto; padding: 9px; transform: translateX(-50%); border: 1px solid var(--v06-line); border-radius: 12px; background: #24333dda; box-shadow: 0 5px 14px #101a2126; }
+.v06-ui:not(.v3-in-combat) #v3-deck-status:empty,.v06-ui:not(.v3-in-combat) #v3-deck-bins:empty { display: none; }
+.v06-ui:not(.v3-in-combat) #v3-facility-actions { display: flex; align-items: stretch; gap: 8px; }
+.v06-ui .v3-room-chip { position: relative; flex: 0 0 76px; width: 76px; height: 86px; padding: 4px 6px 6px; overflow: visible; border: 1px solid transparent; border-radius: 7px; background: #a9b8b00a; box-shadow: none; }
+.v06-ui .v3-room-chip:hover,.v06-ui .v3-room-chip.selected { border-color: #bccab1; background: #647a622e; }
+.v06-ui .v06-dock-portrait { display: block; width: 54px; height: 55px; margin: 0 auto 2px; object-fit: contain; }
+.v06-ui .v3-room-chip .v06-dock-id { display: inline; color: var(--v06-muted); font-size: 10px; letter-spacing: .5px; margin: 0; }
+.v06-ui .v3-room-chip em { position: absolute; right: 7px; bottom: 7px; color: var(--v06-warm); font-style: normal; font-size: 10px; }
+.v06-ui .v3-room-chip .v06-dock-status { display: flex; align-items: center; justify-content: center; position: absolute; right: 3px; top: 3px; width: 20px; height: 20px; margin: 0; border-radius: 50%; color: var(--v06-sage); background: #293c3de8; }
+.v06-ui .v06-dock-status .v06-icon { width: 14px; height: 14px; }
+.v06-ui .v3-room-chip.is-locked .v06-dock-portrait { opacity: .37; }
+.v06-ui .v3-room-chip.is-locked .v06-dock-status { color: #a7b6b1; }
+.v06-ui #v3-message { left: 26px; bottom: 12px; max-width: 1250px; padding: 6px 10px; border-radius: 5px; background: #26353de8; color: var(--v06-ink); }
+.v06-ui #v3-message:empty { display: none; }
+
+/* Instructions and log remain available without occupying the quiet map. */
+.v06-ui .v06-help { position: absolute; z-index: 24; left: 1302px; top: 80px; width: 32px; pointer-events: auto; }
+.v06-ui .v06-help > summary { display: flex; align-items: center; justify-content: center; height: 31px; border: 1px solid var(--v06-line); border-radius: 5px; background: #23313bca; color: var(--v06-muted); cursor: pointer; list-style: none; }
+.v06-ui .v06-help > summary::-webkit-details-marker { display: none; }
+.v06-ui .v06-help-panel { position: absolute; top: 39px; right: 0; width: 310px; padding: 16px; border: 1px solid #829a8a83; border-radius: 7px; background: #24353ef7; box-shadow: 0 8px 26px #101a214d; }
+.v06-ui .v06-help-panel p { margin: 0 0 8px; font-size: 12px; line-height: 1.7; color: var(--v06-ink); }
+.v06-ui .v06-help-panel #v3-log { margin-top: 13px; padding-top: 11px; border-color: var(--v06-line); }
+.v06-ui .v06-help-panel #v3-log p { font-size: 11px; color: var(--v06-muted); }
+.v06-ui #v06-last-message { color: var(--v06-warm); font-size: 11px; line-height: 1.6; }
+
+/* Plain CSS tooltips complement the accessible button names and native
+   titles, and are equally visible when controls are reached by keyboard. */
+.v06-ui :is(button,summary)[data-tooltip] { position: relative; }
+.v06-ui :is(button,summary)[data-tooltip]::after { content: attr(data-tooltip); position: absolute; z-index: 60; left: 50%; bottom: calc(100% + 9px); transform: translateX(-50%); width: max-content; max-width: 260px; padding: 7px 10px; background: #e4e7d8; border: 1px solid #a3b3a4; border-radius: 5px; color: #263b38; font: 11px/1.6 "Microsoft YaHei", sans-serif; white-space: normal; text-align: left; opacity: 0; visibility: hidden; pointer-events: none; box-shadow: 0 4px 12px #14201d33; }
+.v06-ui :is(button,summary)[data-tooltip]:is(:hover,:focus-visible)::after { opacity: 1; visibility: visible; }
+.v06-ui .v3-top :is(button,summary)[data-tooltip]::after,.v06-ui .v3-map-tools :is(button,summary)[data-tooltip]::after { top: calc(100% + 9px); bottom: auto; }
+.v06-ui .v3-top button:last-child:is(button,summary)[data-tooltip]::after { left: auto; right: 0; transform: none; }
+.v06-ui .v3-side :is(button,summary)[data-tooltip]::after { left: auto; right: 0; transform: none; max-width: 185px; }
+
+/* P1 secondary sheets inherit the same soft institutional palette. */
+.v06-ui .v3-shade { background: #15252bd9; }
+.v06-ui .v3-dialog { border-color: #91a69b88; border-radius: 11px; background: #2b3d44; color: var(--v06-ink); box-shadow: 0 16px 50px #101a2159; }
+.v06-ui .v3-dialog p { color: #bdcbc5; }
+.v06-ui .v3-dialog.v3-profile-dialog { position: relative; width: 1020px; height: 530px; padding: 20px; outline: none; border-color: #91a69b88; background: #273940; box-shadow: 0 16px 50px #101a2159; }
+.v06-ui .v3-profile-dialog > .v3-close { position: absolute; top: 28px; right: 28px; z-index: 2; }
+.v06-ui .v3-profile-page { grid-template-columns: 280px 1fr; gap: 16px; }
+.v06-ui .v3-profile-idcard,.v06-ui .v3-profile-record { border: 0; background: #31464a; box-shadow: none; border-radius: 7px; }
+.v06-ui .v3-profile-idcard::before,.v06-ui .v3-profile-portrait::after { content: none; }
+.v06-ui .v3-profile-portrait { width: 216px; height: 215px; margin: 14px auto 10px; border-color: var(--v06-line); background: #adbea514; border-radius: 10px; box-shadow: none; }
+.v06-ui .v3-profile-portrait > :is(img,svg.v06-creature-portrait) { display: block; width: 100%; height: 100%; filter: none; object-fit: contain; padding: 10px; box-sizing: border-box; }
+.v06-ui .v3-profile-idcard > h2,.v06-ui .v3-profile-title h2 { color: var(--v06-ink); }
+.v06-ui .v3-profile-status,.v06-ui .v3-profile-tags span { border-color: var(--v06-line); border-radius: 4px; background: transparent; color: var(--v06-muted); }
+.v06-ui .v3-profile-icon { border: 0; background: transparent; color: var(--v06-sage); }
+.v06-ui .v3-profile-rank,.v06-ui .v3-profile-title,.v06-ui .v3-profile-footer { border-color: var(--v06-line); }
+.v06-ui .v3-profile-record { overflow: auto; scrollbar-width: thin; }
+.v06-ui .v3-profile-title { padding-right: 40px; padding-bottom: 14px; }
+.v06-ui .v3-profile-grid { gap: 14px; grid-template-rows: auto auto; }
+.v06-ui .v3-profile-grid article { background: #253b3d55; border: 0; border-radius: 6px; padding: 16px; box-shadow: none; }
+.v06-ui .v3-profile-grid p { color: #cbd5cb; font-size: 15px; line-height: 1.65; }
+.v06-ui .v3-profile-grid small,.v06-ui .v3-profile-rank small,.v06-ui .v3-profile-title small { color: var(--v06-muted); letter-spacing: .5px; }
+.v06-ui .v3-profile-stat b { color: var(--v06-warm); }
+.v06-ui .v3-profile-modules span { border-color: var(--v06-line); background: transparent; border-radius: 5px; color: var(--v06-sage); }
+.v06-ui .v3-profile-record details { margin-top: 12px; padding: 11px 0; border-top: 1px solid var(--v06-line); }
+.v06-ui .v3-profile-record details summary { cursor: pointer; color: var(--v06-sage); font-size: 14px; }
+.v06-ui .v3-profile-record details p { margin-top: 9px; font-size: 15px; }
+.v06-ui .v06-employee-profile { display: grid; grid-template-columns: 130px 1fr; gap: 12px 25px; align-items: center; padding: 8px 0; }
+.v06-ui .v06-employee-profile > img { width: 130px; height: 155px; object-fit: contain; padding: 12px; border-radius: 10px; background: #b7c8ad0e; grid-row: span 2; }
+.v06-ui .v06-employee-profile h2 { font-size: 23px; color: var(--v06-ink); margin: 0; }
+.v06-ui .v06-employee-profile > .v06-employee-equipment,.v06-ui .v06-employee-profile > details,.v06-ui .v06-employee-profile > button { grid-column: 1 / -1; }
+.v06-ui .v06-employee-profile > details { padding-bottom: 12px; }
+.v06-ui .v06-employee-profile > details summary { cursor: pointer; color: var(--v06-sage); }
+.v06-ui .v06-employee-profile > details p { padding: 10px 0; font-size: 12px; }
+.v06-ui .v06-employee-stats { display: flex; gap: 20px; flex-wrap: wrap; color: var(--v06-sage); padding: 18px 0; border-block: 1px solid var(--v06-line); }
+.v06-ui .v06-employee-stats > div,.v06-ui .v06-employee-stats > span { display: flex; align-items: center; gap: 8px; }
+.v06-ui .v06-employee-equipment { padding: 18px 0; color: var(--v06-muted); font-size: 13px; line-height: 2; }
+.v06-ui .v06-employee-equipment .v06-icon { margin-right: 6px; color: var(--v06-sage); }
+.v06-ui .v3-loadout { border-color: var(--v06-line); }
+.v06-ui .v3-loadout select { border-color: #91a69b66; background: #253b3d; color: var(--v06-ink); border-radius: 4px; }
+
+/* Small live anomaly marks are state classes, with no autonomous animation. */
+.v06-ui .v06-polluted { color: #e8c983; }
+.v06-ui .v06-polluted .v06-icon { stroke-dasharray: 3 1; }
+.v06-ui.v06-nailong-breach .v06-mode > .v06-icon { color: var(--v06-warm); filter: drop-shadow(4px -2px 0 #e7cd8e55); }
+@media (prefers-reduced-motion: reduce) {
+  .v06-ui :is(button,summary)[data-tooltip]::after { transition: none; }
+}

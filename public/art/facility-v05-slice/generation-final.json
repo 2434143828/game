@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-25",
+  "assets": [
+    {
+      "name": "n01",
+      "file": "n01_wall.png",
+      "prompt": "Production game background for a hand-inked modern anomaly agency 2D side-scroller with chibi employees. Strict orthographic FRONT ELEVATION, absolutely no perspective, no visible side walls, NO FLOOR and no ceiling, no outer room frame; flat rectangular WALL BACKDROP. All props align along image bottom edge, bottom is straight. WIDE 2.5:1 image. Simplified bold charcoal outlines, flat muted cream and sage color fills, ONE flat shadow per object, tiny subtle paper grain. Clean contemporary institution, not rusty, vintage, military, metal sci-fi or greenhouse. No characters, no mascots, no animals, no silhouettes, no writing or symbols resembling words, no decorative foliage. Big quiet empty shapes, small functional furnishings, low contrast to leave live actors dominant. Nailong containment room: broad quiet cream upper wall with pale sage lower band. A rounded rectangular observation window with opaque blue-gray glass spans right half, no scenery behind window. A small simple desk and tablet at LEFT third bottom, low yellow padded mat at RIGHT third bottom for live character to stand in front of, one small yellow toy block on a short shelf. One modest wall light over window. Upper quarter remains almost empty for game title. Nothing else.",
+      "sha256": "c2e7aef27b6db26412e28a41bb5dca4fe846489bc684062a0f9de65bebb63cc0"
+    },
+    {
+      "name": "medical",
+      "file": "medical_wall.png",
+      "prompt": "Production game background for a hand-inked modern anomaly agency 2D side-scroller with chibi employees. Strict orthographic FRONT ELEVATION, absolutely no perspective, no visible side walls, NO FLOOR and no ceiling, no outer room frame; flat rectangular WALL BACKDROP. All props align along image bottom edge, bottom is straight. WIDE 2.5:1 image. Simplified bold charcoal outlines, flat muted cream and sage color fills, ONE flat shadow per object, tiny subtle paper grain. Clean contemporary institution, not rusty, vintage, military, metal sci-fi or greenhouse. No characters, no mascots, no animals, no silhouettes, no writing or symbols resembling words, no decorative foliage. Big quiet empty shapes, small functional furnishings, low contrast to leave live actors dominant. Medical rest room: broad quiet cream wall with pale sage lower band. Two low padded reclining medical beds at left and right bottom, bed height about 30 percent of image. Small medicine cabinet between beds about 48 percent of image height, rounded wall heart monitor above right bed, simple closed curtain left edge. One modest wall light. Upper quarter remains empty. No external windows or scenery. Nothing else.",
+      "sha256": "73ff13013a5ee2f193ca04d1ed1b27bcbd82cdc44665d36cdd483068d483ebe7"
+    },
+    {
+      "name": "corridor",
+      "file": "corridor_wall.png",
+      "prompt": "Production game background for a hand-inked modern anomaly agency 2D side-scroller with chibi employees. Strict orthographic FRONT ELEVATION, absolutely no perspective, no visible side walls, NO FLOOR and no ceiling, no outer room frame; flat rectangular WALL BACKDROP. All props align along image bottom edge, bottom is straight. WIDE 2.5:1 image. Simplified bold charcoal outlines, flat muted cream and sage color fills, ONE flat shadow per object, tiny subtle paper grain. Clean contemporary institution, not rusty, vintage, military, metal sci-fi or greenhouse. No characters, no mascots, no animals, no silhouettes, no writing or symbols resembling words, no decorative foliage. Big quiet empty shapes, small functional furnishings, low contrast to leave live actors dominant. Transit corridor wallpaper, NO DOOR, NO floor, no stairs. Warm pale gray wall with sage lower band. A simple small rounded rectangular frosted glass observation window left third; a narrow low bench right third bottom, two small warm wall lights. Lots of clear undecorated wall. Absolutely no pillars, girder, mechanical details or perspective. Nothing else.",
+      "sha256": "c1c4bd046527c65651e9ccad3fced2c38c52bdb0fc93f40ad605c7e56b6f5eab"
+    }
+  ]
+}

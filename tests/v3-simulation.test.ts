@@ -24,6 +24,33 @@ describe('v0.3 production and progression',()=>{
   it('abandon is not a win and a completed result cannot be abandoned again',()=>{const s=battle();s.abandonEncounter();expect(s.state.rooms[0].rank).toBe(1);expect(s.state.rooms[0].state).toBe('STABLE');s.finishEncounter();s.startEncounter('BREACH_CHALLENGE','N01');s.state.encounter!.enemies[0].suppressionHp=0;s.step();s.abandonEncounter();expect(s.state.rooms[0].rank).toBe(2);});
 });
 
+describe('v0.4 result card progression data',()=>{
+  it('derives the next target from live room state and prerequisites',()=>{
+    const s=new V3Simulation();
+    expect(s.nextTarget()).toMatchObject({anomalyId:'N01',mode:'BREACH_CHALLENGE',currentRank:1,nextRank:2,available:true});
+    s.state.rooms[0].rank=2;
+    expect(s.nextTarget()).toMatchObject({anomalyId:'N02',mode:'CAPTURE',currentRank:0,nextRank:1,available:true,requirement:null});
+    s.state.wallet=100;
+    expect(s.nextTarget()).toMatchObject({anomalyId:'N02',mode:'CAPTURE',available:true,energyCost:50});
+    s.state.rooms[0].rank=3;s.state.wallet=0;
+    expect(s.nextTarget()).toMatchObject({anomalyId:'N02',mode:'CAPTURE',currentRank:0,nextRank:1,available:false});
+    s.state.wallet=100;
+    expect(s.nextTarget()).toMatchObject({anomalyId:'N02',mode:'CAPTURE',available:true,energyCost:50});
+  });
+  it('exposes real victory deltas and keeps the summary reward-free on repeated reads',()=>{
+    const s=new V3Simulation();
+    expect(s.startEncounter('BREACH_CHALLENGE','N01').ok).toBe(true);
+    const enc=s.state.encounter!;enc.enemies[0].suppressionHp=0;s.step();
+    const summary=s.victorySummary();
+    expect(summary).toMatchObject({result:'VICTORY',anomalyId:'N01',previousRank:1,currentRank:2,productionBefore:2,productionAfter:4,egoTier:2});
+    expect(summary?.rewards.some(item=>item.includes('I → II'))).toBe(true);
+    const again=s.victorySummary();
+    expect(again).toEqual(summary);
+    expect(s.state.rooms[0].rank).toBe(2);
+    expect(s.finishEncounter().ok).toBe(true);
+  });
+});
+
 /** Deliberate combat fixture: all damage still goes through real queued card actions/AI impacts. */
 function isolatedCardBattle(weapon:WeaponId):V3Simulation {
   const s=new V3Simulation();s.state.employees[0].weaponId=weapon;s.startEncounter('BREACH_CHALLENGE','N01');
@@ -75,6 +102,7 @@ describe('v0.3 interruption and progression boundaries',()=>{
     const s=new V3Simulation();expect(s.equip('E01','W01','A01',1).ok).toBe(true);
     const play=():void=>{for(let tick=0;tick<2400&&!s.state.encounter!.result;tick++){
       const enc=s.state.encounter!,d=enc.deck;
+      if(enc.mode==='CAPTURE'&&enc.capturePhase==='CAPTURABLE'&&!enc.captureEmployeeId)expect(s.startCapture(enc.squadIds[0]).ok).toBe(true);
       if(!d.pendingCast&&d.globalCooldown<1e-7)for(const c of d.hand){const def=cardById[c.cardId],target=def.target==='SELF'?c.ownerId:def.target==='TEAM'?'TEAM':def.target==='ALLY'?[...s.state.employees].filter(e=>e.hp>0).sort((a,b)=>a.sp-b.sp)[0].id:enc.enemies[0].id;if(s.queueCard(c.instanceId,target).ok)break;}
       s.step();
     }};
@@ -94,6 +122,17 @@ describe('v0.3 interruption and progression boundaries',()=>{
   it('max rank rejects challenge without charging or creating an encounter',()=>{const s=new V3Simulation();s.state.rooms[0].rank=3;const before=structuredClone(s.state);expect(s.startEncounter('BREACH_CHALLENGE','N01').ok).toBe(false);expect(s.state).toEqual(before);});
   it('second win advances only to III, preserves surviving health, and return restores actual home',()=>{const s=new V3Simulation();s.state.rooms[0].rank=2;const home={...s.state.employees[0].location};s.startEncounter('BREACH_CHALLENGE','N01');s.state.employees[0].hp=22;s.state.employees[0].sp=13;s.state.encounter!.enemies[0].suppressionHp=0;s.step();expect(s.state.rooms[0].rank).toBe(3);s.finishEncounter();expect(s.state.employees[0]).toMatchObject({location:home,hp:22,sp:13,status:'IDLE'});expect(s.state.employees[0].weaponTier).toBe(1);expect(s.startEncounter('BREACH_CHALLENGE','N01').ok).toBe(false);});
   it('reserve employees preserved by old-save migration are not teleported by the three-person encounter',()=>{const s=new V3Simulation();const reserve={...structuredClone(s.state.employees[0]),id:'E04'as const,location:{x:600,y:440,zone:'CORRIDOR'as const}};s.state.employees.push(reserve);s.startEncounter('BREACH_CHALLENGE','N01');s.abandonEncounter();s.finishEncounter();expect(reserve.location).toEqual({x:600,y:440,zone:'CORRIDOR'});});
+  it('recovers only in the safe room and does not send zero-vital staff on idle walks',()=>{
+    const s=new V3Simulation(),employee=s.state.employees[0];
+    employee.hp=20;employee.sp=0;employee.location={x:600,y:440,zone:'CORRIDOR'};employee.status='PANICKED';
+    s.step();
+    expect(employee.hp).toBe(20);
+    expect(employee.path).toHaveLength(0);
+    employee.location={...employee.home};
+    s.step();
+    expect(employee.hp).toBeGreaterThan(20);
+    expect(employee.sp).toBeGreaterThan(0);
+  });
 });
 describe('v0.3 unique deck and precise timers',()=>{
   it('three duplicate training weapons produce nine unique owner-bound instances',()=>{const s=battle(),d=s.state.encounter!.deck;expect(d.hand).toHaveLength(3);const all=[...d.hand,...d.drawPile];expect(all).toHaveLength(9);expect(new Set(all.map(c=>c.instanceId)).size).toBe(9);for(const e of s.state.employees)expect(all.filter(c=>c.ownerId===e.id)).toHaveLength(3);});
